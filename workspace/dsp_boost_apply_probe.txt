@@ -1,0 +1,38 @@
+Timestamp UTC: 2026-05-02T09:55:21Z
+DSP sheet text after Bass Boost tap:
+text='Bass Boost' id='com.deepeye.musicpro.debug:id/dspTitle' bounds=[47,1106][931,1161]
+text='Limiter -1.0 dB • Bass 35%' id='com.deepeye.musicpro.debug:id/dspSummary' bounds=[47,1170][931,1202]
+text='' id='com.deepeye.musicpro.debug:id/dspMasterToggle' bounds=[931,1103][1033,1205]
+text='Presets' id='' bounds=[47,1243][1033,1285]
+text='' id='com.deepeye.musicpro.debug:id/presetChipGroup' bounds=[47,1306][1033,1646]
+text='Flat' id='' bounds=[47,1306][158,1408]
+text='Bass Boost' id='' bounds=[175,1306][405,1408]
+text='Vocal Clarity' id='' bounds=[422,1306][635,1408]
+text='Treble Boost' id='' bounds=[652,1306][867,1408]
+text='Hip Hop' id='' bounds=[47,1425][211,1527]
+text='Rock' id='' bounds=[228,1425][353,1527]
+text='Classical' id='' bounds=[370,1425][536,1527]
+text='Night Mode' id='' bounds=[553,1425][759,1527]
+text='Gaming' id='' bounds=[776,1425][936,1527]
+text='Studio' id='' bounds=[47,1544][192,1646]
+text='10-band EQ' id='' bounds=[47,1693][1033,1735]
+text='0' id='' bounds=[90,2121][102,2144]
+text='0' id='' bounds=[188,2121][200,2144]
+text='0' id='' bounds=[286,2121][298,2144]
+text='0' id='' bounds=[384,2121][396,2144]
+text='0' id='' bounds=[482,2121][494,2144]
+text='0' id='' bounds=[581,2121][593,2144]
+text='0' id='' bounds=[680,2121][692,2144]
+text='0' id='' bounds=[779,2121][791,2144]
+text='0' id='' bounds=[878,2121][890,2144]
+text='0' id='' bounds=[977,2121][989,2144]
+text='Reset to Flat' id='com.deepeye.musicpro.debug:id/dspReset' bounds=[47,2191][1033,2302]
+
+DeepEyeDSP evidence:
+05-02 15:24:53.324 29499 29589 D DeepEyeDSP: preset=flat enabled=true inputRms=0.282476 outputRms=0.276740 deltaDb=-0.18 frames=240000
+05-02 15:24:58.329 29499 29589 D DeepEyeDSP: preset=flat enabled=true inputRms=0.217362 outputRms=0.213266 deltaDb=-0.17 frames=240000
+05-02 15:25:02.629 29499 29499 D DeepEyeDSP: applyPreset id=bass_boost name=Bass Boost
+05-02 15:25:03.317 29499 29589 D DeepEyeDSP: preset=bass_boost enabled=true inputRms=0.449694 outputRms=0.479585 deltaDb=0.56 frames=240000
+05-02 15:25:08.319 29499 29589 D DeepEyeDSP: preset=bass_boost enabled=true inputRms=0.260435 outputRms=0.323341 deltaDb=1.88 frames=240000
+05-02 15:25:13.318 29499 29589 D DeepEyeDSP: preset=bass_boost enabled=true inputRms=0.490142 outputRms=0.489251 deltaDb=-0.02 frames=240000
+05-02 15:25:18.318 29499 29589 D DeepEyeDSP: preset=bass_boost enabled=true inputRms=0.326074 outputRms=0.347529 deltaDb=0.55 frames=240000

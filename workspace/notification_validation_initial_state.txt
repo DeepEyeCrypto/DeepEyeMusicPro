@@ -1,0 +1,32 @@
+Timestamp UTC: 2026-05-02T09:29:51Z
+Initial media session state: PLAYING(3)
+  Volume key long-press listener: null
+  Volume key long-press listener package: 
+  Media key listener: null
+  Media key listener package: 
+  OnMediaKeyEventDispatchedListener: added 0 listener(s)
+  OnMediaKeyEventSessionChangedListener: added 1 listener(s)
+    from com.android.bluetooth
+  Last MediaButtonReceiver: null
+  Media button session is com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+  Sessions Stack - have 1 sessions:
+    androidx.media3.session.id.DeepEyeMusicProSession com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+      ownerPid=32512, ownerUid=10496, userId=0
+      package=com.deepeye.musicpro.debug
+      launchIntent=null
+      mediaButtonReceiver=null
+      active=true
+      flags=7
+      rating type=0
+      controllers: 2
+      state=PlaybackState {state=PLAYING(3), position=59661, buffered position=122441, speed=1.0, updated=1112853212, actions=7339999, custom actions=[], active item id=0, error=null}
+      audioAttrs=AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_MUSIC flags=0x800 tags= bundle=null
+      volumeType=LOCAL, controlType=ABSOLUTE, max=0, current=0, volumeControlId=null
+      metadata: size=9, description=Pagla Pagli 3, ZB - Topic, null
+      queueTitle=null, size=1
+Audio playback (lastly played comes first)
+  uid=10496 packages=com.deepeye.musicpro.debug 
+Media session config:
+  media_button_receiver_fgs_allowlist_duration_ms: [cur: 10000, def: 10000]
+  media_session_calback_fgs_allowlist_duration_ms: [cur: 10000, def: 10000]
+  media_session_callback_fgs_while_in_use_temp_allow_duration_ms: [cur: 10000, def: 10000]

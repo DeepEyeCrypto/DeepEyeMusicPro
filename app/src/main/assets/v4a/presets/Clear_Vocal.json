@@ -1,0 +1,1 @@
+{"id":"clear_vocal","name":"Clear Vocal","convolverIR":null,"ddcProfile":"Vocal_Enhance.ddc","eqGains":[-2,-1.5,-0.5,1,2.5,3.5,3,1.5,0.5,0],"fet":{"attack":4,"release":110,"ratio":1.8,"threshold":-9,"knee":6},"tubeWarmth":0.2,"enabledEffects":["EQ","DDC","FET"]}

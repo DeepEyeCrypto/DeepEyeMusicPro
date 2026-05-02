@@ -1,0 +1,10 @@
+Timestamp UTC: 2026-05-02T09:30:11Z
+Command: adb shell dumpsys audio | grep -i "deepeye"
+  source:android.os.BinderProxy@13d4996 -- pack: com.deepeye.musicpro.debug -- client: android.media.AudioManager@76aeebandroidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@964448 -- gain: GAIN -- flags:  -- loss: none -- notified: true -- limbofalse -- uid: 10496 -- attr: AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_MUSIC flags=0x800 tags= bundle=null -- sdk:35
+05-02 04:43:10:692 requestAudioFocus() from uid/pid 10496/7503 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@96f5a4aandroidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@1282dbb callingPack=com.deepeye.musicpro.debug req=1 flags=0x0 sdk=35
+05-02 04:48:20:249 focus requester:android.media.AudioManager@96f5a4aandroidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@1282dbb in uid:10496 pack:com.deepeye.musicpro.debug died
+05-02 13:59:46:120 requestAudioFocus() from uid/pid 10496/10784 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@111be89androidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@3920e8e callingPack=com.deepeye.musicpro.debug req=1 flags=0x0 sdk=35
+05-02 14:07:14:724 focus requester:android.media.AudioManager@111be89androidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@3920e8e in uid:10496 pack:com.deepeye.musicpro.debug died
+05-02 14:08:46:291 requestAudioFocus() from uid/pid 10496/2511 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@530fd56androidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@99041d7 callingPack=com.deepeye.musicpro.debug req=1 flags=0x0 sdk=35
+05-02 14:20:38:499 focus requester:android.media.AudioManager@530fd56androidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@99041d7 in uid:10496 pack:com.deepeye.musicpro.debug died
+05-02 14:21:07:029 requestAudioFocus() from uid/pid 10496/32512 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@76aeebandroidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@964448 callingPack=com.deepeye.musicpro.debug req=1 flags=0x0 sdk=35

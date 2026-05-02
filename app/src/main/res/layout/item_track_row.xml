@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp" android:background="@drawable/bg_surface_card">
+    <ImageView android:id="@+id/trackArtwork" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/ic_notification" android:contentDescription="@string/app_name" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+        <TextView android:id="@+id/trackTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/deep_text_primary" android:textStyle="bold" />
+        <TextView android:id="@+id/trackArtist" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/deep_text_secondary" android:textSize="12sp" />
+        <TextView android:id="@+id/trackMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/deep_text_muted" android:textSize="11sp" />
+    </LinearLayout>
+    <TextView android:id="@+id/trackDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/deep_text_muted" android:textSize="12sp" />
+</LinearLayout>

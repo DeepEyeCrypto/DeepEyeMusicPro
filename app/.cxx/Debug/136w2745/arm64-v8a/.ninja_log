@@ -1,0 +1,21 @@
+# ninja log v5
+60	4665	1777709043449209456	CMakeFiles/deepeye_dsp.dir/jamesdsp/jdsp_controller.c.o	5d3fb16e129a6a55
+58	8993	1777709047773686015	CMakeFiles/deepeye_dsp.dir/jni_bridge.cpp.o	7c111c2b302719e9
+8993	10076	1777709048864851627	/Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/cxx/Debug/136w2745/obj/arm64-v8a/libdeepeye_dsp.so	2e526bc2f48e3fca
+1	742	1777718631825681765	build.ninja	369311d9e7afcb69
+0	446	0	clean	ff8d410e53b651fa
+179	2808	1777718637733674790	CMakeFiles/deepeye_dsp.dir/jamesdsp/fet_compressor.c.o	1dc15c18daa0e232
+187	2848	1777718637782415654	CMakeFiles/deepeye_dsp.dir/jamesdsp/spectrum.c.o	49fb68feeb1176a
+111	2849	1777718637783093815	CMakeFiles/deepeye_dsp.dir/jamesdsp/ddc_engine.c.o	d6b44238e9b4639
+36	3391	1777718638325476929	CMakeFiles/deepeye_dsp.dir/jamesdsp/convolver.c.o	b4c579f1d2cfe747
+15	3713	1777718638645323195	CMakeFiles/deepeye_dsp.dir/jamesdsp/jdsp_controller.c.o	5d3fb16e129a6a55
+7	5214	1777718640146382837	CMakeFiles/deepeye_dsp.dir/jni_bridge.cpp.o	7c111c2b302719e9
+5214	6288	1777718641220533405	/Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/cxx/Debug/136w2745/obj/arm64-v8a/libdeepeye_dsp.so	d5e2f0aee6a4a1de
+2	480	0	clean	ff8d410e53b651fa
+208	5214	1777719237575565339	CMakeFiles/deepeye_dsp.dir/jamesdsp/fet_compressor.c.o	1dc15c18daa0e232
+212	5440	1777719237807448459	CMakeFiles/deepeye_dsp.dir/jamesdsp/spectrum.c.o	49fb68feeb1176a
+163	5503	1777719237858502843	CMakeFiles/deepeye_dsp.dir/jamesdsp/ddc_engine.c.o	d6b44238e9b4639
+161	6590	1777719238935613211	CMakeFiles/deepeye_dsp.dir/jamesdsp/convolver.c.o	b4c579f1d2cfe747
+14	8180	1777719240546030927	CMakeFiles/deepeye_dsp.dir/jamesdsp/jdsp_controller.c.o	5d3fb16e129a6a55
+11	11960	1777719244283817192	CMakeFiles/deepeye_dsp.dir/jni_bridge.cpp.o	7c111c2b302719e9
+11961	14359	1777719246688178132	/Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/cxx/Debug/136w2745/obj/arm64-v8a/libdeepeye_dsp.so	d5e2f0aee6a4a1de

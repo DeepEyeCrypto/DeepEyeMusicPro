@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/enayat/Documents/DeepEyeMusicPro/app/.cxx/Debug/136w2745/x86_64'
+ninja: no work to do.

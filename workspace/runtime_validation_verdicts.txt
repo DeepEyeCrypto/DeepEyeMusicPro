@@ -1,0 +1,19 @@
+Timestamp UTC: 2026-05-02T09:34:45Z
+Device: ZD2226X6RW
+Package: com.deepeye.musicpro.debug
+
+PATH A Notification Transport Controls:
+- PAUSE: PASS. Media session changed to state=PAUSED(2). See workspace/notification_pause_media_session.txt line 8.
+- PLAY: PASS. Media session changed to state=PLAYING(3). See workspace/notification_play_media_session.txt line 8.
+- SKIP NEXT: PARTIAL. Dispatch was accepted without crash and state remained PLAYING(3), but active queue size remained 1 and metadata did not change. See workspace/notification_skip_media_session.txt lines 22, 26, 68, 72.
+
+PATH B DSP Effect Audibility:
+- UNVERIFIED for Bass Boost 100%. Flat and post-capture audio focus dumps are materially identical and do not prove a 100% preset switch. See workspace/dsp_flat_audio.txt line 3 and workspace/dsp_bass_boost_100_audio.txt line 3.
+- Effect engine attachment is present for DeepEye session 26201 with active track and two enabled platform effect chains. See workspace/dsp_effect_engine_status.txt lines 69, 73, 154-163, 176-184.
+- App-side DSP wiring exists through DeepEyeRenderersFactory and DSPAudioProcessor, but audibility was not measured from these artifacts.
+
+PATH C Background Eviction Stress:
+- SURVIVED. After HOME plus RUNNING_CRITICAL trim and 60s wait, Media3 session remained PLAYING(3), process remained FGS, and playback notification id=4010 remained active. See workspace/eviction_media_session.txt line 22, workspace/eviction_process_status.txt lines 23-27 and 62-64, workspace/eviction_notification.txt line 3.
+
+PATH D Search-to-Queue Flow:
+- SINGLE-ONLY/PARTIAL. Runtime media session exposes queueTitle=null, size=1, so search taps currently replace the player playlist with a single MediaItem. See workspace/queue_media_session.txt lines 24-25 and app/src/main/java/com/deepeye/musicpro/ui/search/SearchFragment.kt line 57.

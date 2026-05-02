@@ -1,0 +1,8 @@
+-keep class com.deepeye.musicpro.model.** { *; }
+-keep class com.deepeye.musicpro.db.** { *; }
+-keepclassmembers class com.deepeye.musicpro.dsp.NativeDSP { native <methods>; }
+-keep class androidx.media3.** { *; }
+-keep class org.schabi.newpipe.extractor.** { *; }
+-dontwarn org.schabi.newpipe.extractor.**
+-dontwarn kotlin.**
+-dontwarn kotlinx.coroutines.**

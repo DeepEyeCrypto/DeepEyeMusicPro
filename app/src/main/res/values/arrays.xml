@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="audio_quality_entries"><item>Best available</item><item>Balanced</item><item>Data saver</item></string-array>
+    <string-array name="audio_quality_values"><item>best</item><item>balanced</item><item>saver</item></string-array>
+    <string-array name="dsp_preset_values"><item>flat</item><item>bass_boost</item><item>vocal_clarity</item><item>treble_boost</item><item>hip_hop</item><item>rock</item><item>classical</item><item>night_mode</item><item>gaming</item><item>studio</item></string-array>
+    <string-array name="download_location_entries"><item>Private app library</item><item>Shared Music folder</item></string-array>
+    <string-array name="download_location_values"><item>app_private</item><item>shared_music</item></string-array>
+</resources>

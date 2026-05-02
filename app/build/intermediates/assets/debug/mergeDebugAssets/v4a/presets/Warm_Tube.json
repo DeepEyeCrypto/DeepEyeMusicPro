@@ -1,0 +1,1 @@
+{"id":"warm_tube","name":"Warm Tube","convolverIR":null,"ddcProfile":null,"eqGains":[1.5,1,0.5,0,0,0.5,1,1,0.5,0],"fet":{"attack":12,"release":260,"ratio":1.6,"threshold":-8,"knee":9},"tubeWarmth":0.78,"enabledEffects":["EQ","FET","TUBE"]}

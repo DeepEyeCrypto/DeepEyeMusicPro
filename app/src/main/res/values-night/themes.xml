@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DeepEyeMusicPro" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/outfit_variable</item>
+        <item name="fontFamily">@font/outfit_variable</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/deep_black</item>
+        <item name="android:colorAccent">@color/deep_accent_cyan</item>
+        <item name="colorPrimary">@color/deep_accent_cyan</item>
+        <item name="colorOnPrimary">@color/deep_text_inverse</item>
+        <item name="colorSecondary">@color/deep_accent_blue</item>
+        <item name="colorOnSecondary">@color/deep_text_primary</item>
+        <item name="colorSurface">@color/deep_surface</item>
+        <item name="colorOnSurface">@color/deep_text_primary</item>
+        <item name="colorSurfaceVariant">@color/deep_surface_elevated</item>
+        <item name="colorOnSurfaceVariant">@color/deep_text_secondary</item>
+        <item name="colorOutline">@color/deep_outline</item>
+        <item name="colorError">@color/deep_error</item>
+        <item name="bottomSheetStyle">@style/Widget.DeepEye.BottomSheet</item>
+        <item name="materialButtonStyle">@style/Widget.DeepEye.Button</item>
+        <item name="sliderStyle">@style/Widget.DeepEye.Slider</item>
+        <item name="chipStyle">@style/Widget.DeepEye.Chip</item>
+    </style>
+</resources>

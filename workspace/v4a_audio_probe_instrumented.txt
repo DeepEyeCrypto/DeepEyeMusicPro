@@ -1,0 +1,19 @@
+05-02 16:35:12.444 26112 26112 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: com.deepeye.musicpro.debug, current user: UserHandle{0}, packageChangeEvent: UPDATE, intent user: UserHandle{0}
+05-02 16:35:12.448  3064  3064 W AlarmManager: Package com.deepeye.musicpro.debug, uid 10496 lost permission to set exact alarms!
+05-02 16:35:12.479 18964 18970 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/LifetimeData/LifetimeData.apk' with 1 weak references
+05-02 16:35:12.637  3064  3459 V SafetySourceDataValidat: Package: com.android.vending has expected signature
+05-02 16:35:12.637  3064  3459 V SafetySourceDataValidat: Package: com.android.vending has expected signature
+05-02 16:35:12.658 18964 18970 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~WkIn6j88qnvnduYAz4KuGA==/com.google.android.apps.safetyhub-iwZCc0cTX1gs-z3zdWpTNA==/base.apk' with 1 weak references
+05-02 16:35:12.659 18964 18970 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~WkIn6j88qnvnduYAz4KuGA==/com.google.android.apps.safetyhub-iwZCc0cTX1gs-z3zdWpTNA==/split_config.arm64_v8a.apk' with 1 weak references
+05-02 16:35:12.659 18964 18970 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~WkIn6j88qnvnduYAz4KuGA==/com.google.android.apps.safetyhub-iwZCc0cTX1gs-z3zdWpTNA==/split_config.xxhdpi.apk' with 1 weak references
+05-02 16:35:13.421 23240 23312 D StagedTaskContainer: STO Startup Task start: MShopApplication.onCreate.DNSPrefetch
+05-02 16:35:13.481 23213 23255 D nativeloader: Load /data/app/~~qK2OvidFsT8A94pDtK_5ow==/com.deepeye.musicpro.debug-_6F47RRvUUaMGLn1-6Vh_Q==/base.apk!/lib/arm64-v8a/libdeepeye_dsp.so using class loader ns clns-4 (caller=/data/app/~~qK2OvidFsT8A94pDtK_5ow==/com.deepeye.musicpro.debug-_6F47RRvUUaMGLn1-6Vh_Q==/base.apk!classes10.dex): ok
+05-02 16:35:13.625 23240 23369 I in.amazon.mShop.android.shopping/CorPfmLogic: COR PFM has already been fetched. Returning current COR/PFM
+05-02 16:35:13.644  7916  7941 W bt_device_profile: profile_feature_fetch:profile 1
+05-02 16:35:13.644  7916  7941 W bt_device_profile: profile_feature_fetch:AVRCP_COVERART_SUPPORT found 1
+05-02 16:35:13.784 27566 27745 E MFL     : PlayStoreAppInfo - Exception HTTP error fetching URL. Status=404, URL=[https://play.google.com/store/apps/details?id=com.deepeye.musicpro.debug] for com.deepeye.musicpro.debug
+05-02 16:35:13.916 23240 23312 D DNSPrefetchTask: resolved domain succeed: images-eu.ssl-images-amazon.com
+05-02 16:35:13.994 26295 26305 I FontLog : (REDACTED) Fetch %s end status %s
+05-02 16:35:14.011 23240 23312 D DNSPrefetchTask: resolved domain succeed: m.media-amazon.com
+05-02 16:35:14.551 23240 23312 D DNSPrefetchTask: resolved domain succeed: www.amazon.in
+05-02 16:35:14.551 23240 23312 D StagedTaskContainer: STO Startup Task end: MShopApplication.onCreate.DNSPrefetch

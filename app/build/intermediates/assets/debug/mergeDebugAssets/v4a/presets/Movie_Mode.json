@@ -1,0 +1,1 @@
+{"id":"movie_mode","name":"Movie Mode","convolverIR":"Headphone_Surround.irs","ddcProfile":null,"eqGains":[3,2,1,0.5,-0.5,0,1.5,3,2.5,1],"fet":{"attack":5,"release":150,"ratio":2.6,"threshold":-11,"knee":6},"tubeWarmth":0.38,"enabledEffects":["EQ","CONVOLVER","FET","TUBE","REVERB"]}

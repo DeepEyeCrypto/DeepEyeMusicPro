@@ -1,0 +1,1 @@
+{"id":"concert_hall","name":"Concert Hall","convolverIR":"Reverb_ConcertHall.irs","ddcProfile":null,"eqGains":[1,1,0.5,0,0.5,1,1.5,2,2.5,2],"fet":{"attack":10,"release":220,"ratio":2.2,"threshold":-10,"knee":7},"tubeWarmth":0.3,"enabledEffects":["EQ","CONVOLVER","REVERB","TUBE"]}

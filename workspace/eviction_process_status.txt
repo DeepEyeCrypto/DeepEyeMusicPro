@@ -1,0 +1,153 @@
+Timestamp UTC: 2026-05-02T09:31:25Z
+Command: adb shell dumpsys activity processes | grep -i deepeye
+    earliestFreezableTimeMs=-6m7s772ms
+     Configuration={0.85 404mcc10mnc [en_IN] ldltr sw508dp w508dp h1063dp 340dpi lrg long layoutCompatNeeded port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 90 - 1080, 2349) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11189 fontWeightAdjustment=0 spnairtel gidffffffffffffffffffff}
+     OverrideConfiguration={0.0 ?mcc0mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?round ?ldr ?wideColorGamut ?orien ?uimode ?night ?mot-uimode ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mMaxBounds=Rect(0, 0 - 0, 0) mDisplayRotation=undefined mWindowingMode=undefined mDisplayWindowingMode=undefined mActivityType=undefined mAlwaysOnTop=undefined mRotation=undefined} ?fontWeightAdjustment ?spn ?gid}
+     mLastReportedConfiguration={0.85 404mcc10mnc [en_IN] ldltr sw508dp w508dp h1063dp 340dpi lrg long layoutCompatNeeded port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 90 - 1080, 2349) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11189 fontWeightAdjustment=0 spnairtel gidffffffffffffffffffff}
+  *APP* UID 10496 ProcessRecord{afd416e 32512:com.deepeye.musicpro.debug/u0a496}
+    user #0 uid=10496 gids={3003, 50496, 20496, 9997}
+    mRequiredAbi=arm64-v8a instructionSet=arm64
+    class=com.deepeye.musicpro.DeepEyeApp
+    dir=/data/app/~~PpoEV_caWzREV-WfSD5dOw==/com.deepeye.musicpro.debug-9NIxPWC_xTMls2qpkOB8pw==/base.apk publicDir=/data/app/~~PpoEV_caWzREV-WfSD5dOw==/com.deepeye.musicpro.debug-9NIxPWC_xTMls2qpkOB8pw==/base.apk data=/data/user/0/com.deepeye.musicpro.debug
+    packageList={com.deepeye.musicpro.debug}
+    compat={340dpi always-compat}
+    thread=android.app.IApplicationThread$Stub$Proxy@d293beb
+    pid=32512
+    lastActivityTime=-20m18s368ms    startUptimeTime=+5d14h35m47s379ms    startElapsedTime=-40m46s366ms
+    startSeq=14954
+    mountMode=DEFAULT
+    lastPssTime=-1m57s197ms pssProcState=2 pssStatType=0 nextPssTime=+9m26s210ms
+    lastPss=185MB lastSwapPss=37MB lastCachedPss=151MB lastCachedSwapPss=34MB lastRss=251MB
+--
+    lastInvisibleTime=2026-05-02 09:30:23.589 (-1m2s850ms)
+    hasStartedServices=true
+    mHasForegroundServices=true forcingToImportant=null
+    Services:
+      - ServiceRecord{91e68f2 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.service.MusicPlayerService}
+    mConnections:
+      - ConnectionRecord{2af33fd u0 CR CAPS com.deepeye.musicpro.debug/com.deepeye.musicpro.service.MusicPlayerService:@8256854 flags=0x1001}
+      - ConnectionRecord{4a3258a u0 CR CAPS com.deepeye.musicpro.debug/com.deepeye.musicpro.service.MusicPlayerService:@10523f5 flags=0x1001}
+    Published Providers:
+      - androidx.startup.InitializationProvider
+        -> ContentProviderRecord{d924d48 u0 com.deepeye.musicpro.debug/androidx.startup.InitializationProvider}
+      - androidx.core.content.FileProvider
+        -> ContentProviderRecord{88707e1 u0 com.deepeye.musicpro.debug/androidx.core.content.FileProvider}
+    Connected Providers:
+      - 10dcb9a/com.android.providers.settings/.SettingsProvider->32512:com.deepeye.musicpro.debug/u0a496 s1/1 u0/0 +40m45s981ms
+    mReceivers:
+      - ReceiverList{5fcc303 32512 com.deepeye.musicpro.debug/10496/u0 remote:75f57b2}
+      - ReceiverList{7298f7b 32512 com.deepeye.musicpro.debug/10496/u0 remote:762b0a}
+      - ReceiverList{802782d 32512 com.deepeye.musicpro.debug/10496/u0 remote:8475f44}
+      - ReceiverList{938f741 32512 com.deepeye.musicpro.debug/10496/u0 remote:6e2de28}
+    lastCompactTime=624672834 lastCompactProfile=FULL
+    hasPendingCompaction=false    isFreezeExempt=false isPendingFreeze=false isFrozen=false
+    earliestFreezableTimeMs=-21m22s8ms
+    Activities:
+      - ActivityRecord{9be1517 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity t3611}
+    Recent Tasks:
+      - Task{21092ed #3611 type=standard A=10496:com.deepeye.musicpro.debug}
+     Configuration={0.85 404mcc10mnc [en_IN] ldltr sw508dp w508dp h1063dp 340dpi lrg long layoutCompatNeeded port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 90 - 1080, 2349) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11189 fontWeightAdjustment=0 spnairtel gidffffffffffffffffffff}
+     OverrideConfiguration={0.85 404mcc10mnc [en_IN] ldltr sw508dp w508dp h1063dp 340dpi lrg long layoutCompatNeeded port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 90 - 1080, 2349) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.1 fontWeightAdjustment=0 spnairtel gidffffffffffffffffffff}
+     mLastReportedConfiguration={0.85 404mcc10mnc [en_IN] ldltr sw508dp w508dp h1063dp 340dpi lrg long layoutCompatNeeded port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 90 - 1080, 2349) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11189 fontWeightAdjustment=0 spnairtel gidffffffffffffffffffff}
+  *APP* UID 10228 ProcessRecord{f156177 6239:com.google.android.googlequicksearchbox:googleapp/u0a228}
+    user #0 uid=10228 gids={1005, 3002, 3003, 3001, 50228, 20228, 9997}
+    mRequiredAbi=arm64-v8a instructionSet=arm64
+    class=com.google.android.apps.gsa.binaries.velvet.app.VelvetMultiprocessRoot_Application
+    dir=/data/app/~~NIZyaE1E4sgNIMwnjahj8A==/com.google.android.googlequicksearchbox-kuMc78MYht-jjXEvqrwLHQ==/base.apk publicDir=/data/app/~~NIZyaE1E4sgNIMwnjahj8A==/com.google.android.googlequicksearchbox-kuMc78MYht-jjXEvqrwLHQ==/base.apk data=/data/user/0/com.google.android.googlequicksearchbox
+--
+    Proc #60: prcp   F/S/FGS  ---NFU  t: 0 17522:org.kde.kdeconnect_tp/u0a386 (fg-service)
+        oom: max=1001 curRaw=200 setRaw=200 cur=200 set=200
+        state: cur=FGS  set=FGS  lastPss=35MB lastSwapPss=29MB lastCachedPss=0.00
+        cached=false empty=true hasAboveClient=false
+    Proc # 3: prcp   F/S/FGS  ---NFU  t:15 32512:com.deepeye.musicpro.debug/u0a496 (fg-service)
+        oom: max=1001 curRaw=200 setRaw=200 cur=200 set=200
+        state: cur=FGS  set=FGS  lastPss=185MB lastSwapPss=37MB lastCachedPss=151MB
+        cached=false empty=true hasAboveClient=false
+    Proc #68: prcp   F/ /BFGS ---NFU  t: 0 31775:com.google.android.apps.messaging:rcs/u0a200 (service)
+        com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService<=Proc{3064:system/1000}
+        oom: max=1001 curRaw=200 setRaw=200 cur=200 set=200
+        state: cur=BFGS set=BFGS lastPss=39MB lastSwapPss=31MB lastCachedPss=0.00
+        cached=false empty=true hasAboveClient=false
+--
+        state: cur=CEM  set=CEM  lastPss=5.6MB lastSwapPss=445KB lastCachedPss=5.6MB
+        cached=true empty=true hasAboveClient=false
+
+  mHomeProcess: ProcessRecord{948426b 20981:com.motorola.launcher3/u0a296}
+  mPreviousProcess: ProcessRecord{afd416e 32512:com.deepeye.musicpro.debug/u0a496}
+
+  UID states:
+    UID 1000: UidRecord{70b689e 1000 PER  change:procadj procs:0 seq(7116514,7104462)} caps=LCMNFU
+      curProcState=0 curCapability=LCMNFU
+      proc=ProcessRecord{bcfdf54 3064:system/1000}
+      proc=ProcessRecord{1740357 18964:com.android.settings/1000}
+    UID 1001: UidRecord{1efdf7f 1001 PER  change:procadj procs:0 seq(7116513,6945040)} caps=LCMNFU
+      curProcState=0 curCapability=LCMNFU
+--
+      curProcState=19 curCapability=------
+      proc=ProcessRecord{c7abfd0 31278:in.amazon.mShop.android.shopping/u0a476}
+    UID u0a496: UidRecord{189e609 u0a496 FGS  fgServices change:procadj procs:0 seq(7116434,7115938)} caps=---NFU
+      curProcState=4 curCapability=---NFU
+      proc=ProcessRecord{afd416e 32512:com.deepeye.musicpro.debug/u0a496}
+    UID u0i460: UidRecord{fc3e00e u0i460 CACC bg:+5h9m20s208ms idle change:procadj procs:0 seq(7116433,6953058)} caps=------
+      curProcState=17 curCapability=------
+      proc=ProcessRecord{976fe49 18099:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a464i460}
+
+  UID validation:
+    UID 1000: UidRecord{d7eda2f 1000 PER  procs:0 seq(0,0)} caps=LCMNFU
+      curProcState=0 curCapability=LCMNFU
+    UID 1001: UidRecord{4d7683c 1001 PER  procs:0 seq(0,0)} caps=LCMNFU
+--
+    Activities:
+    #93: prcp   IMPB ------ 23155:com.google.android.inputmethod.latin/u0a275 act:treated
+    #92: vis    BTOP LCMNFU 26295:com.google.android.gms.persistent/u0a192 act:client
+    #91: fg     TOP  LCMNFU 20981:com.motorola.launcher3/u0a296 act:activities|recents
+    #90: prcp   FGS  ---NFU 32512:com.deepeye.musicpro.debug/u0a496 act:activities|recents
+    #89: cch    CAC  ------ 18964:com.android.settings/1000 act:activities|recents
+    #88: cch    CAC  ------ 12178:com.google.android.contacts/u0a260 act:activities
+    #87: fg     BTOP ---NFU 29780:com.google.android.adservices.api/u0a357 act:client
+    #86: prev   CAC  ------ 12045:com.google.android.dialer/u0a178 act:activities|recents|client
+    #85: prev   CAC  ------ 12606:com.whatsapp.w4b/u0a392 act:activities
+    #84: cch+15 CAC  ------ 17316:com.phonepe.app/u0a464 act:activities|recents
+    #83: cch+15 CACC ------ 18099:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a464i460 act:client
+    #82: fg     BTOP ---NFU 6239:com.google.android.googlequicksearchbox:googleapp/u0a228 act:client
+--
+        com.google.android.tts/com.google.android.apps.speech.tts.googletts.service.GoogleTtsService<=Proc{3064:system/1000}
+    Proc #55: vis    F/ /IMPF ------  t: 0 26112:com.google.android.permissioncontroller/u0a365 (service)
+        com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.PermissionControllerServiceImpl<=Proc{3064:system/1000}
+    Proc #60: prcp   F/S/FGS  ---NFU  t: 0 17522:org.kde.kdeconnect_tp/u0a386 (fg-service)
+    Proc # 3: prcp   F/S/FGS  ---NFU  t:15 32512:com.deepeye.musicpro.debug/u0a496 (fg-service)
+    Proc #68: prcp   F/ /BFGS ---NFU  t: 0 31775:com.google.android.apps.messaging:rcs/u0a200 (service)
+        com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService<=Proc{3064:system/1000}
+    Proc # 0: prcp   T/ /IMPB ------  t: 0 23155:com.google.android.inputmethod.latin/u0a275 (service)
+        com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME<=Proc{3064:system/1000}
+    Proc #25: prcl   F/ /BFGS ---NFU  t: 0 18119:com.motorola.mobiledesktop.core/u0a331 (service)
+        com.motorola.mobiledesktop.core/.MotoDesktopService<=Proc{17482:com.motorola.mobiledesktop/u0a163}
+    Proc #23: prcl   F/ /BFGS ---NFU  t: 0 17482:com.motorola.mobiledesktop/u0a163 (service)
+        com.motorola.mobiledesktop/.notification.NotificationMonitorService<=Proc{3064:system/1000}
+--
+    PID #30339: ProcessRecord{2b197a1 30339:com.motorola.faceunlock/u0a218}
+    PID #30455: ProcessRecord{80dab3c 30455:com.qti.qcc/u0a344}
+    PID #31278: ProcessRecord{c7abfd0 31278:in.amazon.mShop.android.shopping/u0a476}
+    PID #31775: ProcessRecord{b31b58c 31775:com.google.android.apps.messaging:rcs/u0a200}
+    PID #32512: ProcessRecord{afd416e 32512:com.deepeye.musicpro.debug/u0a496}
+
+  Active process infos:
+    Pinfo PID #17525:
+      name=com.google.android.ext.services
+      deny: android.permission.INTERNET
+
+  All Active App Child Processes:
+    proc #0: PhantomProcessRecord {47f27f5 20215:19930:libTor.so/u0a382}
+      user #0 uid=10382 pid=20215 ppid=19930 knownSince=-5m20s368ms killed=false
+      lastCpuTime=0 oom adj=915 seq=5380
+
+  mHomeProcess: ProcessRecord{948426b 20981:com.motorola.launcher3/u0a296}
+  mPreviousProcess: ProcessRecord{afd416e 32512:com.deepeye.musicpro.debug/u0a496}
+  mPreviousProcessVisibleTime: +7d5h32m16s322ms
+  mGlobalConfiguration: {0.85 404mcc10mnc [en_IN] ldltr sw508dp w508dp h1063dp 340dpi lrg long layoutCompatNeeded port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 90 - 1080, 2349) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11189 fontWeightAdjustment=0 spnairtel gidffffffffffffffffffff}
+  Display override configurations:
+    0: {0.85 404mcc10mnc [en_IN] ldltr sw508dp w508dp h1063dp 340dpi lrg long layoutCompatNeeded port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 90 - 1080, 2349) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11189 fontWeightAdjustment=0 spnairtel gidffffffffffffffffffff}
+  mConfigWillChange: false
+  mWakefulness=Awake
+  mSleepTokens={}
+  mSleeping=false

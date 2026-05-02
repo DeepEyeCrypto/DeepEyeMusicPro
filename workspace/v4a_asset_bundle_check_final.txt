@@ -1,0 +1,25 @@
+OK assets/v4a/irs/ expected=5 actual=5
+assets/v4a/irs/BassBoost.irs
+assets/v4a/irs/Crossfeed.irs
+assets/v4a/irs/Headphone_Surround.irs
+assets/v4a/irs/Reverb_ConcertHall.irs
+assets/v4a/irs/Reverb_SmallRoom.irs
+OK assets/v4a/ddc/ expected=5 actual=5
+assets/v4a/ddc/Apple_AirPods_Pro.ddc
+assets/v4a/ddc/Generic_BassBoost.ddc
+assets/v4a/ddc/Sennheiser_HD650.ddc
+assets/v4a/ddc/Sony_WH-1000XM4.ddc
+assets/v4a/ddc/Vocal_Enhance.ddc
+OK assets/v4a/fet/ expected=3 actual=3
+assets/v4a/fet/Punchy_Bass.json
+assets/v4a/fet/Smooth_Vocal.json
+assets/v4a/fet/Warm_Tube.json
+OK assets/v4a/presets/ expected=8 actual=8
+assets/v4a/presets/Clear_Vocal.json
+assets/v4a/presets/Concert_Hall.json
+assets/v4a/presets/Gaming.json
+assets/v4a/presets/Headphone_Surround.json
+assets/v4a/presets/Movie_Mode.json
+assets/v4a/presets/Studio_Reference.json
+assets/v4a/presets/Super_Bass.json
+assets/v4a/presets/Warm_Tube.json

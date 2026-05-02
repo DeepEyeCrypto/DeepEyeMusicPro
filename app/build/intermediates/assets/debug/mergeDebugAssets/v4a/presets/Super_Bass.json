@@ -1,0 +1,1 @@
+{"id":"super_bass","name":"Super Bass","convolverIR":"BassBoost.irs","ddcProfile":null,"eqGains":[6,5.5,4,2,0.5,0,-0.5,0,1,1.5],"fet":{"attack":8,"release":180,"ratio":2.8,"threshold":-12,"knee":6},"tubeWarmth":0.45,"enabledEffects":["EQ","CONVOLVER","FET","TUBE"]}

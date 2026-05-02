@@ -1,0 +1,1 @@
+{"id":"gaming","name":"Gaming","convolverIR":null,"ddcProfile":null,"eqGains":[1,0.5,0,0.5,1.5,2.5,3,4,3,1],"fet":{"attack":2,"release":80,"ratio":2.2,"threshold":-10,"knee":5},"tubeWarmth":0.18,"enabledEffects":["EQ","FET"]}

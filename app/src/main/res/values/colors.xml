@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_black">#020407</color>
+    <color name="deep_graphite">#070B10</color>
+    <color name="deep_surface">#0C121A</color>
+    <color name="deep_surface_elevated">#121A24</color>
+    <color name="deep_surface_peak">#182231</color>
+    <color name="deep_surface_soft">#1F2B3A</color>
+    <color name="deep_outline">#2C3B4C</color>
+    <color name="deep_outline_strong">#3B5368</color>
+    <color name="deep_accent_cyan">#35D8FF</color>
+    <color name="deep_accent_blue">#2F7BFF</color>
+    <color name="deep_accent_magenta">#BE7DFF</color>
+    <color name="deep_accent_green">#63F2AF</color>
+    <color name="deep_error">#FF6B7A</color>
+    <color name="deep_warning">#FFC857</color>
+    <color name="deep_text_primary">#F5FAFF</color>
+    <color name="deep_text_secondary">#AAB8C7</color>
+    <color name="deep_text_muted">#6D7D8F</color>
+    <color name="deep_text_inverse">#041019</color>
+    <color name="deep_scrim">#CC020407</color>
+    <color name="deep_transparent">#00000000</color>
+</resources>

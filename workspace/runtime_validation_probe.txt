@@ -1,0 +1,243 @@
+Timestamp UTC: 2026-05-02T09:28:37Z
+ADB devices:
+List of devices attached
+ZD2226X6RW             device usb:20-1 product:hiphi_g model:motorola_edge_30_pro device:hiphi transport_id:3
+
+
+Target package install state:
+package:/data/app/~~PpoEV_caWzREV-WfSD5dOw==/com.deepeye.musicpro.debug-9NIxPWC_xTMls2qpkOB8pw==/base.apk
+
+Top focused window/activity:
+  mCurrentFocus=Window{e5e244a u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}
+  mFocusedApp=ActivityRecord{9be1517 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity t3611}
+
+Media sessions containing deepeye/musicpro:
+  Volume key long-press listener: null
+  Volume key long-press listener package: 
+  Media key listener: null
+  Media key listener package: 
+  OnMediaKeyEventDispatchedListener: added 0 listener(s)
+  OnMediaKeyEventSessionChangedListener: added 1 listener(s)
+    from com.android.bluetooth
+  Last MediaButtonReceiver: null
+  Media button session is com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+  Sessions Stack - have 1 sessions:
+    androidx.media3.session.id.DeepEyeMusicProSession com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+      ownerPid=32512, ownerUid=10496, userId=0
+      package=com.deepeye.musicpro.debug
+      launchIntent=null
+      mediaButtonReceiver=null
+      active=true
+      flags=7
+      rating type=0
+      controllers: 8
+      state=PlaybackState {state=STOPPED(1), position=153988, buffered position=153981, speed=0.0, updated=1112740953, actions=7339999, custom actions=[], active item id=0, error=null}
+      audioAttrs=AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_MUSIC flags=0x800 tags= bundle=null
+      volumeType=LOCAL, controlType=ABSOLUTE, max=0, current=0, volumeControlId=null
+      metadata: size=9, description=Pagla Pagli 2, ZB - Topic, null
+      queueTitle=null, size=1
+Audio playback (lastly played comes first)
+  uid=1000 packages=com.android.location.fused com.android.providers.settings com.android.localtransport com.motorola.android.providers.settings com.android.inputdevices com.android.keychain com.android.settings com.android.dynsystem android com.android.server.telecom com.android.wallpaperbackup com.qualcomm.qti.xrvd.service 
+  uid=10496 packages=com.deepeye.musicpro.debug 
+Media session config:
+  media_button_receiver_fgs_allowlist_duration_ms: [cur: 10000, def: 10000]
+  media_session_calback_fgs_allowlist_duration_ms: [cur: 10000, def: 10000]
+  media_session_callback_fgs_while_in_use_temp_allow_duration_ms: [cur: 10000, def: 10000]
+
+Notification snapshot containing deepeye/musicpro:
+      effectiveNotificationChannel=NotificationChannel{mId='1', mName=Subscriptions, mDescription=, mImportance=4, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=null, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=4, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+      mAdjustments=[]
+      shortcut=null found valid? false
+      mUserVisOverride=-1000
+    NotificationRecord(0x04835f4f: pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=1001 tag=null importance=2 key=0|com.deepeye.musicpro.debug|1001|null|10496: Notification(channel=default_channel_id shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x8 color=0x00000000 category=transport groupKey=media3_group_key actions=2 vis=PUBLIC))
+      uid=10496 userId=0
+      opPkg=com.deepeye.musicpro.debug
+      icon=Icon(typ=RESOURCE pkg=com.deepeye.musicpro.debug id=0x7f08017b)
+      flags=0x8
+      originalFlags=0x8
+      pri=0
+      key=0|com.deepeye.musicpro.debug|1001|null|10496
+      seen=false
+      groupKey=0|com.deepeye.musicpro.debug|g:media3_group_key
+      notification=
+            fullscreenIntent=null
+            contentIntent=null
+            deleteIntent=PendingIntent{913d6dc: PendingIntentRecord{15f8e99 com.deepeye.musicpro.debug startService (allowlist: b5bcd3b:+30s0ms/0/NOTIFICATION_SERVICE/NotificationManagerService)}}
+            number=0
+            groupAlertBehavior=0
+            when=0
+            tickerText=null
+            vis=1
+            contentView=null
+            bigContentView=null
+            headsUpContentView=null
+            color=0x00000000
+            timeout=unknown
+            actions={
+                [0] "Rewind to previous item" -> PendingIntent{311b3e5: PendingIntentRecord{9a25be0 com.deepeye.musicpro.debug startService (allowlist: b5bcd3b:+30s0ms/0/NOTIFICATION_SERVICE/NotificationManagerService)}}
+                [1] "Play" -> PendingIntent{b778eba: PendingIntentRecord{8bc85e3 com.deepeye.musicpro.debug startService (allowlist: b5bcd3b:+30s0ms/0/NOTIFICATION_SERVICE/NotificationManagerService)}}
+              }
+            extras={
+                android.title=String (Pagla Pagli 2)
+                android.reduced.images=Boolean (true)
+                android.subText=null
+                android.template=String (android.app.Notification$MediaStyle)
+                android.showChronometer=Boolean (false)
+                androidx.media3.session=Bundle (Bundle[mParcelledData.dataSize=268])
+                android.text=String (ZB - Topic)
+                android.progress=Integer (0)
+                android.progressMax=Integer (0)
+                android.appInfo=ApplicationInfo (ApplicationInfo{d40a16b com.deepeye.musicpro.debug})
+                android.showWhen=Boolean (false)
+                android.largeIcon=Icon (Icon(typ=BITMAP size=102x57))
+                android.infoText=null
+                android.mediaSession=Token (android.media.session.MediaSession$Token@8a7612)
+                android.progressIndeterminate=Boolean (false)
+                android.remoteInputHistory=null
+                android.compactActions=int[] (2)
+                  [0] 0
+                  [1] 1
+            }
+      publicNotification=
+            None
+--
+      effectiveNotificationChannel=NotificationChannel{mId='default_channel_id', mName=Now playing, mDescription=, mImportance=2, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=true, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=2, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+      mAdjustments=[]
+      shortcut=null found valid? false
+      mUserVisOverride=-1000
+    NotificationRecord(0x097584c8: pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=4010 tag=null importance=2 key=0|com.deepeye.musicpro.debug|4010|null|10496: Notification(channel=deepeye_playback shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x200a color=0x00000000 category=transport vis=PUBLIC))
+      uid=10496 userId=0
+      opPkg=com.deepeye.musicpro.debug
+      icon=Icon(typ=RESOURCE pkg=com.deepeye.musicpro.debug id=0x7f080110)
+      flags=0x200a
+      originalFlags=0x202a
+      pri=0
+      key=0|com.deepeye.musicpro.debug|4010|null|10496
+      seen=false
+      groupKey=0|com.deepeye.musicpro.debug|4010|null|10496
+      notification=
+            fullscreenIntent=null
+            contentIntent=null
+            deleteIntent=null
+            number=0
+            groupAlertBehavior=0
+            when=1777713480455
+            tickerText=null
+            vis=1
+            contentView=null
+            bigContentView=null
+            headsUpContentView=null
+--
+                androidx.media3.session=Bundle (Bundle[mParcelledData.dataSize=268])
+                android.text=String (ZB - Topic)
+                android.progress=Integer (0)
+                android.progressMax=Integer (0)
+                android.appInfo=ApplicationInfo (ApplicationInfo{2ea961 com.deepeye.musicpro.debug})
+                android.showWhen=Boolean (true)
+                android.largeIcon=null
+                android.infoText=null
+                android.mediaSession=Token (android.media.session.MediaSession$Token@8a7612)
+                android.progressIndeterminate=Boolean (false)
+                android.remoteInputHistory=null
+            }
+      publicNotification=
+            None
+      stats=SingleNotificationStats{posttimeElapsedMs=1112126272, posttimeToFirstClickMs=-1, posttimeToDismissMs=-1, airtimeCount=0, airtimeMs=0, currentAirtimeStartElapsedMs=-1, airtimeExpandedMs=0, posttimeToFirstVisibleExpansionMs=-1, currentAirtimeExpandedStartElapsedMs=-1, requestedImportance=3, naturalImportance=2, isNoisy=true}
+      mContactAffinity=0.0
+      mRecentlyIntrusive=false
+--
+      mColorized=false
+      mAllowBubble=false
+      isBubble=false
+      mIsInterruptive=false
+      effectiveNotificationChannel=NotificationChannel{mId='deepeye_playback', mName=DeepEyeMusicPro Playback, mDescription=hasDescription , mImportance=2, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=true, mVibrationEnabled=false, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=2, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+      mAdjustments=[]
+      shortcut=null found valid? false
+      mUserVisOverride=-1000
+    NotificationRecord(0x0d7fdc86: pkg=com.google.android.googlequicksearchbox user=UserHandle{0} id=0 tag=-1690805326::a:snotification:[0xd29dd2977357ffdc,stories.f,NOTIFICATION] importance=2 key=0|com.google.android.googlequicksearchbox|0|-1690805326::a:snotification:[0xd29dd2977357ffdc,stories.f,NOTIFICATION]|10228: Notification(channel=74 shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x8 color=0x00000000 groupKey=-1690805326::SUMMARY::chime_default_group actions=2 vis=PRIVATE))
+      uid=10228 userId=0
+      opPkg=com.google.android.googlequicksearchbox
+      icon=Icon(typ=RESOURCE pkg=com.google.android.googlequicksearchbox id=0x7f080dbb)
+      flags=0x8
+      originalFlags=0x8
+      pri=-1
+      key=0|com.google.android.googlequicksearchbox|0|-1690805326::a:snotification:[0xd29dd2977357ffdc,stories.f,NOTIFICATION]|10228
+      seen=false
+--
+  mMaxPackageEnqueueRate=5.0
+  hideSilentStatusBar=false
+  mArchive=Archive (100 notifications)
+    StatusBarNotification(pkg=com.google.android.dialer user=UserHandle{0} id=1 tag=null key=0|com.google.android.dialer|1|null|10178: Notification(channel=phone_incoming_call shortcut=null contentView=null fullScreenIntent=PendingIntent{f702caa: PendingIntentRecord{53c05fe com.google.android.dialer startActivity (allowlist: b5bcd3b:+30s0ms/0/NOTIFICATION_SERVICE/NotificationManagerService)}} vibrate=null sound=null defaults=0x0 flags=0x20ea color=0xff324b49 category=call actions=2 vis=PRIVATE publicVersion=Notification(channel=null shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x0 color=0xff324b49 vis=PRIVATE)))
+    StatusBarNotification(pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=1001 tag=null key=0|com.deepeye.musicpro.debug|1001|null|10496: Notification(channel=default_channel_id shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x68 color=0x00000000 category=transport groupKey=media3_group_key actions=2 vis=PUBLIC))
+    StatusBarNotification(pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=4010 tag=null key=0|com.deepeye.musicpro.debug|4010|null|10496: Notification(channel=deepeye_playback shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x200a color=0x00000000 category=transport vis=PUBLIC))
+    StatusBarNotification(pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=1001 tag=null key=0|com.deepeye.musicpro.debug|1001|null|10496: Notification(channel=default_channel_id shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x68 color=0x00000000 category=transport groupKey=media3_group_key actions=2 vis=PUBLIC))
+    StatusBarNotification(pkg=com.android.systemui user=UserHandle{-1} id=1201 tag=fully_charged_and_plugged key=-1|com.android.systemui|1201|fully_charged_and_plugged|10342: Notification(channel=FULL_BATT shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x0 color=0x00000000 vis=PRIVATE))
+    ...
+
+  Snoozed notifications:
+
+ Pending snoozed notifications
+
+  Ranking Config:
+    mSignalExtractors.length = 11
+      NotificationChannelExtractor
+      NotificationAdjustmentExtractor
+      BubbleExtractor
+--
+      AppSettings: com.google.android.apps.docs.editors.sheets (10444) importance=NONE userSet=false
+        NotificationChannel{mId='DEFAULT', mName=Default, mDescription=, mImportance=3, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=3, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='LOW_PRIORITY', mName=Low priority, mDescription=, mImportance=2, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=2, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+      AppSettings: com.motorola.android.overlay.wfd (10110) importance=NONE userSet=false
+      AppSettings: com.deepeye.musicpro.debug (10496) importance=DEFAULT userSet=true
+        NotificationChannel{mId='default_channel_id', mName=Now playing, mDescription=, mImportance=2, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=true, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=2, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='deepeye_downloads', mName=DeepEyeMusicPro Downloads, mDescription=hasDescription , mImportance=2, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=2, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='deepeye_playback', mName=DeepEyeMusicPro Playback, mDescription=hasDescription , mImportance=2, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=true, mVibrationEnabled=false, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=2, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='deepeye_diagnostics', mName=DeepEyeMusicPro Diagnostics, mDescription=hasDescription , mImportance=3, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=3, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+      AppSettings: com.android.hotwordenrollment.okgoogle (10158)
+      AppSettings: com.google.android.apps.tachyon (10273) importance=DEFAULT userSet=true
+        NotificationChannel{mId='com.google.android.libraries.communications.conference.KNOCK_REQUEST.v1', mName=Requests to join, mDescription=, mImportance=4, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=android.resource://com.google.android.apps.tachyon/raw/remote_knocker_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_UNKNOWN flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=4, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='notification_channel_new_in_duo', mName=New features, mDescription=hasDescription , mImportance=1, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=true, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=1, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='com.google.android.libraries.communications.conference.ONGOING_CALL_STATUS.v1', mName=Changes to ongoing calls, mDescription=, mImportance=4, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=null, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=4, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='notification_channel_contact_updates', mName=Contact updates, mDescription=hasDescription , mImportance=1, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=true, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=1, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='com.google.android.libraries.communications.conference.PHONE_NUMBER_REACHABILITY.v1', mName=Phone number reachability alerts, mDescription=, mImportance=4, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=4, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='notification_channel_special_event', mName=Special events & topics, mDescription=hasDescription , mImportance=1, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=true, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=1, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='com.google.android.libraries.communications.conference.TAKE_NOTES_CALENDAR_EVENT.v1', mName=In-person notes, mDescription=, mImportance=4, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=4, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='com.google.android.libraries.communications.conference.CALL.v3', mName=Incoming calls, mDescription=, mImportance=5, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=android.resource://com.google.android.apps.tachyon/raw/incoming_loud, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='notification_group_for_calls', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION_RINGTONE content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=5, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='com.google.android.libraries.communications.conference.ONGOING_CALL.v1', mName=Ongoing call, mDescription=, mImportance=3, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=null, mLights=false, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=false, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=3, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+        NotificationChannel{mId='notification_channel_sim_card_changes', mName=SIM card changes, mDescription=, mImportance=3, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=content://settings/system/notification_sound, mLights=true, mLightColor=0, mVibration=null, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=true, mShowBadge=false, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=3, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false}
+--
+    Allowed condition providers:
+      com.motorola.leanbacklauncher:com.motorola.camera2:com.motorola.camera3:com.google.android.apps.wellbeing:com.google.android.gms:com.motorola.gamemode:com.motorola.demo:com.motorola.actions (user: 0 isPrimary: true)
+      com.google.android.ext.services:com.google.android.googlequicksearchbox:com.motorola.mobiledesktop:com.google.android.projection.gearhead:com.motorola.launcher3:com.motorola.motodisplay (user: 0 isPrimary: false)
+    Has user set:
+      userId=0 value={com.healthkart.healthkart, com.google.android.trichromelibrary_768011133, com.google.android.trichromelibrary_768011533, com.google.android.trichromelibrary_768015333, com.google.android.trichromelibrary_768016433, com.google.android.trichromelibrary_768016633, com.speed.gc.autoclicker.automatictap, com.coindcx.okto, com.whatsapp.w4b, com.ideopay.user, com.paisabazaar, app.revanced.android.apps.youtube.music, com.google.android.ext.services, in.swiggy.android.instamart, com.mudrexmobile, com.multi_watch_time.bd, lauresprojects.com.mictest, me.kavishdevar.librepods, io.metamask, com.microsoft.appmanager, com.google.android.trichromelibrary_755900343, com.google.android.trichromelibrary_755902143, com.google.android.trichromelibrary_755909033, com.google.android.trichromelibrary_755909133, com.google.android.googlequicksearchbox, com.sbi.lotusintouch, piuk.blockchain.android, com.appsmotor.imageenhancer, maxplayer.mediaplayer.videoplayer, com.whereismytrain.android, org.telegram.messenger, com.arlosoft.macrodroid, org.altruist.BajajExperia, org.midorinext.android, com.google.android.apps.docs.editors.docs, org.chromium.webapk.a175510735107cd81_v2, exa.lnx.a, com.dexscreener, com.phonepe.app, com.motorola.leanbacklauncher, com.termux.api, com.termux.nix, com.termux.x11, com.delivery.india.client, com.callapp.contacts, com.rbl.rblmycard, com.niksoftware.snapseed, com.teslacoilsw.launcher, com.payswiff.kotakpos.app, com.moonpay, com.mgoogle.android.gms, com.balancehero.truebalance, com.google.android.GoogleCameraEng, com.ai375.go, com.onlinebankaccount.zerobalanceaccount, zebpay.Application, com.android.MGC_8_7_250, com.android.MGC_8_9_097, app.revanced.android.youtube, com.myairtelapp, com.king.candycrushsodasaga, com.google.android.apps.podcasts, tech.ula, com.mowand.trim, com.dbs.in.cbcards, com.playgendary.polyspherecoolgame, com.lgeha.nuts, com.whatsapp, com.picsart.studio, org.chromium.webapk.a4af91c0ec9993b13_v2, studio.com.techriz.andronix, com.idfcfirstbank.optimus, com.google.android.apps.docs.editors.sheets, com.tradingview.tradingviewapp, com.google.android.apps.docs.editors.slides, games.flexus.trainminer, com.fsn.nykaa, ru.zdevs.zarchiver, ginlemon.iconpackstudio.exported, com.discord, com.openai.chatgpt, com.kreditbee.android, ch.protonmail.android, com.speedify.speedifyandroid, com.delhiveryConsigneeApp, com.bybit.app, com.naviapp, com.vibhorsrv.shamim.cameraids, com.termux.boot, com.nicehash.metallum, cards.uni.app.credit, com.google.android.trichromelibrary_772704933, com.google.android.trichromelibrary_772711133, org.schabi.newpipe, com.bubbleshooter.popbubbles.collectcards, com.microsoft.office.excel, com.lemon.lvoverseas, com.motorola.camera2, com.motorola.camera3, com.offsec.nethunter.kex, in.amazon.mShop.android.shopping, com.paytmbank.mobile, com.msf.bfsltrade, ch.deletescape.lawnchair.plah, com.littlecobrasoftware.multiviewbrowser, com.tester.wpswpatester, com.google.ar.lens, org.chromium.webapk.ad8ad779fb7d91ddc_v2, in.rebase.app, com.mixapplications.rufus, com.realvnc.viewer.android, com.zui.camera, in.wefast, com.Frontesque.vuetube, com.csdroid.pkg, com.apkeditor.new.explorer3, com.newpipe.mp4downloader.video.downloader.addsblock.app, com.xlsx.reader.xls.excel.viewer.spread.sheets, com.flipkart.android, com.brave.browser, com.prefr.credit, ai.nodepay.mobileapp, com.deepeye.otg, com.legend.hiwatchpro.app, com.softwarebakery.drivedroid, com.opera.mini.native, com.olx.southasia, com.amazon.mp3, com.motorola.mobiledesktop, com.confirmtkt.lite, com.html.htmlviewer, com.drhowdydoo.displayinfo, ball.sort.puzzle.color.sorting.bubble.games, com.bitkeep.wallet, app.kitadai31.manager.flutter, com.handycloset.android.eraser, com.radio.pocketfm, com.amazon.dee.app, com.instagram.android, com.deepseek.chat, jinbaittai.phonestick, app.revanced.manager.flutter, com.weegoon.thiefpuzzle, com.paytm.business, com.pinterest, com.excelliance.multiaccounts, org.pocketworkstation.pckeyboard, com.policybazaar, in.startv.hotstar, com.patreon.android, liveearthmaps.livelocations.streetview.livcams, com.ducky.bikehill3d, com.microsoft.bing, com.google.android.trichromelibrary_744404833, com.google.android.trichromelibrary_744413833, com.google.android.trichromelibrary_744415833, com.paytmmall, com.magicpin.local, com.block.juggle, com.vanced.android.youtube, com.supercell.clashofclans, com.foxdebug.acodefree, apps.infinite.mousesound, com.google.android.apps.nbu.paisa.merchant, com.mamaearthapp, com.coindcx.btc, com.pubg.imobile, com.sangiorgisrl.wifimanagertool, com.polestar.super.clone, com.winlator, com.wakdev.wdnfc, torrent.search.revolution, com.ssdn.anumatipass, com.google.android.trichromelibrary_749902443, com.google.android.trichromelibrary_749910933, com.sysboon.aryvaidyasala, com.mnm.godrej, com.offsec.nethunter.store, xyz.openledger.worker.android, com.google.android.apps.wellbeing, biz.softwareits.torrentsearchengine, com.dbs.in.digitalbank, com.oasisfeng.island, com.google.android.apps.adwords, com.tmstore.robu.in, com.mxtech.videoplayer.ad, com.google.android.accessibility.soundamplifier, com.bigwinepot.nwdn.international, com.twitter.android, net.sourceforge.opencamera, com.earlysalary.android, free.vpn.unblock.proxy.turbovpn, com.dreamplug.androidapp, org.chromium.webapk.aef3e431c96a85d13_v2, net.one97.paytm, com.limbo.emu.main.arm, com.nothing.weather, com.opera.browser, com.nothing.smartcenter, com.ace.ex.file.manager, com.google.android.contacts, com.nothing.hearthstone, com.google.android.apps.fitness, com.server.auditor.ssh.client, marto.rtl_tcp_andro, sansunsen3.imagesearcher, holecek.pavel.MorseCode, net.zedge.android, com.colobolo.chainball, io.gosats, com.bfl.merchant, com.teamsmart.videomanager.tv, com.google.android.gms, app.revanced.android.gms, com.google.android.apps.walletnfcrel, org.torproject.torbrowser, power.amp.musicplayer.pi.audioplayer, ai.x.grok, com.fastbanking, org.xbmc.kodi, org.xbmc.kore, com.Dominos, com.netflix.mediaclient, com.mobikwik_new, org.videolan.vlc, tv.accedo.airtel.wynk, com.jio.myjio, com.xiaomi.midrop, com.airbeat.device.inspector, com.vlv.aravali, com.gameloft.android.ANMP.GloftA9HM, com.spotify.music, com.truedevelopersstudio.automatictap.autoclicker, com.buyhatke.assistant, com.ubercab, com.anydesk.anydeskandroid, com.motorola.gamemode, com.application.zomato, ai.perplexity.app.android, com.nxp.nfc.tagwriter, com.wifi.signal.wifisignalmeter.wifisignalbooster, com.motorola.demo, com.facebook.katana, com.ledger.live, com.amazon.avod.thirdpartyclient, com.bigjpg, com.content.magnetsearch, com.rushpro.clonemaster, com.herond.android.browser, com.wondershare.filmorago, global.dostavista.client, wps.wpa.geek, com.freakurl.apps.ollama, com.farcaster.mobile, com.okinc.okex.gp, com.tatadigital.tcp, io.appground.blek, com.mobikwik.business, in.gov.uidai.mAadhaarPlus, com.mixapplications.ultimateusb, com.google.android.apps.youtube.kids, com.mixapplications.usbfilemanager, com.toogud.android, tech.fplabs.score, com.ge.capital.konysbiapp, com.tuci.cibilindia, com.athan, com.sbi.SBIFreedomPlus, org.mozilla.firefox, idm.internet.download.manager.plus, com.amazon.storm.lightning.client.aosp, com.adobe.psmobile, com.widgapp.NFC_ReTAG_FREE, com.nothing.cardservice, com.creditcard.onecard, com.theporter.android.customerapp, com.linkedin.android, com.scaleforce.mobile.myexcitel, com.google.android.apps.nbu.paisa.user, com.grofers.customerapp, com.freeplay.twerk, com.termux, com.google.android.projection.gearhead, com.binance.dev, com.coinswitch.kuber, com.google.android.apps.chromecast.app, com.crrepa.band.dafit, com.motorola.launcher3, video.downloader.videodownloader, com.deepeye.otg.debug, com.tutozz.blespam, com.rapido.passenger, team.noones.mobilemessenger, com.motorola.actions, com.digilocker.android, com.einnovation.temu, com.gombosdev.ampere, com.best.alyousifi, com.nothing.customization.pixel, com.mixapplications.iso2usb, com.reglobe.cashify, org.videolan.vlcbenchmark, org.codeaurora.qcamera3, com.unicostudio.braintest3, com.pincode.shop, com.dubox.drive, com.snaptik.tt.downloader.nologo.nowatermark, com.mobilemotion.dubsmash, com.devmarques.gcambrasil, com.msf.kbank.mobile, ginlemon.iconpackstudio, org.codeaurora.snapcam, com.king.candycrushsaga, com.google.android.ext.services/android.ext.services.notification.Assistant, com.shamim.cam, com.tantranshanfc.mainpart, com.fantvapp, in.swiggy.android, com.cpplusworld.ezykamp, com.vlab.creditlog.book, live.citymall.customer.prod, com.wrx.wazirx, pi.browser, indwin.c3.shareapp, com.motorola.motodisplay, com.whizdm.moneyview.loans, games.playpack.mergeaway, com.ninja.toolkit.pulse.fake.gps.pro, com.aranoah.healthkart.plus, gr.nikolasspyr.integritycheck, ru.maximoff.apktool, app.rvx.android.youtube, com.cpuid.cpu_z, com.mystenlabs.suiwallet, torrent.search.revolutionv2, com.mixapplications.ventoy_app, com.google.android.apps.magazines, com.oneplus.camera, org.chromium.webapk.a8448fdb4b5fc2580_v2, com.google.android.GoogleCamera, com.yoyo.snake.rush, com.blockchainvault, com.mixapplications.usbtools, com.xsquarestudio.forcelte, com.google.android.trichromelibrary_763201943, com.google.android.trichromelibrary_763207533, com.google.android.trichromelibrary_763215933, com.instagram.lite, com.meesho.supply, com.volcanogames.mudracing, com.google.android.trichromelibrary_739012433, com.samsung.android.ruler, nom.vrd, com.gl.clx_fantasy}
+    All condition providers (1) enabled for current profiles:
+      ComponentInfo{com.google.android.gms/com.google.android.location.settings.DrivingConditionProvider}
+    Live condition providers (3):
+      ComponentInfo{android/com.android.server.notification.CountdownConditionProvider} (user 0): android.service.notification.ConditionProviderService$Provider@68d11d4 SYSTEM
+      ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider} (user 0): android.service.notification.ConditionProviderService$Provider@3775f7d SYSTEM
+      ComponentInfo{android/com.android.server.notification.EventConditionProvider} (user 0): android.service.notification.ConditionProviderService$Provider@99ee72 SYSTEM
+    Snoozed condition providers (1):
+      User: 0
+        com.google.android.gms/com.google.android.location.settings.DrivingConditionProvider
+    mRecords(2):
+      ConditionRecord[id=condition://android/event?userId=-10000&calendar=&reply=1,component=ComponentInfo{android/com.android.server.notification.EventConditionProvider},subscribed=true]
+      ConditionRecord[id=condition://android/schedule?days=1.2.3.4.5.6.7&start=22.0&end=7.0&exitAtAlarm=true,component=ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider},subscribed=true]
+--
+    -1|android|g:ranker_group -> -1|android|2147483647|ranker_group|1000|ranker_group
+
+  Usage Stats:
+    AggregatedStats{
+      key='com.deepeye.musicpro.debug',
+      numEnqueuedByApp=76,
+      numPostedByApp=18,
+      numUpdatedByApp=49,
+      numRemovedByApp=19,
+      numPeopleCacheHit=102,
+      numWithStaredPeople=0,
+      numWithValidPeople=0,
+      numPeopleCacheMiss=0,
+      numBlocked=0,
+      numSuspendedByAdmin=0,
+      numWithActions=34,
+      numPrivate=0,

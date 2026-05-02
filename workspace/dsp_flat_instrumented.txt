@@ -1,0 +1,48 @@
+Timestamp UTC: 2026-05-02T09:49:31Z
+After first tap media session:
+    active=false
+    flags=65537
+    rating type=0
+    controllers: 0
+    state=null
+    audioAttrs=AudioAttributes: usage=USAGE_VOICE_COMMUNICATION content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null
+    volumeType=LOCAL, controlType=ABSOLUTE, max=0, current=0, volumeControlId=null
+    metadata: null
+    queueTitle=null, size=0
+User Records:
+Record for full_user=0
+  Volume key long-press listener: null
+  Volume key long-press listener package: 
+  Media key listener: null
+  Media key listener package: 
+  OnMediaKeyEventDispatchedListener: added 0 listener(s)
+  OnMediaKeyEventSessionChangedListener: added 1 listener(s)
+    from com.android.bluetooth
+  Last MediaButtonReceiver: null
+  Media button session is com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+  Sessions Stack - have 1 sessions:
+    androidx.media3.session.id.DeepEyeMusicProSession com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+      ownerPid=29499, ownerUid=10496, userId=0
+      package=com.deepeye.musicpro.debug
+      launchIntent=null
+      mediaButtonReceiver=null
+      active=true
+      flags=7
+      rating type=0
+      controllers: 6
+      state=PlaybackState {state=PLAYING(3), position=8696, buffered position=20681, speed=1.0, updated=1114032949, actions=7339999, custom actions=[], active item id=0, error=null}
+      audioAttrs=AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_MUSIC flags=0x800 tags= bundle=null
+      volumeType=LOCAL, controlType=ABSOLUTE, max=0, current=0, volumeControlId=null
+      metadata: size=9, description=Believer, Imagine Dragons - Topic, null
+      queueTitle=null, size=1
+Audio playback (lastly played comes first)
+  uid=10496 packages=com.deepeye.musicpro.debug 
+Media session config:
+  media_button_receiver_fgs_allowlist_duration_ms: [cur: 10000, def: 10000]
+  media_session_calback_fgs_allowlist_duration_ms: [cur: 10000, def: 10000]
+  media_session_callback_fgs_while_in_use_temp_allow_duration_ms: [cur: 10000, def: 10000]
+
+DeepEyeDSP logs after first playback:
+05-02 15:19:21.113 29499 29589 D DeepEyeDSP: preset=flat enabled=true inputRms=0.000000 outputRms=0.000000 deltaDb=0.00 frames=648
+05-02 15:19:26.142 29499 29589 D DeepEyeDSP: preset=flat enabled=true inputRms=0.000142 outputRms=0.000142 deltaDb=-0.00 frames=238080
+05-02 15:19:31.136 29499 29589 D DeepEyeDSP: preset=flat enabled=true inputRms=0.480944 outputRms=0.437810 deltaDb=-0.82 frames=240000

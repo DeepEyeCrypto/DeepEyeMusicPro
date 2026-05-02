@@ -1,0 +1,3 @@
+/Users/enayat/Documents/DeepEyeMusicPro/app/.cxx/Debug/136w2745/armeabi-v7a/CMakeFiles/deepeye_dsp.dir
+/Users/enayat/Documents/DeepEyeMusicPro/app/.cxx/Debug/136w2745/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/enayat/Documents/DeepEyeMusicPro/app/.cxx/Debug/136w2745/armeabi-v7a/CMakeFiles/rebuild_cache.dir

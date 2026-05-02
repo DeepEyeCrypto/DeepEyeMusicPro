@@ -1,0 +1,13 @@
+Timestamp UTC: 2026-05-02T09:30:06Z
+Command: adb shell dumpsys media_session | grep -A5 -B5 "state=PLAYING"
+      mediaButtonReceiver=null
+      active=true
+      flags=7
+      rating type=0
+      controllers: 6
+      state=PlaybackState {state=PLAYING(3), position=69383, buffered position=124481, speed=1.0, updated=1112867250, actions=7339999, custom actions=[], active item id=0, error=null}
+      audioAttrs=AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_MUSIC flags=0x800 tags= bundle=null
+      volumeType=LOCAL, controlType=ABSOLUTE, max=0, current=0, volumeControlId=null
+      metadata: size=9, description=Pagla Pagli 3, ZB - Topic, null
+      queueTitle=null, size=1
+Audio playback (lastly played comes first)

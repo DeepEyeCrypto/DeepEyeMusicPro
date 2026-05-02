@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+configurations {
+    probe
+}
+def versions = ['v0.24.8', 'v0.24.7', 'v0.24.6', 'v0.24.5', 'v0.24.4', 'v0.24.3', 'v0.25.0', 'v0.26.0', 'v0.27.0']
+versions.each { version ->
+    dependencies.add('probe', "com.github.TeamNewPipe:NewPipeExtractor:${version}")
+}
+tasks.register('probeNewPipe') {
+    doLast {
+        configurations.probe.resolvedConfiguration.lenientConfiguration.getArtifacts(Specs.SATISFIES_ALL).each { artifact ->
+            println "RESOLVED ${artifact.moduleVersion.id} -> ${artifact.file.name}"
+        }
+        configurations.probe.resolvedConfiguration.lenientConfiguration.unresolvedModuleDependencies.each { dep ->
+            println "UNRESOLVED ${dep.selector}: ${dep.problem.message}"
+        }
+    }
+}

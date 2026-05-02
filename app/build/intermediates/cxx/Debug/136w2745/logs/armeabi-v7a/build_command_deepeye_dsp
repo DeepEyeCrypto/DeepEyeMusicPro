@@ -1,0 +1,4 @@
+/usr/local/share/android-commandlinetools/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/enayat/Documents/DeepEyeMusicPro/app/.cxx/Debug/136w2745/armeabi-v7a \
+  deepeye_dsp

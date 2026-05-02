@@ -1,0 +1,949 @@
+--------- beginning of main
+05-02 13:35:08.105  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-02 13:35:08.107  3064  3064 D EnhancedConnectivityController: Wifi onCapabilitiesChanged
+05-02 13:35:08.107  3064  3064 D EnhancedConnectivityController: Default net onCapabilitiesChanged
+05-02 13:35:08.107  3064  3064 D EnhancedConnectivityController: updateDefaultNet:573
+05-02 13:35:08.107  3064  3064 D EnhancedConnectivityController: mayUpdateNotification: shouldShow=false,UidsBlocked=false, net info=net:573,ifName=wlan0,securityType=2,isDefault=true,ssid="Airtel_Siddhanth's wifi",notificationId=0
+05-02 13:35:08.110  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-02 13:35:08.110  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.11, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -60, Link speed: 175Mbps, Tx Link speed: 175Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 234Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -60 UnderlyingNetworks: Null]
+05-02 13:35:08.110  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-02 13:35:08.110  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-02 13:35:08.110  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-02 13:35:08.114 26295 26723 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+--------- beginning of system
+05-02 13:35:08.114 26295 26723 W Binder  : reply too large data on java level: InterfaceDescriptor = null, code = 1
+05-02 13:35:08.114 26295 26723 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+05-02 13:35:08.205 18617 18791 I ThermalEngine: ACTION: freeze_rule - Setting freeze_rule to 0
+05-02 13:35:08.205 18617 18791 I ThermalEngine: Monitor:INACTIVE:FREEZE-CHG:freeze_rule=1:DETECT-STANDBY=0
+05-02 13:35:08.205 18617 18791 I ThermalEngine: ACTION: override_c - Setting override_c to 0
+05-02 13:35:08.205 18617 18791 I ThermalEngine: Monitor:INACTIVE:OVERRIDE-CHG:internal_override=1:DETECT-STANDBY=0
+05-02 13:35:08.205 18617 18790 I ThermalEngine: Thermal-Server: Thermal received msg from  freezing
+05-02 13:35:08.206 18617 20105 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-02 13:35:08.206 18617 18790 I ThermalEngine: Thermal-Server: Thermal received msg from  override_c
+05-02 13:35:08.206 18617 20106 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-02 13:35:08.266  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10496; state: DISABLED
+05-02 13:35:08.267  3064  4510 W ActivityTaskManager: callingPackage for (uid=2000, pid=20109) has no WPC
+05-02 13:35:08.267  3064  4510 I SettingsAccessControlPolicy: isDeviceSettingsChangeDisabled: value -> false
+05-02 13:35:08.267  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10496; state: DISABLED
+05-02 13:35:08.267  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 265452344; UID 10496; state: DISABLED
+05-02 13:35:08.267  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 266124927; UID 10496; state: DISABLED
+05-02 13:35:08.267  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 265451093; UID 10496; state: DISABLED
+05-02 13:35:08.267  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 265456536; UID 10496; state: DISABLED
+05-02 13:35:08.267  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 255940284; UID 10496; state: DISABLED
+05-02 13:35:08.267  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 236283604; UID 10496; state: DISABLED
+05-02 13:35:08.267  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 263959004; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 264304459; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 264301586; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 254631730; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 273509367; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 263259275; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10496; state: DISABLED
+05-02 13:35:08.268  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 194480991; UID 10496; state: ENABLED
+05-02 13:35:08.268  3064  4510 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-02 13:35:08.268  3064  4510 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-02 13:35:08.269  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-02 13:35:08.269  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-02 13:35:08.269  3064  4510 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-02 13:35:08.269  3064  4510 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-02 13:35:08.271  3064  3785 W TopAppMonitor: resend missed activity state ActivityState{com.deepeye.musicpro.debug, userId=0, uid=10496, displayId=0, category=0, isLauncher=false, isTop=false, lastTopTime=1107740394}
+05-02 13:35:08.272  3064  4510 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-02 13:35:08.272  3064  4510 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-02 13:35:08.273  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10496; state: DISABLED
+05-02 13:35:08.273  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10496; state: DISABLED
+05-02 13:35:08.273  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10496; state: ENABLED
+05-02 13:35:08.274  3064  4510 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:true duration ms: 0
+05-02 13:35:08.274  3064  4510 D CompatibilityChangeReporter: Compat change id reported: 205907456; UID 10496; state: ENABLED
+05-02 13:35:08.274  3064  4510 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-02 13:35:08.275  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-02 13:35:08.275  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-02 13:35:08.275  3064  4510 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-02 13:35:08.276  3064  4510 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (startActivityAsUser) (BAL_ALLOW_PERMISSION) result code=0
+05-02 13:35:08.277  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@eab4728 TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3607 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1107770242 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=false isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@f8bac41} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{83a55e6 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:08.281  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-02 13:35:08.281  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-02 13:35:08.283  3827  3925 D ViewRootImpl: update {(0,0)(fillxfill) ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x10302fe
+05-02 13:35:08.283  3827  3925 D ViewRootImpl:   fl=NOT_FOCUSABLE NOT_TOUCHABLE LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR ALT_FOCUSABLE_IM HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+05-02 13:35:08.283  3827  3925 D ViewRootImpl:   pfl=SHOW_FOR_ALL_USERS FIT_INSETS_CONTROLLED
+05-02 13:35:08.283  3827  3925 D ViewRootImpl:   bhv=DEFAULT
+05-02 13:35:08.283  3827  3925 D ViewRootImpl:   fitSides=} by setView
+05-02 13:35:08.284  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10496; state: DISABLED
+05-02 13:35:08.284  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10496; state: DISABLED
+05-02 13:35:08.284  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10496; state: DISABLED
+05-02 13:35:08.284  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10496; state: ENABLED
+05-02 13:35:08.285  3064  3380 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10496; state: ENABLED
+05-02 13:35:08.286  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10496; state: DISABLED
+05-02 13:35:08.286  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10496; state: DISABLED
+05-02 13:35:08.288  3064  3851 W AutofillManagerServiceImpl: getFillEventHistory() called by UID 10177, but service UID is 10192
+05-02 13:35:08.290  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10496; state: ENABLED
+05-02 13:35:08.293  3064  4883 D CoreBackPreview: Window{493ff65 u0 Splash Screen com.deepeye.musicpro.debug}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@41c98eb, mPriority=0, mIsAnimationCallback=false}
+05-02 13:35:08.294  1587  1587 D Zygote  : Forked child process 20121
+05-02 13:35:08.294  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-02 13:35:08.294  3064  3380 I ActivityManager: Start proc 20121:com.deepeye.musicpro.debug/u0a496 for next-top-activity {com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}
+05-02 13:35:08.297  3827  3949 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-02 13:35:08.303 20121 20121 I .musicpro.debug: Late-enabling -Xcheck:jni
+05-02 13:35:08.304  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@eab4728: {id=5215 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@b89d422} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3607)/@0xb9dd817 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@c9ddeb3} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x2d63404 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:08.304  3827  3912 V WindowManagerShell: Playing animation for (#5215)android.os.BinderProxy@eab4728@0
+05-02 13:35:08.304  3064  3367 V WindowManager: Sent Transition #5215 createdAt=05-02 13:35:08.268 via request=TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3607 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1107770242 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=true isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{RemoteToken{4dbb61d Task{b8aaae2 #3607 type=standard A=10496:com.deepeye.musicpro.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{5e13a63 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-02 13:35:08.304  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-02 13:35:08.304  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-02 13:35:08.304  3064  3367 V WindowManager:     info={id=5215 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{4dbb61d Task{b8aaae2 #3607 type=standard A=10496:com.deepeye.musicpro.debug}}} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3607)/@0xba9d8c7 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{9a2e0c9 Task{97f56a1 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x5e976da sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:08.304  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=5215 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@b89d422} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3607)/@0xb9dd817 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@c9ddeb3} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x2d63404 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  Delegate animation for #5215 to null
+05-02 13:35:08.304  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-02 13:35:08.304  3827  3912 V WindowManagerShell: start default transition animation, info = {id=5215 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@b89d422} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3607)/@0xb9dd817 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@c9ddeb3} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x2d63404 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:08.304  3827  3912 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@bda1be9 animAttr=0x13 type=OPEN isEntrance=false
+05-02 13:35:08.305  3827  3912 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@92f8da5 animAttr=0x12 type=OPEN isEntrance=true
+05-02 13:35:08.305  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-02 13:35:08.319 20121 20121 I .musicpro.debug: Using CollectorTypeCMC GC.
+05-02 13:35:08.322 12976 12981 I adbd    : jdwp connection from 20121
+05-02 13:35:08.324 20121 20121 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-02 13:35:08.330  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-02 13:35:08.336 20121 20121 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10496; state: ENABLED
+05-02 13:35:08.336 20121 20121 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10496; state: ENABLED
+05-02 13:35:08.339  3064  7249 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10496; state: ENABLED
+05-02 13:35:08.378  6239  6239 I bwmt    : onPause
+05-02 13:35:08.391 17496 17496 D AdaptivePerfD: PackageChangedReceiver.onReceive [android.intent.action.PACKAGE_DATA_CLEARED, com.deepeye.musicpro.debug]
+05-02 13:35:08.392 17496 17641 D AdaptivePerfD: h.onPackageChanged [ApplicationInfo{f2285c9 com.deepeye.musicpro.debug}.enabled]
+05-02 13:35:08.512 20121 20121 D nativeloader: Configuring clns-4 for other apk /data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/lib/arm64:/data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.deepeye.musicpro.debug
+05-02 13:35:08.519 20121 20121 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+05-02 13:35:08.521 20121 20121 V GraphicsEnvironment: Currently set values for:
+05-02 13:35:08.521 20121 20121 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-02 13:35:08.521 20121 20121 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-02 13:35:08.521 20121 20121 V GraphicsEnvironment: ANGLE GameManagerService for com.deepeye.musicpro.debug: false
+05-02 13:35:08.521 20121 20121 V GraphicsEnvironment: com.deepeye.musicpro.debug is not listed in per-application setting
+05-02 13:35:08.521 20121 20121 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+05-02 13:35:08.532 20121 20121 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+05-02 13:35:08.541 20121 20121 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+05-02 13:35:08.541 20121 20121 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+05-02 13:35:08.553 20121 20121 I Typeface: updateThemeFont new=Rookery-Regular;old=sans-serif;new=Rookery-Stacked;old=
+05-02 13:35:08.554  3064  4883 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10496. pid: 20121
+05-02 13:35:08.559  1737 22807 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-02 13:35:08.559  1737 22807 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-02 13:35:08.559  1737 22807 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-02 13:35:08.559  1737 22807 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-02 13:35:08.559 22738 22809 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 00:64:90:e2:54:b5
+05-02 13:35:08.559 22738 22809 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-02 13:35:08.571 20121 20162 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10496; state: ENABLED
+05-02 13:35:08.571 20121 20121 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+05-02 13:35:08.586  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#5215)android.os.BinderProxy@eab4728@0
+05-02 13:35:08.588  3064  3367 V WindowManager: Finish Transition #5215: created at 05-02 13:35:08.268 collect-started=0.009ms request-sent=7.66ms started=9.769ms ready=32.658ms sent=34.725ms finished=319.24ms
+05-02 13:35:08.590  3827  3912 V WindowManagerShell: Track 0 became idle
+05-02 13:35:08.591  3827  3912 V WindowManagerShell: All active transition animations finished
+05-02 13:35:08.593  6239 11600 D Surface : Surface::disconnect
+05-02 13:35:08.593  6239 11600 D BufferQueueProducer: [VRI[GoogleDiscoverWindow]#12(BLAST Consumer)12](id:185f0000000c,api:1,p:6239,c:6239) disconnect: api 1
+05-02 13:35:08.593 20981 21011 D Surface : Surface::disconnect
+05-02 13:35:08.593 20981 21011 D BufferQueueProducer: [VRI[CustomizationPanelLauncher]#89(BLAST Consumer)89](id:51f500000170,api:1,p:20981,c:20981) disconnect: api 1
+05-02 13:35:08.599  1737 22807 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-02 13:35:08.599  1737 22807 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-02 13:35:08.605 20121 20121 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10496; state: ENABLED
+05-02 13:35:08.616 26295 11426 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-02 13:35:08.638 20121 20121 I .musicpro.debug: hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-02 13:35:08.644 20121 20121 I MediaController: Init 75495ee [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-02 13:35:08.652  3064  3851 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10496; state: ENABLED
+05-02 13:35:08.660  3064  3851 I SettingsAccessControlPolicy: isDeviceSettingsChangeDisabled: value -> false
+05-02 13:35:08.661  3064  3851 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-02 13:35:08.661  3064  3851 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-02 13:35:08.661  3064  3851 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-02 13:35:08.661  3064  3851 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-02 13:35:08.663  3064  3851 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:true duration ms: 0
+05-02 13:35:08.664  3064  3851 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-02 13:35:08.664  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-02 13:35:08.664  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-02 13:35:08.664  3064  3851 E Transition: Trying to add a ready-group twice: Display{#0 state=ON size=1080x2400 ROTATION_0}
+05-02 13:35:08.665  3064  3851 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10496 (startActivityAsUser) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+05-02 13:35:08.665  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@b12cc5d TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3607 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=2 lastActiveTime=1107770630 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=false isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@e3389d2} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{a5bdaa3 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:08.672  1858  1858 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+05-02 13:35:08.683 20121 20121 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10496; state: DISABLED
+05-02 13:35:08.689 20121 20121 D ViewRootImpl: update {(0,0)(fillxfill) sim={adjust=resize forwardNavigation} ty=BASE_APPLICATION wanim=0x10302fe
+05-02 13:35:08.689 20121 20121 D ViewRootImpl:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+05-02 13:35:08.689 20121 20121 D ViewRootImpl:   pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+05-02 13:35:08.689 20121 20121 D ViewRootImpl:   bhv=DEFAULT
+05-02 13:35:08.689 20121 20121 D ViewRootImpl:   fitSides=} by setView
+05-02 13:35:08.701  1798  5375 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-02 13:35:08.706  1798  5376 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-02 13:35:08.706  1798  5376 E ANDR-PERF-LM: AdaptiveLaunch: writeToDataBase() 64: Meter aborted or could not get meter data for this run
+05-02 13:35:08.708  3064  3851 D CoreBackPreview: Window{a7346a7 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1f2bff2, mPriority=0, mIsAnimationCallback=false}
+05-02 13:35:08.726 20121 20170 D nativeloader: Load /data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/base.apk!/lib/arm64-v8a/libdeepeye_dsp.so using class loader ns clns-4 (caller=/data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/base.apk!classes9.dex): ok
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: QUALCOMM build                   : dad4038ba6, If56d4a5bb8
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: Build Date                       : 07/28/23
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.36.08.24
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: Local Branch                     : 
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.1.0.11.00.00.766.892
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: Remote Branch                    : NONE
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: Build Config                     : S P 12.1.1 AArch64
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+05-02 13:35:08.726 20121 20165 I AdrenoGLES-0: Driver Version                   : 0615.74
+05-02 13:35:08.729 20121 20165 I AdrenoGLES-0: PFP: 0x01730158, ME: 0x00000000
+05-02 13:35:08.740 20121 20165 I OpenGLRenderer: setGrContext nullptr-->validptr
+05-02 13:35:08.740 20121 20165 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-02 13:35:08.750  1737 22789 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-02 13:35:08.861  3064  3371 W ActivityTaskManager: activity boost didn't release as expected
+05-02 13:35:08.865 20121 20121 I ExoPlayerImpl: Init 25cf3d1 [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-02 13:35:08.871  3064  3851 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10496; state: ENABLED
+05-02 13:35:08.874  1852  8305 W AidlConversionCppNdk: legacy2aidl_audio_channel_mask_t_AudioChannelLayout: no AudioChannelLayout found for legacy output audio_channel_mask_t value 0x10
+05-02 13:35:08.874 20121 20121 W AidlConversionCppNdk: aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+05-02 13:35:08.881 20121 20121 I .musicpro.debug: hiddenapi: Accessing hidden method Landroid/media/AudioTrack;->getLatency()I (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-02 13:35:08.901  1852  2887 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+05-02 13:35:08.904 20121 20121 I MediaSessionImpl: Init ffbb02f [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-02 13:35:08.908 20121 20121 W MediaSessionCompat: Couldn't find a unique registered media button receiver in the given context.
+05-02 13:35:08.910  3064  4883 I MediaSessionStack: addSession to bottom of stack | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-02 13:35:08.911  3827  3827 D MotoMediaSessionUtils: onActiveSessionsChanged - controllers size: 0 mActiveControllers size: 0
+05-02 13:35:08.911  3827  3827 D MotoMediaSessionUtils: Final controllers count: 0
+05-02 13:35:08.911 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: null
+05-02 13:35:08.911 22738 17196 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 2 A2dp State: 11 mAudioPlaybackIsActive: false
+05-02 13:35:08.911 22738 17196 W Avrcp_ext: updateCurrentMediaState: isPlaying = false
+05-02 13:35:08.911 22738 17196 V Avrcp_ext: Media update: id -1➡-1? [MediaAttributes: none] : [MediaAttributes: none]
+05-02 13:35:08.911 22738 17196 D Avrcp_ext: isPackageNameValid: browsedPackage = isValid = false
+05-02 13:35:08.911 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null} device: null
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107769719, actions=0, custom actions=[], active item id=-1, error=null}, state=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: old state = PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107769719, actions=0, custom actions=[], active item id=-1, error=null}, new state= PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}
+05-02 13:35:08.912 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107769719, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2)
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107769719, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2)
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107769719, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2)
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107769719, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2)
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107769719, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2)
+05-02 13:35:08.912 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.912 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.912 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.912 22738 17196 D Avrcp_ext: isAdmStable = true activeAbsAddr = null device = null
+05-02 13:35:08.916 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.916 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.916 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.916 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.916 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.916 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.917  3827  3827 D MotoMediaSessionUtils: onActiveSessionsChanged - controllers size: 1 mActiveControllers size: 0
+05-02 13:35:08.917 22738 17196 V Avrcp_ext: ActiveSession: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.917  3827  3827 D MotoMediaSessionUtils: Final controllers count: 0
+05-02 13:35:08.917 22738 17196 V Avrcp_ext: isBrowseSupported for com.deepeye.musicpro.debug: false
+05-02 13:35:08.918 22738 17196 D Avrcp_ext: Adding media player info for com.deepeye.musicpro.debug with id 10
+05-02 13:35:08.918 22738 17196 D Avrcp_ext: add #10:MediaPlayerInfo com.deepeye.musicpro.debug (as 'DeepEyeMusicPro') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.918 22738 17196 W Avrcp_ext: No addressed player but active sessions, taking first.
+05-02 13:35:08.918 22738 17196 V APM: MediaControlManager: onPackageChanged
+05-02 13:35:08.918 22738 17196 W McpService: updatePlayerName pkg com.deepeye.musicpro.debug removed false
+05-02 13:35:08.918 22738 17196 D McpService: sending player change update
+05-02 13:35:08.918 22738 17196 D McpService:  MediaControlPointOpcodeUpdate feature: 6175
+05-02 13:35:08.918 22738 17196 D McpService:  PlayingOrderSupportedUpdate support: 1
+05-02 13:35:08.918 22738 17196 D McpService:  MediaPlayerNameUpdate name: com.deepeye.musicpro.debug
+05-02 13:35:08.918 22738 17196 W Avrcp_ext: No package name for player (0 not valid)
+05-02 13:35:08.918 22738 17196 W Avrcp_ext: Changing addressed media session to com.deepeye.musicpro.debug
+05-02 13:35:08.918 22738 17196 V Avrcp_ext: getMediaPlayerInfo: Found com.deepeye.musicpro.debug
+05-02 13:35:08.918 22738 17196 V Avrcp_ext: Set addressed #10 MediaPlayerInfo com.deepeye.musicpro.debug (as 'DeepEyeMusicPro') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.918 22738 17196 V Avrcp_ext: updateNewIds: Addressed:0 to 10, Browse:-1 to -1
+05-02 13:35:08.918 22738 17196 D Avrcp_ext: updateCurrentController: null to MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.918 22738 17260 V McpService: McsMessageHandler: received message=6
+05-02 13:35:08.918 22738 17260 V McpService: MEDIA_CONTROL_POINT_OPCODES_SUPPORTED_UPDATE msg: 6175
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:com_android_bluetooth_mcp.cpp(227)] mediaControlPointOpcodeSupportedNative
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:btif_mcp.cc(93)] MediaControlPointOpcodeSupported: feature6175
+05-02 13:35:08.919 22738 17260 V McpService: Exit handleMessage
+05-02 13:35:08.919 22738 17260 V McpService: McsMessageHandler: received message=13
+05-02 13:35:08.919 22738 17260 V McpService: PLAYING_ORDER_SUPPORT_UPDATE msg: 1
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:com_android_bluetooth_mcp.cpp(379)] playingOrderNative
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:btif_mcp.cc(145)] PlayingOrder: value
+05-02 13:35:08.919 22738 17260 V McpService: Exit handleMessage
+05-02 13:35:08.919 22738 17260 V McpService: McsMessageHandler: received message=8
+05-02 13:35:08.919 22738 17260 V McpService: MEDIA_PLAYER_NAME_UPDATE msg: com.deepeye.musicpro.debug
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:com_android_bluetooth_mcp.cpp(260)] mediaPlayerNameNative
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:btif_mcp.cc(83)] MediaPlayerName: namecom.deepeye.musicpro.debug
+05-02 13:35:08.919 22738 17260 V McpService: Exit handleMessage
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(445)] MediaControlPointOpcodeSupported
+05-02 13:35:08.919 22738 17260 V McpService: McsMessageHandler: received message=15
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(895)] HandleMcsEvent   mcs handle event MCP_MEDIA_SUPPORTED_OPCODE_UPDATE
+05-02 13:35:08.919 22738 17260 V McpService: CONTENT_CONTROL_ID_UPDATE msg: 1
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1634)] HandleMcsEvent event to media handler MCP_NOTIFY_ALL
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:com_android_bluetooth_mcp.cpp(391)] contentControlIdNative
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1645)] MediaStateInactiveHandler handle event MCP_NOTIFY_ALL in state MCP_STATE_INACTIVE
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:btif_mcp.cc(133)] ContentControlId: ccid
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1653)] MediaStateInactiveHandler device: 0x2e64696f72646e61
+05-02 13:35:08.919 22738 17260 V McpService: Exit handleMessage
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1654)] MediaStateInactiveHandler inactive mcs handle event MCP_NOTIFY_ALL
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1657)] MediaStateInactiveHandler Notify all handle 48
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1663)] MediaStateInactiveHandler Number of devices to send the notification to: 0
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1667)] MediaStateInactiveHandler No device register for notification
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1638)] HandleMcsEventfree rsp data
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(501)] PlayingOrder
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(895)] HandleMcsEvent   mcs handle event MCP_PLAYING_ORDER_UPDATE
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1634)] HandleMcsEvent event to media handler MCP_NOTIFY_ALL
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1645)] MediaStateInactiveHandler handle event MCP_NOTIFY_ALL in state MCP_STATE_INACTIVE
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1653)] MediaStateInactiveHandler device: 0x2e64696f72646e61
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1654)] MediaStateInactiveHandler inactive mcs handle event MCP_NOTIFY_ALL
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1657)] MediaStateInactiveHandler Notify all handle 71
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1663)] MediaStateInactiveHandler Number of devices to send the notification to: 0
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1667)] MediaStateInactiveHandler No device register for notification
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1638)] HandleMcsEventfree rsp data
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(430)] MediaPlayerName
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(895)] HandleMcsEvent   mcs handle event MCP_MEDIA_PLAYER_NAME_UPDATE
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1634)] HandleMcsEvent event to media handler MCP_NOTIFY_ALL
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1645)] MediaStateInactiveHandler handle event MCP_NOTIFY_ALL in state MCP_STATE_INACTIVE
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1653)] MediaStateInactiveHandler device: 0x2e64696f72646e61
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1654)] MediaStateInactiveHandler inactive mcs handle event MCP_NOTIFY_ALL
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1657)] MediaStateInactiveHandler Notify all handle 51
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1663)] MediaStateInactiveHandler Number of devices to send the notification to: 0
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1667)] MediaStateInactiveHandler No device register for notification
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1638)] HandleMcsEventfree rsp data
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(508)] ContentControlId
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(895)] HandleMcsEvent   mcs handle event MCP_CCID_UPDATE
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1634)] HandleMcsEvent event to media handler MCP_NOTIFY_ALL
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1645)] MediaStateInactiveHandler handle event MCP_NOTIFY_ALL in state MCP_STATE_INACTIVE
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1653)] MediaStateInactiveHandler device: 0x2e64696f72646e61
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1654)] MediaStateInactiveHandler inactive mcs handle event MCP_NOTIFY_ALL
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1657)] MediaStateInactiveHandler Notify all handle 74
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1663)] MediaStateInactiveHandler Number of devices to send the notification to: 0
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1667)] MediaStateInactiveHandler No device register for notification
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(1638)] HandleMcsEventfree rsp data
+05-02 13:35:08.919 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.919 22738 17196 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 2 A2dp State: 11 mAudioPlaybackIsActive: false
+05-02 13:35:08.919 22738 17196 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: Skipping update due to invalid playback state
+05-02 13:35:08.920 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null} device: null
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}, state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: old state = PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}, new state= PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.920 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}(2), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.920 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.920 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.921 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.921 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.921 22738 17196 D Avrcp_ext: isAdmStable = true activeAbsAddr = null device = null
+05-02 13:35:08.921  3064  7249 I ActivityTaskManager: The Process com.google.android.permissioncontroller Already Exists in BG. So sending its PID: 26112
+05-02 13:35:08.924  3064  5941 W AutofillManagerServiceImpl: getFillEventHistory() called by UID 10177, but service UID is 10192
+05-02 13:35:08.924  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-02 13:35:08.924 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.924 22738 17196 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 0 A2dp State: 11 mAudioPlaybackIsActive: false
+05-02 13:35:08.924 22738 17196 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.924 22738 17196 I Avrcp_ext: Skipping update due to invalid playback state
+05-02 13:35:08.924 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null} device: null
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: old state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, new state= PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.925 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.925 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.925 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.925 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.925 22738 17196 D Avrcp_ext: isAdmStable = true activeAbsAddr = null device = null
+05-02 13:35:08.926 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.926 22738 17196 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 0 A2dp State: 11 mAudioPlaybackIsActive: false
+05-02 13:35:08.926 22738 17196 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.926 22738 17196 I Avrcp_ext: Skipping update due to invalid playback state
+05-02 13:35:08.927 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.929 20121 20121 I Choreographer: Skipped 32 frames!  The application may be doing too much work on its main thread.
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null} device: null
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: old state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, new state= PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.929 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.929 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.929 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.929 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.929 22738 17196 D Avrcp_ext: isAdmStable = true activeAbsAddr = null device = null
+05-02 13:35:08.944 26112 26112 D ViewRootImpl: update {(0,0)(wrapxwrap) gr=CENTER sim={state=always_hidden adjust=nothing forwardNavigation} ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302ff
+05-02 13:35:08.944 26112 26112 D ViewRootImpl:   fl=DIM_BEHIND SPLIT_TOUCH HARDWARE_ACCELERATED
+05-02 13:35:08.944 26112 26112 D ViewRootImpl:   pfl=HIDE_NON_SYSTEM_OVERLAY_WINDOWS
+05-02 13:35:08.944 26112 26112 D ViewRootImpl:   bhv=DEFAULT
+05-02 13:35:08.944 26112 26112 D ViewRootImpl:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR} by setView
+05-02 13:35:08.952 20121 20121 I MediaController: Init 5383717 [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-02 13:35:08.953 22738 17196 V Avrcp_ext: onPlaybackStateChanged: state PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.953 22738 17196 V APM: MediaControlManager: onPlaybackStateChanged
+05-02 13:35:08.953 22738 17196 W McpService: updatePlaybackState state PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.953 22738 17196 W McpService: updatePlaybackState mState: 0 state: 0
+05-02 13:35:08.954 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.954 22738 17196 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 0 A2dp State: 11 mAudioPlaybackIsActive: false
+05-02 13:35:08.954 22738 17196 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.955 22738 17196 I Avrcp_ext: Skipping update due to invalid playback state
+05-02 13:35:08.955 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null} device: null
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: Device: no name: 
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: old state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, new state= PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.955 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.955 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.955 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.955 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.955 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.955 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.955 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.955 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.955 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.956 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.956 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.956 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.956 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.956 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.956 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.956 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.956 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.956 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.956 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.957 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.957 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.957 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.957 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.957 22738 17196 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-02 13:35:08.957 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.957 22738 17196 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-02 13:35:08.957 22738 17196 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}(0), new=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}(0)
+05-02 13:35:08.957 22738 17196 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-02 13:35:08.957 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.957 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.957 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.957 22738 17196 D Avrcp_ext: isAdmStable = true activeAbsAddr = null device = null
+05-02 13:35:08.957 22738 17196 V Avrcp_ext:  Exit onPlaybackStateChanged
+05-02 13:35:08.958  3064  5857 D CoreBackPreview: Window{4d46aa u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ba45638, mPriority=0, mIsAnimationCallback=false}
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: QUALCOMM build                   : dad4038ba6, If56d4a5bb8
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: Build Date                       : 07/28/23
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.36.08.24
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: Local Branch                     : 
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.1.0.11.00.00.766.892
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: Remote Branch                    : NONE
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: Build Config                     : S P 12.1.1 AArch64
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+05-02 13:35:08.966 26112  7197 I AdrenoGLES-0: Driver Version                   : 0615.74
+05-02 13:35:08.969 26112  7197 I AdrenoGLES-0: PFP: 0x01730158, ME: 0x00000000
+05-02 13:35:08.973 26112  7197 W Adreno-AppProfiles: Could not find QSPM HAL service. Skipping adreno profile processing.
+05-02 13:35:08.977 22738 22782 I BtGatt.ScanManager: msg.what = 6
+05-02 13:35:08.977 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 1
+05-02 13:35:08.977 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 3
+05-02 13:35:08.977 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 3
+05-02 13:35:08.978 26112  7197 I OpenGLRenderer: setGrContext nullptr-->validptr
+05-02 13:35:08.978 26112  7197 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-02 13:35:08.980  3064  3371 I LaunchCheckinHandler: MotoDisplayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,wp,ca,59
+05-02 13:35:08.980  3064  3371 W ActivityTaskManager: activity boost didn't release as expected
+05-02 13:35:08.983 26112 26112 D VRI[GrantPermissionsActivity]: update {(0,0)(wrapxwrap) gr=CENTER sim={state=always_hidden adjust=nothing forwardNavigation} ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302ff
+05-02 13:35:08.983 26112 26112 D VRI[GrantPermissionsActivity]:   fl=DIM_BEHIND SPLIT_TOUCH HARDWARE_ACCELERATED
+05-02 13:35:08.983 26112 26112 D VRI[GrantPermissionsActivity]:   pfl=HIDE_NON_SYSTEM_OVERLAY_WINDOWS
+05-02 13:35:08.983 26112 26112 D VRI[GrantPermissionsActivity]:   bhv=DEFAULT
+05-02 13:35:08.983 26112 26112 D VRI[GrantPermissionsActivity]:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR} by setLayoutParams
+05-02 13:35:08.984 26112 26112 D VRI[GrantPermissionsActivity]: update {(0,0)(wrapxwrap) gr=CENTER sim={state=always_hidden adjust=nothing forwardNavigation} ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302ff
+05-02 13:35:08.984 26112 26112 D VRI[GrantPermissionsActivity]:   fl=DIM_BEHIND SPLIT_TOUCH HARDWARE_ACCELERATED
+05-02 13:35:08.984 26112 26112 D VRI[GrantPermissionsActivity]:   pfl=HIDE_NON_SYSTEM_OVERLAY_WINDOWS
+05-02 13:35:08.984 26112 26112 D VRI[GrantPermissionsActivity]:   bhv=DEFAULT
+05-02 13:35:08.984 26112 26112 D VRI[GrantPermissionsActivity]:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR} by setLayoutParams
+05-02 13:35:08.985  3064  3367 I ActivityTaskManager: Displayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity for user 0: +713ms
+05-02 13:35:08.986  6239  6239 I bwmt    : onStop
+05-02 13:35:08.986 20981 21005 I ImeTracker: com.motorola.launcher3:4f35c182: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+05-02 13:35:08.986  3064  4510 I ImeTracker: com.motorola.launcher3:4f35c182: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-02 13:35:08.989  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@b12cc5d: {id=5216 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=TRANSLUCENT|FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{b1bf0af u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity)/@0x9d82a15 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) d=-1->0 r=-1->0:-1}]}
+05-02 13:35:08.989  3827  3912 V WindowManagerShell: Playing animation for (#5216)android.os.BinderProxy@b12cc5d@0
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-02 13:35:08.989  3064  3367 V WindowManager: Sent Transition #5216 createdAt=05-02 13:35:08.661 via request=TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3607 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=2 lastActiveTime=1107770630 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=true isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{RemoteToken{4dbb61d Task{b8aaae2 #3607 type=standard A=10496:com.deepeye.musicpro.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{9952b4e com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-02 13:35:08.989  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-02 13:35:08.989  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-02 13:35:08.989  3064  3367 V WindowManager:     info={id=5216 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=TRANSLUCENT|FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{b1bf0af u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity)/@0xabfb450 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) d=-1->0 r=-1->0:-1}]}
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-02 13:35:08.989  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=5216 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=TRANSLUCENT|FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{b1bf0af u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity)/@0x9d82a15 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) d=-1->0 r=-1->0:-1}]}
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  Delegate animation for #5216 to null
+05-02 13:35:08.989  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-02 13:35:08.989  3827  3912 V WindowManagerShell: start default transition animation, info = {id=5216 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=TRANSLUCENT|FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{b1bf0af u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity)/@0x9d82a15 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) d=-1->0 r=-1->0:-1}]}
+05-02 13:35:08.989  3827  3912 V WindowManagerShell: loadAnimation: anim=null animAttr=0x4 type=OPEN isEntrance=true
+05-02 13:35:08.991  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#5216)android.os.BinderProxy@b12cc5d@0
+05-02 13:35:08.995  3064  3367 V WindowManager: Finish Transition #5216: created at 05-02 13:35:08.661 collect-started=0.009ms request-sent=3.412ms started=4.302ms ready=265.236ms sent=326.691ms finished=333.745ms
+05-02 13:35:08.996  3827  3912 V WindowManagerShell: Track 0 became idle
+05-02 13:35:08.996  3827  3912 V WindowManagerShell: All active transition animations finished
+05-02 13:35:08.996  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-02 13:35:08.996  3827  3912 V WindowManagerShell: Track 0 became idle
+05-02 13:35:08.996  3827  3912 V WindowManagerShell: All active transition animations finished
+05-02 13:35:09.002 26112  7197 D Surface : Surface::disconnect
+05-02 13:35:09.002 26112  7197 D BufferQueueProducer: [VRI[GrantPermissionsActivity]#5(BLAST Consumer)5](id:660000000005,api:1,p:26112,c:26112) disconnect: api 1
+05-02 13:35:09.003 26112  7197 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-02 13:35:09.010  3064  3458 I ImeTracker: com.google.android.permissioncontroller:1314398a: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_ALWAYS_HIDDEN_STATE
+05-02 13:35:09.010  3064  3458 I ImeTracker: com.google.android.permissioncontroller:1314398a: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-02 13:35:09.012  3064  5856 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:false duration ms: 0
+05-02 13:35:09.012 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+05-02 13:35:09.013 23155 23155 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-02 13:35:09.013 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.permissioncontroller, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-02 13:35:09.014 23155 23155 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=false, bottom inset=102
+05-02 13:35:09.014 23155 23155 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-02 13:35:09.015  3064  5856 W PackageConfigPersister: App-specific configuration not found for packageName: com.google.android.permissioncontroller and userId: 0
+05-02 13:35:09.037 20121 20127 I .musicpro.debug: Compiler allocated 4496KB to compile void android.view.ViewRootImpl.performTraversals()
+05-02 13:35:09.050 26295 11426 I NearbyMediums: Found Fast Ble Advertisements :
+05-02 13:35:09.050 26295 11426 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x32 0x38 0x37 0x30 0x11 0x32 0xf3 0x85 0xc7 0x9d 0x16 0x1d 0x37 0x69 0xdf 0xda 0xca 0x7f 0x9f 0x01 0xc8 0x70 ], deviceToken=[ 0x9e 0xf2 ], rxAdvertisement=null } : 2 times.
+05-02 13:35:09.050 26295 11426 I NearbyMediums: Total 2 fast advertisements from 1 unique advertisers.
+05-02 13:35:09.050 26295 11426 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-02 13:35:09.186 22738 22782 I BtGatt.ScanManager: msg.what = 6
+05-02 13:35:09.186 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 1
+05-02 13:35:09.186 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 3
+05-02 13:35:09.186 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 3
+05-02 13:35:09.187 26295 26723 I FontLog : (REDACTED) Received query %s, URI %s
+05-02 13:35:09.187 26295 26723 I FontLog : (REDACTED) Query [%s] resolved to %s
+05-02 13:35:09.188 26295 26723 I FontLog : (REDACTED) Fetch %s end status %s
+05-02 13:35:09.189 26295 26723 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+05-02 13:35:09.191 26295 26723 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+05-02 13:35:09.217  3827  3949 D Surface : Surface::disconnect
+05-02 13:35:09.217  3827  3949 D BufferQueueProducer: [VRI[debug]#6016(BLAST Consumer)6016](id:ef300001783,api:1,p:3827,c:3827) disconnect: api 1
+05-02 13:35:09.221  3827  3925 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@9c455ca
+05-02 13:35:09.222  3064  5856 W InputManager-JNI: Input channel object '493ff65 Splash Screen com.deepeye.musicpro.debug (client)' was disposed without first being removed with the input manager!
+05-02 13:35:09.223  3064  7249 D CoreBackPreview: Window{493ff65 u0 Splash Screen com.deepeye.musicpro.debug EXITING}: Setting back callback null
+05-02 13:35:09.736  3974 26498 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 27 up
+05-02 13:35:09.919  1731  3697 I slpi    : STK3A5X ALS_OC: lux:4709.399902, last_ps:0[1283], CH0:3525, CH2:382, CH4:124, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-02 13:35:09.922 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[bolt clock triggered, queue operations will be executed now..]
+05-02 13:35:09.922 17316 17400 I System.out: [[Dispatchers.Default][bolt-default][debug][bolt-v2][BoltControlManager]:message[bolt clock is registered for [2000] delay]
+05-02 13:35:09.923 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:09.923 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry started, checking for retry limits..]
+05-02 13:35:09.923 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:09.923 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, waiting window is not completed, skipping the execution this time...]
+05-02 13:35:09.923 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:09.924 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:09.924 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry started, checking for retry limits..]
+05-02 13:35:09.924 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:09.924 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, waiting window is completed, ready to execute in 3.2.1..]
+05-02 13:35:09.924 17316 19268 I System.out: [[BlockingEventLoop@4622295][unknown][info][bolt-v2][BoltManager]:message[state validation operation running]
+05-02 13:35:09.924 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation] retried.]
+05-02 13:35:09.924 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:09.934  1798  5375 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-02 13:35:09.935  1798  5376 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-02 13:35:09.935  1798  5376 E ANDR-PERF-LM: AdaptiveLaunch: writeToDataBase() 64: Meter aborted or could not get meter data for this run
+05-02 13:35:10.233  1731  3697 I slpi    : STK3A5X ALS_OC: lux:4108.200195, last_ps:0[1277], CH0:3075, CH2:321, CH4:112, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-02 13:35:10.338 20121 20128 W .musicpro.debug: userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+05-02 13:35:10.547  1731  3697 I slpi    : STK3A5X ALS_OC: lux:3695.375977, last_ps:0[1279], CH0:2766, CH2:289, CH4:101, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-02 13:35:10.912  3064  3458 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-02 13:35:11.068  3064  3519 D ActivityManager: freezing 26562 com.google.android.apps.wellbeing, reason = oom_cached
+05-02 13:35:11.145  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-02 13:35:11.147  3064  3064 D EnhancedConnectivityController: Wifi onCapabilitiesChanged
+05-02 13:35:11.147  3064  3064 D EnhancedConnectivityController: Default net onCapabilitiesChanged
+05-02 13:35:11.147  3064  3064 D EnhancedConnectivityController: updateDefaultNet:573
+05-02 13:35:11.147  3064  3064 D EnhancedConnectivityController: mayUpdateNotification: shouldShow=false,UidsBlocked=false, net info=net:573,ifName=wlan0,securityType=2,isDefault=true,ssid="Airtel_Siddhanth's wifi",notificationId=0
+05-02 13:35:11.149  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.11, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -60, Link speed: 234Mbps, Tx Link speed: 234Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 117Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -60 UnderlyingNetworks: Null]
+05-02 13:35:11.149  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-02 13:35:11.149  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-02 13:35:11.149  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-02 13:35:11.149  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-02 13:35:11.151 26295 26723 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-02 13:35:11.151 26295 26723 W Binder  : reply too large data on java level: InterfaceDescriptor = null, code = 1
+05-02 13:35:11.151 26295 26723 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+05-02 13:35:11.515 26112 26112 I GrantPermissionsViewModel: Logged buttons presented and clicked permissionGroupName=android.permission-group.NOTIFICATIONS uid=10496 package=com.deepeye.musicpro.debug presentedButtons=9 clickedButton=1 isPermissionRationaleShown=false sessionId=-2915301114859980824 targetSdk=35 prompt=BASIC initialLocationPrecision=0 selectedLocationPrecision=0 locationAccuracyButtonClicked= false
+05-02 13:35:11.517 26112 26112 I GrantPermissionsViewModel: Permission grant result requestId=-2915301114859980824 callingUid=10496 callingPackage=com.deepeye.musicpro.debug permission=android.permission.POST_NOTIFICATIONS isImplicit=false result=4 isPermissionRationaleShown=falseisPackageRestrictedByEnhancedConfirmation=false
+05-02 13:35:11.518  3064  3458 D RestartModeController: determineRescueAppAfterAppFinishItself@1 null pkgName=com.google.android.permissioncontroller
+05-02 13:35:11.518  3064  3064 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-02 13:35:11.519  3064  3458 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-02 13:35:11.519  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@d1e5291 TransitionRequestInfo { type = 2, triggerTask = null, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:11.519  3064  5862 D HealthConnectTrackerManagerImpl: No packages eligible for step tracking. Aborting initialization.
+05-02 13:35:11.524  3064  5862 D HealthConnectTrackerManagerImpl: No packages eligible for step tracking. Aborting initialization.
+05-02 13:35:11.529  3064  4510 W AutofillManagerServiceImpl: getFillEventHistory() called by UID 10177, but service UID is 10192
+05-02 13:35:11.531 20121 20121 D CompatibilityChangeReporter: Compat change id reported: 78294732; UID 10496; state: ENABLED
+05-02 13:35:11.534  1858  1858 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+05-02 13:35:11.535  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@d1e5291: {id=5217 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=CLOSE f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{b1bf0af u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity)/@0x3785f6 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:11.535  3827  3912 V WindowManagerShell: Playing animation for (#5217)android.os.BinderProxy@d1e5291@0
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-02 13:35:11.535  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-02 13:35:11.535  3064  3367 V WindowManager: Sent Transition #5217 createdAt=05-02 13:35:11.518 via request=TransitionRequestInfo { type = 2, triggerTask = null, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-02 13:35:11.535  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-02 13:35:11.535  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=5217 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=CLOSE f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{b1bf0af u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity)/@0x3785f6 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:11.535  3064  3367 V WindowManager:     info={id=5217 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=CLOSE f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{b1bf0af u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity)/@0xabfb450 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  Delegate animation for #5217 to null
+05-02 13:35:11.535  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-02 13:35:11.535  3827  3912 V WindowManagerShell: start default transition animation, info = {id=5217 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=CLOSE f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{b1bf0af u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity)/@0x3785f6 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:11.535  3827  3912 V WindowManagerShell: loadAnimation: anim=null animAttr=0x7 type=CLOSE isEntrance=false
+05-02 13:35:11.536  3064  5856 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-02 13:35:11.536  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#5217)android.os.BinderProxy@d1e5291@0
+05-02 13:35:11.539  3064  3367 V WindowManager: Finish Transition #5217: created at 05-02 13:35:11.518 collect-started=0.023ms request-sent=0.051ms started=6.378ms ready=12.582ms sent=14.944ms finished=20.078ms
+05-02 13:35:11.540  3827  3912 V WindowManagerShell: Track 0 became idle
+05-02 13:35:11.540  3827  3912 V WindowManagerShell: All active transition animations finished
+05-02 13:35:11.540  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-02 13:35:11.540  3827  3912 V WindowManagerShell: Track 0 became idle
+05-02 13:35:11.540  3827  3912 V WindowManagerShell: All active transition animations finished
+05-02 13:35:11.544 26112 26112 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@94c5f10
+05-02 13:35:11.544  3064  3458 D CoreBackPreview: Window{4d46aa u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}: Setting back callback null
+05-02 13:35:11.544  3064  5856 D CompatibilityChangeReporter: Compat change id reported: 214016041; UID 10496; state: ENABLED
+05-02 13:35:11.544  3064  5856 I ImeTracker: com.deepeye.musicpro.debug:cdf84515: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+05-02 13:35:11.544  3064  5856 I ImeTracker: com.deepeye.musicpro.debug:cdf84515: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-02 13:35:11.545 26112  7197 D Surface : Surface::disconnect
+05-02 13:35:11.545 26112  7197 D BufferQueueProducer: [VRI[GrantPermissionsActivity]#5(BLAST Consumer)5](id:660000000005,api:1,p:26112,c:26112) disconnect: api 1
+05-02 13:35:11.546  3064  3458 W InputManager-JNI: Input channel object '4d46aa com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (client)' was disposed without first being removed with the input manager!
+05-02 13:35:11.548 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+05-02 13:35:11.549 23155 23155 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-02 13:35:11.549 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.deepeye.musicpro.debug, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-02 13:35:11.549 23155 23155 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=false, bottom inset=102
+05-02 13:35:11.549 23155 23155 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-02 13:35:11.549  3064  5857 W PackageConfigPersister: App-specific configuration not found for packageName: com.deepeye.musicpro.debug and userId: 0
+05-02 13:35:11.657 26295 11426 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-02 13:35:11.923 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[bolt clock triggered, queue operations will be executed now..]
+05-02 13:35:11.924 17316 19268 I System.out: [[Dispatchers.Default][bolt-default][debug][bolt-v2][BoltControlManager]:message[bolt clock is registered for [2000] delay]
+05-02 13:35:11.924 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:11.925 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry started, checking for retry limits..]
+05-02 13:35:11.925 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:11.925 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, waiting window is not completed, skipping the execution this time...]
+05-02 13:35:11.925 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:11.926 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:11.926 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry started, checking for retry limits..]
+05-02 13:35:11.926 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:11.926 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, waiting window is completed, ready to execute in 3.2.1..]
+05-02 13:35:11.926 17316 17400 I System.out: [[BlockingEventLoop@8904faa][unknown][info][bolt-v2][BoltManager]:message[state validation operation running]
+05-02 13:35:11.926 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation] retried.]
+05-02 13:35:11.927 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:12.218  1731  3697 I slpi    : STK3A5X ALS_OC: lux:4142.936035, last_ps:0[1276], CH0:3101, CH2:327, CH4:110, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-02 13:35:12.464 20235 20235 W getenforce: type=1400 audit(0.0:471034): avc:  denied  { read } for  name="enforce" dev="selinuxfs" ino=4 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:selinuxfs:s0 tclass=file permissive=0 app=com.csam.icici.bank.imobile
+05-02 13:35:12.464 17316 17316 W Thread-1565: type=1400 audit(0.0:471035): avc:  denied  { read } for  name="enforce" dev="selinuxfs" ino=4 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:selinuxfs:s0 tclass=file permissive=0 app=com.phonepe.app
+05-02 13:35:12.464 17316 17316 W Thread-1565: type=1400 audit(0.0:471036): avc:  denied  { read } for  name="cache" dev="dm-8" ino=16 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:cache_file:s0 tclass=lnk_file permissive=0 app=com.phonepe.app
+05-02 13:35:12.464 17316 17316 W Thread-1565: type=1400 audit(0.0:471037): avc:  denied  { read } for  name="cache" dev="dm-8" ino=16 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:cache_file:s0 tclass=lnk_file permissive=0 app=com.phonepe.app
+05-02 13:35:12.532  1731  3697 I slpi    : STK3A5X ALS_OC: lux:4593.167969, last_ps:0[1284], CH0:3438, CH2:370, CH4:121, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-02 13:35:12.540  1798  5375 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-02 13:35:12.542  1798  5376 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-02 13:35:12.542  1798  5376 E ANDR-PERF-LM: AdaptiveLaunch: writeToDataBase() 64: Meter aborted or could not get meter data for this run
+05-02 13:35:13.015  3064  3798 D MotoSxfService: unknown touch type
+05-02 13:35:13.266  3064  3519 D ActivityManager: freezing 18964 com.android.settings, reason = oom_cached
+05-02 13:35:13.268  3064  3519 D ActivityManager: freezing 18343 com.android.keychain, reason = oom_cached
+05-02 13:35:13.725  1737 22807 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-02 13:35:13.725  1737 22807 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-02 13:35:13.725  1737 22807 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-02 13:35:13.725  1737 22807 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-02 13:35:13.725 22738 22809 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 00:64:90:e2:54:b5
+05-02 13:35:13.726 22738 22809 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-02 13:35:13.766  1737 22807 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-02 13:35:13.766  1737 22807 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-02 13:35:13.876  2313  2313 I CNSS    : cnss_open_log_file: directory /data/vendor/wifi/wlan_logs/ created
+05-02 13:35:13.916  1737 22789 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-02 13:35:13.924 17316 17400 I System.out: [[Dispatchers.Default][bolt-default][debug][bolt-v2][BoltControlManager]:message[bolt clock is registered for [2000] delay]
+05-02 13:35:13.924 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[bolt clock triggered, queue operations will be executed now..]
+05-02 13:35:13.925 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:13.925 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry started, checking for retry limits..]
+05-02 13:35:13.925 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:13.925 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, waiting window is not completed, skipping the execution this time...]
+05-02 13:35:13.925 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:13.926 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:13.926 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry started, checking for retry limits..]
+05-02 13:35:13.926 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:13.926 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, waiting window is completed, ready to execute in 3.2.1..]
+05-02 13:35:13.926 17316 19268 I System.out: [[BlockingEventLoop@533e79b][unknown][info][bolt-v2][BoltManager]:message[state validation operation running]
+05-02 13:35:13.926 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation] retried.]
+05-02 13:35:13.926 17316 19268 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:14.165  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-02 13:35:14.241 20121 20409 D ProfileInstaller: Installing profile for com.deepeye.musicpro.debug
+05-02 13:35:14.516 27124 25637 D FileLogger: 0-split.log is full (size: 3.09 MB), switching
+05-02 13:35:15.197 22738 22782 I BtGatt.ScanManager: msg.what = 6
+05-02 13:35:15.197 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 1
+05-02 13:35:15.197 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 3
+05-02 13:35:15.197 22738 22782 D BtGatt.ScanManager: uid 10192 isForeground true scanMode 3
+05-02 13:35:15.485  3064  3733 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-02 13:35:15.506  3064  3733 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-02 13:35:15.507  4065 13019 I QImsService: VtDataUsageProvider : onSetAlert:2097152
+05-02 13:35:15.507  4065  4065 I QImsService: ImsServiceClassTracker : updateAlertQuota:newQuota=2097152,Remaining=2097152
+05-02 13:35:15.926 17316 19268 I System.out: [[Dispatchers.Default][bolt-default][debug][bolt-v2][BoltControlManager]:message[bolt clock is registered for [2000] delay]
+05-02 13:35:15.926 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[bolt clock triggered, queue operations will be executed now..]
+05-02 13:35:15.927 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:15.927 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry started, checking for retry limits..]
+05-02 13:35:15.927 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:15.927 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, waiting window is not completed, skipping the execution this time...]
+05-02 13:35:15.927 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:15.928 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:15.928 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry started, checking for retry limits..]
+05-02 13:35:15.928 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:15.928 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, waiting window is completed, ready to execute in 3.2.1..]
+05-02 13:35:15.928 17316 19266 I System.out: [[BlockingEventLoop@5a75ee4][unknown][info][bolt-v2][BoltManager]:message[state validation operation running]
+05-02 13:35:15.928 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation] retried.]
+05-02 13:35:15.929 17316 19266 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:16.210 18617 18791 I ThermalEngine: Monitor:ACTIVE:FREEZE-CHG:freeze_rule=1:DETECT-STANDBY=1
+05-02 13:35:16.211 18617 18791 I ThermalEngine: ACTION: freeze_rule - Setting freeze_rule to 1
+05-02 13:35:16.211 18617 18791 I ThermalEngine: Monitor:ACTIVE:OVERRIDE-CHG:internal_override=1:DETECT-STANDBY=1
+05-02 13:35:16.211 18617 18791 I ThermalEngine: ACTION: override_c - Setting override_c to 1
+05-02 13:35:16.211 18617 18790 I ThermalEngine: Thermal-Server: Thermal received msg from  override_c
+05-02 13:35:16.211 18617 20505 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-02 13:35:16.211 18617 18790 I ThermalEngine: Thermal-Server: Thermal received msg from  freezing
+05-02 13:35:16.211 18617 20504 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-02 13:35:17.207  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-02 13:35:17.209  3064  3064 D EnhancedConnectivityController: Wifi onCapabilitiesChanged
+05-02 13:35:17.209  3064  3064 D EnhancedConnectivityController: Default net onCapabilitiesChanged
+05-02 13:35:17.209  3064  3064 D EnhancedConnectivityController: updateDefaultNet:573
+05-02 13:35:17.209  3064  3064 D EnhancedConnectivityController: mayUpdateNotification: shouldShow=false,UidsBlocked=false, net info=net:573,ifName=wlan0,securityType=2,isDefault=true,ssid="Airtel_Siddhanth's wifi",notificationId=0
+05-02 13:35:17.212  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.11, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -60, Link speed: 234Mbps, Tx Link speed: 234Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 175Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -60 UnderlyingNetworks: Null]
+05-02 13:35:17.212  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-02 13:35:17.212  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-02 13:35:17.212  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-02 13:35:17.212  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-02 13:35:17.217 26295 26309 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-02 13:35:17.217 26295 26309 W Binder  : reply too large data on java level: InterfaceDescriptor = null, code = 1
+05-02 13:35:17.217 26295 26309 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+05-02 13:35:17.719 26295 11426 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-02 13:35:17.928 17316 19266 I System.out: [[Dispatchers.Default][bolt-default][debug][bolt-v2][BoltControlManager]:message[bolt clock is registered for [2000] delay]
+05-02 13:35:17.928 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[bolt clock triggered, queue operations will be executed now..]
+05-02 13:35:17.930 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:17.930 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry started, checking for retry limits..]
+05-02 13:35:17.930 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:17.930 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl retry limits not reached, waiting window is completed, ready to execute in 3.2.1..]
+05-02 13:35:17.930 17316 17400 I System.out: [[BlockingEventLoop@f850f4d][unknown][info][bolt-v2][BoltManager]:message[periodic check operation running]
+05-02 13:35:17.930 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltManager]:message[updatePredicate is Called by PeriodicCheckPredicate with value true]
+05-02 13:35:17.931 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][ConnectionManager]:message[Predicate BoltAppStatePredicate is not ready for making connection]
+05-02 13:35:17.931 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltManager]:message[all predicates are evaluated, result [false]]
+05-02 13:35:17.931 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltManager]:message[calculated is there any listener which is still active, result [true]]
+05-02 13:35:17.931 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltManager]:message[calculated should bolt manager proceed with connection attempt for CONNECT_AGGRESSIVELY with predicate PeriodicCheckPredicate, result [false]]
+05-02 13:35:17.931 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltManager]:message[connection state [DISCONNECTED] and the connection verdict [false] is same, no need to proceed further.]
+05-02 13:35:17.931 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][PeriodicCheckQueueOperation]:message[Queue operation with name [BoltCtl] retried.]
+05-02 13:35:17.931 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [BoltCtl and item [PeriodicCheckQueueOperation(uniqueName=BoltCtl, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@52de3a2, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@1317833, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=false, queueOperationType=BOLT_PERIODIC_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:17.932 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution called for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)]]
+05-02 13:35:17.932 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry started, checking for retry limits..]
+05-02 13:35:17.932 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, checking for waiting window before execution..]
+05-02 13:35:17.932 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation retry limits not reached, waiting window is completed, ready to execute in 3.2.1..]
+05-02 13:35:17.932 17316 17400 I System.out: [[BlockingEventLoop@8df2a02][unknown][info][bolt-v2][BoltManager]:message[state validation operation running]
+05-02 13:35:17.932 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][StateInactiveTimeQueueOperation]:message[Queue operation with name [StateValidationQueueOperation] retried.]
+05-02 13:35:17.933 17316 17400 I System.out: [[Dispatchers.Default.limitedParallelism(1)][bolt-manager][debug][bolt-v2][BoltControlManager]:message[execution completed for name [StateValidationQueueOperation and item [StateInactiveTimeQueueOperation(uniqueName=StateValidationQueueOperation, retryConfig=com.phonepe.boltV2Sdk.external.RetryConfiguration@a73f251, logger=com.phonepe.boltV2Sdk.internal.logger.core.DebugLogger@2d90ab6, analyticManager=com.phonepe.boltV2Sdk.internal.BoltAnalyticManager@67133b7, immediateExecute=true, queueOperationType=STATE_INACTIVE_TIME_QUEUE_OPERATION, block=(com.phonepe.boltV2Sdk.internal.boltctl.queueOperations.QueueOperation) -> kotlin.Boolean)], checking for GC status]
+05-02 13:35:17.935  3064  3519 D ActivityManager: freezing 12468 com.google.android.apps.photos, reason = oom_cached
+05-02 13:35:17.939  3064  3519 D ActivityManager: freezing 25009 com.android.chrome, reason = oom_cached
+05-02 13:35:17.939  3064  3519 D ActivityManager: freezing 18530 com.google.android.documentsui, reason = oom_cached
+05-02 13:35:18.067  1731  3697 I slpi    : STK3A5X ALS_OC: lux:5054.087891, last_ps:0[1276], CH0:3783, CH2:412, CH4:129, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-02 13:35:18.389  1336 20076 I keystore2: system/security/keystore2/src/watchdog.rs:319 - Watchdog thread idle -> terminating. Have a great day.

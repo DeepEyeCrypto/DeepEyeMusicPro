@@ -1,0 +1,92 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/Users/enayat/.gradle/wrapper/dists/gradle-8.9-bin/90cnw93cvbtalezasaz0blq0a/gradle-8.9/lib/native-platform-0.22-milestone-26.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Configuration on demand is an incubating feature.
+
+> Task :app:externalNativeBuildCleanDebug
+Clean deepeye_dsp-armeabi-v7a
+Clean deepeye_dsp-arm64-v8a
+Clean deepeye_dsp-x86_64
+
+> Task :app:externalNativeBuildCleanRelease
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues FROM-CACHE
+> Task :app:generateDebugResources
+> Task :app:generateDebugBuildConfig FROM-CACHE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :app:checkDebugAarMetadata
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :app:javaPreCompileDebug FROM-CACHE
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:desugarDebugFileDependencies FROM-CACHE
+> Task :app:compressDebugAssets
+> Task :app:checkDebugDuplicateClasses
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:mergeExtDexDebug FROM-CACHE
+> Task :app:mergeLibDexDebug FROM-CACHE
+> Task :app:mergeDebugResources
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:configureCMakeDebug[armeabi-v7a]
+> Task :app:processDebugResources FAILED
+> Task :app:buildCMakeDebug[armeabi-v7a]
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+   > Android resource linking failed
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:39: AAPT: error: attribute value (aka com.deepeye.musicpro.debug:value) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:39: AAPT: error: attribute valueFrom (aka com.deepeye.musicpro.debug:valueFrom) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:39: AAPT: error: attribute valueTo (aka com.deepeye.musicpro.debug:valueTo) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:41: AAPT: error: attribute value (aka com.deepeye.musicpro.debug:value) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:41: AAPT: error: attribute valueFrom (aka com.deepeye.musicpro.debug:valueFrom) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:41: AAPT: error: attribute valueTo (aka com.deepeye.musicpro.debug:valueTo) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:43: AAPT: error: attribute value (aka com.deepeye.musicpro.debug:value) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:43: AAPT: error: attribute valueFrom (aka com.deepeye.musicpro.debug:valueFrom) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:43: AAPT: error: attribute valueTo (aka com.deepeye.musicpro.debug:valueTo) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:45: AAPT: error: attribute value (aka com.deepeye.musicpro.debug:value) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:45: AAPT: error: attribute valueFrom (aka com.deepeye.musicpro.debug:valueFrom) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:45: AAPT: error: attribute valueTo (aka com.deepeye.musicpro.debug:valueTo) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:48: AAPT: error: attribute value (aka com.deepeye.musicpro.debug:value) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:48: AAPT: error: attribute valueFrom (aka com.deepeye.musicpro.debug:valueFrom) not found.
+         
+     ERROR: /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/screen_v4a_sheet.xml:48: AAPT: error: attribute valueTo (aka com.deepeye.musicpro.debug:valueTo) not found.
+         
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 46s
+29 actionable tasks: 19 executed, 10 from cache

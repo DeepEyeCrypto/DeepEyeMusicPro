@@ -1,0 +1,32 @@
+Timestamp UTC: 2026-05-02T09:31:26Z
+Command: adb shell dumpsys notification --noredact | grep -A10 "pkg=com.deepeye.musicpro.debug"
+    NotificationRecord(0x0d674e71: pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=4010 tag=null importance=2 key=0|com.deepeye.musicpro.debug|4010|null|10496: Notification(channel=deepeye_playback shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x206a color=0x00000000 category=transport vis=PUBLIC))
+      uid=10496 userId=0
+      opPkg=com.deepeye.musicpro.debug
+      icon=Icon(typ=RESOURCE pkg=com.deepeye.musicpro.debug id=0x7f080110)
+      flags=0x206a
+      originalFlags=0x204a
+      pri=0
+      key=0|com.deepeye.musicpro.debug|4010|null|10496
+      seen=false
+      groupKey=0|com.deepeye.musicpro.debug|4010|null|10496
+      notification=
+            fullscreenIntent=null
+            contentIntent=null
+            deleteIntent=null
+--
+    StatusBarNotification(pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=1001 tag=null key=0|com.deepeye.musicpro.debug|1001|null|10496: Notification(channel=default_channel_id shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x68 color=0x00000000 category=transport groupKey=media3_group_key actions=2 vis=PUBLIC))
+    StatusBarNotification(pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=4010 tag=null key=0|com.deepeye.musicpro.debug|4010|null|10496: Notification(channel=deepeye_playback shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x200a color=0x00000000 category=transport vis=PUBLIC))
+    StatusBarNotification(pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=1001 tag=null key=0|com.deepeye.musicpro.debug|1001|null|10496: Notification(channel=default_channel_id shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x68 color=0x00000000 category=transport groupKey=media3_group_key actions=2 vis=PUBLIC))
+    StatusBarNotification(pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=4010 tag=null key=0|com.deepeye.musicpro.debug|4010|null|10496: Notification(channel=deepeye_playback shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x200a color=0x00000000 category=transport vis=PUBLIC))
+    StatusBarNotification(pkg=com.deepeye.musicpro.debug user=UserHandle{0} id=1001 tag=null key=0|com.deepeye.musicpro.debug|1001|null|10496: Notification(channel=default_channel_id shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x68 color=0x00000000 category=transport groupKey=media3_group_key actions=2 vis=PUBLIC))
+    ...
+
+  Snoozed notifications:
+
+ Pending snoozed notifications
+
+  Ranking Config:
+    mSignalExtractors.length = 11
+      NotificationChannelExtractor
+      NotificationAdjustmentExtractor

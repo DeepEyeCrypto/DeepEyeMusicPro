@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text.DeepEye.Display" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textColor">@color/deep_text_primary</item>
+        <item name="android:fontFamily">@font/outfit_variable</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.DeepEye.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/deep_text_primary</item>
+        <item name="android:fontFamily">@font/outfit_variable</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.DeepEye.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/deep_text_secondary</item>
+        <item name="android:fontFamily">@font/inter_variable</item>
+    </style>
+    <style name="Widget.DeepEye.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/Shape.DeepEye.Sheet</item>
+        <item name="backgroundTint">@color/deep_surface</item>
+    </style>
+    <style name="Shape.DeepEye.Sheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+    <style name="Widget.DeepEye.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">18dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/deep_accent_cyan</item>
+        <item name="android:textColor">@color/deep_text_inverse</item>
+        <item name="rippleColor">#6635D8FF</item>
+    </style>
+    <style name="Widget.DeepEye.Slider" parent="Widget.Material3.Slider">
+        <item name="trackColorActive">@color/deep_accent_cyan</item>
+        <item name="trackColorInactive">@color/deep_outline</item>
+        <item name="thumbColor">@color/deep_text_primary</item>
+        <item name="haloColor">#3335D8FF</item>
+    </style>
+    <style name="Widget.DeepEye.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/deep_surface_elevated</item>
+        <item name="chipStrokeColor">@color/deep_outline</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/deep_text_secondary</item>
+    </style>
+</resources>

@@ -1,0 +1,52 @@
+
+== Device state ==
+device
+
+== Fresh-start reset ==
+Success
+
+== Reinstall existing debug APK ==
+Performing Streamed Install
+Success
+
+== Packaged native libraries ==
+  1292896  01-01-1981 01:01   lib/arm64-v8a/libc++_shared.so
+     7112  01-01-1981 01:01   lib/arm64-v8a/libdatastore_shared_counter.so
+    15320  01-01-1981 01:01   lib/arm64-v8a/libdeepeye_dsp.so
+   872872  01-01-1981 01:01   lib/armeabi-v7a/libc++_shared.so
+     4416  01-01-1981 01:01   lib/armeabi-v7a/libdatastore_shared_counter.so
+    11880  01-01-1981 01:01   lib/armeabi-v7a/libdeepeye_dsp.so
+  1252080  01-01-1981 01:01   lib/x86_64/libc++_shared.so
+     6224  01-01-1981 01:01   lib/x86_64/libdatastore_shared_counter.so
+    15400  01-01-1981 01:01   lib/x86_64/libdeepeye_dsp.so
+
+== Resolve launcher ==
+Launch component: com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity
+
+== Clear logcat and launch app ==
+  bash arg: -p
+  bash arg: com.deepeye.musicpro.debug
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+args: [-p, com.deepeye.musicpro.debug, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.deepeye.musicpro.debug"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.deepeye.musicpro.debug"
+data="android.intent.category.LAUNCHER"
+Events injected: 1
+## Network stats: elapsed time=33ms (0ms mobile, 0ms wifi, 33ms not connected)
+
+== Capture filtered logs ==
+
+== Capture screenshot ==
+/sdcard/screen.png: 1 file pulled, 0 skipped. 14.0 MB/s (156697 bytes in 0.011s)
+Screenshot saved to device-test-output/screen-ZD2226X6RW.png
+
+== Workflow complete ==
+Native libs log: device-test-output/apk-native-libs.txt
+Filtered logcat: device-test-output/deepeye-logcat.txt
+Workflow summary: device-test-output/workflow-summary.txt

@@ -1,0 +1,229 @@
+05-02 13:35:08.110  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-02 13:35:08.110  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.11, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -60, Link speed: 175Mbps, Tx Link speed: 175Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 234Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -60 UnderlyingNetworks: Null]
+05-02 13:35:08.110  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-02 13:35:08.110  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-02 13:35:08.110  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-02 13:35:08.114 26295 26723 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-02 13:35:08.271  3064  3785 W TopAppMonitor: resend missed activity state ActivityState{com.deepeye.musicpro.debug, userId=0, uid=10496, displayId=0, category=0, isLauncher=false, isTop=false, lastTopTime=1107740394}
+05-02 13:35:08.274  3064  4510 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:true duration ms: 0
+05-02 13:35:08.275  3064  4510 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-02 13:35:08.276  3064  4510 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (startActivityAsUser) (BAL_ALLOW_PERMISSION) result code=0
+05-02 13:35:08.277  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@eab4728 TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3607 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1107770242 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=false isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@f8bac41} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{83a55e6 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:08.288  3064  3851 W AutofillManagerServiceImpl: getFillEventHistory() called by UID 10177, but service UID is 10192
+05-02 13:35:08.293  3064  4883 D CoreBackPreview: Window{493ff65 u0 Splash Screen com.deepeye.musicpro.debug}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@41c98eb, mPriority=0, mIsAnimationCallback=false}
+05-02 13:35:08.294  3064  3380 I ActivityManager: Start proc 20121:com.deepeye.musicpro.debug/u0a496 for next-top-activity {com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}
+05-02 13:35:08.303 20121 20121 I .musicpro.debug: Late-enabling -Xcheck:jni
+05-02 13:35:08.304  3064  3367 V WindowManager: Sent Transition #5215 createdAt=05-02 13:35:08.268 via request=TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3607 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1107770242 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=true isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{RemoteToken{4dbb61d Task{b8aaae2 #3607 type=standard A=10496:com.deepeye.musicpro.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{5e13a63 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:08.304  3064  3367 V WindowManager:     info={id=5215 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{4dbb61d Task{b8aaae2 #3607 type=standard A=10496:com.deepeye.musicpro.debug}}} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3607)/@0xba9d8c7 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{9a2e0c9 Task{97f56a1 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x5e976da sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-02 13:35:08.319 20121 20121 I .musicpro.debug: Using CollectorTypeCMC GC.
+05-02 13:35:08.324 20121 20121 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-02 13:35:08.391 17496 17496 D AdaptivePerfD: PackageChangedReceiver.onReceive [android.intent.action.PACKAGE_DATA_CLEARED, com.deepeye.musicpro.debug]
+05-02 13:35:08.392 17496 17641 D AdaptivePerfD: h.onPackageChanged [ApplicationInfo{f2285c9 com.deepeye.musicpro.debug}.enabled]
+05-02 13:35:08.512 20121 20121 D nativeloader: Configuring clns-4 for other apk /data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/lib/arm64:/data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.deepeye.musicpro.debug
+05-02 13:35:08.519 20121 20121 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+05-02 13:35:08.521 20121 20121 V GraphicsEnvironment: ANGLE GameManagerService for com.deepeye.musicpro.debug: false
+05-02 13:35:08.521 20121 20121 V GraphicsEnvironment: com.deepeye.musicpro.debug is not listed in per-application setting
+05-02 13:35:08.541 20121 20121 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+05-02 13:35:08.541 20121 20121 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+05-02 13:35:08.571 20121 20121 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+05-02 13:35:08.638 20121 20121 I .musicpro.debug: hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-02 13:35:08.663  3064  3851 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:true duration ms: 0
+05-02 13:35:08.665  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@b12cc5d TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3607 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=2 lastActiveTime=1107770630 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=false isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@e3389d2} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{a5bdaa3 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:08.708  3064  3851 D CoreBackPreview: Window{a7346a7 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1f2bff2, mPriority=0, mIsAnimationCallback=false}
+05-02 13:35:08.726 20121 20170 D nativeloader: Load /data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/base.apk!/lib/arm64-v8a/libdeepeye_dsp.so using class loader ns clns-4 (caller=/data/app/~~9tLnIyBvDPhhBGhb7dhQbA==/com.deepeye.musicpro.debug-C8ri_9cd3UM2Ucuv6haWzA==/base.apk!classes9.dex): ok
+05-02 13:35:08.865 20121 20121 I ExoPlayerImpl: Init 25cf3d1 [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-02 13:35:08.881 20121 20121 I .musicpro.debug: hiddenapi: Accessing hidden method Landroid/media/AudioTrack;->getLatency()I (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-02 13:35:08.910  3064  4883 I MediaSessionStack: addSession to bottom of stack | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-02 13:35:08.911 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107769719, actions=0, custom actions=[], active item id=-1, error=null}, state=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}
+05-02 13:35:08.912 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.912 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.912 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.912 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.912 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.916 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.916 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.916 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.916 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.917 22738 17196 V Avrcp_ext: ActiveSession: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.917 22738 17196 V Avrcp_ext: isBrowseSupported for com.deepeye.musicpro.debug: false
+05-02 13:35:08.918 22738 17196 D Avrcp_ext: Adding media player info for com.deepeye.musicpro.debug with id 10
+05-02 13:35:08.918 22738 17196 D Avrcp_ext: add #10:MediaPlayerInfo com.deepeye.musicpro.debug (as 'DeepEyeMusicPro') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.918 22738 17196 W Avrcp_ext: No addressed player but active sessions, taking first.
+05-02 13:35:08.918 22738 17196 W McpService: updatePlayerName pkg com.deepeye.musicpro.debug removed false
+05-02 13:35:08.918 22738 17196 D McpService: sending player change update
+05-02 13:35:08.918 22738 17196 D McpService:  MediaControlPointOpcodeUpdate feature: 6175
+05-02 13:35:08.918 22738 17196 D McpService:  PlayingOrderSupportedUpdate support: 1
+05-02 13:35:08.918 22738 17196 D McpService:  MediaPlayerNameUpdate name: com.deepeye.musicpro.debug
+05-02 13:35:08.918 22738 17196 W Avrcp_ext: No package name for player (0 not valid)
+05-02 13:35:08.918 22738 17196 W Avrcp_ext: Changing addressed media session to com.deepeye.musicpro.debug
+05-02 13:35:08.918 22738 17196 V Avrcp_ext: getMediaPlayerInfo: Found com.deepeye.musicpro.debug
+05-02 13:35:08.918 22738 17196 V Avrcp_ext: Set addressed #10 MediaPlayerInfo com.deepeye.musicpro.debug (as 'DeepEyeMusicPro') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.918 22738 17196 D Avrcp_ext: updateCurrentController: null to MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.918 22738 17260 V McpService: McsMessageHandler: received message=6
+05-02 13:35:08.918 22738 17260 V McpService: MEDIA_CONTROL_POINT_OPCODES_SUPPORTED_UPDATE msg: 6175
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:com_android_bluetooth_mcp.cpp(227)] mediaControlPointOpcodeSupportedNative
+05-02 13:35:08.919 22738 17260 V McpService: Exit handleMessage
+05-02 13:35:08.919 22738 17260 V McpService: McsMessageHandler: received message=13
+05-02 13:35:08.919 22738 17260 V McpService: PLAYING_ORDER_SUPPORT_UPDATE msg: 1
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:com_android_bluetooth_mcp.cpp(379)] playingOrderNative
+05-02 13:35:08.919 22738 17260 V McpService: Exit handleMessage
+05-02 13:35:08.919 22738 17260 V McpService: McsMessageHandler: received message=8
+05-02 13:35:08.919 22738 17260 V McpService: MEDIA_PLAYER_NAME_UPDATE msg: com.deepeye.musicpro.debug
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:com_android_bluetooth_mcp.cpp(260)] mediaPlayerNameNative
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:btif_mcp.cc(83)] MediaPlayerName: namecom.deepeye.musicpro.debug
+05-02 13:35:08.919 22738 17260 V McpService: Exit handleMessage
+05-02 13:35:08.919 22738 17260 V McpService: McsMessageHandler: received message=15
+05-02 13:35:08.919 22738 17260 V McpService: CONTENT_CONTROL_ID_UPDATE msg: 1
+05-02 13:35:08.919 22738 17260 I bt_stack: [INFO:com_android_bluetooth_mcp.cpp(391)] contentControlIdNative
+05-02 13:35:08.919 22738 17260 V McpService: Exit handleMessage
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(430)] MediaPlayerName
+05-02 13:35:08.919 22738 22809 I bt_stack: [INFO:bta_mcp_main.cc(895)] HandleMcsEvent   mcs handle event MCP_MEDIA_PLAYER_NAME_UPDATE
+05-02 13:35:08.919 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.919 22738 17196 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.920 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=PAUSED(2), position=-1, buffered position=0, speed=0.0, updated=1107770878, actions=0, custom actions=[], active item id=-1, error=null}, state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.920 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.920 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.920 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.921 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.921 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.924  3064  5941 W AutofillManagerServiceImpl: getFillEventHistory() called by UID 10177, but service UID is 10192
+05-02 13:35:08.924 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.924 22738 17196 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.924 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.925 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.925 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.925 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.925 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.925 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.926 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.926 22738 17196 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.927 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.929 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.929 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.929 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.929 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.929 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.953 22738 17196 W McpService: updatePlaybackState state PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.953 22738 17196 W McpService: updatePlaybackState mState: 0 state: 0
+05-02 13:35:08.954 22738 17196 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.deepeye.musicpro.debug@286ef51) null
+05-02 13:35:08.954 22738 17196 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.955 22738 17196 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = true
+05-02 13:35:08.955 22738 17196 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770883, actions=7339655, custom actions=[], active item id=0, error=null}, state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=1107770919, actions=7339655, custom actions=[], active item id=0, error=null}
+05-02 13:35:08.955 22738 17196 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@bd4fb20
+05-02 13:35:08.955 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.955 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.955 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.956 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.956 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.957 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.957 22738 17196 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-02 13:35:08.957 22738 17196 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-02 13:35:08.957 22738 17196 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-02 13:35:08.957 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: null
+05-02 13:35:08.957 22738 17196 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-02 13:35:08.973 26112  7197 W Adreno-AppProfiles: Could not find QSPM HAL service. Skipping adreno profile processing.
+05-02 13:35:08.989  3064  3367 V WindowManager: Sent Transition #5216 createdAt=05-02 13:35:08.661 via request=TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3607 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=2 lastActiveTime=1107770630 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=true isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{RemoteToken{4dbb61d Task{b8aaae2 #3607 type=standard A=10496:com.deepeye.musicpro.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{9952b4e com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-02 13:35:09.012  3064  5856 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:false duration ms: 0
+05-02 13:35:09.012 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+05-02 13:35:09.013 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.permissioncontroller, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-02 13:35:09.037 20121 20127 I .musicpro.debug: Compiler allocated 4496KB to compile void android.view.ViewRootImpl.performTraversals()
+05-02 13:35:09.050 26295 11426 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x32 0x38 0x37 0x30 0x11 0x32 0xf3 0x85 0xc7 0x9d 0x16 0x1d 0x37 0x69 0xdf 0xda 0xca 0x7f 0x9f 0x01 0xc8 0x70 ], deviceToken=[ 0x9e 0xf2 ], rxAdvertisement=null } : 2 times.
+05-02 13:35:09.222  3064  5856 W InputManager-JNI: Input channel object '493ff65 Splash Screen com.deepeye.musicpro.debug (client)' was disposed without first being removed with the input manager!
+05-02 13:35:09.223  3064  7249 D CoreBackPreview: Window{493ff65 u0 Splash Screen com.deepeye.musicpro.debug EXITING}: Setting back callback null
+05-02 13:35:10.338 20121 20128 W .musicpro.debug: userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+05-02 13:35:10.912  3064  3458 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-02 13:35:11.149  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.11, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -60, Link speed: 234Mbps, Tx Link speed: 234Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 117Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -60 UnderlyingNetworks: Null]
+05-02 13:35:11.149  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-02 13:35:11.149  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-02 13:35:11.149  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-02 13:35:11.149  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-02 13:35:11.151 26295 26723 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-02 13:35:11.515 26112 26112 I GrantPermissionsViewModel: Logged buttons presented and clicked permissionGroupName=android.permission-group.NOTIFICATIONS uid=10496 package=com.deepeye.musicpro.debug presentedButtons=9 clickedButton=1 isPermissionRationaleShown=false sessionId=-2915301114859980824 targetSdk=35 prompt=BASIC initialLocationPrecision=0 selectedLocationPrecision=0 locationAccuracyButtonClicked= false
+05-02 13:35:11.517 26112 26112 I GrantPermissionsViewModel: Permission grant result requestId=-2915301114859980824 callingUid=10496 callingPackage=com.deepeye.musicpro.debug permission=android.permission.POST_NOTIFICATIONS isImplicit=false result=4 isPermissionRationaleShown=falseisPackageRestrictedByEnhancedConfirmation=false
+05-02 13:35:11.518  3064  3064 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-02 13:35:11.529  3064  4510 W AutofillManagerServiceImpl: getFillEventHistory() called by UID 10177, but service UID is 10192
+05-02 13:35:11.536  3064  5856 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-02 13:35:11.544  3064  5856 I ImeTracker: com.deepeye.musicpro.debug:cdf84515: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+05-02 13:35:11.544  3064  5856 I ImeTracker: com.deepeye.musicpro.debug:cdf84515: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-02 13:35:11.548 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+05-02 13:35:11.549 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.deepeye.musicpro.debug, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-02 13:35:11.549  3064  5857 W PackageConfigPersister: App-specific configuration not found for packageName: com.deepeye.musicpro.debug and userId: 0
+05-02 13:35:13.015  3064  3798 D MotoSxfService: unknown touch type
+05-02 13:35:14.241 20121 20409 D ProfileInstaller: Installing profile for com.deepeye.musicpro.debug
+05-02 13:35:15.485  3064  3733 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-02 13:35:15.506  3064  3733 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-02 13:35:15.507  4065 13019 I QImsService: VtDataUsageProvider : onSetAlert:2097152
+05-02 13:35:15.507  4065  4065 I QImsService: ImsServiceClassTracker : updateAlertQuota:newQuota=2097152,Remaining=2097152
+05-02 13:35:17.212  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.11, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -60, Link speed: 234Mbps, Tx Link speed: 234Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 175Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -60 UnderlyingNetworks: Null]
+05-02 13:35:17.212  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-02 13:35:17.212  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-02 13:35:17.212  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-02 13:35:17.212  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-02 13:35:17.217 26295 26309 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0

@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_favorite_row.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_favorite_row.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_album_card.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_album_card.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_eq_band.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_eq_band.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_search_history.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_search_history.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_section_header.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_section_header.xml"
+    },
+    {
+        "merged": "com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_v4a_sheet.xml",
+        "source": "com.deepeye.musicpro.app-main-69:/layout/screen_v4a_sheet.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_queue_row.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_queue_row.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_library.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_library.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_web_fallback.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_web_fallback.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_queue_sheet.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_queue_sheet.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/layout_empty_state.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/layout_empty_state.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_v4a_effect_toggle.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_v4a_effect_toggle.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_settings.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_settings.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_track_row.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_track_row.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/layout_queue_sheet.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/layout_queue_sheet.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_about.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_about.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/layout_now_playing_sheet.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/layout_now_playing_sheet.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_download_row.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_download_row.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/layout_dsp_sheet.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/layout_dsp_sheet.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/layout_mini_player.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/layout_mini_player.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_quick_action.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_quick_action.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_search_result.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_search_result.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_chip_text.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_chip_text.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_now_playing.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_now_playing.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/activity_main.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_home.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_home.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_dsp_sheet.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_dsp_sheet.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/view_spectrum_visualizer.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/view_spectrum_visualizer.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_search.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_search.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_v4a_preset_chip.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_v4a_preset_chip.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/screen_v4a_sheet.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/screen_v4a_sheet.xml"
+    },
+    {
+        "merged": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-mergeDebugResources-66:/layout/item_queue_track.xml",
+        "source": "/Users/enayat/.gradle/daemon/8.9/com.deepeye.musicpro.app-main-69:/layout/item_queue_track.xml"
+    }
+]

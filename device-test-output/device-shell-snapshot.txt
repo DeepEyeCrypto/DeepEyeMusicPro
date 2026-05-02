@@ -1,0 +1,16 @@
+== Device shell snapshot ==
+whoami=shell
+
+getprop ro.product.model=motorola edge 30 pro
+
+getprop ro.build.version.release=14
+
+getprop ro.build.version.sdk=34
+
+current focused app/window:
+  mCurrentFocus=Window{960ecc4 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}
+  mFocusedApp=ActivityRecord{6d8026a u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity t3603}
+
+== Short screen recording ==
+/sdcard/demo.mp4: 1 file pulled, 0 skipped. 7.3 MB/s (34891 bytes in 0.005s)
+Recording saved to device-test-output/demo-ZD2226X6RW.mp4

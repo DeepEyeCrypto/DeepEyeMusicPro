@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deepeye.musicpro.ui.v4a.SpectrumVisualizerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spectrumVisualizer"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:background="@drawable/bg_v4a_spectrum" />

@@ -1,0 +1,55 @@
+Timestamp UTC: 2026-05-02T09:30:06Z
+Command: adb shell dumpsys audio | grep -A3 "AudioTrack.*deepeye"
+Pattern 'AudioTrack.*deepeye' not found; fallback deepeye/musicpro audio context:
+    Looper (AudioService, tid 134) {1878d9c}
+      (Total messages: 0, polling=true, quitting=false)
+
+MediaFocusControl dump time: 3:00:07 pm
+
+Audio Focus stack entries (last is top of stack):
+  source:android.os.BinderProxy@13d4996 -- pack: com.deepeye.musicpro.debug -- client: android.media.AudioManager@76aeebandroidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@964448 -- gain: GAIN -- flags:  -- loss: none -- notified: true -- limbofalse -- uid: 10496 -- attr: AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_MUSIC flags=0x800 tags= bundle=null -- sdk:35
+
+
+No external focus policy
+
+
+
+ Notify on duck:  true
+
+--
+05-01 23:03:10:114 abandonAudioFocus() from uid/pid 10178/20379 clientId=android.media.AudioManager@6195d61hnt@d468086
+05-01 23:03:14:066 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_VOICE_COMMUNICATION/CONTENT_TYPE_SPEECH clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+05-01 23:03:43:180 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_VOICE_COMMUNICATION/CONTENT_TYPE_SPEECH clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+05-01 23:03:44:414 abandonAudioFocus() from uid/pid 1000/3064 clientId=AudioFocus_For_Phone_Ring_And_Calls
+05-01 23:03:55:345 abandonAudioFocus() from uid/pid 10178/20379 clientId=android.media.AudioManager@6195d61hnt@d468086
+05-02 00:58:22:819 focus requester:android.media.AudioManager@6a0dc40andl@b65c896 in uid:10289 pack:com.google.android.youtube died
+05-02 04:43:10:692 requestAudioFocus() from uid/pid 10496/7503 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@96f5a4aandroidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@1282dbb callingPack=com.deepeye.musicpro.debug req=1 flags=0x0 sdk=35
+05-02 04:48:20:249 focus requester:android.media.AudioManager@96f5a4aandroidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@1282dbb in uid:10496 pack:com.deepeye.musicpro.debug died
+05-02 09:47:24:137 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_NOTIFICATION_RINGTONE/CONTENT_TYPE_SONIFICATION clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+05-02 09:47:37:436 abandonAudioFocus() from uid/pid 1000/3064 clientId=AudioFocus_For_Phone_Ring_And_Calls
+05-02 09:52:12:869 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_VOICE_COMMUNICATION/CONTENT_TYPE_SPEECH clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+05-02 09:52:12:892 abandonAudioFocus() from uid/pid 10178/15760 clientId=android.media.AudioManager@f2cf018hoe@4e90056
+05-02 09:52:15:520 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_VOICE_COMMUNICATION/CONTENT_TYPE_SPEECH clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+05-02 09:52:16:716 abandonAudioFocus() from uid/pid 1000/3064 clientId=AudioFocus_For_Phone_Ring_And_Calls
+05-02 09:52:29:637 abandonAudioFocus() from uid/pid 10178/15760 clientId=android.media.AudioManager@f2cf018hoe@4e90056
+05-02 10:57:54:190 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_NOTIFICATION_RINGTONE/CONTENT_TYPE_SONIFICATION clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+--
+05-02 12:30:45:088 abandonAudioFocus() from uid/pid 1000/3064 clientId=AudioFocus_For_Phone_Ring_And_Calls
+05-02 12:30:53:421 abandonAudioFocus() from uid/pid 10178/12045 clientId=android.media.AudioManager@c644eaahoe@8297a9b
+05-02 12:34:53:770 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_NOTIFICATION_RINGTONE/CONTENT_TYPE_SONIFICATION clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+05-02 12:34:57:636 abandonAudioFocus() from uid/pid 1000/3064 clientId=AudioFocus_For_Phone_Ring_And_Calls
+05-02 13:02:36:733 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_NOTIFICATION_RINGTONE/CONTENT_TYPE_SONIFICATION clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+05-02 13:02:54:259 abandonAudioFocus() from uid/pid 1000/3064 clientId=AudioFocus_For_Phone_Ring_And_Calls
+05-02 13:59:46:120 requestAudioFocus() from uid/pid 10496/10784 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@111be89androidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@3920e8e callingPack=com.deepeye.musicpro.debug req=1 flags=0x0 sdk=35
+05-02 14:07:14:724 focus requester:android.media.AudioManager@111be89androidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@3920e8e in uid:10496 pack:com.deepeye.musicpro.debug died
+05-02 14:08:46:291 requestAudioFocus() from uid/pid 10496/2511 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@530fd56androidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@99041d7 callingPack=com.deepeye.musicpro.debug req=1 flags=0x0 sdk=35
+05-02 14:20:38:499 focus requester:android.media.AudioManager@530fd56androidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@99041d7 in uid:10496 pack:com.deepeye.musicpro.debug died
+05-02 14:21:07:029 requestAudioFocus() from uid/pid 10496/32512 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@76aeebandroidx.media3.exoplayer.AudioFocusManager$AudioFocusListener@964448 callingPack=com.deepeye.musicpro.debug req=1 flags=0x0 sdk=35
+05-02 14:57:49:943 requestAudioFocus() from uid/pid 1000/3064 AA=USAGE_NOTIFICATION_RINGTONE/CONTENT_TYPE_SONIFICATION clientId=AudioFocus_For_Phone_Ring_And_Calls callingPack=com.android.server.telecom req=2 flags=0x4 sdk=0
+05-02 14:57:58:986 abandonAudioFocus() from uid/pid 1000/3064 clientId=AudioFocus_For_Phone_Ring_And_Calls
+Multi Audio Focus enabled :false
+
+Stream volumes (device: index)
+- STREAM_VOICE_CALL:
+   Muted: false
+   Muted Internally: false

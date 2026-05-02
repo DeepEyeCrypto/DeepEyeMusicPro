@@ -1,0 +1,1 @@
+{"id":"studio_reference","name":"Studio Reference","convolverIR":null,"ddcProfile":"Sennheiser_HD650.ddc","eqGains":[0,0,0,0,0,0,0,0,0,0],"fet":{"attack":10,"release":180,"ratio":1.4,"threshold":-6,"knee":4},"tubeWarmth":0.12,"enabledEffects":["EQ","DDC","FET"]}

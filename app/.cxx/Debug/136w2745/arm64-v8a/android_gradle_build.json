@@ -1,0 +1,40 @@
+{
+  "buildFiles": [
+    "/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/usr/local/share/android-commandlinetools/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/enayat/Documents/DeepEyeMusicPro/app/.cxx/Debug/136w2745/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/usr/local/share/android-commandlinetools/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/enayat/Documents/DeepEyeMusicPro/app/.cxx/Debug/136w2745/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "deepeye_dsp::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "deepeye_dsp",
+      "output": "/Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/cxx/Debug/136w2745/obj/arm64-v8a/libdeepeye_dsp.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/usr/local/share/android-commandlinetools/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/usr/local/share/android-commandlinetools/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

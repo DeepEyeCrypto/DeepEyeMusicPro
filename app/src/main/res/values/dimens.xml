@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">12dp</dimen>
+    <dimen name="space_lg">16dp</dimen>
+    <dimen name="space_xl">24dp</dimen>
+    <dimen name="space_2xl">32dp</dimen>
+    <dimen name="radius_sm">10dp</dimen>
+    <dimen name="radius_md">16dp</dimen>
+    <dimen name="radius_lg">24dp</dimen>
+    <dimen name="radius_xl">32dp</dimen>
+    <dimen name="stroke_regular">1dp</dimen>
+    <dimen name="mini_player_height">76dp</dimen>
+    <dimen name="bottom_nav_height">72dp</dimen>
+    <dimen name="artwork_card_size">156dp</dimen>
+    <dimen name="track_artwork_size">56dp</dimen>
+    <dimen name="eq_track_height">148dp</dimen>
+    <dimen name="eq_thumb_size">18dp</dimen>
+    <dimen name="eq_fill_min_height">8dp</dimen>
+    <dimen name="sheet_peek_height">0dp</dimen>
+</resources>

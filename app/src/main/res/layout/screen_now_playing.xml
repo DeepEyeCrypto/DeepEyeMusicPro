@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal" android:padding="24dp" android:background="@drawable/bg_app_backdrop">
+    <ImageView android:id="@+id/playerArtwork" android:layout_width="280dp" android:layout_height="280dp" android:layout_marginTop="52dp" android:background="@drawable/bg_surface_card_selected" android:padding="74dp" android:src="@drawable/ic_notification" android:contentDescription="@string/screen_now_playing" />
+    <TextView android:id="@+id/playerTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:gravity="center" android:textColor="@color/deep_text_primary" android:textSize="24sp" android:textStyle="bold" />
+    <TextView android:id="@+id/playerArtist" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center" android:textColor="@color/deep_text_secondary" android:textSize="15sp" />
+    <SeekBar android:id="@+id/playerProgress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:id="@+id/playerElapsed" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/deep_text_secondary" />
+        <TextView android:id="@+id/playerRemaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/deep_text_secondary" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:gravity="center" android:orientation="horizontal">
+        <ImageButton android:id="@+id/playerPrev" android:layout_width="58dp" android:layout_height="58dp" android:background="@drawable/bg_ghost_button" android:src="@drawable/ic_prev" android:contentDescription="@string/action_previous" />
+        <ImageButton android:id="@+id/playerPlayPause" android:layout_width="74dp" android:layout_height="74dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp" android:background="@drawable/bg_primary_button" android:src="@drawable/ic_play" android:contentDescription="@string/action_play" />
+        <ImageButton android:id="@+id/playerNext" android:layout_width="58dp" android:layout_height="58dp" android:background="@drawable/bg_ghost_button" android:src="@drawable/ic_next" android:contentDescription="@string/action_next" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:gravity="center" android:orientation="horizontal">
+        <Button android:id="@+id/playerDsp" android:layout_width="0dp" android:layout_height="52dp" android:layout_marginEnd="8dp" android:layout_weight="1" android:background="@drawable/bg_ghost_button" android:text="V4A" android:textColor="@color/deep_text_primary" />
+        <Button android:id="@+id/playerQueue" android:layout_width="0dp" android:layout_height="52dp" android:layout_marginStart="8dp" android:layout_weight="1" android:background="@drawable/bg_ghost_button" android:text="Queue" android:textColor="@color/deep_text_primary" />
+    </LinearLayout>
+</LinearLayout>

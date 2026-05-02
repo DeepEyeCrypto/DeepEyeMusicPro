@@ -1,0 +1,9 @@
+Timestamp UTC: 2026-05-02T09:31:26Z
+notification_pause_state_line=Command: adb shell dumpsys media_session | grep -A5 -B5 "state=PAUSED"
+notification_play_state_line=Command: adb shell dumpsys media_session | grep -A5 -B5 "state=PLAYING"
+skip_state_line=After skip state: PLAYING(3)
+eviction_media_line=  Media button session is com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+eviction_process_line=  *APP* UID 10496 ProcessRecord{afd416e 32512:com.deepeye.musicpro.debug/u0a496}
+eviction_notification_line=Command: adb shell dumpsys notification --noredact | grep -A10 "pkg=com.deepeye.musicpro.debug"
+queue_line=    queueTitle=null, size=0
+effect_line=Command: adb shell dumpsys media.audio_flinger | grep -i "effect"

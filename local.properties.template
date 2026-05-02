@@ -1,0 +1,10 @@
+# Copy this file to local.properties when opening DeepEyeMusicPro in Android Studio.
+# Keep machine-specific SDK/NDK paths and signing paths out of Git.
+# sdk.dir=/Users/your-name/Library/Android/sdk
+# ndk.dir=/Users/your-name/Library/Android/sdk/ndk/26.3.11579264
+
+# Optional release signing. If omitted, release builds use the debug keystore for local builder validation.
+# DEEPEYE_RELEASE_STORE_FILE=/absolute/path/to/deepeye-release.jks
+# DEEPEYE_RELEASE_STORE_PASSWORD=change-me
+# DEEPEYE_RELEASE_KEY_ALIAS=deepeye
+# DEEPEYE_RELEASE_KEY_PASSWORD=change-me

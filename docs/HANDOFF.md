@@ -1,0 +1,198 @@
+# DeepEyeMusicPro Builder Handoff
+
+## Completion summary
+
+- Normalized app name and package to DeepEyeMusicPro / com.deepeye.musicpro.
+- Rebuilt Gradle, manifest, resource, Kotlin, Room, Media3, extractor, download, adblock, and DSP layers.
+- Added native C/JNI DSP with a safe Kotlin bridge and Media3 audio processor wiring.
+- Added premium dark Material 3 resources, adaptive icon assets, notification assets, navigation, and screen layouts.
+- Added builder docs for architecture, setup, DSP, UI guidelines, branding, and roadmap.
+
+## Validation performed
+
+- XML parse check passed for all generated resource XML files.
+- Native C syntax check passed for jdsp_controller.c with the host C compiler.
+- Legacy naming scan found no stale YTMusicPro / ytmusicpro / yt_ references.
+- Gradle build could not run in this shell because no Gradle executable or wrapper is installed in the workspace.
+
+## Generated file inventory
+
+- `README.md`
+- `app/build.gradle`
+- `app/src/main/AndroidManifest.xml`
+- `app/src/main/cpp/jamesdsp/jdsp_controller.c`
+- `app/src/main/cpp/jamesdsp/jdsp_controller.h`
+- `app/src/main/cpp/jni_bridge.cpp`
+- `app/src/main/java/com/deepeye/musicpro/DeepEyeApp.kt`
+- `app/src/main/java/com/deepeye/musicpro/adblock/AdBlockEngine.kt`
+- `app/src/main/java/com/deepeye/musicpro/adblock/AdBlockingWebView.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/AppDatabase.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/CachedTrack.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/Converters.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/DspPresetEntity.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/FavoriteDao.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/FavoriteTrack.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/PlaylistDao.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/PlaylistEntity.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/PresetDao.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/SearchHistoryDao.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/SearchHistoryEntry.kt`
+- `app/src/main/java/com/deepeye/musicpro/db/TrackDao.kt`
+- `app/src/main/java/com/deepeye/musicpro/dsp/DSPAudioProcessor.kt`
+- `app/src/main/java/com/deepeye/musicpro/dsp/DSPManager.kt`
+- `app/src/main/java/com/deepeye/musicpro/dsp/DSPPreset.kt`
+- `app/src/main/java/com/deepeye/musicpro/dsp/NativeDSP.kt`
+- `app/src/main/java/com/deepeye/musicpro/extractor/DownloaderImpl.kt`
+- `app/src/main/java/com/deepeye/musicpro/extractor/LinkParser.kt`
+- `app/src/main/java/com/deepeye/musicpro/extractor/SearchService.kt`
+- `app/src/main/java/com/deepeye/musicpro/extractor/StreamExtractor.kt`
+- `app/src/main/java/com/deepeye/musicpro/model/AppSettings.kt`
+- `app/src/main/java/com/deepeye/musicpro/model/DownloadState.kt`
+- `app/src/main/java/com/deepeye/musicpro/model/SearchResult.kt`
+- `app/src/main/java/com/deepeye/musicpro/model/StreamFormat.kt`
+- `app/src/main/java/com/deepeye/musicpro/model/Track.kt`
+- `app/src/main/java/com/deepeye/musicpro/notification/PlayerNotificationManager.kt`
+- `app/src/main/java/com/deepeye/musicpro/player/PlayerController.kt`
+- `app/src/main/java/com/deepeye/musicpro/player/PlayerState.kt`
+- `app/src/main/java/com/deepeye/musicpro/player/QueueManager.kt`
+- `app/src/main/java/com/deepeye/musicpro/receiver/BootReceiver.kt`
+- `app/src/main/java/com/deepeye/musicpro/repository/AppRepository.kt`
+- `app/src/main/java/com/deepeye/musicpro/repository/DSPRepository.kt`
+- `app/src/main/java/com/deepeye/musicpro/repository/DownloadRepository.kt`
+- `app/src/main/java/com/deepeye/musicpro/repository/PlayerRepository.kt`
+- `app/src/main/java/com/deepeye/musicpro/repository/SearchRepository.kt`
+- `app/src/main/java/com/deepeye/musicpro/repository/SettingsRepository.kt`
+- `app/src/main/java/com/deepeye/musicpro/service/DeepEyeRenderersFactory.kt`
+- `app/src/main/java/com/deepeye/musicpro/service/DownloadService.kt`
+- `app/src/main/java/com/deepeye/musicpro/service/MusicPlayerService.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/MainActivity.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/dsp/DspBottomSheetFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/dsp/DspViewModel.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/home/HomeAdapter.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/home/HomeFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/library/DownloadsFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/library/FavoritesFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/library/LibraryFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/library/LibraryPagerAdapter.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/library/RecentFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/player/NowPlayingFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/player/NowPlayingViewModel.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/search/SearchAdapter.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/search/SearchFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/search/SearchViewModel.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/settings/AboutFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/settings/SettingsFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/ui/web/WebFallbackFragment.kt`
+- `app/src/main/java/com/deepeye/musicpro/util/CoroutineExt.kt`
+- `app/src/main/java/com/deepeye/musicpro/util/FileUtils.kt`
+- `app/src/main/java/com/deepeye/musicpro/util/Logger.kt`
+- `app/src/main/java/com/deepeye/musicpro/util/NetworkUtils.kt`
+- `app/src/main/java/com/deepeye/musicpro/util/TimeUtils.kt`
+- `app/src/main/java/com/deepeye/musicpro/util/UiState.kt`
+- `app/src/main/res/color/bottom_nav_tint.xml`
+- `app/src/main/res/color/chip_text_tint.xml`
+- `app/src/main/res/drawable/bg_app_backdrop.xml`
+- `app/src/main/res/drawable/bg_art_glow.xml`
+- `app/src/main/res/drawable/bg_bottom_nav.xml`
+- `app/src/main/res/drawable/bg_chip.xml`
+- `app/src/main/res/drawable/bg_chip_selected.xml`
+- `app/src/main/res/drawable/bg_download_badge.xml`
+- `app/src/main/res/drawable/bg_drag_handle.xml`
+- `app/src/main/res/drawable/bg_dsp_sheet.xml`
+- `app/src/main/res/drawable/bg_empty_state.xml`
+- `app/src/main/res/drawable/bg_eq_fill.xml`
+- `app/src/main/res/drawable/bg_eq_track.xml`
+- `app/src/main/res/drawable/bg_ghost_button.xml`
+- `app/src/main/res/drawable/bg_mini_player.xml`
+- `app/src/main/res/drawable/bg_player_sheet.xml`
+- `app/src/main/res/drawable/bg_primary_button.xml`
+- `app/src/main/res/drawable/bg_search_input.xml`
+- `app/src/main/res/drawable/bg_splash_overlay.xml`
+- `app/src/main/res/drawable/bg_surface_card.xml`
+- `app/src/main/res/drawable/bg_surface_card_selected.xml`
+- `app/src/main/res/drawable/cover_blinding_lights.xml`
+- `app/src/main/res/drawable/cover_ghost.xml`
+- `app/src/main/res/drawable/cover_good_4_u.xml`
+- `app/src/main/res/drawable/cover_levitating.xml`
+- `app/src/main/res/drawable/cover_peaches.xml`
+- `app/src/main/res/drawable/cover_save_your_tears.xml`
+- `app/src/main/res/drawable/ic_arrow_back.xml`
+- `app/src/main/res/drawable/ic_chevron_down.xml`
+- `app/src/main/res/drawable/ic_close.xml`
+- `app/src/main/res/drawable/ic_download.xml`
+- `app/src/main/res/drawable/ic_equalizer.xml`
+- `app/src/main/res/drawable/ic_favorite.xml`
+- `app/src/main/res/drawable/ic_home.xml`
+- `app/src/main/res/drawable/ic_launcher_background.xml`
+- `app/src/main/res/drawable/ic_launcher_foreground.xml`
+- `app/src/main/res/drawable/ic_launcher_monochrome.xml`
+- `app/src/main/res/drawable/ic_library.xml`
+- `app/src/main/res/drawable/ic_menu.xml`
+- `app/src/main/res/drawable/ic_more.xml`
+- `app/src/main/res/drawable/ic_next.xml`
+- `app/src/main/res/drawable/ic_notification.xml`
+- `app/src/main/res/drawable/ic_pause.xml`
+- `app/src/main/res/drawable/ic_play.xml`
+- `app/src/main/res/drawable/ic_prev.xml`
+- `app/src/main/res/drawable/ic_queue.xml`
+- `app/src/main/res/drawable/ic_repeat.xml`
+- `app/src/main/res/drawable/ic_search.xml`
+- `app/src/main/res/drawable/ic_settings.xml`
+- `app/src/main/res/drawable/ic_shuffle.xml`
+- `app/src/main/res/drawable/ic_web.xml`
+- `app/src/main/res/layout/activity_main.xml`
+- `app/src/main/res/layout/item_album_card.xml`
+- `app/src/main/res/layout/item_chip_text.xml`
+- `app/src/main/res/layout/item_download_row.xml`
+- `app/src/main/res/layout/item_eq_band.xml`
+- `app/src/main/res/layout/item_favorite_row.xml`
+- `app/src/main/res/layout/item_preset_chip.xml`
+- `app/src/main/res/layout/item_queue_row.xml`
+- `app/src/main/res/layout/item_quick_action.xml`
+- `app/src/main/res/layout/item_search_history.xml`
+- `app/src/main/res/layout/item_search_result.xml`
+- `app/src/main/res/layout/item_section_header.xml`
+- `app/src/main/res/layout/item_track_row.xml`
+- `app/src/main/res/layout/layout_dsp_sheet.xml`
+- `app/src/main/res/layout/layout_empty_state.xml`
+- `app/src/main/res/layout/layout_mini_player.xml`
+- `app/src/main/res/layout/layout_now_playing_sheet.xml`
+- `app/src/main/res/layout/layout_queue_sheet.xml`
+- `app/src/main/res/layout/screen_about.xml`
+- `app/src/main/res/layout/screen_dsp_sheet.xml`
+- `app/src/main/res/layout/screen_home.xml`
+- `app/src/main/res/layout/screen_library.xml`
+- `app/src/main/res/layout/screen_now_playing.xml`
+- `app/src/main/res/layout/screen_search.xml`
+- `app/src/main/res/layout/screen_settings.xml`
+- `app/src/main/res/layout/screen_web_fallback.xml`
+- `app/src/main/res/menu/bottom_nav_menu.xml`
+- `app/src/main/res/mipmap-anydpi/ic_launcher.xml`
+- `app/src/main/res/mipmap-anydpi/ic_launcher_round.xml`
+- `app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml`
+- `app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml`
+- `app/src/main/res/navigation/nav_graph.xml`
+- `app/src/main/res/values/arrays.xml`
+- `app/src/main/res/values/colors.xml`
+- `app/src/main/res/values/dimens.xml`
+- `app/src/main/res/values/strings.xml`
+- `app/src/main/res/values/styles.xml`
+- `app/src/main/res/values/themes.xml`
+- `app/src/main/res/values-night/colors.xml`
+- `app/src/main/res/values-night/themes.xml`
+- `app/src/main/res/xml/backup_rules.xml`
+- `app/src/main/res/xml/data_extraction_rules.xml`
+- `app/src/main/res/xml/file_paths.xml`
+- `app/src/main/res/xml/locales_config.xml`
+- `app/src/main/res/xml/network_security_config.xml`
+- `app/src/main/res/xml/preferences.xml`
+- `build.gradle`
+- `docs/ARCHITECTURE.md`
+- `docs/BRANDING.md`
+- `docs/DSP_PIPELINE.md`
+- `docs/ROADMAP.md`
+- `docs/SETUP.md`
+- `docs/UI_GUIDELINES.md`
+- `gradle.properties`
+- `local.properties.template`
+- `settings.gradle`
