@@ -28,3 +28,4 @@ Thumbs.db
 *.iml
 .idea/
 *.hprof
+app/google-services.json

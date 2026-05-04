@@ -27,12 +27,9 @@ object YoutubeAuthManager {
     )
     
     private var context: Context? = null
+    private val authScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
     
-    fun init(ctx: Context) {
-        context = ctx.applicationContext
-    }
-
-    private val prefs by lazy {
+    private val prefsDeferred: Deferred<android.content.SharedPreferences> = authScope.async {
         val ctx = context ?: throw IllegalStateException("AuthManager not initialized")
         try {
             val masterKey = MasterKey.Builder(ctx)
@@ -50,6 +47,12 @@ object YoutubeAuthManager {
             ctx.getSharedPreferences("youtube_auth_insecure", Context.MODE_PRIVATE)
         }
     }
+    
+    fun init(ctx: Context) {
+        context = ctx.applicationContext
+    }
+
+    private suspend fun getPrefs() = prefsDeferred.await()
     
     fun signIn(activity: Activity, launcher: ActivityResultLauncher<Intent>) {
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -105,14 +108,16 @@ object YoutubeAuthManager {
                     val refreshToken = json.optString("refresh_token")
                     val expiresIn = json.getLong("expires_in")
                     
-                    prefs.edit().apply {
-                        putString("access_token", accessToken)
-                        if (refreshToken.isNotEmpty()) putString("refresh_token", refreshToken)
-                        putLong("expires_at", System.currentTimeMillis() + (expiresIn * 1000))
-                        putString("user_email", account.email)
-                        putString("user_name", account.displayName)
-                        putString("user_photo", account.photoUrl?.toString())
-                        apply()
+                    withContext(Dispatchers.IO) {
+                        getPrefs().edit().apply {
+                            putString("access_token", accessToken)
+                            if (refreshToken.isNotEmpty()) putString("refresh_token", refreshToken)
+                            putLong("expires_at", System.currentTimeMillis() + (expiresIn * 1000))
+                            putString("user_email", account.email)
+                            putString("user_name", account.displayName)
+                            putString("user_photo", account.photoUrl?.toString())
+                            apply()
+                        }
                     }
                     withContext(Dispatchers.Main) { onSuccess(accessToken) }
                 } else {
@@ -124,55 +129,56 @@ object YoutubeAuthManager {
         }
     }
     
-    fun getAccessToken(): String? {
-        val expiresAt = prefs.getLong("expires_at", 0)
+    suspend fun getAccessToken(): String? = withContext(Dispatchers.IO) {
+        val p = getPrefs()
+        val expiresAt = p.getLong("expires_at", 0)
         if (System.currentTimeMillis() > expiresAt - 300000) { // 5 mins buffer
-            return refreshAccessToken()
+            return@withContext refreshAccessToken()
         }
-        return prefs.getString("access_token", null)
+        p.getString("access_token", null)
     }
     
-    private fun refreshAccessToken(): String? {
-        val refreshToken = prefs.getString("refresh_token", null) ?: return null
-        // Sync refresh for simplicity in getAccessToken call (not ideal but works for foreground fetch)
-        return runBlocking(Dispatchers.IO) {
-            try {
-                val client = OkHttpClient()
-                val body = FormBody.Builder()
-                    .add("client_id", CLIENT_ID)
-                    .add("refresh_token", refreshToken)
-                    .add("grant_type", "refresh_token")
-                    .build()
-                
-                val request = Request.Builder()
-                    .url("https://oauth2.googleapis.com/token")
-                    .post(body)
-                    .build()
-                
-                val response = client.newCall(request).execute()
-                val json = JSONObject(response.body?.string() ?: "{}")
-                
-                if (json.has("access_token")) {
-                    val newToken = json.getString("access_token")
-                    val expiresIn = json.getLong("expires_in")
-                    prefs.edit().apply {
-                        putString("access_token", newToken)
-                        putLong("expires_at", System.currentTimeMillis() + (expiresIn * 1000))
-                        apply()
-                    }
-                    newToken
-                } else null
-            } catch (e: Exception) { null }
-        }
+    private suspend fun refreshAccessToken(): String? = withContext(Dispatchers.IO) {
+        val p = getPrefs()
+        val refreshToken = p.getString("refresh_token", null) ?: return@withContext null
+        try {
+            val client = OkHttpClient()
+            val body = FormBody.Builder()
+                .add("client_id", CLIENT_ID)
+                .add("refresh_token", refreshToken)
+                .add("grant_type", "refresh_token")
+                .build()
+            
+            val request = Request.Builder()
+                .url("https://oauth2.googleapis.com/token")
+                .post(body)
+                .build()
+            
+            val response = client.newCall(request).execute()
+            val json = JSONObject(response.body?.string() ?: "{}")
+            
+            if (json.has("access_token")) {
+                val newToken = json.getString("access_token")
+                val expiresIn = json.getLong("expires_in")
+                getPrefs().edit().apply {
+                    putString("access_token", newToken)
+                    putLong("expires_at", System.currentTimeMillis() + (expiresIn * 1000))
+                    apply()
+                }
+                newToken
+            } else null
+        } catch (e: Exception) { null }
     }
     
-    fun isSignedIn(): Boolean = prefs.getString("access_token", null) != null
-    fun getUserEmail(): String? = prefs.getString("user_email", null)
-    fun getUserName(): String? = prefs.getString("user_name", null)
-    fun getUserPhoto(): String? = prefs.getString("user_photo", null)
+    suspend fun isSignedIn(): Boolean = getPrefs().getString("access_token", null) != null
+    suspend fun getUserEmail(): String? = getPrefs().getString("user_email", null)
+    suspend fun getUserName(): String? = getPrefs().getString("user_name", null)
+    suspend fun getUserPhoto(): String? = getPrefs().getString("user_photo", null)
     
     fun signOut() {
-        prefs.edit().clear().apply()
-        context?.let { GoogleSignIn.getClient(it, GoogleSignInOptions.DEFAULT_SIGN_IN).signOut() }
+        authScope.launch {
+            getPrefs().edit().clear().apply()
+            context?.let { GoogleSignIn.getClient(it, GoogleSignInOptions.DEFAULT_SIGN_IN).signOut() }
+        }
     }
 }

@@ -89,12 +89,15 @@ class NativeDSP {
         private val libraryLoaded = AtomicBoolean(false)
 
         init {
+            val oldPolicy = android.os.StrictMode.allowThreadDiskReads()
             try {
                 System.loadLibrary("deepeye_dsp")
                 libraryLoaded.set(true)
             } catch (error: UnsatisfiedLinkError) {
                 Logger.e("NativeDSP", "Native DSP unavailable", error)
                 libraryLoaded.set(false)
+            } finally {
+                android.os.StrictMode.setThreadPolicy(oldPolicy)
             }
         }
     }

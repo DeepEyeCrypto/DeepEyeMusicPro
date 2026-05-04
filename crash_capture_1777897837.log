@@ -1,0 +1,544 @@
+--------- beginning of main
+05-04 18:00:37.201  1731  3697 I slpi    : STK3A5X ALS_OC: lux:1743.479980, last_ps:0[1259], CH0:1305, CH2:161, CH4:20, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+--------- beginning of system
+05-04 18:00:37.543  3064  4512 W ActivityTaskManager: callingPackage for (uid=2000, pid=25455) has no WPC
+05-04 18:00:37.544  3064  4512 I SettingsAccessControlPolicy: isDeviceSettingsChangeDisabled: value -> false
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 265452344; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 266124927; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 265451093; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 265456536; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 255940284; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 236283604; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 263959004; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 264304459; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 264301586; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 254631730; UID 10502; state: DISABLED
+05-04 18:00:37.544  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 273509367; UID 10502; state: DISABLED
+05-04 18:00:37.545  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 263259275; UID 10502; state: DISABLED
+05-04 18:00:37.545  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10502; state: DISABLED
+05-04 18:00:37.545  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10502; state: DISABLED
+05-04 18:00:37.545  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10502; state: DISABLED
+05-04 18:00:37.545  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 194480991; UID 10502; state: ENABLED
+05-04 18:00:37.545  3064  4512 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 18:00:37.545  3064  4512 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 18:00:37.547  3064  4512 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 18:00:37.546  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 18:00:37.547  3064  4512 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 18:00:37.547  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 18:00:37.549  3064  4512 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-04 18:00:37.549  3064  4512 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-04 18:00:37.550  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10502; state: DISABLED
+05-04 18:00:37.550  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10502; state: DISABLED
+05-04 18:00:37.551  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10502; state: ENABLED
+05-04 18:00:37.552  3064  4512 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:true duration ms: 1
+05-04 18:00:37.552  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 205907456; UID 10502; state: ENABLED
+05-04 18:00:37.552  3064  4512 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-04 18:00:37.554  3064  4512 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (startActivityAsUser) (BAL_ALLOW_PERMISSION) result code=0
+05-04 18:00:37.555  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@4753d19 TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3782 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1296499519 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=false isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@bfbb68c} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{81391d5 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-04 18:00:37.558  3827  3925 D ViewRootImpl: update {(0,0)(fillxfill) ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x10302fe
+05-04 18:00:37.558  3827  3925 D ViewRootImpl:   fl=NOT_FOCUSABLE NOT_TOUCHABLE LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR ALT_FOCUSABLE_IM HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+05-04 18:00:37.558  3827  3925 D ViewRootImpl:   pfl=SHOW_FOR_ALL_USERS FIT_INSETS_CONTROLLED
+05-04 18:00:37.558  3827  3925 D ViewRootImpl:   bhv=DEFAULT
+05-04 18:00:37.558  3827  3925 D ViewRootImpl:   fitSides=} by setView
+05-04 18:00:37.558  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 18:00:37.558  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 18:00:37.564  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10502; state: DISABLED
+05-04 18:00:37.564  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10502; state: DISABLED
+05-04 18:00:37.564  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10502; state: DISABLED
+05-04 18:00:37.564  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10502; state: ENABLED
+05-04 18:00:37.564  3064  3380 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10502; state: ENABLED
+05-04 18:00:37.565  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10502; state: DISABLED
+05-04 18:00:37.565  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10502; state: DISABLED
+05-04 18:00:37.568  3064  3370 W ProcessStats: Tracking association SourceState{3c1221 com.google.android.googlequicksearchbox:googleapp/10228 BTop #2029831} whose proc state 2 is better than process ProcessState{7f8a66a com.google.android.adservices.api/10357 pkg=com.google.android.adservices.api} proc state 14 (5 skipped)
+05-04 18:00:37.570  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10502; state: ENABLED
+05-04 18:00:37.572  3064  4512 D CoreBackPreview: Window{851cc43 u0 Splash Screen com.deepeye.musicpro.debug}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@bbae99f, mPriority=0, mIsAnimationCallback=false}
+05-04 18:00:37.573  3827  3949 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 18:00:37.574  1587  1587 D Zygote  : Forked child process 25460
+05-04 18:00:37.575  3064  3380 I ActivityManager: Start proc 25460:com.deepeye.musicpro.debug/u0a502 for next-top-activity {com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}
+05-04 18:00:37.576  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 18:00:37.580  3064  3367 V WindowManager: Sent Transition #6163 createdAt=05-04 18:00:37.545 via request=TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3782 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1296499519 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=true isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{RemoteToken{36e80bb Task{41ff166 #3782 type=standard A=10502:com.deepeye.musicpro.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{5fd8016 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-04 18:00:37.580  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-04 18:00:37.580  3064  3367 V WindowManager:     info={id=6163 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{36e80bb Task{41ff166 #3782 type=standard A=10502:com.deepeye.musicpro.debug}}} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3782)/@0x8ad8eb5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{9a2e0c9 Task{97f56a1 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x5e976da sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 18:00:37.581  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@4753d19: {id=6163 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@e1fdabc} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3782)/@0x6329e89 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@19d9a45} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x6d16e8e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 18:00:37.581  3827  3912 V WindowManagerShell: Playing animation for (#6163)android.os.BinderProxy@4753d19@0
+05-04 18:00:37.581  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-04 18:00:37.581  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-04 18:00:37.581  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-04 18:00:37.581  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-04 18:00:37.581  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-04 18:00:37.581  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-04 18:00:37.581  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-04 18:00:37.582  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 18:00:37.582  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=6163 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@e1fdabc} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3782)/@0x6329e89 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@19d9a45} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x6d16e8e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 18:00:37.582  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 18:00:37.582  3827  3912 V WindowManagerShell:  Delegate animation for #6163 to null
+05-04 18:00:37.582  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-04 18:00:37.582  3827  3912 V WindowManagerShell: start default transition animation, info = {id=6163 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@e1fdabc} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3782)/@0x6329e89 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@19d9a45} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x6d16e8e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 18:00:37.582  3827  3912 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@5f7decb animAttr=0x13 type=OPEN isEntrance=false
+05-04 18:00:37.582  3827  3912 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@6239ca7 animAttr=0x12 type=OPEN isEntrance=true
+05-04 18:00:37.583  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-04 18:00:37.584 25460 25460 I .musicpro.debug: Late-enabling -Xcheck:jni
+05-04 18:00:37.600 25460 25460 I .musicpro.debug: Using CollectorTypeCMC GC.
+05-04 18:00:37.603  7521  7526 I adbd    : jdwp connection from 25460
+05-04 18:00:37.606 25460 25460 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-04 18:00:37.612  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 18:00:37.621  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 271850009; UID 10382; state: ENABLED
+05-04 18:00:37.622  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10382; state: DISABLED
+05-04 18:00:37.622  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10382; state: DISABLED
+05-04 18:00:37.622  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10382; state: DISABLED
+05-04 18:00:37.622  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10382; state: ENABLED
+05-04 18:00:37.622  3064  3380 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10382; state: ENABLED
+05-04 18:00:37.624  3064  3477 D ActivityManager: unfreezing ProcessRecord{f748e30 22768:com.whatsapp.w4b/u0a392}, reason = oom_uncached, adj = 0, adjType = service, adjSource = ProcessRecord{bcfdf54 3064:system/1000}
+05-04 18:00:37.627 25460 25460 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10502; state: ENABLED
+05-04 18:00:37.627 25460 25460 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10502; state: ENABLED
+05-04 18:00:37.630  3064  3215 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10502; state: ENABLED
+05-04 18:00:37.630 22768 22768 D WM-DelayedWorkTracker: Scheduling work 6aa2ffd1-9b5f-4b00-8373-fea67bc1a709
+05-04 18:00:37.633  3064  3477 D ActivityManager: sync unfroze 22768 com.whatsapp.w4b for 6
+05-04 18:00:37.638 22768 22768 D WM-GreedyScheduler: Starting work for 6aa2ffd1-9b5f-4b00-8373-fea67bc1a709
+05-04 18:00:37.639 22768 22768 D WM-DelayedWorkTracker: Scheduling work 1e116f66-fa29-4b21-ab5b-234e2cec2963
+05-04 18:00:37.639 22768 22768 D WM-GreedyScheduler: Starting tracking for 1e116f66-fa29-4b21-ab5b-234e2cec2963
+05-04 18:00:37.640  1587  1587 D Zygote  : Forked child process 25480
+05-04 18:00:37.641  3064  3380 I ActivityManager: Start proc 25480:org.torproject.torbrowser/u0a382 for service {org.torproject.torbrowser/androidx.work.impl.background.systemjob.SystemJobService}
+05-04 18:00:37.657 25480 25480 I ject.torbrowser: Using CollectorTypeCMC GC.
+05-04 18:00:37.658 10800 10800 I bwmt    : onPause
+05-04 18:00:37.662  7521  7526 I adbd    : jdwp connection from 25480
+05-04 18:00:37.662 22768 22796 D WM-Processor: IwH: processing WorkGenerationalId(workSpecId=6aa2ffd1-9b5f-4b00-8373-fea67bc1a709, generation=138)
+05-04 18:00:37.666 25480 25480 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-04 18:00:37.672 22768 22768 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=6aa2ffd1-9b5f-4b00-8373-fea67bc1a709, generation=138)
+05-04 18:00:37.672 22768 22768 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=1e116f66-fa29-4b21-ab5b-234e2cec2963, generation=0)
+05-04 18:00:37.676  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10382; state: DISABLED
+05-04 18:00:37.676  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10382; state: DISABLED
+05-04 18:00:37.679  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10382; state: ENABLED
+05-04 18:00:37.683 25480 25480 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10382; state: ENABLED
+05-04 18:00:37.683 25480 25480 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10382; state: ENABLED
+05-04 18:00:37.683 22768 22768 D WM-WorkerWrapper: Starting work for com.whatsapp.marketingmessagemanagement.messagesend.notification.SendSuccessNotificationWorker
+05-04 18:00:37.685 22768 22796 D WM-Processor: Work WorkGenerationalId(workSpecId=6aa2ffd1-9b5f-4b00-8373-fea67bc1a709, generation=138) is already enqueued for processing
+05-04 18:00:37.687 22768 22796 D WM-Processor: IwH: processing WorkGenerationalId(workSpecId=1e116f66-fa29-4b21-ab5b-234e2cec2963, generation=0)
+05-04 18:00:37.687  3064  3215 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10382; state: ENABLED
+05-04 18:00:37.692 22768 22796 D WM-ConstraintTracker: Iwa: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true)
+05-04 18:00:37.692 22768 22796 D WM-NetworkStateTracker: Registering network callback
+05-04 18:00:37.694  3064  3215 D ConnectivityService: requestNetwork for uid/pid:10392/22768 activeRequest: null callbackRequest: 32370 [NetworkRequest [ REQUEST id=32371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10392 RequestorUid: 10392 RequestorPkg: com.whatsapp.w4b UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|LP
+05-04 18:00:37.699  3064  3736 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=32371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10392 RequestorUid: 10392 RequestorPkg: com.whatsapp.w4b UnderlyingNetworks: Null] ]
+05-04 18:00:37.699  3064  3736 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=32371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10392 RequestorUid: 10392 RequestorPkg: com.whatsapp.w4b UnderlyingNetworks: Null] ]
+05-04 18:00:37.699  3064  3736 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=32371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10392 RequestorUid: 10392 RequestorPkg: com.whatsapp.w4b UnderlyingNetworks: Null] ]
+05-04 18:00:37.699 22768 23053 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.2, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -61, Link speed: 292Mbps, Tx Link speed: 292Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 234Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5765MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -61 UnderlyingNetworks: Null]
+05-04 18:00:37.699  3064  3736 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=32371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10392 RequestorUid: 10392 RequestorPkg: com.whatsapp.w4b UnderlyingNetworks: Null] ]
+05-04 18:00:37.701  3064  3743 D ConnectivityService: NetReassign [32371 : null → 648] [c 1] [a 2] [i 3]
+05-04 18:00:37.720 22768 22768 D WM-WorkerWrapper: Starting work for com.whatsapp.bizintegrity.logger.receiver.scheduler.ReceiverLoggingWorker
+05-04 18:00:37.754 25480 25480 D nativeloader: Configuring clns-4 for other apk /data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/lib/arm64:/data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.torproject.torbrowser
+05-04 18:00:37.761 25480 25480 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+05-04 18:00:37.763 22768 22796 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=6aa2ffd1-9b5f-4b00-8373-fea67bc1a709, tags={ com.whatsapp.marketingmessagemanagement.messagesend.notification.SendSuccessNotificationWorker } ]
+05-04 18:00:37.764 25480 25480 V GraphicsEnvironment: Currently set values for:
+05-04 18:00:37.764 25480 25480 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-04 18:00:37.764 25480 25480 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-04 18:00:37.764 25480 25480 V GraphicsEnvironment: ANGLE GameManagerService for org.torproject.torbrowser: false
+05-04 18:00:37.764 25480 25480 V GraphicsEnvironment: org.torproject.torbrowser is not listed in per-application setting
+05-04 18:00:37.764 25480 25480 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+05-04 18:00:37.775 22768 22768 D WM-Processor: IwH 6aa2ffd1-9b5f-4b00-8373-fea67bc1a709 executed; reschedule = false
+05-04 18:00:37.775 22768 22768 D WM-SystemJobService: 6aa2ffd1-9b5f-4b00-8373-fea67bc1a709 executed on JobScheduler
+05-04 18:00:37.778 22768 22803 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=1e116f66-fa29-4b21-ab5b-234e2cec2963, tags={ com.whatsapp.bizintegrity.logger.receiver.scheduler.ReceiverLoggingWorker } ]
+05-04 18:00:37.779 25480 25480 W FirebaseApp: Default FirebaseApp failed to initialize because no default options were found. This usually means that com.google.gms:google-services was not applied to your gradle project.
+05-04 18:00:37.779 25480 25480 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+05-04 18:00:37.781 22768 22768 D WM-Processor: IwH 1e116f66-fa29-4b21-ab5b-234e2cec2963 executed; reschedule = false
+05-04 18:00:37.781 22768 22768 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=1e116f66-fa29-4b21-ab5b-234e2cec2963, generation=0)
+05-04 18:00:37.782 22768 22768 D WM-SystemJobService: 1e116f66-fa29-4b21-ab5b-234e2cec2963 executed on JobScheduler
+05-04 18:00:37.784 22768 22803 D WM-GreedyScheduler: Cancelling work ID 6aa2ffd1-9b5f-4b00-8373-fea67bc1a709
+05-04 18:00:37.788 25480 25480 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10382; state: ENABLED
+05-04 18:00:37.792 22768 22803 D WM-SystemJobScheduler: Scheduling work ID 6aa2ffd1-9b5f-4b00-8373-fea67bc1a709Job ID 6490
+05-04 18:00:37.794 22768 22803 D WM-SystemJobScheduler: Scheduling work ID 1e116f66-fa29-4b21-ab5b-234e2cec2963Job ID 6486
+05-04 18:00:37.805 25480 25480 D nativeloader: Load libcrashhelper.so using class loader ns clns-4 (caller=/data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/base.apk!classes4.dex): dlopen failed: library "libcrashhelper.so" not found
+05-04 18:00:37.805 25480 25480 E GeckoCrashHelper: Could not create the crash helper pipes: java.lang.RuntimeException: Could not find mozglue path.
+05-04 18:00:37.805 25480 25480 E GeckoRuntime: Could not create the crash reporter IPC pipes
+05-04 18:00:37.806 25480 25499 I GeckoThread: preparing to run Gecko
+05-04 18:00:37.811  3064  7416 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10382; state: ENABLED
+05-04 18:00:37.811 25480 25499 D nativeloader: Load /data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/lib/arm64/libmozglue.so using class loader ns clns-4 (caller=/data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/base.apk!classes4.dex): ok
+05-04 18:00:37.818 25480 25499 W Settings: Setting animator_duration_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only global URI.
+05-04 18:00:37.819 22768 22803 D WM-GreedyScheduler: Cancelling work ID 1e116f66-fa29-4b21-ab5b-234e2cec2963
+05-04 18:00:37.822 25480 25480 I DefaultRemoteSettingsChecker: Register sync work for Remote Settings
+05-04 18:00:37.823 25480 25500 D nativeloader: Load /data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/lib/arm64/libjnidispatch.so using class loader ns clns-4 (caller=/data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/base.apk): ok
+05-04 18:00:37.827 22768 22803 D WM-NetworkStateTracker: Unregistering network callback
+05-04 18:00:37.833 25480 25499 E GeckoLibLoad: Load sqlite start
+05-04 18:00:37.838  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 18:00:37.844 25480 25499 E GeckoLibLoad: Load sqlite done
+05-04 18:00:37.844 25480 25499 E GeckoLibLoad: Load nss start
+05-04 18:00:37.844 25480 25499 E GeckoLibLoad: Load nss done
+05-04 18:00:37.845  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 18:00:37.870  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#6163)android.os.BinderProxy@4753d19@0
+05-04 18:00:37.871  3064  3367 V WindowManager: Finish Transition #6163: created at 05-04 18:00:37.545 collect-started=0.02ms request-sent=8.411ms started=10.532ms ready=32.276ms sent=34.108ms finished=326.034ms
+05-04 18:00:37.873  3827  3912 V WindowManagerShell: Track 0 became idle
+05-04 18:00:37.873  3827  3912 V WindowManagerShell: All active transition animations finished
+05-04 18:00:37.877 10800 10837 D Surface : Surface::disconnect
+05-04 18:00:37.877 10800 10837 D BufferQueueProducer: [VRI[GoogleDiscoverWindow]#34(BLAST Consumer)34](id:2a3000000022,api:1,p:10800,c:10800) disconnect: api 1
+05-04 18:00:37.878 20981 21011 D Surface : Surface::disconnect
+05-04 18:00:37.878 20981 21011 D BufferQueueProducer: [VRI[CustomizationPanelLauncher]#305(BLAST Consumer)305](id:51f500000451,api:1,p:20981,c:20981) disconnect: api 1
+05-04 18:00:37.917 25480 25499 E GeckoLibLoad: Loaded libs in 72.770833ms total, 0ms(14ms) user, 19ms(18ms) system, 156(164) faults
+05-04 18:00:37.918 25480 25499 W GeckoThread: zerdatime 1296499884 - runGecko
+05-04 18:00:37.920 25480 25480 W PushConfig: No firebase configuration found; cannot support push service.
+05-04 18:00:37.922 25480 25480 I Typeface: updateThemeFont new=Rookery-Regular;old=sans-serif;new=Rookery-Stacked;old=
+05-04 18:00:37.923  3064  4512 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10382. pid: 25480
+05-04 18:00:37.932 25480 25528 D CompatibilityChangeReporter: Compat change id reported: 263076149; UID 10382; state: ENABLED
+05-04 18:00:37.935 25480 25500 E ContileTopSitesUpdaterWorker: Failed to refresh Contile top sites
+05-04 18:00:37.935 25480 25500 E ContileTopSitesUpdaterWorker: java.lang.IllegalArgumentException: initialize must be called before trying to access the TopSitesProvider
+05-04 18:00:37.935 25480 25500 E ContileTopSitesUpdaterWorker: 	at mozilla.components.service.mars.contile.ContileTopSitesUpdaterWorker$doWork$2.invokeSuspend(ContileTopSitesUpdaterWorker.kt:75)
+05-04 18:00:37.935 25480 25500 E ContileTopSitesUpdaterWorker: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:9)
+05-04 18:00:37.935 25480 25500 E ContileTopSitesUpdaterWorker: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:115)
+05-04 18:00:37.935 25480 25500 E ContileTopSitesUpdaterWorker: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:4)
+05-04 18:00:37.935 25480 25500 E ContileTopSitesUpdaterWorker: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:3)
+05-04 18:00:37.935 25480 25500 E ContileTopSitesUpdaterWorker: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:94)
+05-04 18:00:37.936 25480 25529 I WM-WorkerWrapper: Worker result FAILURE for Work [ id=c1989f02-2359-4cd4-9d82-8080f4b35218, tags={ mozilla.components.service.mars.contile.ContileTopSitesUpdaterWorker,mozilla.components.service.contile.periodicWork } ]
+05-04 18:00:37.946 25480 25529 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10382; state: ENABLED
+05-04 18:00:37.946 25480 25529 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 10382; state: ENABLED
+05-04 18:00:37.947  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 10382; state: ENABLED
+05-04 18:00:37.947  3064  4512 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10382; state: ENABLED
+05-04 18:00:37.953 25480 25480 I MemoryController: onTrimMemory(40)
+05-04 18:00:37.954 25480 25480 I FenixApplication: onTrimMemory(), level=40, main=true
+05-04 18:00:37.977 25460 25460 D nativeloader: Configuring clns-4 for other apk /data/app/~~PHkhP4FB5DSbOo1wf-ltdg==/com.deepeye.musicpro.debug-XEt8BCMwpvn23YoemiOeLQ==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~PHkhP4FB5DSbOo1wf-ltdg==/com.deepeye.musicpro.debug-XEt8BCMwpvn23YoemiOeLQ==/lib/arm64:/data/app/~~PHkhP4FB5DSbOo1wf-ltdg==/com.deepeye.musicpro.debug-XEt8BCMwpvn23YoemiOeLQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.deepeye.musicpro.debug
+05-04 18:00:37.982 25460 25460 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+05-04 18:00:37.984 25460 25460 V GraphicsEnvironment: Currently set values for:
+05-04 18:00:37.984 25460 25460 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-04 18:00:37.984 25460 25460 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-04 18:00:37.984 25460 25460 V GraphicsEnvironment: ANGLE GameManagerService for com.deepeye.musicpro.debug: false
+05-04 18:00:37.984 25460 25460 V GraphicsEnvironment: com.deepeye.musicpro.debug is not listed in per-application setting
+05-04 18:00:37.984 25460 25460 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+05-04 18:00:37.999 25460 25460 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10502; state: ENABLED
+05-04 18:00:38.003 25460 25460 D SessionsDependencies: Dependency to CRASHLYTICS added.
+05-04 18:00:38.006 25460 25460 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+05-04 18:00:38.046 25460 25460 D nativeloader: Load /data/app/~~PHkhP4FB5DSbOo1wf-ltdg==/com.deepeye.musicpro.debug-XEt8BCMwpvn23YoemiOeLQ==/base.apk!/lib/arm64-v8a/libcrashlytics.so using class loader ns clns-4 (caller=/data/app/~~PHkhP4FB5DSbOo1wf-ltdg==/com.deepeye.musicpro.debug-XEt8BCMwpvn23YoemiOeLQ==/base.apk!classes18.dex): ok
+05-04 18:00:38.051 25460 25460 D CompatibilityChangeReporter: Compat change id reported: 3400644; UID 10502; state: ENABLED
+05-04 18:00:38.052 25460 25460 I FirebaseCrashlytics: Initializing Firebase Crashlytics 19.3.0 for com.deepeye.musicpro.debug
+05-04 18:00:38.061 25460 25460 D SessionsDependencies: Subscriber CRASHLYTICS registered.
+05-04 18:00:38.070 25460 25543 W .musicpro.debug: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3459175842]{PCL[/system/framework/org.apache.http.legacy.jar*365604909]#PCL[/system/framework/com.android.location.provider.jar*3994156537]#PCL[/system/framework/com.android.media.remotedisplay.jar*2114713712]} | DLC[];PCL[])
+05-04 18:00:38.071 25460 25543 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:127 and remote module com.google.android.gms.measurement.dynamite:189
+05-04 18:00:38.071 25460 25543 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 189
+05-04 18:00:38.071 25460 25543 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+05-04 18:00:38.076  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10502; state: ENABLED
+05-04 18:00:38.082 25460 25547 D libcrashlytics: Initializing libcrashlytics version 3.2.0
+05-04 18:00:38.084 25460 25543 W System  : ClassLoader referenced unknown path: 
+05-04 18:00:38.084 25460 25543 D nativeloader: Configuring clns-5 for other apk . target_sdk_version=37, uses_libraries=, library_path=/data/app/~~PUhE4W2uBXrEkGAAEBiq0w==/com.google.android.gms--Ck5ZGrrO_6TuPDI4fgJVw==/lib/arm64:/data/app/~~PUhE4W2uBXrEkGAAEBiq0w==/com.google.android.gms--Ck5ZGrrO_6TuPDI4fgJVw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+05-04 18:00:38.088 25460 25547 D libcrashlytics: Initializing native crash handling successful.
+05-04 18:00:38.097 25460 25460 D FirebaseSessions: Initializing Firebase Sessions SDK.
+05-04 18:00:38.098 25460 25460 I FirebaseInitProvider: FirebaseApp initialization successful
+05-04 18:00:38.100 25460 25543 W .musicpro.debug: ClassLoaderContext classpath element checksum mismatch. expected=3459175842, found=4293087933 (DLC[];PCL[base.apk*3459175842]{PCL[/system/framework/org.apache.http.legacy.jar*365604909]#PCL[/system/framework/com.android.location.provider.jar*3994156537]#PCL[/system/framework/com.android.media.remotedisplay.jar*2114713712]} | DLC[];PCL[/data/app/~~PHkhP4FB5DSbOo1wf-ltdg==/com.deepeye.musicpro.debug-XEt8BCMwpvn23YoemiOeLQ==/base.apk*4293087933])
+05-04 18:00:38.102 25460 25546 I FirebaseCrashlytics: No version control information found
+05-04 18:00:38.103 25460 25552 D FirebaseSessions: No Sessions subscribers. Not listening to lifecycle events.
+05-04 18:00:38.105 25460 25460 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+05-04 18:00:38.114 25460 25460 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+05-04 18:00:38.114 25460 25460 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+05-04 18:00:38.119 25460 25460 I CrashGuard: Enabling StrictMode penaltyDeath for debug build
+05-04 18:00:38.122 25460 25460 D nativeloader: Load /data/app/~~PHkhP4FB5DSbOo1wf-ltdg==/com.deepeye.musicpro.debug-XEt8BCMwpvn23YoemiOeLQ==/base.apk!/lib/arm64-v8a/libdeepeye_dsp.so using class loader ns clns-4 (caller=/data/app/~~PHkhP4FB5DSbOo1wf-ltdg==/com.deepeye.musicpro.debug-XEt8BCMwpvn23YoemiOeLQ==/base.apk!classes11.dex): ok
+05-04 18:00:38.122 25460 25460 I DeepEyeJNI: JNI_OnLoad called - Native library initializing...
+05-04 18:00:38.124 25460 25460 I Typeface: updateThemeFont new=Rookery-Regular;old=sans-serif;new=Rookery-Stacked;old=
+05-04 18:00:38.125  3064  4883 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10502. pid: 25460
+05-04 18:00:38.126 25460 25460 D StrictMode: StrictMode policy violation; ~duration=4 ms: android.os.strictmode.DiskReadViolation
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:574)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8330)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at libcore.io.IoUtils.canOpenReadOnly(IoUtils.java:331)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at dalvik.system.DexPathList$NativeLibraryElement.findNativeLibrary(DexPathList.java:889)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at dalvik.system.DexPathList.findLibrary(DexPathList.java:594)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at dalvik.system.BaseDexClassLoader.findLibrary(BaseDexClassLoader.java:371)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1071)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1019)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at java.lang.System.loadLibrary(System.java:1765)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at com.deepeye.musicpro.dsp.NativeDSP.<clinit>(NativeDSP.kt:93)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at com.deepeye.musicpro.DeepEyeApp.onCreate(DeepEyeApp.kt:79)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1316)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7208)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2360)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.os.Looper.loop(Looper.java:362)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 18:00:38.126 25460 25460 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 18:00:38.126 25460 25460 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: FATAL EXCEPTION: main
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: Process: com.deepeye.musicpro.debug, PID: 25460
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: java.lang.RuntimeException: StrictMode ThreadPolicy violation
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onThreadPolicyViolation(StrictMode.java:1900)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.lambda$handleViolationWithTimingAttempt$0(StrictMode.java:1814)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.$r8$lambda$AF9hglpXLeeg2_1ZxHCfZb2exEY(Unknown Source:0)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy$$ExternalSyntheticLambda1.run(Unknown Source:6)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1000)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:104)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:362)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: Caused by: android.os.strictmode.DiskReadViolation
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:574)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8330)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at libcore.io.IoUtils.canOpenReadOnly(IoUtils.java:331)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at dalvik.system.DexPathList$NativeLibraryElement.findNativeLibrary(DexPathList.java:889)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at dalvik.system.DexPathList.findLibrary(DexPathList.java:594)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findLibrary(BaseDexClassLoader.java:371)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1071)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1019)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at java.lang.System.loadLibrary(System.java:1765)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.NativeDSP.<clinit>(NativeDSP.kt:93)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at com.deepeye.musicpro.DeepEyeApp.onCreate(DeepEyeApp.kt:79)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1316)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7208)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2360)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 18:00:38.126 25460 25460 E AndroidRuntime: 	... 6 more
+05-04 18:00:38.126 25460 25460 E CrashGuard: FATAL EXCEPTION: main
+05-04 18:00:38.126 25460 25460 E CrashGuard: java.lang.RuntimeException: StrictMode ThreadPolicy violation
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onThreadPolicyViolation(StrictMode.java:1900)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.lambda$handleViolationWithTimingAttempt$0(StrictMode.java:1814)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.$r8$lambda$AF9hglpXLeeg2_1ZxHCfZb2exEY(Unknown Source:0)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy$$ExternalSyntheticLambda1.run(Unknown Source:6)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.Handler.handleCallback(Handler.java:1000)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.Handler.dispatchMessage(Handler.java:104)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.Looper.loop(Looper.java:362)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 18:00:38.126 25460 25460 E CrashGuard: Caused by: android.os.strictmode.DiskReadViolation
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:574)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8330)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at libcore.io.IoUtils.canOpenReadOnly(IoUtils.java:331)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at dalvik.system.DexPathList$NativeLibraryElement.findNativeLibrary(DexPathList.java:889)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at dalvik.system.DexPathList.findLibrary(DexPathList.java:594)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at dalvik.system.BaseDexClassLoader.findLibrary(BaseDexClassLoader.java:371)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1071)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1019)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at java.lang.System.loadLibrary(System.java:1765)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at com.deepeye.musicpro.dsp.NativeDSP.<clinit>(NativeDSP.kt:93)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at com.deepeye.musicpro.DeepEyeApp.onCreate(DeepEyeApp.kt:79)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1316)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7208)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2360)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 18:00:38.126 25460 25460 E CrashGuard: 	... 6 more
+05-04 18:00:38.126  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10502; state: ENABLED
+05-04 18:00:38.127 25460 25460 E CrashGuard: Crash report saved locally to /data/user/0/com.deepeye.musicpro.debug/cache/crash_logs/crash_1777897838126.log
+05-04 18:00:38.127  3064  4883 I ActivityManager: Killing 22901:com.google.android.contacts/u0a260 (adj 945, setSvc -10000): empty #31
+05-04 18:00:38.137  3064  3404 I libprocessgroup: Successfully killed process cgroup uid 10260 pid 22901 in 8ms
+05-04 18:00:38.145 25460 25555 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10502; state: ENABLED
+05-04 18:00:38.146 27765 20513 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.deepeye.musicpro.debug
+05-04 18:00:38.154  3064  4883 I AppsFilter: interaction: PackageSetting{83ba059 com.deepeye.musicpro.debug/10502} -> PackageSetting{a14941e com.motorola.motosignature.app/10134} BLOCKED
+05-04 18:00:38.155 25460 25564 I .musicpro.debug: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/apm; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-04 18:00:38.161 25460 25557 E .musicpro.debug: No package ID 6a found for resource ID 0x6a0b0013.
+05-04 18:00:38.165 25460 25557 I FA      : App measurement initialized, version: 165000
+05-04 18:00:38.165 25460 25557 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+05-04 18:00:38.165 25460 25557 I FA      : To enable faster debug mode event logging run:
+05-04 18:00:38.165 25460 25557 I FA      :   adb shell setprop debug.firebase.analytics.app com.deepeye.musicpro.debug
+05-04 18:00:38.171 25460 25557 W FA      : Failed to retrieve Firebase Instance Id
+05-04 18:00:38.174  3064  4512 I ActivityManager: appDiedLocked: app=ProcessRecord{573b109 22901:com.google.android.contacts/u0a260} thread=android.os.BinderProxy@f64e3f3 fromBinderDied=true isKilledByAm=true reason=null
+05-04 18:00:38.176  3064  4512 D RestartModeController: markWaitRestartAppIsSuicided null processName=com.google.android.contacts
+05-04 18:00:38.176  7521  7521 I adbd    : Remote process closed the socket (on MSG_PEEK)
+05-04 18:00:38.177  3064  4512 D ActivityTaskManager: handleAppDied: uid=10260,diedCount=1,lastDiedTime=727348999,forceStopUids=false
+05-04 18:00:38.177  3064  3368 D DisplayManagerService: Drop pending events for gone uid 10260
+05-04 18:00:38.179  1587  1587 I Zygote  : Process 22901 exited due to signal 9 (Killed)
+05-04 18:00:38.186 25460 25557 W FA      : Failed to retrieve Firebase Instance Id
+05-04 18:00:38.187 25460 25557 W FA      : Failed to retrieve Firebase Instance Id
+05-04 18:00:38.213 25460 25546 W FirebaseCrashlytics: Unable to read App Quality Sessions session id.
+05-04 18:00:38.222 25460 25546 D libcrashlytics: Initializing libcrashlytics version 3.2.0
+05-04 18:00:38.224 25460 25546 D libcrashlytics: Initializing native crash handling successful.
+05-04 18:00:38.228  3064 25567 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+05-04 18:00:38.228  3064 12172 W ActivityTaskManager:   Force finishing activity com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity
+05-04 18:00:38.229  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@255799f TransitionRequestInfo { type = 2, triggerTask = null, remoteTransition = null, displayChange = null, flags = 16 }
+05-04 18:00:38.229  3064 12172 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-04 18:00:38.231  3064  3368 I ActivityManager: 10502 handleShowAppErrorUi: shouldThottle=false,showFirstCrash=false,repeating=false,shouldForceShowError=false
+05-04 18:00:38.231 25460 25460 I Process : Sending signal. PID: 25460 SIG: 9
+05-04 18:00:38.242  1858  1858 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+05-04 18:00:38.252  3064  4512 I ActivityManager: appDiedLocked: app=ProcessRecord{5aebcfd 25460:com.deepeye.musicpro.debug/u0a502} thread=android.os.BinderProxy@3dc9fba fromBinderDied=true isKilledByAm=false reason=null
+05-04 18:00:38.252  7521  7521 I adbd    : Remote process closed the socket (on MSG_PEEK)
+05-04 18:00:38.252  3064  3404 I libprocessgroup: Successfully killed process cgroup uid 10502 pid 25460 in 0ms
+05-04 18:00:38.252  3064  4512 I ActivityManager: Process com.deepeye.musicpro.debug (pid 25460) has died: fg  TOP 
+05-04 18:00:38.252  3064  4512 D RestartModeController: markWaitRestartAppIsSuicided null processName=com.deepeye.musicpro.debug
+05-04 18:00:38.253  3064  3368 D DisplayManagerService: Drop pending events for gone uid 10502
+05-04 18:00:38.254  3064  4512 D ActivityTaskManager: handleAppDied: uid=10502,diedCount=1,lastDiedTime=730199490,forceStopUids=false
+05-04 18:00:38.255  1587  1587 I Zygote  : Process 25460 exited due to signal 9 (Killed)
+05-04 18:00:38.254  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 18:00:38.255  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 18:00:38.264 10800 10837 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 18:00:38.267 20981 21011 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 18:00:38.276 10800 10800 I bwmt    : onResume
+05-04 18:00:38.281 20981 21006 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+05-04 18:00:38.285  3064  3367 V WindowManager: Sent Transition #6164 createdAt=05-04 18:00:38.228 via request=TransitionRequestInfo { type = 2, triggerTask = null, remoteTransition = null, displayChange = null, flags = 16 }
+05-04 18:00:38.285  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-04 18:00:38.285  3064  3367 V WindowManager:     info={id=6164 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{9a2e0c9 Task{97f56a1 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0x5e976da sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{36e80bb Task{41ff166 #3782 type=standard A=10502:com.deepeye.musicpro.debug}}} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3782)/@0x8ad8eb5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0x9a1864e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 18:00:38.285  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@255799f: {id=6164 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@53b7131} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0x8b29eb5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@3b25016} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3782)/@0x566e94a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0x12210bb sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 18:00:38.286  3827  3912 V WindowManagerShell: Playing animation for (#6164)android.os.BinderProxy@255799f@0
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-04 18:00:38.286  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 18:00:38.286  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=6164 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@53b7131} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0x8b29eb5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@3b25016} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3782)/@0x566e94a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0x12210bb sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 18:00:38.286  3827  3912 D RemoteTransitionHandler: Found filterPair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 18:00:38.286  3827  3912 V WindowManagerShell:  Delegate animation for #6164 to RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }
+05-04 18:00:38.290  3064  4512 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:false duration ms: 0
+05-04 18:00:38.292  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 18:00:38.300  3827  3949 D Surface : Surface::disconnect
+05-04 18:00:38.300  3827  3949 D BufferQueueProducer: [VRI[debug]#7205(BLAST Consumer)7205](id:ef300001c2d,api:1,p:3827,c:3827) disconnect: api 1
+05-04 18:00:38.305  3064  5941 I ImeTracker: com.motorola.launcher3:975e999b: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR
+05-04 18:00:38.306  3064  5941 I ImeTracker: com.motorola.launcher3:975e999b: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-04 18:00:38.306  3827  3925 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@7704b24
+05-04 18:00:38.307  3064  4561 D CoreBackPreview: Window{851cc43 u0 Splash Screen com.deepeye.musicpro.debug EXITING}: Setting back callback null
+05-04 18:00:38.307  3064 12172 W InputManager-JNI: Input channel object '851cc43 Splash Screen com.deepeye.musicpro.debug (client)' was disposed without first being removed with the input manager!
+05-04 18:00:38.308 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+05-04 18:00:38.309 23155 23155 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-04 18:00:38.309 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.motorola.launcher3, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-04 18:00:38.309 23155 23155 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=false, bottom inset=102
+05-04 18:00:38.310 23155 23155 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-04 18:00:38.310  3064  5941 W PackageConfigPersister: App-specific configuration not found for packageName: com.motorola.launcher3 and userId: 0
+05-04 18:00:38.345 10311 10487 I ThermalEngine: ACTION: freeze_rule - Setting freeze_rule to 0
+05-04 18:00:38.345 10311 10487 I ThermalEngine: Monitor:INACTIVE:FREEZE-CHG:freeze_rule=1:DETECT-STANDBY=0
+05-04 18:00:38.345 10311 10487 I ThermalEngine: ACTION: override_c - Setting override_c to 0
+05-04 18:00:38.345 10311 10487 I ThermalEngine: Monitor:INACTIVE:OVERRIDE-CHG:internal_override=1:DETECT-STANDBY=0
+05-04 18:00:38.348 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  override_c
+05-04 18:00:38.348 10311 25575 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 18:00:38.348 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  freezing
+05-04 18:00:38.348 10311 25574 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 18:00:38.405 25480 25499 I Gecko:DumpUtils: Fifo watcher disabled via pref.
+05-04 18:00:38.405 25480 25480 W org.torproject.torbrowser: type=1400 audit(0.0:519239): avc:  denied  { bind } for  comm=4E65746C696E6B204D6F6E69746F72 scontext=u:r:untrusted_app:s0:c126,c257,c512,c768 tcontext=u:r:untrusted_app:s0:c126,c257,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=org.torproject.torbrowser
+05-04 18:00:38.516 25480 25499 E ject.torbrowser: hiddenapi: Accessing hidden field Ljava/lang/Boolean;->value:Z (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+05-04 18:00:38.516 25480 25499 E ject.torbrowser: hiddenapi: Accessing hidden field Ljava/lang/Integer;->value:I (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+05-04 18:00:38.516 25480 25499 E ject.torbrowser: hiddenapi: Accessing hidden field Ljava/lang/Long;->value:J (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+05-04 18:00:38.516 25480 25499 E ject.torbrowser: hiddenapi: Accessing hidden field Ljava/lang/Double;->value:D (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+05-04 18:00:38.522  3064 12172 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10382; state: DISABLED
+05-04 18:00:38.522  3064 12172 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10382; state: DISABLED
+05-04 18:00:38.522  3064 12172 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10382; state: DISABLED
+05-04 18:00:38.522  3064 12172 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10382; state: ENABLED
+05-04 18:00:38.522  3064  3380 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10382; state: ENABLED
+05-04 18:00:38.531  1587  1587 D Zygote  : Forked child process 25587
+05-04 18:00:38.531  3064  3380 I ActivityManager: Start proc 25587:org.torproject.torbrowser:tab34/u0a382 for service {org.torproject.torbrowser/org.mozilla.gecko.process.GeckoChildProcessServices$tab34}
+05-04 18:00:38.541 25587 25587 I orbrowser:tab34: Using CollectorTypeCMC GC.
+05-04 18:00:38.544  7521  7526 I adbd    : jdwp connection from 25587
+05-04 18:00:38.545 25587 25587 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-04 18:00:38.552  3064 12172 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10382; state: ENABLED
+05-04 18:00:38.554 25587 25587 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10382; state: ENABLED
+05-04 18:00:38.554 25587 25587 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10382; state: ENABLED
+05-04 18:00:38.558  1731  3697 I slpi    : STK3A5X ALS_OC: lux:1937.199951, last_ps:0[1257], CH0:1450, CH2:183, CH4:20, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:38.574  1798  5375 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-04 18:00:38.576  1798  5376 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-04 18:00:38.576  1798  5376 E ANDR-PERF-LM: AdaptiveLaunch: writeToDataBase() 64: Meter aborted or could not get meter data for this run
+05-04 18:00:38.597  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#6164)android.os.BinderProxy@255799f@0
+05-04 18:00:38.599  3064  3367 V WindowManager: Finish Transition #6164: created at 05-04 18:00:38.228 collect-started=0.045ms request-sent=0.068ms started=3.578ms ready=27.658ms sent=56.427ms finished=370.592ms
+05-04 18:00:38.602  3827  3912 V WindowManagerShell: Track 0 became idle
+05-04 18:00:38.602  3827  3912 V WindowManagerShell: All active transition animations finished
+05-04 18:00:38.603 25587 25587 D nativeloader: Configuring clns-4 for other apk /data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/lib/arm64:/data/app/~~0qwJXl7WYCjzs9UtpFxL1g==/org.torproject.torbrowser-eBYn6MnmBkWAZ0O6p8Wmww==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.torproject.torbrowser
+05-04 18:00:38.604  5894 16279 W MotoFreeForm: [FreeFormController] onTaskRemoved 3782
+05-04 18:00:38.604  5894 16279 W MotoFreeForm: [FreeFormController] onTaskRemoved 3782
+05-04 18:00:38.614 25587 25587 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+05-04 18:00:38.618 25587 25587 V GraphicsEnvironment: Currently set values for:
+05-04 18:00:38.618 25587 25587 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-04 18:00:38.618 25587 25587 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-04 18:00:38.618 25587 25587 V GraphicsEnvironment: ANGLE GameManagerService for org.torproject.torbrowser: false
+05-04 18:00:38.618 25587 25587 V GraphicsEnvironment: org.torproject.torbrowser is not listed in per-application setting
+05-04 18:00:38.619 25587 25587 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+05-04 18:00:38.632 25587 25587 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10382; state: ENABLED
+05-04 18:00:38.642 25587 25587 I Typeface: updateThemeFont new=Rookery-Regular;old=sans-serif;new=Rookery-Stacked;old=
+05-04 18:00:38.643  3064  5941 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10382. pid: 25587
+05-04 18:00:38.646 25587 25587 I ServiceChildProcess: onCreate
+05-04 18:00:38.647 25587 25606 I GeckoThread: preparing to run Gecko
+05-04 18:00:38.650 25587 25587 I FenixApplication: onTrimMemory(), level=40, main=false
+05-04 18:00:38.729  3064  3370 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{1cd96a8 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity t-1 f}}
+05-04 18:00:38.731  3064 12172 I ActivityManager: Killing 23395:com.android.keychain/1000 (adj 999, setSvc -10000): empty #31
+05-04 18:00:38.737  3064  3404 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 23395 in 5ms
+05-04 18:00:38.755  3064  4561 I ActivityManager: appDiedLocked: app=ProcessRecord{f889253 23395:com.android.keychain/1000} thread=android.os.BinderProxy@7eb3d04 fromBinderDied=true isKilledByAm=true reason=null
+05-04 18:00:38.755 14578 14578 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.semanticlocationhistory.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+05-04 18:00:38.756  1587  1587 I Zygote  : Process 23395 exited due to signal 9 (Killed)
+05-04 18:00:38.756  3064  4561 D RestartModeController: markWaitRestartAppIsSuicided null processName=com.android.keychain
+05-04 18:00:38.756  3064  4561 D ActivityTaskManager: handleAppDied: uid=1000,diedCount=1,lastDiedTime=723315970,forceStopUids=false
+05-04 18:00:38.924  1736  4259 D DlbDap2ProcessWithIht: process() called [19073000] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 18:00:39.061 25480 25627 I TorAndroidIntegration: Tor process c444d10a-c10e-48f1-8f59-42d89ef9086d started.
+05-04 18:00:39.057 25629 25629 W libTor.so: type=1400 audit(0.0:519240): avc:  denied  { search } for  name="tests" dev="dm-50" ino=108 scontext=u:r:untrusted_app:s0:c126,c257,c512,c768 tcontext=u:object_r:shell_test_data_file:s0 tclass=dir permissive=0 app=org.torproject.torbrowser
+05-04 18:00:39.057 25629 25629 W libTor.so: type=1400 audit(0.0:519241): avc:  denied  { search } for  name="tests" dev="dm-50" ino=108 scontext=u:r:untrusted_app:s0:c126,c257,c512,c768 tcontext=u:object_r:shell_test_data_file:s0 tclass=dir permissive=0 app=org.torproject.torbrowser
+05-04 18:00:39.057 25629 25629 W libTor.so: type=1400 audit(0.0:519242): avc:  denied  { search } for  name="tests" dev="dm-50" ino=108 scontext=u:r:untrusted_app:s0:c126,c257,c512,c768 tcontext=u:object_r:shell_test_data_file:s0 tclass=dir permissive=0 app=org.torproject.torbrowser
+05-04 18:00:39.057 25629 25629 W libTor.so: type=1400 audit(0.0:519243): avc:  denied  { search } for  name="tests" dev="dm-50" ino=108 scontext=u:r:untrusted_app:s0:c126,c257,c512,c768 tcontext=u:object_r:shell_test_data_file:s0 tclass=dir permissive=0 app=org.torproject.torbrowser
+05-04 18:00:39.111 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.111 [notice] Tor 0.4.9.6 (git-894a92ac2279747e) running on Linux with Libevent 2.1.12-stable, OpenSSL 3.5.6, Zlib 1.3.2, Liblzma N/A, Libzstd 1.5.7 and Unknown N/A as libc.
+05-04 18:00:39.111 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.111 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+05-04 18:00:39.111 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.111 [notice] Read configuration file "/data/user/0/org.torproject.torbrowser/cache/torrc-defaults".
+05-04 18:00:39.111 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.111 [notice] Configuration file "/data/user/0/org.torproject.torbrowser/files/.torrc" not present, using reasonable defaults.
+05-04 18:00:39.118 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.118 [notice] Opening Control listener on /data/user/0/org.torproject.torbrowser/files/tor-ipc/control-ipc
+05-04 18:00:39.118 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.118 [notice] Opened Control listener connection (ready) on /data/user/0/org.torproject.torbrowser/files/tor-ipc/control-ipc
+05-04 18:00:39.118 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.118 [notice] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+05-04 18:00:39.161 25480 25499 W GeckoEventDispatcher: No listener for GeckoView:Tor:ConnectStateChanged
+05-04 18:00:39.197 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+05-04 18:00:39.197 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:39.000 [notice] Bootstrapped 0% (starting): Starting
+05-04 18:00:39.394  1731  3697 I slpi    : STK3A5X ALS_OC: lux:2153.632080, last_ps:0[1258], CH0:1612, CH2:202, CH4:20, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:39.430 25480 25499 W GeckoEventDispatcher: No listener for GeckoView:BrowserAction:Update
+05-04 18:00:39.613  1798  2034 E ANDR-PERF-UTIL: Failed to update node /proc/sys/walt/sched_per_task_boost with value 25460 0
+05-04 18:00:39.613  1798  2034 E ANDR-PERF-OPTSHANDLER: can't reset task 25460
+05-04 18:00:39.613  1798  2034 E ANDR-PERF-RESOURCEQS: Failed to reset optimization [3, 32]
+05-04 18:00:39.662  1585 25561 W SocketClient: write error (Broken pipe)
+05-04 18:00:39.662  1585 25561 W resolv  : GetAddrInfoHandler::run: Error writing DNS result to client uid 10502 pid 25460: Broken pipe
+05-04 18:00:40.458 10311 10487 I ThermalEngine: Monitor:ACTIVE:MON-MSM-charge:battery=9:CHG-SENSORS=41168
+05-04 18:00:40.857  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 18:00:40.862  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 18:00:41.094  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.003/s)| Stream: 30.00fps 203.8Kbps
+05-04 18:00:41.094  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 18:00:41.603  1736  4259 D DlbDap2ProcessWithIht: process() called [19073500] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 18:00:42.111  1731  3697 I slpi    : STK3A5X ALS_OC: lux:1925.176025, last_ps:0[1258], CH0:1441, CH2:183, CH4:20, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:42.828 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:42.000 [notice] Delaying directory fetches: DisableNetwork is set.
+05-04 18:00:42.834 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:42.000 [notice] Starting with guard context "default"
+05-04 18:00:42.836 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:42.000 [notice] New control connection opened.
+05-04 18:00:42.836 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:42.000 [notice] New control connection opened.
+05-04 18:00:42.843 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:42.000 [notice] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+05-04 18:00:42.861 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:42.000 [notice] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+05-04 18:00:42.874 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:42.000 [notice] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+05-04 18:00:42.878  3974 26498 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 27 up
+05-04 18:00:42.885 25480 25627 I TorAndroidIntegration: [tor-c444d10a-c10e-48f1-8f59-42d89ef9086d] May 04 18:00:42.000 [notice] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+05-04 18:00:43.349 10311 10487 I ThermalEngine: Monitor:ACTIVE:FREEZE-CHG:freeze_rule=1:DETECT-STANDBY=1
+05-04 18:00:43.350 10311 10487 I ThermalEngine: ACTION: freeze_rule - Setting freeze_rule to 1
+05-04 18:00:43.350 10311 10487 I ThermalEngine: Monitor:ACTIVE:OVERRIDE-CHG:internal_override=1:DETECT-STANDBY=1
+05-04 18:00:43.351 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  freezing
+05-04 18:00:43.351 10311 10487 I ThermalEngine: ACTION: override_c - Setting override_c to 1
+05-04 18:00:43.351 10311 25650 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 18:00:43.351 10311 25649 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 18:00:43.352 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  override_c
+05-04 18:00:43.875  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 18:00:43.880  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 18:00:44.003 27765 20513 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+05-04 18:00:44.004 27765 20513 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-04 18:00:44.284  1736  4259 D DlbDap2ProcessWithIht: process() called [19074000] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 18:00:44.410  1731  3697 I slpi    : STK3A5X ALS_OC: lux:1716.760010, last_ps:0[1264], CH0:1285, CH2:163, CH4:20, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:45.246  1731  3697 I slpi    : STK3A5X ALS_OC: lux:1937.199951, last_ps:0[1252], CH0:1450, CH2:186, CH4:20, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:46.094  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.003/s)| Stream: 30.00fps 203.8Kbps
+05-04 18:00:46.095  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 18:00:46.301  3064  3379 D ActivityManager: unfreezing ProcessRecord{a52c340 31334:com.android.settings/1000}, reason = shouldNotFreeze_allowlist, adj = 915, adjType = cch-act, adjSource = null
+05-04 18:00:46.302  3064  3379 D ActivityManager: sync unfroze 31334 com.android.settings for 10
+05-04 18:00:46.303  3064  3064 I AS.SoundDoseHelper: onCheckMusicActive() mMusicActiveMs: 7236023
+05-04 18:00:46.521  4065 22260 I QImsService: VtDataUsageProvider : onSetAlert:2097152
+05-04 18:00:46.521  4065  4065 I QImsService: ImsServiceClassTracker : updateAlertQuota:newQuota=2097152,Remaining=2097152
+05-04 18:00:46.894  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 18:00:46.899  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 18:00:46.926  1736  4259 D DlbDap2ProcessWithIht: process() called [19074500] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 18:00:47.022  1731  3697 I slpi    : STK3A5X ALS_OC: lux:2134.927979, last_ps:0[1263], CH0:1598, CH2:206, CH4:21, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:47.753  1731  3697 I slpi    : STK3A5X ALS_OC: lux:2350.023926, last_ps:0[1258], CH0:1759, CH2:225, CH4:21, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:47.957  3064  3519 D ActivityManager: freezing 25480 org.torproject.torbrowser, reason = oom_cached
+05-04 18:00:47.962  1731  3697 I slpi    : STK3A5X ALS_OC: lux:2599.855957, last_ps:0[1258], CH0:1946, CH2:247, CH4:21, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:48.796  3064  3519 D ActivityManager: freezing 22768 com.whatsapp.w4b, reason = oom_cached
+05-04 18:00:48.801  3064  3519 D ActivityManager: freezing 25587 org.torproject.torbrowser:tab34, reason = oom_cached
+05-04 18:00:49.605  1736  4259 D DlbDap2ProcessWithIht: process() called [19075000] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 18:00:49.908  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 18:00:49.914  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 18:00:50.240  2313  2313 I CNSS    : cnss_open_log_file: directory /data/vendor/wifi/wlan_logs/ created
+05-04 18:00:50.887  1731  3697 I slpi    : STK3A5X ALS_OC: lux:2879.080078, last_ps:0[1262], CH0:2155, CH2:275, CH4:23, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 18:00:51.095  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.003/s)| Stream: 30.00fps 203.8Kbps
+05-04 18:00:51.095  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 18:00:51.330  3064  3971 W ProcessStats: Tracking association SourceState{6b48797 com.google.android.gms.persistent/10192 BTop #2029898} whose proc state 2 is better than process ProcessState{e07f7ec com.google.android.gms/10192 pkg=com.google.android.gms} proc state 14 (192 skipped)
+05-04 18:00:52.284  1736  4259 D DlbDap2ProcessWithIht: process() called [19075500] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)

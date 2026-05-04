@@ -1,0 +1,76 @@
+--------- beginning of system
+05-04 17:59:49.375  3064  5941 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.deepeye.musicpro.debug/.MainActivity} with LAUNCH_MULTIPLE from uid 2000 (startActivityAsUser) result code=-92
+--------- beginning of main
+05-04 17:59:49.555  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 17:59:49.560  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 17:59:50.928  1736  4259 D DlbDap2ProcessWithIht: process() called [19064000] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 17:59:51.087  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.003/s)| Stream: 30.00fps 203.8Kbps
+05-04 17:59:51.087  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 17:59:51.611  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 17:59:51.611  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 17:59:51.611  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 17:59:51.611  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 17:59:51.613  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 3a:97:ec:9e:9e:0d
+05-04 17:59:51.614  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 17:59:51.616 27765 25362 I NearbyConnections: Found BleAdvertisement [ 0x23 0x43 0x4b 0x58 0x54 0x11 0x32 0x9b 0x42 0xc7 0x63 0x88 0x5e 0x48 0x14 0x1e 0x93 0xaa 0x1d 0x00 0x02 0x13 0xbd ] (with EndpointId CKXT and EndpointInfo [ 0x32 0x9b 0x42 0xc7 0x63 0x88 0x5e 0x48 0x14 0x1e 0x93 0xaa 0x1d 0x00 0x02 0x13 0xbd ])
+05-04 17:59:51.616 27765 25362 I NearbyConnections: Unable to record discovered endpoint due to null currentDiscoveryPhase
+05-04 17:59:51.616 27765 25362 I NearbyConnections: ClientProxy(214472614 0p:com.google.android.gms.nearby.sharing) reporting onEndpointFound(CKXT)
+05-04 17:59:51.616 27765 25362 I NearbyConnections: ClientProxy(214472614) reporting onEndpointDistanceChanged(CKXT, UNKNOWN)
+05-04 17:59:51.617 27765 25395 I NearbySharing: NearbySharing Internal event EndpointDiscovered(endpointId=CKXT)
+05-04 17:59:51.652  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 17:59:51.652  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 17:59:51.804  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 17:59:52.572  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 17:59:52.577  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 17:59:52.578  3827  3827 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+05-04 17:59:53.607  1736  4259 D DlbDap2ProcessWithIht: process() called [19064500] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 17:59:53.991 27765 25362 I NearbyMediums: Found Fast Ble Advertisements :
+05-04 17:59:53.991 27765 25362 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x43 0x4b 0x58 0x54 0x11 0x32 0x9b 0x42 0xc7 0x63 0x88 0x5e 0x48 0x14 0x1e 0x93 0xaa 0x1d 0x00 0x02 0x13 0xbd ], deviceToken=[ 0x3e 0x82 ], rxAdvertisement=null } : 1 times.
+05-04 17:59:53.991 27765 25362 I NearbyMediums: Total 1 fast advertisements from 1 unique advertisers.
+05-04 17:59:53.991 27765 25362 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-04 17:59:55.589  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 17:59:55.594  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 17:59:55.595  3827  3827 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+05-04 17:59:56.087  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.003/s)| Stream: 30.00fps 203.8Kbps
+05-04 17:59:56.088  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 17:59:56.287  1736  4259 D DlbDap2ProcessWithIht: process() called [19065000] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 17:59:56.299  3064  3477 W ProcessStats: Tracking association SourceState{3c1221 com.google.android.googlequicksearchbox:googleapp/10228 BTop #2029810} whose proc state 2 is better than process ProcessState{7f8a66a com.google.android.adservices.api/10357 pkg=com.google.android.adservices.api} proc state 14 (30 skipped)
+05-04 17:59:58.609  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 17:59:58.614  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 17:59:58.848  3064  3746 I MdnsReplySender: Sending {MdnsReplyInfo: /[fe80::d08d:76ff:fe5f:4745%ap_br_wlan2]:5353 to /[ff02::fb]:5353, answers: 1, additionalAnswers: 6, knownAnswers: 0, sendDelayMs 37}
+05-04 17:59:58.909  3064  3746 I MdnsReplySender: Sending {MdnsReplyInfo: /10.85.181.71:5353 to /224.0.0.251:5353, answers: 1, additionalAnswers: 6, knownAnswers: 0, sendDelayMs 97}
+05-04 17:59:58.927  1736  4259 D DlbDap2ProcessWithIht: process() called [19065500] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 17:59:59.911  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 17:59:59.911  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 17:59:59.912  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 17:59:59.912  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 17:59:59.915  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 3a:97:ec:9e:9e:0d
+05-04 17:59:59.915  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 17:59:59.953  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 17:59:59.953  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 18:00:00.003  3827  3827 I FolioManager: Doze enabled: true
+05-04 18:00:00.003  3827  3827 D FolioManager: Use SystemUI folio UI.  isAodComponentEmpty: true  isADEnabled: true
+05-04 18:00:00.003  3827  3827 D FolioManager: updateTime
+05-04 18:00:00.103  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 18:00:01.088  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.003/s)| Stream: 30.00fps 203.8Kbps
+05-04 18:00:01.088  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 18:00:01.606  1736  4259 D DlbDap2ProcessWithIht: process() called [19066000] times with input format 0x22 and channel mask 0x3 (ProcessingMode=9), htEnable=0(0, 0, 0)
+05-04 18:00:01.626  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 18:00:01.628  3064  3064 D EnhancedConnectivityController: Wifi onCapabilitiesChanged
+05-04 18:00:01.629  3064  3064 D EnhancedConnectivityController: Default net onCapabilitiesChanged
+05-04 18:00:01.629  3064  3064 D EnhancedConnectivityController: updateDefaultNet:648
+05-04 18:00:01.629  3064  3064 D EnhancedConnectivityController: mayUpdateNotification: shouldShow=false,UidsBlocked=false, net info=net:648,ifName=wlan0,securityType=2,isDefault=true,ssid="Airtel_Siddhanth's wifi",notificationId=0
+05-04 18:00:01.632 27765 27776 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-04 18:00:01.632  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 18:00:01.632 27765 27776 W Binder  : reply too large data on java level: InterfaceDescriptor = null, code = 1
+05-04 18:00:01.632  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-04 18:00:01.632 27765 27776 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+05-04 18:00:01.633  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.2, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -60, Link speed: 292Mbps, Tx Link speed: 292Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 234Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5765MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -60 UnderlyingNetworks: Null]
+05-04 18:00:01.633  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-04 18:00:01.633  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-04 18:00:01.633  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-04 18:00:02.137 27765 20513 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-04 18:00:03.993 27765 20513 I NearbyMediums: Found Fast Ble Advertisements :
+05-04 18:00:03.993 27765 20513 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x43 0x4b 0x58 0x54 0x11 0x32 0x9b 0x42 0xc7 0x63 0x88 0x5e 0x48 0x14 0x1e 0x93 0xaa 0x1d 0x00 0x02 0x13 0xbd ], deviceToken=[ 0x3e 0x82 ], rxAdvertisement=null } : 1 times.
+05-04 18:00:03.993 27765 20513 I NearbyMediums: Total 1 fast advertisements from 1 unique advertisers.
+05-04 18:00:03.994 27765 20513 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
