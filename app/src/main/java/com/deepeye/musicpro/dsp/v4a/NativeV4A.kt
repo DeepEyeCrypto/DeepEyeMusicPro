@@ -86,12 +86,15 @@ class NativeV4A {
         @JvmStatic external fun getTubeWarmthNative(): Float
 
         init {
+            val oldPolicy = android.os.StrictMode.allowThreadDiskReads()
             try {
                 System.loadLibrary("deepeye_dsp")
                 libraryLoaded.set(true)
             } catch (error: UnsatisfiedLinkError) {
                 Logger.e("NativeV4A", "Native V4A unavailable", error)
                 libraryLoaded.set(false)
+            } finally {
+                android.os.StrictMode.setThreadPolicy(oldPolicy)
             }
         }
     }

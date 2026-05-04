@@ -31,6 +31,7 @@ object YoutubeMusicApi {
     }
     
     suspend fun getMadeForYou(token: String): Result<List<MusicMix>> = withContext(Dispatchers.IO) {
+        android.util.Log.d("YoutubeMusicApi", "getMadeForYou: Requested")
         runCatching {
             val body = requestBody().apply { put("browseId", "FEmade_for_you") }
             val request = Request.Builder()
@@ -40,8 +41,12 @@ object YoutubeMusicApi {
                 .build()
             
             val response = client.newCall(request).execute()
-            val json = JSONObject(response.body?.string() ?: "{}")
-            parseMixes(json)
+            val bodyString = response.body?.string() ?: "{}"
+            android.util.Log.d("YoutubeMusicApi", "getMadeForYou: Response received, length: ${bodyString.length}")
+            val json = JSONObject(bodyString)
+            val mixes = parseMixes(json)
+            android.util.Log.d("YoutubeMusicApi", "getMadeForYou: Parsed ${mixes.size} mixes")
+            mixes
         }
     }
     

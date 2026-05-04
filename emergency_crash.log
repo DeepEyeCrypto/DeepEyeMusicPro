@@ -1,0 +1,878 @@
+--------- beginning of system
+05-04 19:29:09.569  3064  7105 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10502; state: DISABLED
+05-04 19:29:09.569  3064  7105 W ActivityTaskManager: callingPackage for (uid=2000, pid=2962) has no WPC
+05-04 19:29:09.569  3064  7105 I SettingsAccessControlPolicy: isDeviceSettingsChangeDisabled: value -> false
+05-04 19:29:09.570  3064  7105 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 19:29:09.570  3064  7105 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+--------- beginning of main
+05-04 19:29:09.570  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 19:29:09.571  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 19:29:09.571  3064  7105 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 19:29:09.571  3064  7105 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 19:29:09.574  3064  7105 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-04 19:29:09.574  3064  7105 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-04 19:29:09.576  3064  7105 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:true duration ms: 0
+05-04 19:29:09.576  3064  7105 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-04 19:29:09.578  3064  7105 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-04 19:29:09.578  3064  7105 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (startActivityAsUser) (BAL_ALLOW_PERMISSION) result code=0
+05-04 19:29:09.580  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10502; state: DISABLED
+05-04 19:29:09.580  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10502; state: DISABLED
+05-04 19:29:09.580  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10502; state: DISABLED
+05-04 19:29:09.580  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10502; state: ENABLED
+05-04 19:29:09.581  3064  3380 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10502; state: ENABLED
+05-04 19:29:09.582  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 19:29:09.582  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 19:29:09.584  3827  3925 D ViewRootImpl: update {(0,0)(fillxfill) ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x10302fe
+05-04 19:29:09.584  3827  3925 D ViewRootImpl:   fl=NOT_FOCUSABLE NOT_TOUCHABLE LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR ALT_FOCUSABLE_IM HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+05-04 19:29:09.584  3827  3925 D ViewRootImpl:   pfl=SHOW_FOR_ALL_USERS FIT_INSETS_CONTROLLED
+05-04 19:29:09.584  3827  3925 D ViewRootImpl:   bhv=DEFAULT
+05-04 19:29:09.584  3827  3925 D ViewRootImpl:   fitSides=} by setView
+05-04 19:29:09.586  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@6124796 TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3798 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1301811544 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=false isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@b9c5f17} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{957af04 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-04 19:29:09.590  1587  1587 D Zygote  : Forked child process 2968
+05-04 19:29:09.591  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 19:29:09.591  3064  3380 I ActivityManager: Start proc 2968:com.deepeye.musicpro.debug/u0a502 for next-top-activity {com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}
+05-04 19:29:09.597  1858  1858 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+05-04 19:29:09.598  3064  7105 D CoreBackPreview: Window{b758650 u0 Splash Screen com.deepeye.musicpro.debug}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@87c4d4e, mPriority=0, mIsAnimationCallback=false}
+05-04 19:29:09.601  3827  3949 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 19:29:09.602  2968  2968 I .musicpro.debug: Late-enabling -Xcheck:jni
+05-04 19:29:09.609  3064  3367 V WindowManager: Sent Transition #6209 createdAt=05-04 19:29:09.570 via request=TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3798 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1301811544 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=true isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{RemoteToken{114f28b Task{3fe0576 #3798 type=standard A=10502:com.deepeye.musicpro.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{a53cf68 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-04 19:29:09.609  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-04 19:29:09.609  3064  3367 V WindowManager:     info={id=6209 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{114f28b Task{3fe0576 #3798 type=standard A=10502:com.deepeye.musicpro.debug}}} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3798)/@0xec21805 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{9a2e0c9 Task{97f56a1 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x5e976da sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:29:09.609  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@6124796: {id=6209 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@e04482b} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3798)/@0x553da9c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@2120488} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x1f7cca5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:29:09.609  3827  3912 V WindowManagerShell: Playing animation for (#6209)android.os.BinderProxy@6124796@0
+05-04 19:29:09.609  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-04 19:29:09.610  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 19:29:09.610  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=6209 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@e04482b} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3798)/@0x553da9c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@2120488} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x1f7cca5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  Delegate animation for #6209 to null
+05-04 19:29:09.610  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-04 19:29:09.610  3827  3912 V WindowManagerShell: start default transition animation, info = {id=6209 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@e04482b} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3798)/@0x553da9c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@2120488} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x1f7cca5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:29:09.610  3827  3912 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@209c246 animAttr=0x13 type=OPEN isEntrance=false
+05-04 19:29:09.610  3827  3912 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@20fbcd2 animAttr=0x12 type=OPEN isEntrance=true
+05-04 19:29:09.611  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-04 19:29:09.619  2968  2968 I .musicpro.debug: Using CollectorTypeCMC GC.
+05-04 19:29:09.622  7521  7526 I adbd    : jdwp connection from 2968
+05-04 19:29:09.624  2968  2968 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-04 19:29:09.629  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 19:29:09.639  2968  2968 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10502; state: ENABLED
+05-04 19:29:09.640  2968  2968 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10502; state: ENABLED
+05-04 19:29:09.671 16948 17026 D CmdCenter: - RowBase2: sPrevModStatus: 1, modStatus: 1
+05-04 19:29:09.671 16948 17026 D CmdCenter: - RowBase2: sPrevBatStatus: 2, status: 2
+05-04 19:29:09.671 16948 17026 D CmdCenter: - RowBase2: sPrevChargeRate = 1, new = 1
+05-04 19:29:09.671 16948 17026 D CmdCenter: - RowBase2: sPrevPlugType: 2 plugType: 2
+05-04 19:29:09.681 10800 10800 I bwmt    : onPause
+05-04 19:29:09.896  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#6209)android.os.BinderProxy@6124796@0
+05-04 19:29:09.897  3064  3367 V WindowManager: Finish Transition #6209: created at 05-04 19:29:09.570 collect-started=0.021ms request-sent=8.547ms started=21.744ms ready=36.456ms sent=38.645ms finished=327.28ms
+05-04 19:29:09.898  3827  3912 V WindowManagerShell: Track 0 became idle
+05-04 19:29:09.898  3827  3912 V WindowManagerShell: All active transition animations finished
+05-04 19:29:09.903 10800 10837 D Surface : Surface::disconnect
+05-04 19:29:09.903 10800 10837 D BufferQueueProducer: [VRI[GoogleDiscoverWindow]#51(BLAST Consumer)51](id:2a3000000033,api:1,p:10800,c:10800) disconnect: api 1
+05-04 19:29:09.905 20981 21011 D Surface : Surface::disconnect
+05-04 19:29:09.905 20981 21011 D BufferQueueProducer: [VRI[CustomizationPanelLauncher]#322(BLAST Consumer)322](id:51f500000474,api:1,p:20981,c:20981) disconnect: api 1
+05-04 19:29:09.950  2968  2968 D nativeloader: Configuring clns-4 for other apk /data/app/~~eeQ5pQBIEa9KM81_MsFlPQ==/com.deepeye.musicpro.debug-J7rQjlSow9qfvPX2mqsb6w==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~eeQ5pQBIEa9KM81_MsFlPQ==/com.deepeye.musicpro.debug-J7rQjlSow9qfvPX2mqsb6w==/lib/arm64:/data/app/~~eeQ5pQBIEa9KM81_MsFlPQ==/com.deepeye.musicpro.debug-J7rQjlSow9qfvPX2mqsb6w==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.deepeye.musicpro.debug
+05-04 19:29:09.954  2968  2968 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+05-04 19:29:09.956  2968  2968 V GraphicsEnvironment: Currently set values for:
+05-04 19:29:09.956  2968  2968 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-04 19:29:09.956  2968  2968 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-04 19:29:09.956  2968  2968 V GraphicsEnvironment: ANGLE GameManagerService for com.deepeye.musicpro.debug: false
+05-04 19:29:09.956  2968  2968 V GraphicsEnvironment: com.deepeye.musicpro.debug is not listed in per-application setting
+05-04 19:29:09.956  2968  2968 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+05-04 19:29:09.970  2968  2968 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10502; state: ENABLED
+05-04 19:29:09.975  2968  2968 D SessionsDependencies: Dependency to CRASHLYTICS added.
+05-04 19:29:09.977  2968  2968 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+05-04 19:29:10.017  2968  2968 D nativeloader: Load /data/app/~~eeQ5pQBIEa9KM81_MsFlPQ==/com.deepeye.musicpro.debug-J7rQjlSow9qfvPX2mqsb6w==/base.apk!/lib/arm64-v8a/libcrashlytics.so using class loader ns clns-4 (caller=/data/app/~~eeQ5pQBIEa9KM81_MsFlPQ==/com.deepeye.musicpro.debug-J7rQjlSow9qfvPX2mqsb6w==/base.apk!classes18.dex): ok
+05-04 19:29:10.022  2968  2968 D CompatibilityChangeReporter: Compat change id reported: 3400644; UID 10502; state: ENABLED
+05-04 19:29:10.023  2968  2968 I FirebaseCrashlytics: Initializing Firebase Crashlytics 19.3.0 for com.deepeye.musicpro.debug
+05-04 19:29:10.032  2968  2968 D SessionsDependencies: Subscriber CRASHLYTICS registered.
+05-04 19:29:10.040  2968  3048 W .musicpro.debug: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3459175842]{PCL[/system/framework/org.apache.http.legacy.jar*365604909]#PCL[/system/framework/com.android.location.provider.jar*3994156537]#PCL[/system/framework/com.android.media.remotedisplay.jar*2114713712]} | DLC[];PCL[])
+05-04 19:29:10.041  2968  3048 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:127 and remote module com.google.android.gms.measurement.dynamite:189
+05-04 19:29:10.041  2968  3048 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 189
+05-04 19:29:10.041  2968  3048 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+05-04 19:29:10.048  2968  3048 W System  : ClassLoader referenced unknown path: 
+05-04 19:29:10.049  2968  3048 D nativeloader: Configuring clns-5 for other apk . target_sdk_version=37, uses_libraries=, library_path=/data/app/~~PUhE4W2uBXrEkGAAEBiq0w==/com.google.android.gms--Ck5ZGrrO_6TuPDI4fgJVw==/lib/arm64:/data/app/~~PUhE4W2uBXrEkGAAEBiq0w==/com.google.android.gms--Ck5ZGrrO_6TuPDI4fgJVw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+05-04 19:29:10.051  2968  3059 D libcrashlytics: Initializing libcrashlytics version 3.2.0
+05-04 19:29:10.053  2968  3059 D libcrashlytics: Initializing native crash handling successful.
+05-04 19:29:10.055  2968  3048 W .musicpro.debug: ClassLoaderContext classpath element checksum mismatch. expected=3459175842, found=146493634 (DLC[];PCL[base.apk*3459175842]{PCL[/system/framework/org.apache.http.legacy.jar*365604909]#PCL[/system/framework/com.android.location.provider.jar*3994156537]#PCL[/system/framework/com.android.media.remotedisplay.jar*2114713712]} | DLC[];PCL[/data/app/~~eeQ5pQBIEa9KM81_MsFlPQ==/com.deepeye.musicpro.debug-J7rQjlSow9qfvPX2mqsb6w==/base.apk*146493634])
+05-04 19:29:10.063  2968  3061 I FirebaseCrashlytics: No version control information found
+05-04 19:29:10.067  2968  2968 D FirebaseSessions: Initializing Firebase Sessions SDK.
+05-04 19:29:10.067  2968  2968 I FirebaseInitProvider: FirebaseApp initialization successful
+05-04 19:29:10.068  2968  3066 D FirebaseSessions: No Sessions subscribers. Not listening to lifecycle events.
+05-04 19:29:10.074  2968  2968 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+05-04 19:29:10.075 10311 10487 I ThermalEngine: ACTION: freeze_rule - Setting freeze_rule to 0
+05-04 19:29:10.075 10311 10487 I ThermalEngine: Monitor:INACTIVE:FREEZE-CHG:freeze_rule=1:DETECT-STANDBY=0
+05-04 19:29:10.075 10311 10487 I ThermalEngine: ACTION: override_c - Setting override_c to 0
+05-04 19:29:10.075 10311 10487 I ThermalEngine: Monitor:INACTIVE:OVERRIDE-CHG:internal_override=1:DETECT-STANDBY=0
+05-04 19:29:10.075 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  freezing
+05-04 19:29:10.076 10311  3081 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 19:29:10.076 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  override_c
+05-04 19:29:10.076 10311  3085 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 19:29:10.080 27765  2688 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.deepeye.musicpro.debug
+05-04 19:29:10.083  2968  2968 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+05-04 19:29:10.083  2968  2968 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+05-04 19:29:10.084  2968  3087 I .musicpro.debug: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/apm; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-04 19:29:10.086  2968  2968 I CrashGuard: Enabling StrictMode penaltyDeath for debug build
+05-04 19:29:10.088  2968  2968 D nativeloader: Load /data/app/~~eeQ5pQBIEa9KM81_MsFlPQ==/com.deepeye.musicpro.debug-J7rQjlSow9qfvPX2mqsb6w==/base.apk!/lib/arm64-v8a/libdeepeye_dsp.so using class loader ns clns-4 (caller=/data/app/~~eeQ5pQBIEa9KM81_MsFlPQ==/com.deepeye.musicpro.debug-J7rQjlSow9qfvPX2mqsb6w==/base.apk!classes11.dex): ok
+05-04 19:29:10.088  2968  2968 I DeepEyeJNI: JNI_OnLoad called - Native library initializing...
+05-04 19:29:10.090  2968  2968 I Typeface: updateThemeFont new=Rookery-Regular;old=sans-serif;new=Rookery-Stacked;old=
+05-04 19:29:10.090  3064  3971 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10502. pid: 2968
+05-04 19:29:10.092  2968  3069 E .musicpro.debug: No package ID 6a found for resource ID 0x6a0b0013.
+05-04 19:29:10.094  2968  3069 I FA      : App measurement initialized, version: 165000
+05-04 19:29:10.094  2968  3069 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+05-04 19:29:10.094  2968  3069 I FA      : To enable faster debug mode event logging run:
+05-04 19:29:10.094  2968  3069 I FA      :   adb shell setprop debug.firebase.analytics.app com.deepeye.musicpro.debug
+05-04 19:29:10.096  2968  3069 E FA      : Invalid google_app_id. Firebase Analytics disabled. See https://goo.gl/NAOOOI. provided id: 1:1234567890:android:debug
+05-04 19:29:10.096  2968  3069 E FA      : Uploading is not possible. App measurement disabled
+05-04 19:29:10.111  2968  2968 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+05-04 19:29:10.111  2968  3088 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10502; state: ENABLED
+05-04 19:29:10.150  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:29:10.150  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:29:10.150  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:29:10.157  2968  2968 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10502; state: ENABLED
+05-04 19:29:10.162  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:29:10.162  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:29:10.162  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:29:10.176  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:29:10.176  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:29:10.176  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:29:10.192  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:29:10.192  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:29:10.192  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:29:10.196  2968  2968 I .musicpro.debug: hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-04 19:29:10.202  2968  2968 I MediaController: Init 25a612e [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-04 19:29:10.204  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:29:10.204  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:29:10.204  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:29:10.216  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:29:10.216  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:29:10.216  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:29:10.229  2968  2968 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10502; state: ENABLED
+05-04 19:29:10.343  2968  3069 I FA      : Tag Manager is not found and thus will not be used
+05-04 19:29:10.345  2968  2968 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10502; state: DISABLED
+05-04 19:29:10.349  2968  2968 D ViewRootImpl: update {(0,0)(fillxfill) sim={adjust=resize forwardNavigation} ty=BASE_APPLICATION wanim=0x10302fe
+05-04 19:29:10.349  2968  2968 D ViewRootImpl:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+05-04 19:29:10.349  2968  2968 D ViewRootImpl:   pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+05-04 19:29:10.349  2968  2968 D ViewRootImpl:   bhv=DEFAULT
+05-04 19:29:10.349  2968  2968 D ViewRootImpl:   fitSides=} by setView
+05-04 19:29:10.355  2968  2968 I Choreographer: Skipped 39 frames!  The application may be doing too much work on its main thread.
+05-04 19:29:10.368  3064  3971 D CoreBackPreview: Window{d136f6a u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@255c5d1, mPriority=0, mIsAnimationCallback=false}
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: QUALCOMM build                   : dad4038ba6, If56d4a5bb8
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: Build Date                       : 07/28/23
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.36.08.24
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: Local Branch                     : 
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.1.0.11.00.00.766.892
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: Remote Branch                    : NONE
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: Build Config                     : S P 12.1.1 AArch64
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+05-04 19:29:10.384  2968  3107 I AdrenoGLES-0: Driver Version                   : 0615.74
+05-04 19:29:10.386  2968  3107 I AdrenoGLES-0: PFP: 0x01730158, ME: 0x00000000
+05-04 19:29:10.395  2968  3107 I OpenGLRenderer: setGrContext nullptr-->validptr
+05-04 19:29:10.396  2968  3107 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 19:29:10.436  3064  3371 I LaunchCheckinHandler: MotoDisplayed com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity,cp,ca,849
+05-04 19:29:10.436  3064  3371 W ActivityTaskManager: activity boost didn't release as expected
+05-04 19:29:10.439  3064  3367 I ActivityTaskManager: Displayed com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity for user 0: +867ms
+05-04 19:29:10.443  2968  2968 I ExoPlayerImpl: Init d6e0f15 [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-04 19:29:10.451  1852  8583 W AidlConversionCppNdk: legacy2aidl_audio_channel_mask_t_AudioChannelLayout: no AudioChannelLayout found for legacy output audio_channel_mask_t value 0x10
+05-04 19:29:10.452  2968  2968 W AidlConversionCppNdk: aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+05-04 19:29:10.457  2968  2968 I .musicpro.debug: hiddenapi: Accessing hidden method Landroid/media/AudioTrack;->getLatency()I (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-04 19:29:10.477  2968  2968 D CompatibilityChangeReporter: Compat change id reported: 263076149; UID 10502; state: ENABLED
+05-04 19:29:10.484  2968  2968 I MediaSessionImpl: Init 13e7dc4 [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-04 19:29:10.489  2968  2968 W MediaSessionCompat: Couldn't find a unique registered media button receiver in the given context.
+05-04 19:29:10.491  3064  3971 I MediaSessionStack: addSession to bottom of stack | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-04 19:29:10.492  3827  3827 D MotoMediaSessionUtils: onActiveSessionsChanged - controllers size: 1 mActiveControllers size: 1
+05-04 19:29:10.492  7916  8010 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@ee3f0c7
+05-04 19:29:10.492  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.492  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.492  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.492  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.492  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.492  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.492  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.492  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.492  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.493  3827  3827 D MotoMediaSessionUtils: Final controllers count: 1
+05-04 19:29:10.494  7916  8010 V Avrcp_ext: ActiveSession: MediaController (com.google.android.youtube@2b5f8f9) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.494  7916  8010 V Avrcp_ext: isBrowseSupported for com.google.android.youtube: false
+05-04 19:29:10.494  7916  8010 D Avrcp_ext: Adding media player info for com.google.android.youtube with id 3
+05-04 19:29:10.495  7916  8010 D Avrcp_ext: update #3:MediaPlayerInfo com.google.android.youtube (as 'YouTube') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (com.google.android.youtube@2b5f8f9) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.495  7916  8010 V Avrcp_ext: updateNewIds: Addressed:3 to 3, Browse:-1 to -1
+05-04 19:29:10.499  3827  3827 D MotoMediaSessionUtils: onActiveSessionsChanged - controllers size: 2 mActiveControllers size: 1
+05-04 19:29:10.500  3827  3827 D MotoMediaSessionUtils: Final controllers count: 1
+05-04 19:29:10.501  7916  8010 D Avrcp_ext: updateCurrentController: MediaController (com.google.android.youtube@f313bbc) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai to MediaController (com.google.android.youtube@2b5f8f9) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.503  2968  2968 D StrictMode: StrictMode policy violation; ~duration=64 ms: android.os.strictmode.DiskReadViolation
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:574)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8330)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at libcore.io.IoUtils.canOpenReadOnly(IoUtils.java:331)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at dalvik.system.DexPathList$NativeLibraryElement.findNativeLibrary(DexPathList.java:889)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at dalvik.system.DexPathList.findLibrary(DexPathList.java:594)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at dalvik.system.BaseDexClassLoader.findLibrary(BaseDexClassLoader.java:371)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1071)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1019)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at java.lang.System.loadLibrary(System.java:1765)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.deepeye.musicpro.dsp.v4a.NativeV4A.<clinit>(NativeV4A.kt:90)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.deepeye.musicpro.dsp.v4a.V4AEngine.<init>(V4AEngine.kt:15)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.deepeye.musicpro.DeepEyeApp.v4aEngine_delegate$lambda$9(DeepEyeApp.kt:57)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.deepeye.musicpro.DeepEyeApp.$r8$lambda$SrxmE71MSbLx-2C5Mx43hgxol_E(Unknown Source:0)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.deepeye.musicpro.DeepEyeApp$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.deepeye.musicpro.DeepEyeApp.getV4aEngine(DeepEyeApp.kt:57)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.deepeye.musicpro.service.MusicPlayerService.onCreate(MusicPlayerService.kt:67)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4795)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2388)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.os.Looper.loop(Looper.java:362)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 19:29:10.503  2968  2968 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 19:29:10.503  2968  2968 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: FATAL EXCEPTION: main
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: Process: com.deepeye.musicpro.debug, PID: 2968
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: java.lang.RuntimeException: StrictMode ThreadPolicy violation
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onThreadPolicyViolation(StrictMode.java:1900)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.lambda$handleViolationWithTimingAttempt$0(StrictMode.java:1814)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.$r8$lambda$AF9hglpXLeeg2_1ZxHCfZb2exEY(Unknown Source:0)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy$$ExternalSyntheticLambda1.run(Unknown Source:6)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1000)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:104)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:362)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: Caused by: android.os.strictmode.DiskReadViolation
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:574)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8330)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at libcore.io.IoUtils.canOpenReadOnly(IoUtils.java:331)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at dalvik.system.DexPathList$NativeLibraryElement.findNativeLibrary(DexPathList.java:889)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at dalvik.system.DexPathList.findLibrary(DexPathList.java:594)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findLibrary(BaseDexClassLoader.java:371)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1071)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1019)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at java.lang.System.loadLibrary(System.java:1765)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.v4a.NativeV4A.<clinit>(NativeV4A.kt:90)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.v4a.V4AEngine.<init>(V4AEngine.kt:15)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.deepeye.musicpro.DeepEyeApp.v4aEngine_delegate$lambda$9(DeepEyeApp.kt:57)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.deepeye.musicpro.DeepEyeApp.$r8$lambda$SrxmE71MSbLx-2C5Mx43hgxol_E(Unknown Source:0)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.deepeye.musicpro.DeepEyeApp$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.deepeye.musicpro.DeepEyeApp.getV4aEngine(DeepEyeApp.kt:57)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at com.deepeye.musicpro.service.MusicPlayerService.onCreate(MusicPlayerService.kt:67)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4795)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2388)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 19:29:10.503  2968  2968 E AndroidRuntime: 	... 6 more
+05-04 19:29:10.503  2968  2968 E CrashGuard: FATAL EXCEPTION: main
+05-04 19:29:10.503  2968  2968 E CrashGuard: java.lang.RuntimeException: StrictMode ThreadPolicy violation
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onThreadPolicyViolation(StrictMode.java:1900)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.lambda$handleViolationWithTimingAttempt$0(StrictMode.java:1814)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.$r8$lambda$AF9hglpXLeeg2_1ZxHCfZb2exEY(Unknown Source:0)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy$$ExternalSyntheticLambda1.run(Unknown Source:6)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.Handler.handleCallback(Handler.java:1000)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.Handler.dispatchMessage(Handler.java:104)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.Looper.loop(Looper.java:362)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 19:29:10.503  2968  2968 E CrashGuard: Caused by: android.os.strictmode.DiskReadViolation
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:574)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8330)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at libcore.io.IoUtils.canOpenReadOnly(IoUtils.java:331)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at dalvik.system.DexPathList$NativeLibraryElement.findNativeLibrary(DexPathList.java:889)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at dalvik.system.DexPathList.findLibrary(DexPathList.java:594)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at dalvik.system.BaseDexClassLoader.findLibrary(BaseDexClassLoader.java:371)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1071)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1019)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at java.lang.System.loadLibrary(System.java:1765)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.deepeye.musicpro.dsp.v4a.NativeV4A.<clinit>(NativeV4A.kt:90)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.deepeye.musicpro.dsp.v4a.V4AEngine.<init>(V4AEngine.kt:15)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.deepeye.musicpro.DeepEyeApp.v4aEngine_delegate$lambda$9(DeepEyeApp.kt:57)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.deepeye.musicpro.DeepEyeApp.$r8$lambda$SrxmE71MSbLx-2C5Mx43hgxol_E(Unknown Source:0)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.deepeye.musicpro.DeepEyeApp$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.deepeye.musicpro.DeepEyeApp.getV4aEngine(DeepEyeApp.kt:57)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at com.deepeye.musicpro.service.MusicPlayerService.onCreate(MusicPlayerService.kt:67)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4795)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2388)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 19:29:10.503  2968  2968 E CrashGuard: 	... 6 more
+05-04 19:29:10.504  7916  8010 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.google.android.youtube@2b5f8f9) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.504  7916  8010 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 0 A2dp State: 11 mAudioPlaybackIsActive: false
+05-04 19:29:10.504  7916  8010 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.504  2968  2968 E CrashGuard: Crash report saved locally to /data/user/0/com.deepeye.musicpro.debug/cache/crash_logs/crash_1777903150504.log
+05-04 19:29:10.506  7916  8010 D Avrcp_ext: overwrite album_artist :Punya Prasun Bajpaiif album is blank
+05-04 19:29:10.506  7916  8010 D AvrcpBipRsp:  getImgHandle device :17:3F:CF:BE:B9:01 data :android.media.MediaMetadata@e49e1816
+05-04 19:29:10.506  7916  8010 W AvrcpBipRsp: getImgHandle bipSm null
+05-04 19:29:10.506  7916  8010 D Avrcp_ext:  getImgHandle device:17:3F:CF:BE:B9:01 data:android.media.MediaMetadata@e49e1816 isKeyContains true Handle 
+05-04 19:29:10.507  7916  8010 I Avrcp_ext: device found at index 0
+05-04 19:29:10.507  7916  8010 V Avrcp_ext: updateCurrentMediaState: addr: [B@a80fad8
+05-04 19:29:10.507  7916  8010 V Avrcp_ext: Media update: id -1➡-1? [MediaAttributes: B⋯. - P⋯i by P⋯i (1329000 0/0) - ] : [MediaAttributes: B⋯. - P⋯i by P⋯i (1329000 0/0) - ]
+05-04 19:29:10.507  7916  8010 D Avrcp_ext: isPackageNameValid: browsedPackage = com.google.android.youtubeisValid = true
+05-04 19:29:10.507  7916  8010 V Avrcp_ext: isBrowseSupported for com.google.android.youtube: false
+05-04 19:29:10.507  7916  8010 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = false
+05-04 19:29:10.507  7916  8010 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null} device: null
+05-04 19:29:10.508  7916  8010 D BroadcastService: getBroadcastAddress
+05-04 19:29:10.508  7916  8010 D BroadcastService: isBroadcastActive: Broadcast is turned to off
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: Device: Ejaj’s AirPods : old state: PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}, state=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: old state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}, new state= PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.508  7916  8010 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@ee3f0c7
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: 17:3F:CF:BE:B9:01
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: updatePlaybackState (0): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.508  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.508  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.508  7916  8010 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-04 19:29:10.508  7916  8010 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: 17:3F:CF:BE:B9:01
+05-04 19:29:10.508  7916  8010 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-04 19:29:10.508  7916  8010 D Avrcp_ext: isAdmStable = true activeAbsAddr = 17:3F:CF:BE:B9:01 device = null
+05-04 19:29:10.508  7916  8010 V APM: MediaControlManager: onPlaybackStateChanged
+05-04 19:29:10.508  7916  8010 W McpService: updatePlaybackState state PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.508  7916  8010 W McpService: updatePlaybackState mState: 2 state: 2
+05-04 19:29:10.508  7916  8010 W Avrcp_ext: updated player state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}to MCP module also
+05-04 19:29:10.510  7916  8010 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.google.android.youtube@2b5f8f9) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.510  7916  8010 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 0 A2dp State: 11 mAudioPlaybackIsActive: false
+05-04 19:29:10.510  7916  8010 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.511  7916  8010 D Avrcp_ext: overwrite album_artist :Punya Prasun Bajpaiif album is blank
+05-04 19:29:10.511  7916  8010 D AvrcpBipRsp:  getImgHandle device :17:3F:CF:BE:B9:01 data :android.media.MediaMetadata@e49e1816
+05-04 19:29:10.511  7916  8010 W AvrcpBipRsp: getImgHandle bipSm null
+05-04 19:29:10.511  7916  8010 D Avrcp_ext:  getImgHandle device:17:3F:CF:BE:B9:01 data:android.media.MediaMetadata@e49e1816 isKeyContains true Handle 
+05-04 19:29:10.512  7916  8010 I Avrcp_ext: device found at index 0
+05-04 19:29:10.512  7916  8010 V Avrcp_ext: updateCurrentMediaState: addr: [B@676ec84
+05-04 19:29:10.512  7916  8010 V Avrcp_ext: Media update: id -1➡-1? [MediaAttributes: B⋯. - P⋯i by P⋯i (1329000 0/0) - ] : [MediaAttributes: B⋯. - P⋯i by P⋯i (1329000 0/0) - ]
+05-04 19:29:10.512  7916  8010 D Avrcp_ext: isPackageNameValid: browsedPackage = com.google.android.youtubeisValid = true
+05-04 19:29:10.512  7916  8010 V Avrcp_ext: isBrowseSupported for com.google.android.youtube: false
+05-04 19:29:10.512  7916  8010 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = false
+05-04 19:29:10.512  7916  8010 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null} device: null
+05-04 19:29:10.513  7916  8010 D BroadcastService: getBroadcastAddress
+05-04 19:29:10.513  7916  8010 D BroadcastService: isBroadcastActive: Broadcast is turned to off
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: Device: Ejaj’s AirPods : old state: PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}, state=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: old state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}, new state= PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.513  7916  8010 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@ee3f0c7
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: 17:3F:CF:BE:B9:01
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: updatePlaybackState (0): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.513  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.513  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.513  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.513  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.513  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.513  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.513  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.514  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.514  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.514  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.514  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.514  7916  8010 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-04 19:29:10.514  7916  8010 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: 17:3F:CF:BE:B9:01
+05-04 19:29:10.514  7916  8010 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-04 19:29:10.514  7916  8010 D Avrcp_ext: isAdmStable = true activeAbsAddr = 17:3F:CF:BE:B9:01 device = null
+05-04 19:29:10.514  7916  8010 V APM: MediaControlManager: onPlaybackStateChanged
+05-04 19:29:10.514  7916  8010 W McpService: updatePlaybackState state PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.514  7916  8010 W McpService: updatePlaybackState mState: 2 state: 2
+05-04 19:29:10.514  7916  8010 W Avrcp_ext: updated player state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}to MCP module also
+05-04 19:29:10.514  7916  8010 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@ee3f0c7
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.514  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.514  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.514  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.514  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.514  3064  7105 I AppsFilter: interaction: PackageSetting{ddfe51f com.deepeye.musicpro.debug/10502} -> PackageSetting{a14941e com.motorola.motosignature.app/10134} BLOCKED
+05-04 19:29:10.515  7916  8010 V Avrcp_ext: ActiveSession: MediaController (com.google.android.youtube@87280a2) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.515  7916  8010 V Avrcp_ext: isBrowseSupported for com.google.android.youtube: false
+05-04 19:29:10.515  7916  8010 D Avrcp_ext: Adding media player info for com.google.android.youtube with id 3
+05-04 19:29:10.516  7916  8010 D Avrcp_ext: update #3:MediaPlayerInfo com.google.android.youtube (as 'YouTube') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (com.google.android.youtube@87280a2) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.516  7916  8010 V Avrcp_ext: updateNewIds: Addressed:3 to 3, Browse:-1 to -1
+05-04 19:29:10.519  7916  8010 D Avrcp_ext: updateCurrentController: MediaController (com.google.android.youtube@2b5f8f9) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai to MediaController (com.google.android.youtube@87280a2) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.522  7916  8010 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.google.android.youtube@87280a2) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.522  7916  8010 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 0 A2dp State: 11 mAudioPlaybackIsActive: false
+05-04 19:29:10.522  7916  8010 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.523  7916  8010 D Avrcp_ext: overwrite album_artist :Punya Prasun Bajpaiif album is blank
+05-04 19:29:10.523  7916  8010 D AvrcpBipRsp:  getImgHandle device :17:3F:CF:BE:B9:01 data :android.media.MediaMetadata@e49e1816
+05-04 19:29:10.523  7916  8010 W AvrcpBipRsp: getImgHandle bipSm null
+05-04 19:29:10.523  7916  8010 D Avrcp_ext:  getImgHandle device:17:3F:CF:BE:B9:01 data:android.media.MediaMetadata@e49e1816 isKeyContains true Handle 
+05-04 19:29:10.525  7916  8010 I Avrcp_ext: device found at index 0
+05-04 19:29:10.525 12829 12960 I MlsIntegration: Treatment for Weblab MLS_USE_PSEUDO_DEVICE_ID_ANDROID_1109242 is C_default (changed?: false)
+05-04 19:29:10.525 12829 12960 I MlsIntegration: Treatment for Weblab MLS_ANDROID_ZAZ_MIGRATION_1364350 is C_default (changed?: false)
+05-04 19:29:10.525 12829 12960 I MlsIntegration: Treatment for Weblab MLS_ENABLE_DEBUG_LOGS_1366122 is C_default (changed?: false)
+05-04 19:29:10.525  7916  8010 V Avrcp_ext: updateCurrentMediaState: addr: [B@286c25
+05-04 19:29:10.525  7916  8010 V Avrcp_ext: Media update: id -1➡-1? [MediaAttributes: B⋯. - P⋯i by P⋯i (1329000 0/0) - ] : [MediaAttributes: B⋯. - P⋯i by P⋯i (1329000 0/0) - ]
+05-04 19:29:10.525  7916  8010 D Avrcp_ext: isPackageNameValid: browsedPackage = com.google.android.youtubeisValid = true
+05-04 19:29:10.525  7916  8010 V Avrcp_ext: isBrowseSupported for com.google.android.youtube: false
+05-04 19:29:10.525  7916  8010 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = false
+05-04 19:29:10.525  7916  8010 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null} device: null
+05-04 19:29:10.526  7916  8010 D BroadcastService: getBroadcastAddress
+05-04 19:29:10.526  7916  8010 D BroadcastService: isBroadcastActive: Broadcast is turned to off
+05-04 19:29:10.526  7916  8010 V Avrcp_ext: Device: Ejaj’s AirPods : old state: PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.526  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.526  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.526  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.526  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.526  7916  8010 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}, state=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.526  7916  8010 V Avrcp_ext: old state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}, new state= PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.526  7916  8010 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@ee3f0c7
+05-04 19:29:10.526  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.527  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.527  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: 17:3F:CF:BE:B9:01
+05-04 19:29:10.527  7916  8010 V Avrcp_ext: updatePlaybackState (0): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.527  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.527  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.527  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.527  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.527  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.527  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.527  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.527  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.527  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.527  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.527  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.527  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.527  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.528  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.528  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.528  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.528  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.528  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.528  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.528  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.528  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.528  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.528  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.528  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.528  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.528  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.528  7916  8010 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-04 19:29:10.528  7916  8010 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: 17:3F:CF:BE:B9:01
+05-04 19:29:10.528  7916  8010 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-04 19:29:10.528  7916  8010 D Avrcp_ext: isAdmStable = true activeAbsAddr = 17:3F:CF:BE:B9:01 device = null
+05-04 19:29:10.528  7916  8010 V APM: MediaControlManager: onPlaybackStateChanged
+05-04 19:29:10.528  7916  8010 W McpService: updatePlaybackState state PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.528  7916  8010 W McpService: updatePlaybackState mState: 2 state: 2
+05-04 19:29:10.528  7916  8010 W Avrcp_ext: updated player state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}to MCP module also
+05-04 19:29:10.528  7916  8010 V Avrcp_ext: ActiveSession: MediaController (com.deepeye.musicpro.debug@bc781fa) null
+05-04 19:29:10.529  7916  8010 V Avrcp_ext: isBrowseSupported for com.deepeye.musicpro.debug: false
+05-04 19:29:10.529  7916  8010 D Avrcp_ext: Adding media player info for com.deepeye.musicpro.debug with id 14
+05-04 19:29:10.529  7916  8010 D Avrcp_ext: update #14:MediaPlayerInfo com.deepeye.musicpro.debug (as 'DeepEyeMusicPro') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (com.deepeye.musicpro.debug@bc781fa) null
+05-04 19:29:10.531  7916  8010 V Avrcp_ext: updateCurrentMediaState: mMediaController: MediaController (com.google.android.youtube@87280a2) Bengal Election Result : बंगाल में आज असली खेल क्या हुआ? नतीजों पर सब चौंक गए.., Punya Prasun Bajpai, Punya Prasun Bajpai
+05-04 19:29:10.531  7916  8010 W Avrcp_ext: isMusicActive: false getBluetoothPlayState: 0 A2dp State: 11 mAudioPlaybackIsActive: false
+05-04 19:29:10.531  7916  8010 D Avrcp_ext: isMusicActive = false mAudioPlaybackIsActive = false player state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.532  7916  8010 D Avrcp_ext: overwrite album_artist :Punya Prasun Bajpaiif album is blank
+05-04 19:29:10.532  7916  8010 D AvrcpBipRsp:  getImgHandle device :17:3F:CF:BE:B9:01 data :android.media.MediaMetadata@e49e1816
+05-04 19:29:10.532  7916  8010 W AvrcpBipRsp: getImgHandle bipSm null
+05-04 19:29:10.532  7916  8010 D Avrcp_ext:  getImgHandle device:17:3F:CF:BE:B9:01 data:android.media.MediaMetadata@e49e1816 isKeyContains true Handle 
+05-04 19:29:10.534  7916  8010 I Avrcp_ext: device found at index 0
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: updateCurrentMediaState: addr: [B@ffbc3c6
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: Media update: id -1➡-1? [MediaAttributes: B⋯. - P⋯i by P⋯i (1329000 0/0) - ] : [MediaAttributes: B⋯. - P⋯i by P⋯i (1329000 0/0) - ]
+05-04 19:29:10.534  7916  8010 D Avrcp_ext: isPackageNameValid: browsedPackage = com.google.android.youtubeisValid = true
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: isBrowseSupported for com.google.android.youtube: false
+05-04 19:29:10.534  7916  8010 W Avrcp_ext: updateCurrentMediaState: isInactivePlayer = false
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: updatePlaybackState, state: PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null} device: null
+05-04 19:29:10.534  7916  8010 D BroadcastService: getBroadcastAddress
+05-04 19:29:10.534  7916  8010 D BroadcastService: isBroadcastActive: Broadcast is turned to off
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: Device: Ejaj’s AirPods : old state: PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: Device: no name: 
+05-04 19:29:10.534  7916  8010 V Avrcp_ext: updatePlayerStateAndPosition, old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}, state=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.535  7916  8010 V Avrcp_ext: old state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}, new state= PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.535  7916  8010 D HeadsetService: getHeadsetService(): returning com.android.bluetooth.hfp.HeadsetService@ee3f0c7
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: 17:3F:CF:BE:B9:01
+05-04 19:29:10.535  7916  8010 V Avrcp_ext: updatePlaybackState (0): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.535  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.535  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.535  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 D HeadsetService: isScoOrCallActive(): Call Active:falseCall is Ringing:falseSCO is Active:false
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Connected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 E HeadsetStateMachine: returning mCurrentState as Disconnected
+05-04 19:29:10.535  7916  8010 D HeadsetService:  isAudioOn: The number of audio connected devices 0
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: updatePlayStatusForDevice: device: null
+05-04 19:29:10.535  7916  8010 V Avrcp_ext: updatePlaybackState (1): old=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0), new=PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}(0)
+05-04 19:29:10.535  7916  8010 I Avrcp_ext: Exit updatePlayStatusForDevice
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: Enter sendPlayPosNotificationRsp
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: sendPlayPosNotificationRsp: Not registered or requesting.
+05-04 19:29:10.535  7916  8010 V Avrcp_ext: Exit updatePlayerStateAndPosition
+05-04 19:29:10.535  7916  8010 D APM: ActiveDeviceManagerServiceLegacy: getActiveAbsoluteDevice(): device: 17:3F:CF:BE:B9:01
+05-04 19:29:10.535  7916  8010 D APM: ActiveDeviceManagerServiceLegacy: isStableState(): true
+05-04 19:29:10.535  7916  8010 D Avrcp_ext: isAdmStable = true activeAbsAddr = 17:3F:CF:BE:B9:01 device = null
+05-04 19:29:10.535  7916  8010 V APM: MediaControlManager: onPlaybackStateChanged
+05-04 19:29:10.535  7916  8010 W McpService: updatePlaybackState state PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}
+05-04 19:29:10.535  7916  8010 W McpService: updatePlaybackState mState: 2 state: 2
+05-04 19:29:10.535  7916  8010 W Avrcp_ext: updated player state = PlaybackState {state=STOPPED(1), position=1328924, buffered position=0, speed=1.0, updated=1296916309, actions=8615, custom actions=[], active item id=-1, error=null}to MCP module also
+05-04 19:29:10.575  2968  3055 W FirebaseCrashlytics: Unable to read App Quality Sessions session id.
+05-04 19:29:10.587  2968  3055 D libcrashlytics: Initializing libcrashlytics version 3.2.0
+05-04 19:29:10.589  2968  3055 D libcrashlytics: Initializing native crash handling successful.
+05-04 19:29:10.592  1798  5376 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-04 19:29:10.592  1798  5376 E ANDR-PERF-LM: AdaptiveLaunch: writeToDataBase() 64: Meter aborted or could not get meter data for this run
+05-04 19:29:10.594  3064  3458 W ActivityTaskManager:   Force finishing activity com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity
+05-04 19:29:10.594  3064  3184 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+05-04 19:29:10.596  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@61cfe82 TransitionRequestInfo { type = 2, triggerTask = null, remoteTransition = null, displayChange = null, flags = 16 }
+05-04 19:29:10.596  1798  5375 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-04 19:29:10.598  3064  3458 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-04 19:29:10.600  3064  3368 I ActivityManager: 10502 handleShowAppErrorUi: shouldThottle=false,showFirstCrash=false,repeating=true,shouldForceShowError=false
+05-04 19:29:10.600  3064  3368 I ActivityManager: Showing crash dialog for package com.deepeye.musicpro.debug u0
+05-04 19:29:10.606  2968  3030 I .musicpro.debug: Compiler allocated 4496KB to compile void android.view.ViewRootImpl.performTraversals()
+05-04 19:29:10.609  3064  3368 D ViewRootImpl: update {(0,0)(wrapxwrap) gr=CENTER sim={adjust=pan forwardNavigation} ty=SYSTEM_ALERT fmt=TRANSLUCENT wanim=0x10302ff
+05-04 19:29:10.609  3064  3368 D ViewRootImpl:   fl=DIM_BEHIND ALT_FOCUSABLE_IM SPLIT_TOUCH HARDWARE_ACCELERATED
+05-04 19:29:10.609  3064  3368 D ViewRootImpl:   pfl=SHOW_FOR_ALL_USERS SYSTEM_ERROR
+05-04 19:29:10.609  3064  3368 D ViewRootImpl:   bhv=DEFAULT
+05-04 19:29:10.609  3064  3368 D ViewRootImpl:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR} by setView
+05-04 19:29:10.610  1858  1858 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+05-04 19:29:10.617  3064  3368 D CoreBackPreview: Window{194eaf6 u0 Application Error: com.deepeye.musicpro.debug}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.WindowOnBackInvokedDispatcher$OnBackInvokedCallbackWrapper@beb05ef, mPriority=0, mIsAnimationCallback=false}
+05-04 19:29:10.625  3064  8995 I OpenGLRenderer: setGrContext nullptr-->validptr
+05-04 19:29:10.625  3064  8995 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 19:29:10.791  3827  3949 D Surface : Surface::disconnect
+05-04 19:29:10.791  3827  3949 D BufferQueueProducer: [VRI[debug]#7228(BLAST Consumer)7228](id:ef300001c44,api:1,p:3827,c:3827) disconnect: api 1
+05-04 19:29:10.795  3827  3925 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@b7dd5b3
+05-04 19:29:10.795  3064  3216 D CoreBackPreview: Window{b758650 u0 Splash Screen com.deepeye.musicpro.debug EXITING}: Setting back callback null
+05-04 19:29:10.796  3064  7105 W InputManager-JNI: Input channel object 'b758650 Splash Screen com.deepeye.musicpro.debug (client)' was disposed without first being removed with the input manager!
+05-04 19:29:11.095  3064  3370 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{d79e838 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity t3798 f}}
+05-04 19:29:11.100  3064  3370 W ActivityTaskManager: Activity pause timeout for ActivityRecord{d79e838 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity t3798 f}}
+05-04 19:29:11.108 20981 21011 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 19:29:11.112 10800 10837 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 19:29:11.115 10800 10800 I bwmt    : onResume
+05-04 19:29:11.126 20981 21006 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+05-04 19:29:11.129  3064  3367 V WindowManager: Sent Transition #6210 createdAt=05-04 19:29:10.594 via request=TransitionRequestInfo { type = 2, triggerTask = null, remoteTransition = null, displayChange = null, flags = 16 }
+05-04 19:29:11.129  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-04 19:29:11.129  3064  3367 V WindowManager:     info={id=6210 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{9a2e0c9 Task{97f56a1 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0x5e976da sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{114f28b Task{3fe0576 #3798 type=standard A=10502:com.deepeye.musicpro.debug}}} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3798)/@0xec21805 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0x9a1864e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:29:11.130  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@61cfe82: {id=6210 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@13949e7} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0xab1380b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@9930994} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3798)/@0xa66e8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0xf38b101 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:29:11.130  3827  3912 V WindowManagerShell: Playing animation for (#6210)android.os.BinderProxy@61cfe82@0
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-04 19:29:11.131  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 19:29:11.131  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=6210 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@13949e7} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0xab1380b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@9930994} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3798)/@0xa66e8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0xf38b101 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 19:29:11.131  3827  3912 D RemoteTransitionHandler: Found filterPair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 19:29:11.131  3827  3912 V WindowManagerShell:  Delegate animation for #6210 to RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }
+05-04 19:29:11.134  3064  3459 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:false duration ms: 0
+05-04 19:29:11.137  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 19:29:11.158  1746  1746 I QTI PowerHAL: Power setMode: 6 to: 1
+05-04 19:29:11.158  1746  1746 E QTI PowerHAL: Failed to acquire lock for hint_id: 10A5.
+05-04 19:29:11.337  1746  1746 I QTI PowerHAL: Power setMode: 6 to: 0
+05-04 19:29:11.371  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 19:29:11.374  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.2, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -59, Link speed: 263Mbps, Tx Link speed: 263Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 263Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5765MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -59 UnderlyingNetworks: Null]
+05-04 19:29:11.374  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-04 19:29:11.374  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-04 19:29:11.374  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-04 19:29:11.375  3064  3064 D EnhancedConnectivityController: Wifi onCapabilitiesChanged
+05-04 19:29:11.375  3064  3064 D EnhancedConnectivityController: Default net onCapabilitiesChanged
+05-04 19:29:11.375  3064  3064 D EnhancedConnectivityController: updateDefaultNet:648
+05-04 19:29:11.375  3064  3064 D EnhancedConnectivityController: mayUpdateNotification: shouldShow=false,UidsBlocked=false, net info=net:648,ifName=wlan0,securityType=2,isDefault=true,ssid="Airtel_Siddhanth's wifi",notificationId=0
+05-04 19:29:11.380  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-04 19:29:11.384  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 19:29:11.386  3827  3827 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+05-04 19:29:11.388 27765 27777 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-04 19:29:11.388 27765 27777 W Binder  : reply too large data on java level: InterfaceDescriptor = null, code = 1
+05-04 19:29:11.388 27765 27777 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+05-04 19:29:11.431  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#6210)android.os.BinderProxy@61cfe82@0
+05-04 19:29:11.432  3064  3367 V WindowManager: Finish Transition #6210: created at 05-04 19:29:10.594 collect-started=0.021ms request-sent=0.053ms started=6.252ms ready=507.974ms sent=533.981ms finished=837.829ms
+05-04 19:29:11.435  3827  3912 V WindowManagerShell: Track 0 became idle
+05-04 19:29:11.435  3827  3912 V WindowManagerShell: All active transition animations finished
+05-04 19:29:11.643  2968  3031 W .musicpro.debug: userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+05-04 19:29:11.877 27765  2688 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-04 19:29:11.956  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.002/s)| Stream: 30.00fps 203.8Kbps
+05-04 19:29:11.956  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 19:29:12.122  1798  5375 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-04 19:29:12.125  1798  5376 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-04 19:29:12.125  1798  5376 E ANDR-PERF-LM: AdaptiveLaunch: writeToDataBase() 64: Meter aborted or could not get meter data for this run
+05-04 19:29:13.281  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:29:13.281  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:29:13.281  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:29:13.281  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:29:13.282  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 2f:0b:2e:00:4b:56
+05-04 19:29:13.282  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:29:13.322  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:29:13.322  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:29:13.472  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:29:13.486  3064  4561 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-04 19:29:13.961  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:29:13.961  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:29:13.961  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:29:13.961  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:29:13.962  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 0f:4f:6c:91:b4:b2
+05-04 19:29:13.962  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:29:14.002  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:29:14.002  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:29:14.076 10311 10487 I ThermalEngine: Monitor:ACTIVE:FREEZE-CHG:freeze_rule=1:DETECT-STANDBY=1
+05-04 19:29:14.077 10311 10487 I ThermalEngine: ACTION: freeze_rule - Setting freeze_rule to 1
+05-04 19:29:14.077 10311 10487 I ThermalEngine: Monitor:ACTIVE:OVERRIDE-CHG:internal_override=1:DETECT-STANDBY=1
+05-04 19:29:14.077 10311 10487 I ThermalEngine: ACTION: override_c - Setting override_c to 1
+05-04 19:29:14.079 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  override_c
+05-04 19:29:14.079 10311  3319 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 19:29:14.079 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  freezing
+05-04 19:29:14.080 10311  3318 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 19:29:14.152  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:29:14.395  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 19:29:14.396  3064  3064 D EnhancedConnectivityController: Wifi onCapabilitiesChanged
+05-04 19:29:14.396  3064  3064 D EnhancedConnectivityController: Default net onCapabilitiesChanged
+05-04 19:29:14.396  3064  3064 D EnhancedConnectivityController: updateDefaultNet:648
+05-04 19:29:14.396  3064  3064 D EnhancedConnectivityController: mayUpdateNotification: shouldShow=false,UidsBlocked=false, net info=net:648,ifName=wlan0,securityType=2,isDefault=true,ssid="Airtel_Siddhanth's wifi",notificationId=0
+05-04 19:29:14.399  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged networkCapabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1636Kbps LinkDnBandwidth>=37611Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.2, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -59, Link speed: 263Mbps, Tx Link speed: 263Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 175Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5765MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -59 UnderlyingNetworks: Null]
+05-04 19:29:14.399  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged NET_CAPABILITY_VALIDATED=true
+05-04 19:29:14.399  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallManager.mDataStallInstance=null
+05-04 19:29:14.399  5998  6251 I ModemStats: [DataStallDetectService] onCapabilitiesChanged mDataStallSmart5gManager.mDataStallInstance=null
+05-04 19:29:14.403 27765 27943 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-04 19:29:14.403 27765 27943 W Binder  : reply too large data on java level: InterfaceDescriptor = null, code = 1
+05-04 19:29:14.403 27765 27943 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+05-04 19:29:14.404  4043  4925 D QCNEJ/NativeHalConnector: -> SND notifyDefaultNetworkChanged(1)
+05-04 19:29:14.406  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 19:29:14.822  3064  3733 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-04 19:29:14.837  3064  3733 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-04 19:29:14.837  4065 22260 I QImsService: VtDataUsageProvider : onSetAlert:2097152
+05-04 19:29:14.837  4065  4065 I QImsService: ImsServiceClassTracker : updateAlertQuota:newQuota=2097152,Remaining=2097152
+05-04 19:29:14.902 27765  2688 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)

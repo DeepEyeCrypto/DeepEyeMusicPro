@@ -1,0 +1,630 @@
+--------- beginning of main
+05-04 19:14:46.463  1731  3697 I slpi    : STK3A5X ALS_OC: lux:3340.000000, last_ps:0[1239], CH0:2500, CH2:328, CH4:13, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+--------- beginning of system
+05-04 19:14:46.544  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10502; state: DISABLED
+05-04 19:14:46.544  3064  4883 W ActivityTaskManager: callingPackage for (uid=2000, pid=904) has no WPC
+05-04 19:14:46.544  3064  4883 I SettingsAccessControlPolicy: isDeviceSettingsChangeDisabled: value -> false
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 265452344; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 266124927; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 265451093; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 265456536; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 255940284; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 236283604; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 263959004; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 264304459; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 264301586; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 254631730; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 273509367; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 263259275; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10502; state: DISABLED
+05-04 19:14:46.545  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10502; state: DISABLED
+05-04 19:14:46.546  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 194480991; UID 10502; state: ENABLED
+05-04 19:14:46.546  3064  4883 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 19:14:46.546  3064  4883 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 19:14:46.547  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 19:14:46.547  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 19:14:46.547  3064  4883 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 19:14:46.547  3064  4883 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id -1, current focus display 0
+05-04 19:14:46.550  3064  4883 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-04 19:14:46.550  3064  4883 D ActivityTaskManager: getPreferredLaunchDisplay userset_displayid false user set display id 0, current focus display 0
+05-04 19:14:46.551  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10502; state: DISABLED
+05-04 19:14:46.551  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10502; state: DISABLED
+05-04 19:14:46.552  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10502; state: ENABLED
+05-04 19:14:46.553  3064  4883 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:true duration ms: 0
+05-04 19:14:46.553  3064  4883 D CompatibilityChangeReporter: Compat change id reported: 205907456; UID 10502; state: ENABLED
+05-04 19:14:46.554  3064  4883 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-04 19:14:46.556  3064  4883 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 2
+05-04 19:14:46.557  3064  4883 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (startActivityAsUser) (BAL_ALLOW_PERMISSION) result code=0
+05-04 19:14:46.558  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@3494f54 TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3793 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1300948523 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=false isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@b5a8efd} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{1ce27f2 com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-04 19:14:46.559  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10502; state: DISABLED
+05-04 19:14:46.559  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10502; state: DISABLED
+05-04 19:14:46.559  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10502; state: DISABLED
+05-04 19:14:46.559  3064  3370 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10502; state: ENABLED
+05-04 19:14:46.560  3064  3380 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10502; state: ENABLED
+05-04 19:14:46.561  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:46.561  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:46.561  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:46.561  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:46.561  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 18:05:09:5a:bc:95
+05-04 19:14:46.561  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:46.562  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 19:14:46.562  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 19:14:46.563  3827  3925 D ViewRootImpl: update {(0,0)(fillxfill) ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x10302fe
+05-04 19:14:46.563  3827  3925 D ViewRootImpl:   fl=NOT_FOCUSABLE NOT_TOUCHABLE LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR ALT_FOCUSABLE_IM HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+05-04 19:14:46.563  3827  3925 D ViewRootImpl:   pfl=SHOW_FOR_ALL_USERS FIT_INSETS_CONTROLLED
+05-04 19:14:46.563  3827  3925 D ViewRootImpl:   bhv=DEFAULT
+05-04 19:14:46.563  3827  3925 D ViewRootImpl:   fitSides=} by setView
+05-04 19:14:46.568  1587  1587 D Zygote  : Forked child process 916
+05-04 19:14:46.569  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 19:14:46.570  3064  3380 I ActivityManager: Start proc 916:com.deepeye.musicpro.debug/u0a502 for next-top-activity {com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}
+05-04 19:14:46.571  3064  3477 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10502; state: ENABLED
+05-04 19:14:46.571  3064  3968 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10502; state: DISABLED
+05-04 19:14:46.571  3064  3968 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10502; state: DISABLED
+05-04 19:14:46.575  3064  3968 D CoreBackPreview: Window{ec433d5 u0 Splash Screen com.deepeye.musicpro.debug}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4d7adb, mPriority=0, mIsAnimationCallback=false}
+05-04 19:14:46.578  3827  3949 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 19:14:46.582   916   916 I .musicpro.debug: Late-enabling -Xcheck:jni
+05-04 19:14:46.587  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@3494f54: {id=6196 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@3093584} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3793)/@0x5389331 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@152316d} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0xed5ca16 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:14:46.587  3064  3367 V WindowManager: Sent Transition #6196 createdAt=05-04 19:14:46.546 via request=TransitionRequestInfo { type = 1, triggerTask = TaskInfo{userId=0 taskId=3793 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity } baseActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} topActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} origActivity=null realActivity=ComponentInfo{com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity} numActivities=1 lastActiveTime=1300948523 supportsMultiWindow=true supportsGlobalFreeform=true resizeMode=1 isResizeable=true isAppLocked=false canKillAndRestart=true isShowDecorCaptionWindowRequest=false minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{RemoteToken{7697524 Task{c02263 #3793 type=standard A=10502:com.deepeye.musicpro.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 90 - 0, 0) topActivityInfo=ActivityInfo{770088d com.deepeye.musicpro.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null, flags = 0 }
+05-04 19:14:46.587  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-04 19:14:46.587  3827  3912 V WindowManagerShell: Playing animation for (#6196)android.os.BinderProxy@3494f54@0
+05-04 19:14:46.587  3064  3367 V WindowManager:     info={id=6196 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{7697524 Task{c02263 #3793 type=standard A=10502:com.deepeye.musicpro.debug}}} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3793)/@0xf3d8b6 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{9a2e0c9 Task{97f56a1 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0x5e976da sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-04 19:14:46.587  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 19:14:46.587  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=6196 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@3093584} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3793)/@0x5389331 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@152316d} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0xed5ca16 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  Delegate animation for #6196 to null
+05-04 19:14:46.587  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-04 19:14:46.587  3827  3912 V WindowManagerShell: start default transition animation, info = {id=6196 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@3093584} m=OPEN f=NONE pTaskId=-1 leash=Surface(name=Task=3793)/@0x5389331 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@152316d} m=TO_BACK f=SHOW_WALLPAPER pTaskId=-1 leash=Surface(name=Task=1)/@0xed5ca16 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:14:46.588  3827  3912 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@147ee33 animAttr=0x13 type=OPEN isEntrance=false
+05-04 19:14:46.588  3827  3912 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@a893a8f animAttr=0x12 type=OPEN isEntrance=true
+05-04 19:14:46.588  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@acd98f4
+05-04 19:14:46.600   916   916 I .musicpro.debug: Using CollectorTypeCMC GC.
+05-04 19:14:46.602  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:46.602  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:46.602  7521  7526 I adbd    : jdwp connection from 916
+05-04 19:14:46.605   916   916 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-04 19:14:46.610  1798  2035 E ANDR-PERF-LM: MetaMeter: handleAsync() 166: AdaptLaunch Invalid Async
+05-04 19:14:46.617   916   916 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10502; state: ENABLED
+05-04 19:14:46.617   916   916 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10502; state: ENABLED
+05-04 19:14:46.620  3064  3968 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10502; state: ENABLED
+05-04 19:14:46.662 10800 10800 I bwmt    : onPause
+05-04 19:14:46.752  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:46.815  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.002/s)| Stream: 30.00fps 203.8Kbps
+05-04 19:14:46.815  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 19:14:46.870  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#6196)android.os.BinderProxy@3494f54@0
+05-04 19:14:46.871  3064  3367 V WindowManager: Finish Transition #6196: created at 05-04 19:14:46.546 collect-started=0.009ms request-sent=11.275ms started=13.339ms ready=37.619ms sent=40.196ms finished=325.231ms
+05-04 19:14:46.872  3827  3912 V WindowManagerShell: Track 0 became idle
+05-04 19:14:46.872  3827  3912 V WindowManagerShell: All active transition animations finished
+05-04 19:14:46.877 10800 10837 D Surface : Surface::disconnect
+05-04 19:14:46.877 10800 10837 D BufferQueueProducer: [VRI[GoogleDiscoverWindow]#46(BLAST Consumer)46](id:2a300000002e,api:1,p:10800,c:10800) disconnect: api 1
+05-04 19:14:46.880 20981 21011 D Surface : Surface::disconnect
+05-04 19:14:46.880 20981 21011 D BufferQueueProducer: [VRI[CustomizationPanelLauncher]#317(BLAST Consumer)317](id:51f50000046d,api:1,p:20981,c:20981) disconnect: api 1
+05-04 19:14:46.927   916   916 D nativeloader: Configuring clns-4 for other apk /data/app/~~TKMuyZX5N9QCna7SK7FFew==/com.deepeye.musicpro.debug-mCiABCsRz1ajRSk3KnNl1g==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~TKMuyZX5N9QCna7SK7FFew==/com.deepeye.musicpro.debug-mCiABCsRz1ajRSk3KnNl1g==/lib/arm64:/data/app/~~TKMuyZX5N9QCna7SK7FFew==/com.deepeye.musicpro.debug-mCiABCsRz1ajRSk3KnNl1g==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.deepeye.musicpro.debug
+05-04 19:14:46.931   916   916 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+05-04 19:14:46.933   916   916 V GraphicsEnvironment: Currently set values for:
+05-04 19:14:46.933   916   916 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-04 19:14:46.933   916   916 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-04 19:14:46.933   916   916 V GraphicsEnvironment: ANGLE GameManagerService for com.deepeye.musicpro.debug: false
+05-04 19:14:46.933   916   916 V GraphicsEnvironment: com.deepeye.musicpro.debug is not listed in per-application setting
+05-04 19:14:46.933   916   916 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+05-04 19:14:46.943 27765   894 I NearbyMediums: Found Fast Ble Advertisements :
+05-04 19:14:46.943 27765   894 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x42 0x31 0x30 0x4a 0x11 0x32 0xe7 0x6e 0xb6 0xfd 0x7b 0xe2 0x38 0x90 0xd2 0xc1 0xee 0xaa 0xea 0x84 0xba 0x7f ], deviceToken=[ 0x3e 0x82 ], rxAdvertisement=null } : 1 times.
+05-04 19:14:46.943 27765   894 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x56 0x53 0x36 0x52 0x11 0x32 0x96 0x67 0x23 0xab 0xeb 0xcd 0x7e 0x5d 0x33 0x77 0xd8 0xeb 0x2c 0x8d 0xd3 0x70 ], deviceToken=[ 0x15 0xea ], rxAdvertisement=null } : 3 times.
+05-04 19:14:46.943 27765   894 I NearbyMediums: Total 4 fast advertisements from 2 unique advertisers.
+05-04 19:14:46.944 27765   894 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-04 19:14:46.947   916   916 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10502; state: ENABLED
+05-04 19:14:46.952   916   916 D SessionsDependencies: Dependency to CRASHLYTICS added.
+05-04 19:14:46.954   916   916 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+05-04 19:14:46.994   916   916 D nativeloader: Load /data/app/~~TKMuyZX5N9QCna7SK7FFew==/com.deepeye.musicpro.debug-mCiABCsRz1ajRSk3KnNl1g==/base.apk!/lib/arm64-v8a/libcrashlytics.so using class loader ns clns-4 (caller=/data/app/~~TKMuyZX5N9QCna7SK7FFew==/com.deepeye.musicpro.debug-mCiABCsRz1ajRSk3KnNl1g==/base.apk!classes18.dex): ok
+05-04 19:14:46.999   916   916 D CompatibilityChangeReporter: Compat change id reported: 3400644; UID 10502; state: ENABLED
+05-04 19:14:47.000   916   916 I FirebaseCrashlytics: Initializing Firebase Crashlytics 19.3.0 for com.deepeye.musicpro.debug
+05-04 19:14:47.009   916   916 D SessionsDependencies: Subscriber CRASHLYTICS registered.
+05-04 19:14:47.018   916   935 W .musicpro.debug: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3459175842]{PCL[/system/framework/org.apache.http.legacy.jar*365604909]#PCL[/system/framework/com.android.location.provider.jar*3994156537]#PCL[/system/framework/com.android.media.remotedisplay.jar*2114713712]} | DLC[];PCL[])
+05-04 19:14:47.019   916   935 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:127 and remote module com.google.android.gms.measurement.dynamite:189
+05-04 19:14:47.019   916   935 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 189
+05-04 19:14:47.019   916   935 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+05-04 19:14:47.021  3064  5857 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10502; state: ENABLED
+05-04 19:14:47.026   916   935 W System  : ClassLoader referenced unknown path: 
+05-04 19:14:47.026   916   935 D nativeloader: Configuring clns-5 for other apk . target_sdk_version=37, uses_libraries=, library_path=/data/app/~~PUhE4W2uBXrEkGAAEBiq0w==/com.google.android.gms--Ck5ZGrrO_6TuPDI4fgJVw==/lib/arm64:/data/app/~~PUhE4W2uBXrEkGAAEBiq0w==/com.google.android.gms--Ck5ZGrrO_6TuPDI4fgJVw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+05-04 19:14:47.029   916   939 D libcrashlytics: Initializing libcrashlytics version 3.2.0
+05-04 19:14:47.032   916   939 D libcrashlytics: Initializing native crash handling successful.
+05-04 19:14:47.032   916   935 W .musicpro.debug: ClassLoaderContext classpath element checksum mismatch. expected=3459175842, found=2389662786 (DLC[];PCL[base.apk*3459175842]{PCL[/system/framework/org.apache.http.legacy.jar*365604909]#PCL[/system/framework/com.android.location.provider.jar*3994156537]#PCL[/system/framework/com.android.media.remotedisplay.jar*2114713712]} | DLC[];PCL[/data/app/~~TKMuyZX5N9QCna7SK7FFew==/com.deepeye.musicpro.debug-mCiABCsRz1ajRSk3KnNl1g==/base.apk*2389662786])
+05-04 19:14:47.039   916   940 I FirebaseCrashlytics: No version control information found
+05-04 19:14:47.045   916   916 D FirebaseSessions: Initializing Firebase Sessions SDK.
+05-04 19:14:47.046   916   916 I FirebaseInitProvider: FirebaseApp initialization successful
+05-04 19:14:47.048   916   944 D FirebaseSessions: No Sessions subscribers. Not listening to lifecycle events.
+05-04 19:14:47.055   916   916 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+05-04 19:14:47.059  3064  5857 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10502; state: ENABLED
+05-04 19:14:47.064   916   916 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+05-04 19:14:47.064   916   916 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+05-04 19:14:47.067   916   916 I CrashGuard: Enabling StrictMode penaltyDeath for debug build
+05-04 19:14:47.068 27765   894 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.deepeye.musicpro.debug
+05-04 19:14:47.069   916   916 D nativeloader: Load /data/app/~~TKMuyZX5N9QCna7SK7FFew==/com.deepeye.musicpro.debug-mCiABCsRz1ajRSk3KnNl1g==/base.apk!/lib/arm64-v8a/libdeepeye_dsp.so using class loader ns clns-4 (caller=/data/app/~~TKMuyZX5N9QCna7SK7FFew==/com.deepeye.musicpro.debug-mCiABCsRz1ajRSk3KnNl1g==/base.apk!classes11.dex): ok
+05-04 19:14:47.069   916   916 I DeepEyeJNI: JNI_OnLoad called - Native library initializing...
+05-04 19:14:47.071   916   916 I Typeface: updateThemeFont new=Rookery-Regular;old=sans-serif;new=Rookery-Stacked;old=
+05-04 19:14:47.071   916   951 I .musicpro.debug: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/apm; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-04 19:14:47.072  3064  5857 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10502. pid: 916
+05-04 19:14:47.082   916   949 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10502; state: ENABLED
+05-04 19:14:47.085   916   947 E .musicpro.debug: No package ID 6a found for resource ID 0x6a0b0013.
+05-04 19:14:47.085   916   947 I FA      : App measurement initialized, version: 165000
+05-04 19:14:47.086   916   947 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+05-04 19:14:47.086   916   947 I FA      : To enable faster debug mode event logging run:
+05-04 19:14:47.086   916   947 I FA      :   adb shell setprop debug.firebase.analytics.app com.deepeye.musicpro.debug
+05-04 19:14:47.091   916   916 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+05-04 19:14:47.095   916   947 W FA      : Failed to retrieve Firebase Instance Id
+05-04 19:14:47.119   916   947 W FA      : Failed to retrieve Firebase Instance Id
+05-04 19:14:47.121   916   947 W FA      : Failed to retrieve Firebase Instance Id
+05-04 19:14:47.137   916   916 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10502; state: ENABLED
+05-04 19:14:47.178   916   916 I .musicpro.debug: hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-04 19:14:47.183   916   916 I MediaController: Init b9be093 [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-04 19:14:47.215   916   916 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10502; state: ENABLED
+05-04 19:14:47.313  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:14:47.313  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:14:47.313  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:14:47.323  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:14:47.323  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:14:47.323  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:14:47.336  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:14:47.336  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:14:47.336  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:14:47.349  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:14:47.349  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:14:47.349  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:14:47.359  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:14:47.359  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:14:47.359  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:14:47.370  1251  1251 E KeymasterUtils: rsp_header->status: -28
+05-04 19:14:47.370  1251  1251 E KeyMasterHalDevice: abort_operation
+05-04 19:14:47.370  1251  1251 E KeyMasterHalDevice: ret: -28
+05-04 19:14:47.420   916   947 I FA      : Tag Manager is not found and thus will not be used
+05-04 19:14:47.423   916   916 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10502; state: DISABLED
+05-04 19:14:47.424   916   916 D ViewRootImpl: update {(0,0)(fillxfill) sim={adjust=resize forwardNavigation} ty=BASE_APPLICATION wanim=0x10302fe
+05-04 19:14:47.424   916   916 D ViewRootImpl:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+05-04 19:14:47.424   916   916 D ViewRootImpl:   pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+05-04 19:14:47.424   916   916 D ViewRootImpl:   bhv=DEFAULT
+05-04 19:14:47.424   916   916 D ViewRootImpl:   fitSides=} by setView
+05-04 19:14:47.427   916   947 W FA      : Failed to retrieve Firebase Instance Id
+05-04 19:14:47.434   916   916 D StrictMode: StrictMode policy violation; ~duration=134 ms: android.os.strictmode.DiskReadViolation
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 19:14:47.434   916   916 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+05-04 19:14:47.434   916   916 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:129)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:8321)
+05-04 19:14:47.434   916   916 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:337)
+05-04 19:14:47.434   916   916 D StrictMode: 	at java.io.File.exists(File.java:829)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:796)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:787)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ContextImpl.getPreferencesDir(ContextImpl.java:743)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ContextImpl.getSharedPreferencesPath(ContextImpl.java:968)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:589)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:221)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readKeysetFromPrefs(AndroidKeysetManager.java:250)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:287)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:169)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:130)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.prefs_delegate$lambda$0(YoutubeAuthManager.kt:41)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.$r8$lambda$zdSasc3iMbY53tNridpo7uj6Rhk(Unknown Source:0)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.deepeye.musicpro.auth.YoutubeAuthManager$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.getPrefs(YoutubeAuthManager.kt:35)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.getAccessToken(YoutubeAuthManager.kt:128)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.deepeye.musicpro.ui.home.HomeViewModel$loadHomeContent$1.invokeSuspend(HomeViewModel.kt:37)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlinx.coroutines.internal.DispatchedContinuationKt.resumeCancellableWith(DispatchedContinuation.kt:359)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable(Cancellable.kt:26)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:358)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:124)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:52)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlinx.coroutines.BuildersKt.launch(Unknown Source:1)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:43)
+05-04 19:14:47.434   916   916 D StrictMode: 	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source:1)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.deepeye.musicpro.ui.home.HomeViewModel.loadHomeContent(HomeViewModel.kt:35)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.deepeye.musicpro.ui.home.HomeFragment.onViewCreated(HomeFragment.kt:51)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.Fragment.performViewCreated(Fragment.java:3152)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:608)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:286)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(FragmentStore.java:114)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1685)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:3319)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentManager.dispatchViewCreated(FragmentManager.java:3230)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.Fragment.performViewCreated(Fragment.java:3153)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:608)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:286)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(FragmentStore.java:114)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1685)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:3319)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentManager.dispatchActivityCreated(FragmentManager.java:3237)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentController.dispatchActivityCreated(FragmentController.java:263)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.fragment.app.FragmentActivity.onStart(FragmentActivity.java:350)
+05-04 19:14:47.434   916   916 D StrictMode: 	at androidx.appcompat.app.AppCompatActivity.onStart(AppCompatActivity.java:251)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1582)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.Activity.performStart(Activity.java:8767)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:3942)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:225)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:205)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:177)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:98)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2567)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.os.Looper.loop(Looper.java:362)
+05-04 19:14:47.434   916   916 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 19:14:47.434   916   916 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 19:14:47.434   916   916 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 19:14:47.434   916   916 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+05-04 19:14:47.434   916   916 E AndroidRuntime: FATAL EXCEPTION: main
+05-04 19:14:47.434   916   916 E AndroidRuntime: Process: com.deepeye.musicpro.debug, PID: 916
+05-04 19:14:47.434   916   916 E AndroidRuntime: java.lang.RuntimeException: StrictMode ThreadPolicy violation
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onThreadPolicyViolation(StrictMode.java:1900)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.lambda$handleViolationWithTimingAttempt$0(StrictMode.java:1814)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.$r8$lambda$AF9hglpXLeeg2_1ZxHCfZb2exEY(Unknown Source:0)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy$$ExternalSyntheticLambda1.run(Unknown Source:6)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1000)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:104)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:362)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 19:14:47.434   916   916 E AndroidRuntime: Caused by: android.os.strictmode.DiskReadViolation
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:129)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:8321)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:337)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at java.io.File.exists(File.java:829)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:796)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:787)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ContextImpl.getPreferencesDir(ContextImpl.java:743)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ContextImpl.getSharedPreferencesPath(ContextImpl.java:968)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:589)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:221)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readKeysetFromPrefs(AndroidKeysetManager.java:250)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:287)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:169)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:130)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.prefs_delegate$lambda$0(YoutubeAuthManager.kt:41)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.$r8$lambda$zdSasc3iMbY53tNridpo7uj6Rhk(Unknown Source:0)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.deepeye.musicpro.auth.YoutubeAuthManager$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.getPrefs(YoutubeAuthManager.kt:35)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.getAccessToken(YoutubeAuthManager.kt:128)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.deepeye.musicpro.ui.home.HomeViewModel$loadHomeContent$1.invokeSuspend(HomeViewModel.kt:37)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlinx.coroutines.internal.DispatchedContinuationKt.resumeCancellableWith(DispatchedContinuation.kt:359)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable(Cancellable.kt:26)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:358)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:124)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:52)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlinx.coroutines.BuildersKt.launch(Unknown Source:1)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:43)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source:1)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.deepeye.musicpro.ui.home.HomeViewModel.loadHomeContent(HomeViewModel.kt:35)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at com.deepeye.musicpro.ui.home.HomeFragment.onViewCreated(HomeFragment.kt:51)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.Fragment.performViewCreated(Fragment.java:3152)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:608)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:286)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(FragmentStore.java:114)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1685)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:3319)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.dispatchViewCreated(FragmentManager.java:3230)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.Fragment.performViewCreated(Fragment.java:3153)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:608)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:286)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(FragmentStore.java:114)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1685)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:3319)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.dispatchActivityCreated(FragmentManager.java:3237)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentController.dispatchActivityCreated(FragmentController.java:263)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.fragment.app.FragmentActivity.onStart(FragmentActivity.java:350)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at androidx.appcompat.app.AppCompatActivity.onStart(AppCompatActivity.java:251)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1582)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:8767)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:3942)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:225)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:205)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:177)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:98)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2567)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 19:14:47.434   916   916 E AndroidRuntime: 	... 6 more
+05-04 19:14:47.434   916   916 E CrashGuard: FATAL EXCEPTION: main
+05-04 19:14:47.434   916   916 E CrashGuard: java.lang.RuntimeException: StrictMode ThreadPolicy violation
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onThreadPolicyViolation(StrictMode.java:1900)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.lambda$handleViolationWithTimingAttempt$0(StrictMode.java:1814)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.$r8$lambda$AF9hglpXLeeg2_1ZxHCfZb2exEY(Unknown Source:0)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy$$ExternalSyntheticLambda1.run(Unknown Source:6)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.Handler.handleCallback(Handler.java:1000)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.Handler.dispatchMessage(Handler.java:104)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.Looper.loop(Looper.java:362)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 19:14:47.434   916   916 E CrashGuard: Caused by: android.os.strictmode.DiskReadViolation
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:129)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:8321)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:337)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at java.io.File.exists(File.java:829)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:796)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:787)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.app.ContextImpl.getPreferencesDir(ContextImpl.java:743)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.app.ContextImpl.getSharedPreferencesPath(ContextImpl.java:968)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:589)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:221)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readKeysetFromPrefs(AndroidKeysetManager.java:250)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:287)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:169)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:130)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.prefs_delegate$lambda$0(YoutubeAuthManager.kt:41)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.$r8$lambda$zdSasc3iMbY53tNridpo7uj6Rhk(Unknown Source:0)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.deepeye.musicpro.auth.YoutubeAuthManager$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.getPrefs(YoutubeAuthManager.kt:35)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.deepeye.musicpro.auth.YoutubeAuthManager.getAccessToken(YoutubeAuthManager.kt:128)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.deepeye.musicpro.ui.home.HomeViewModel$loadHomeContent$1.invokeSuspend(HomeViewModel.kt:37)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlinx.coroutines.internal.DispatchedContinuationKt.resumeCancellableWith(DispatchedContinuation.kt:359)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable(Cancellable.kt:26)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:358)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:124)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:52)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlinx.coroutines.BuildersKt.launch(Unknown Source:1)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:43)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source:1)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.deepeye.musicpro.ui.home.HomeViewModel.loadHomeContent(HomeViewModel.kt:35)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at com.deepeye.musicpro.ui.home.HomeFragment.onViewCreated(HomeFragment.kt:51)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at androidx.fragment.app.Fragment.performViewCreated(Fragment.java:3152)
+05-04 19:14:47.434   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:608)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:286)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(FragmentStore.java:114)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1685)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:3319)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentManager.dispatchViewCreated(FragmentManager.java:3230)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.Fragment.performViewCreated(Fragment.java:3153)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:608)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:286)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(FragmentStore.java:114)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1685)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:3319)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentManager.dispatchActivityCreated(FragmentManager.java:3237)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentController.dispatchActivityCreated(FragmentController.java:263)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.fragment.app.FragmentActivity.onStart(FragmentActivity.java:350)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at androidx.appcompat.app.AppCompatActivity.onStart(AppCompatActivity.java:251)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1582)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.app.Activity.performStart(Activity.java:8767)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:3942)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:225)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:205)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:177)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:98)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2567)
+05-04 19:14:47.435   916   916 E CrashGuard: 	at android.os.Handler.dispatchMessage(Handler.java:111)
+05-04 19:14:47.435   916   916 E CrashGuard: 	... 6 more
+05-04 19:14:47.436   916   916 E CrashGuard: Crash report saved locally to /data/user/0/com.deepeye.musicpro.debug/cache/crash_logs/crash_1777902287435.log
+05-04 19:14:47.442  3064  3968 I AppsFilter: interaction: PackageSetting{6b18c87 com.deepeye.musicpro.debug/10502} -> PackageSetting{a14941e com.motorola.motosignature.app/10134} BLOCKED
+05-04 19:14:47.489 10311 10487 I ThermalEngine: ACTION: freeze_rule - Setting freeze_rule to 0
+05-04 19:14:47.489 10311 10487 I ThermalEngine: Monitor:INACTIVE:FREEZE-CHG:freeze_rule=1:DETECT-STANDBY=0
+05-04 19:14:47.490 10311 10487 I ThermalEngine: ACTION: override_c - Setting override_c to 0
+05-04 19:14:47.490 10311 10487 I ThermalEngine: Monitor:INACTIVE:OVERRIDE-CHG:internal_override=1:DETECT-STANDBY=0
+05-04 19:14:47.490 10311   978 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 19:14:47.490 10311   977 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 19:14:47.490 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  freezing
+05-04 19:14:47.490 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  override_c
+05-04 19:14:47.502   916   938 W FirebaseCrashlytics: Unable to read App Quality Sessions session id.
+05-04 19:14:47.514   916   938 D libcrashlytics: Initializing libcrashlytics version 3.2.0
+05-04 19:14:47.516   916   938 D libcrashlytics: Initializing native crash handling successful.
+05-04 19:14:47.521  3064  3968 W ActivityTaskManager:   Force finishing activity com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity
+05-04 19:14:47.521  3064   980 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+05-04 19:14:47.522  3064  3968 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-04 19:14:47.523  3827  3912 V WindowManagerShell: Transition requested: android.os.BinderProxy@143ec87 TransitionRequestInfo { type = 2, triggerTask = null, remoteTransition = null, displayChange = null, flags = 16 }
+05-04 19:14:47.524  3064  3368 I ActivityManager: 10502 handleShowAppErrorUi: shouldThottle=false,showFirstCrash=false,repeating=false,shouldForceShowError=false
+05-04 19:14:47.524   916   916 I Process : Sending signal. PID: 916 SIG: 9
+05-04 19:14:47.535  1858  1858 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+05-04 19:14:47.546  3064  5857 I ActivityManager: appDiedLocked: app=ProcessRecord{fffbf19 916:com.deepeye.musicpro.debug/u0a502} thread=android.os.BinderProxy@3660b20 fromBinderDied=true isKilledByAm=false reason=null
+05-04 19:14:47.546  3064  5857 I ActivityManager: Process com.deepeye.musicpro.debug (pid 916) has died: fg  TOP 
+05-04 19:14:47.547  3064  5856 I WindowManager: WIN DEATH: Window{c704aa1 u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity}
+05-04 19:14:47.547  7521  7521 I adbd    : Remote process closed the socket (on MSG_PEEK)
+05-04 19:14:47.547  3064  5856 W InputManager-JNI: Input channel object 'c704aa1 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity (client)' was disposed without first being removed with the input manager!
+05-04 19:14:47.548  3064  5857 D RestartModeController: markWaitRestartAppIsSuicided null processName=com.deepeye.musicpro.debug
+05-04 19:14:47.548  3064  3404 I libprocessgroup: Successfully killed process cgroup uid 10502 pid 916 in 1ms
+05-04 19:14:47.548  1587  1587 I Zygote  : Process 916 exited due to signal 9 (Killed)
+05-04 19:14:47.549  3064  5857 D ActivityTaskManager: handleAppDied: uid=10502,diedCount=1,lastDiedTime=734521049,forceStopUids=false
+05-04 19:14:47.550  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 19:14:47.550  1798  2035 W ANDR-PERF-LM: MetaMeter: handlePrimaryAsync() 118: AdaptLaunch MetaMeter. No MeterMgr Available to handle this Primary Async. !!!!
+05-04 19:14:47.553  3064  3370 W ActivityManager: setHasOverlayUi called on unknown pid: 916
+05-04 19:14:47.554  3064  3368 D DisplayManagerService: Drop pending events for gone uid 10502
+05-04 19:14:47.556 10800 10837 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 19:14:47.560 20981 21011 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-04 19:14:47.564  1585   957 W SocketClient: write error (Broken pipe)
+05-04 19:14:47.564  1585   957 W resolv  : GetAddrInfoHandler::run: Error writing DNS result to client uid 10502 pid 916: Broken pipe
+05-04 19:14:47.564  1585   971 W SocketClient: write error (Broken pipe)
+05-04 19:14:47.564  1585   971 W resolv  : GetAddrInfoHandler::run: Error writing DNS result to client uid 10502 pid 916: Broken pipe
+05-04 19:14:47.565 10800 10800 I bwmt    : onResume
+05-04 19:14:47.566  1585   974 W SocketClient: write error (Broken pipe)
+05-04 19:14:47.566  1585   974 W resolv  : GetAddrInfoHandler::run: Error writing DNS result to client uid 10502 pid 916: Broken pipe
+05-04 19:14:47.574  1798  5375 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-04 19:14:47.576 20981 21006 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+05-04 19:14:47.579  3064  3367 V WindowManager: Sent Transition #6197 createdAt=05-04 19:14:47.521 via request=TransitionRequestInfo { type = 2, triggerTask = null, remoteTransition = null, displayChange = null, flags = 16 }
+05-04 19:14:47.579  1798  5376 E ANDR-PERF-LM: VmRssMeter:: start() 358: Could not find pid, can not collect vmrss data
+05-04 19:14:47.579  1798  5376 E ANDR-PERF-LM: AdaptiveLaunch: writeToDataBase() 64: Meter aborted or could not get meter data for this run
+05-04 19:14:47.579  3064  3367 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-04 19:14:47.579  3064  3367 V WindowManager:     info={id=6197 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{9a2e0c9 Task{97f56a1 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0x5e976da sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{7697524 Task{c02263 #3793 type=standard A=10502:com.deepeye.musicpro.debug}}} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3793)/@0xf3d8b6 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0x9a1864e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:14:47.579  3827  3912 V WindowManagerShell: onTransitionReady android.os.BinderProxy@143ec87: {id=6197 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@b960cd9} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0x6f4fdd sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@fa3c69e} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3793)/@0xba88752 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0xb68ca23 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:14:47.579  3827  3912 V WindowManagerShell: Playing animation for (#6197)android.os.BinderProxy@143ec87@0
+05-04 19:14:47.579  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@9f0b165
+05-04 19:14:47.579  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@aa67e3a
+05-04 19:14:47.579  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@e359aeb
+05-04 19:14:47.580  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@ec8c048
+05-04 19:14:47.580  3827  3912 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-04 19:14:47.580  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@5bffee1
+05-04 19:14:47.580  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@56e4406
+05-04 19:14:47.580  3827  3912 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 19:14:47.580  3827  3912 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=6197 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@b960cd9} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP pTaskId=-1 leash=Surface(name=Task=1)/@0x6f4fdd sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@fa3c69e} m=CLOSE f=NONE pTaskId=-1 leash=Surface(name=Task=3793)/@0xba88752 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{69b9f27 token=android.os.Binder@8253de6})/@0xb68ca23 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+05-04 19:14:47.580  3827  3912 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 19:14:47.580  3827  3912 D RemoteTransitionHandler: Found filterPair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.motorola.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }}
+05-04 19:14:47.580  3827  3912 V WindowManagerShell:  Delegate animation for #6197 to RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4795a1a, appThread = android.app.IApplicationThread$Stub$Proxy@b3b794b, debugName = QuickstepLaunchHome }
+05-04 19:14:47.584  3827  3912 V WindowManagerShell:  animated by com.android.wm.shell.transition.RemoteTransitionHandler@b50fac7
+05-04 19:14:47.584  3064  5856 D PowerManagerService: nativeSetPowerMode ret:false mode:5 enabled:false duration ms: 0
+05-04 19:14:47.585  3064  5856 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-04 19:14:47.593  3827  3949 D Surface : Surface::disconnect
+05-04 19:14:47.593  3827  3949 D BufferQueueProducer: [VRI[debug]#7222(BLAST Consumer)7222](id:ef300001c3e,api:1,p:3827,c:3827) disconnect: api 1
+05-04 19:14:47.598  3064  5857 I ImeTracker: com.motorola.launcher3:885e3d54: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR
+05-04 19:14:47.598  3064  5857 I ImeTracker: com.motorola.launcher3:885e3d54: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-04 19:14:47.598  3827  3925 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@d2f34ec
+05-04 19:14:47.599  3064  3968 D CoreBackPreview: Window{ec433d5 u0 Splash Screen com.deepeye.musicpro.debug EXITING}: Setting back callback null
+05-04 19:14:47.599  3064  3971 W InputManager-JNI: Input channel object 'ec433d5 Splash Screen com.deepeye.musicpro.debug (client)' was disposed without first being removed with the input manager!
+05-04 19:14:47.601 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+05-04 19:14:47.601  1746  1746 I QTI PowerHAL: Power setMode: 6 to: 1
+05-04 19:14:47.602  1746  1746 E QTI PowerHAL: Failed to acquire lock for hint_id: 10A5.
+05-04 19:14:47.602 23155 23155 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-04 19:14:47.602 23155 23155 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.motorola.launcher3, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-04 19:14:47.602 23155 23155 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=false, bottom inset=102
+05-04 19:14:47.603 23155 23155 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-04 19:14:47.604  3064  5856 W PackageConfigPersister: App-specific configuration not found for packageName: com.motorola.launcher3 and userId: 0
+05-04 19:14:47.606  1746  1746 I QTI PowerHAL: Power setMode: 6 to: 0
+05-04 19:14:47.876  3827  3912 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#6197)android.os.BinderProxy@143ec87@0
+05-04 19:14:47.876  3064  3367 V WindowManager: Finish Transition #6197: created at 05-04 19:14:47.521 collect-started=0.031ms request-sent=0.054ms started=2.527ms ready=29.541ms sent=57.284ms finished=355.051ms
+05-04 19:14:47.881  3827  3912 V WindowManagerShell: Track 0 became idle
+05-04 19:14:47.881  3827  3912 V WindowManagerShell: All active transition animations finished
+05-04 19:14:47.882  5894 21253 W MotoFreeForm: [FreeFormController] onTaskRemoved 3793
+05-04 19:14:47.882  5894 21253 W MotoFreeForm: [FreeFormController] onTaskRemoved 3793
+05-04 19:14:48.022  3064  3370 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{8d65e1d u0 com.deepeye.musicpro.debug/com.deepeye.musicpro.ui.MainActivity t-1 f}}
+05-04 19:14:48.033  3064  5856 D PowerManagerService: nativeAcquireSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 1
+05-04 19:14:48.036  3064  5856 D PowerManagerService: nativeReleaseSuspendBlocker name:PowerManagerService.WakeLocks duration ms: 0
+05-04 19:14:48.046 14578 14578 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.semanticlocationhistory.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+05-04 19:14:48.372  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 19:14:48.375  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 19:14:48.610  1798  2034 E ANDR-PERF-UTIL: Failed to update node /proc/sys/walt/sched_per_task_boost with value 916 0
+05-04 19:14:48.610  1798  2034 E ANDR-PERF-OPTSHANDLER: can't reset task 916
+05-04 19:14:48.610  1798  2034 E ANDR-PERF-RESOURCEQS: Failed to reset optimization [3, 32]
+05-04 19:14:48.621  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:48.621  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:48.621  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:48.621  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:48.623  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 18:05:09:5a:bc:95
+05-04 19:14:48.623  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:48.652  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 14:f8:ab:c2:b8:29
+05-04 19:14:48.653  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:48.692  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:48.692  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:48.842  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:49.490 10311 10487 I ThermalEngine: Monitor:ACTIVE:FREEZE-CHG:freeze_rule=1:DETECT-STANDBY=1
+05-04 19:14:49.491 10311 10487 I ThermalEngine: ACTION: freeze_rule - Setting freeze_rule to 1
+05-04 19:14:49.491 10311 10487 I ThermalEngine: Monitor:ACTIVE:OVERRIDE-CHG:internal_override=1:DETECT-STANDBY=1
+05-04 19:14:49.491 10311 10487 I ThermalEngine: ACTION: override_c - Setting override_c to 1
+05-04 19:14:49.491 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  freezing
+05-04 19:14:49.491 10311   994 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 19:14:49.491 10311 10485 I ThermalEngine: Thermal-Server: Thermal received msg from  override_c
+05-04 19:14:49.491 10311   995 I Thermal-Lib: Thermal-Lib-Client: Client request sent
+05-04 19:14:50.015  1731  3697 I slpi    : STK3A5X ALS_OC: lux:2969.927979, last_ps:0[1232], CH0:2223, CH2:292, CH4:11, AWAIT:32, ACRL:33, AGAIN:33, INT1:9, INT2:0, PS:114, LED:128, flag:65, state:7, scale:167.560,als_sel:1(0)(cnt:0)
+05-04 19:14:50.084  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:50.084  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:50.084  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:50.084  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:50.086  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 14:f8:ab:c2:b8:29
+05-04 19:14:50.086  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:50.125  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:50.125  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:50.275  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:50.356  3974 26498 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 27 up
+05-04 19:14:50.766 12829 13167 D MobileLoggingSuite: Executing Sushi UploadTask...
+05-04 19:14:50.766 12829 13167 D MobileLoggingSuite: Starting upload of previously persisted events in path /data/user/0/in.amazon.mShop.android.shopping/files/mls/nexus/sushi_normal
+05-04 19:14:50.768 12829 13167 D MobileLoggingSuite: Completed upload of previously persisted events in path /data/user/0/in.amazon.mShop.android.shopping/files/mls/nexus/sushi_normal
+05-04 19:14:50.768 12829 13167 D MobileLoggingSuite: Sushi UploadTask completed successfully
+05-04 19:14:50.929  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:50.929  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:50.929  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:50.929  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:50.931  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 01:51:16:31:bd:9a
+05-04 19:14:50.931  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:50.933 27765   894 I NearbyMediums: Replace Fast Advertisement Rx Info for service id : NearbySharing on deviceToken : [ 0x15 0xea ]
+05-04 19:14:50.933 27765   687 I NearbyConnections: Found BleAdvertisement [ 0x23 0x56 0x53 0x36 0x52 0x11 0x32 0x96 0x67 0x23 0xab 0xeb 0xcd 0x7e 0x5d 0x33 0x77 0xd8 0xeb 0x2c 0x8d 0xd3 0x70 ] (with EndpointId VS6R and EndpointInfo [ 0x32 0x96 0x67 0x23 0xab 0xeb 0xcd 0x7e 0x5d 0x33 0x77 0xd8 0xeb 0x2c 0x8d 0xd3 0x70 ])
+05-04 19:14:50.938 27765   687 I NearbyConnections: ClientProxy(214472614) ignoring onEndpointDistanceChanged(VS6R, UNKNOWN), because this distance has already been reported
+05-04 19:14:50.970  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:50.970  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:51.121  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:51.387  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 19:14:51.391  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 19:14:51.497  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:51.497  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:51.497  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:51.497  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:51.499  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 01:51:16:31:bd:9a
+05-04 19:14:51.499  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:51.540  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:51.540  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:51.691  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:51.815  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.002/s)| Stream: 30.00fps 203.8Kbps
+05-04 19:14:51.815  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 19:14:52.099  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:52.099  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:52.099  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:52.099  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:52.100  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 14:f8:ab:c2:b8:29
+05-04 19:14:52.100  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:52.139  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:52.139  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:52.289  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:52.959  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:52.959  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:52.959  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:52.959  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:52.961  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 01:51:16:31:bd:9a
+05-04 19:14:52.961  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:53.000  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:53.000  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:53.151  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:53.795  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:53.795  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:53.795  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:53.795  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:53.796  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 18:05:09:5a:bc:95
+05-04 19:14:53.797  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:53.838  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:53.838  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:53.988  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:54.402  3064  3736 D WifiStaIfaceHidlImpl: getCachedScanData is not implemented by HIDL
+05-04 19:14:54.406  3064  3736 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=ap_br_wlan2 type=AP_BRIDGE, name=wlan0 type=STA]
+05-04 19:14:55.235  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:55.235  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:55.235  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:55.235  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:55.237  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 01:51:16:31:bd:9a
+05-04 19:14:55.237  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:55.277  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:55.277  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:55.427  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:55.865  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:55.865  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:55.866  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:55.866  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:55.867  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 18:05:09:5a:bc:95
+05-04 19:14:55.867  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:55.907  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:55.907  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:56.058  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+05-04 19:14:56.692  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+05-04 19:14:56.692  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+05-04 19:14:56.692  1737  7987 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+05-04 19:14:56.692  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+05-04 19:14:56.694  7916  7989 I bt_stack: [INFO:btm_ble_gap.cc(3287)] btm_ble_process_adv_pkt_cont Data Complete 14:f8:ab:c2:b8:29
+05-04 19:14:56.694  7916  7989 D bt_btm_ble: bool parse_adv_audio_uuids_from_adv_pkt(const uint8_t *, size_t, uint8_t): tmap_cap_pts: false
+05-04 19:14:56.735  1737  7987 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+05-04 19:14:56.735  1737  7987 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+05-04 19:14:56.816  1830 10078 I QC2Comp : [avcD_1124] Stats: Pending(9) i/p-done(5) Works: Q: 28/Done 20|Work-Rate: Q(0.0/s Avg=0.0/s) Done(0.000/s Avg=0.002/s)| Stream: 30.00fps 203.8Kbps
+05-04 19:14:56.816  1830 10078 I QC2Comp : [avcD_1124] Mem-usage:  [In-1D: 6 bufs 17.930 MB] [1D-2226: 16 bufs 0.250 MB] [2D-2227: 20 bufs 28.438 MB] | Total: 46.617 MB
+05-04 19:14:56.885  1737  7960 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 

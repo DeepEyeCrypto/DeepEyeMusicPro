@@ -32,20 +32,28 @@ class HomeViewModel : ViewModel() {
     val isLoggedIn: StateFlow<Boolean> = _isLoggedIn.asStateFlow()
     
     fun loadHomeContent() {
+        android.util.Log.d("HomeViewModel", "loadHomeContent: Starting")
         viewModelScope.launch {
             _isLoading.value = true
             val token = YoutubeAuthManager.getAccessToken()
+            android.util.Log.d("HomeViewModel", "loadHomeContent: Token exists: ${token != null}")
             _isLoggedIn.value = token != null
             
             if (token != null) {
-                YoutubeMusicApi.getMadeForYou(token).onSuccess { _madeForYou.value = it }
+                YoutubeMusicApi.getMadeForYou(token).onSuccess { 
+                    android.util.Log.d("HomeViewModel", "loadHomeContent: MadeForYou success, size: ${it.size}")
+                    _madeForYou.value = it 
+                }.onFailure {
+                    android.util.Log.e("HomeViewModel", "loadHomeContent: MadeForYou failed", it)
+                }
                 YoutubeMusicApi.getListenAgain(token).onSuccess { _listenAgain.value = it }
             } else {
+                android.util.Log.d("HomeViewModel", "loadHomeContent: Using guest mixes")
                 // Fallback / Guest Content
                 _madeForYou.value = listOf(
-                    MusicMix("1", "Your Mix", "Songs you love", "", 50),
-                    MusicMix("2", "Discover Mix", "New music", "", 30),
-                    MusicMix("3", "Release Radar", "Latest tracks", "", 25)
+                    MusicMix("1", "Your Mix", "Songs you love", "https://i.ytimg.com/vi/0/maxresdefault.jpg", 50),
+                    MusicMix("2", "Discover Mix", "New music", "https://i.ytimg.com/vi/1/maxresdefault.jpg", 30),
+                    MusicMix("3", "Release Radar", "Latest tracks", "https://i.ytimg.com/vi/2/maxresdefault.jpg", 25)
                 )
             }
             
@@ -54,6 +62,7 @@ class HomeViewModel : ViewModel() {
             YoutubeMusicApi.getMoodGenres().onSuccess { _moodGenres.value = it }
             
             _isLoading.value = false
+            android.util.Log.d("HomeViewModel", "loadHomeContent: Finished")
         }
     }
 }

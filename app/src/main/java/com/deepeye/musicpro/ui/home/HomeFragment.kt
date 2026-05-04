@@ -56,16 +56,18 @@ class HomeFragment : Fragment() {
         val profileText = view.findViewById<TextView>(R.id.profileText)
 
         profileImage?.setOnClickListener {
-            if (YoutubeAuthManager.isSignedIn()) {
-                YoutubeAuthManager.signOut()
-                viewModel.loadHomeContent()
-                Toast.makeText(context, "Signed out", Toast.LENGTH_SHORT).show()
-            } else {
-                YoutubeAuthManager.signIn(requireActivity(), signInLauncher)
+            viewLifecycleOwner.lifecycleScope.launch {
+                if (YoutubeAuthManager.isSignedIn()) {
+                    YoutubeAuthManager.signOut()
+                    viewModel.loadHomeContent()
+                    Toast.makeText(context, "Signed out", Toast.LENGTH_SHORT).show()
+                } else {
+                    YoutubeAuthManager.signIn(requireActivity(), signInLauncher)
+                }
             }
         }
         
-        lifecycleScope.launch {
+        viewLifecycleOwner.lifecycleScope.launch {
             viewModel.isLoggedIn.collect { loggedIn ->
                 if (loggedIn) {
                     profileText?.text = YoutubeAuthManager.getUserName() ?: "Profile"
