@@ -25,35 +25,45 @@ class NativeDSP {
         }
     }
 
-    fun applyPreset(preset: DSPPreset, enabled: Boolean) = synchronized(lock) {
+    fun applyPreset(preset: DSPPreset, enabled: Boolean) {
         if (handle == 0L || !available) return
         nativeSetEnabled(handle, enabled)
-        nativeSetEqEnabled(handle, preset.eqEnabled)
-        nativeSetBassEnabled(handle, preset.bassEnabled)
-        nativeSetWidthEnabled(handle, preset.widthEnabled)
-        nativeSetCompressorEnabled(handle, preset.compressorEnabled)
-        nativeSetReverbEnabled(handle, preset.reverbEnabled)
-        nativeSetConvolverEnabled(handle, preset.convolverEnabled)
         nativeSetEqGains(handle, preset.eqGains.toFloatArray())
         nativeSetBassBoost(handle, preset.bassBoost)
-        nativeSetStereoWidth(handle, preset.stereoWidth)
-        nativeSetCompressor(handle, preset.compressorThresholdDb, preset.compressorRatio, preset.compressorAttackMs, preset.compressorReleaseMs)
-        nativeSetReverb(handle, preset.reverbRoom, preset.reverbDamping, preset.reverbWidth, preset.reverbWet)
         nativeSetLimiterCeiling(handle, preset.limiterCeilingDb)
     }
 
-    fun processDirect(input: ByteBuffer, output: ByteBuffer, frames: Int): Boolean = synchronized(lock) {
+    fun setLimiterCeiling(db: Float) {
+        if (handle != 0L && available) {
+            nativeSetLimiterCeiling(handle, db)
+        }
+    }
+
+    fun setEnabled(enabled: Boolean) {
+        if (handle != 0L && available) {
+            nativeSetEnabled(handle, enabled)
+        }
+    }
+
+    fun reset() = synchronized(lock) {
+        if (handle != 0L && available) {
+            nativeReset(handle)
+        }
+    }
+
+    fun processDirect(input: ByteBuffer, output: ByteBuffer, frames: Int): Boolean {
         if (handle == 0L || !available) return false
         nativeProcessDirect(handle, input, output, frames)
-        true
+        return true
     }
 
-    fun processFloatArray(input: FloatArray, output: FloatArray, frames: Int): Boolean = synchronized(lock) {
-        if (handle == 0L || !available) return false
-        nativeProcessFloatArray(handle, input, output, frames)
-        true
+    fun getVisualizerData(spectrum: FloatArray, waveform: FloatArray, peak: FloatArray) {
+        if (handle != 0L && available) {
+            nativeGetVisualizerData(handle, spectrum, waveform, peak)
+        }
     }
 
+    private external fun nativeReset(handle: Long)
     private external fun nativeCreate(sampleRate: Int, channels: Int): Long
     private external fun nativeRelease(handle: Long)
     private external fun nativeSetEnabled(handle: Long, enabled: Boolean)
@@ -73,6 +83,7 @@ class NativeDSP {
     private external fun nativeSetConvolverIr(handle: Long, left: FloatArray, right: FloatArray?)
     private external fun nativeProcessFloatArray(handle: Long, input: FloatArray, output: FloatArray, frames: Int)
     private external fun nativeProcessDirect(handle: Long, input: ByteBuffer, output: ByteBuffer, frames: Int)
+    private external fun nativeGetVisualizerData(handle: Long, spectrum: FloatArray, waveform: FloatArray, peak: FloatArray)
 
     companion object {
         private val libraryLoaded = AtomicBoolean(false)

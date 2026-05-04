@@ -134,7 +134,54 @@ data class V4APreset(
             )
         )
 
-        val BuiltIns = listOf(SuperBass, ClearVocal, ConcertHall, HeadphoneSurround, WarmTube, StudioReference, MovieMode, Gaming)
+        val SuperBassV2 = V4APreset(
+            id = "super_bass_v2",
+            name = "Super Bass V2",
+            isBuiltIn = true,
+            effects = V4AEffectsState.Default.copy(
+                eqGains = eq(20f, 18.5f, 15f, 9.5f, 4f, -1f, -2.5f, 1f, 4.5f, 6f),
+                convolverIR = "DeepEye_Extreme_Bass.irs",
+                fetAttack = 2.5f,
+                fetRelease = 140f,
+                fetRatio = 3.8f,
+                fetThreshold = -15f,
+                tubeWarmth = 0.88f,
+                enabledEffects = setOf(V4AEffect.EQ, V4AEffect.CONVOLVER, V4AEffect.FET, V4AEffect.TUBE)
+            )
+        )
+
+        val PremiumDeepBass = V4APreset(
+            id = "premium_deep_bass",
+            name = "DeepEye Premium Bass",
+            isBuiltIn = true,
+            effects = V4AEffectsState.Default.copy(
+                eqGains = eq(22f, 18f, 12f, 4f, -1f, -2f, 0f, 2f, 5f, 8f),
+                convolverIR = "DeepEye_Extreme_Bass.irs",
+                fetAttack = 1.5f,
+                fetRelease = 180f,
+                fetRatio = 5.0f,
+                fetThreshold = -22f,
+                tubeWarmth = 0.55f,
+                enabledEffects = setOf(V4AEffect.EQ, V4AEffect.CONVOLVER, V4AEffect.FET, V4AEffect.TUBE)
+            )
+        )
+
+        val ExtremeTube = V4APreset(
+            id = "extreme_tube",
+            name = "Extreme Tube",
+            isBuiltIn = true,
+            effects = V4AEffectsState.Default.copy(
+                eqGains = eq(4f, 3f, 2f, 1f, 0f, 0f, 1f, 2f, 3f, 4f),
+                fetAttack = 5f,
+                fetRelease = 120f,
+                fetRatio = 2.4f,
+                fetThreshold = -10f,
+                tubeWarmth = 1.0f,
+                enabledEffects = setOf(V4AEffect.EQ, V4AEffect.FET, V4AEffect.TUBE)
+            )
+        )
+
+        val BuiltIns = listOf(PremiumDeepBass, SuperBassV2, ExtremeTube, SuperBass, ClearVocal, ConcertHall, HeadphoneSurround, WarmTube, StudioReference, MovieMode, Gaming)
 
         fun fromEntity(entity: V4APresetEntity): V4APreset = entity.toPreset()
     }

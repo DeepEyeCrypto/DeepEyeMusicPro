@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Material 3 Bottom Player Bar - tonal elevation -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/miniPlayerCard"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:shapeAppearance="@style/ShapeAppearance.M3.Medium"
+    app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
+    app:cardElevation="6dp"
+    app:strokeWidth="0dp"
+    android:layout_margin="12dp"
+    app:cardPreventCornerOverlap="true">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+        
+        <!-- Album Art -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/miniAlbumArt"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/ShapeAppearance.M3.Small"/>
+        
+        <!-- Track Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp">
+            
+            <TextView
+                android:id="@+id/miniTrackTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track Title"
+                android:textAppearance="@style/TextAppearance.M3.TitleMedium"
+                android:textColor="?attr/colorOnSurface"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+                
+            <TextView
+                android:id="@+id/miniArtistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artist"
+                android:textAppearance="@style/TextAppearance.M3.BodyMedium"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        
+        <!-- Play Button -->
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/miniPlayButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:icon="@drawable/ic_play"
+            app:iconTint="?attr/colorPrimary"
+            app:iconSize="32dp"/>
+            
+        <!-- Next Button -->
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/miniNextButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:icon="@drawable/ic_next"
+            app:iconTint="?attr/colorOnSurface"
+            app:iconSize="28dp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

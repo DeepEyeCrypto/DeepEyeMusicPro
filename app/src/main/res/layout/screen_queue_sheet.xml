@@ -2,6 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_dsp_sheet" android:orientation="vertical" android:padding="22dp">
     <View android:layout_width="44dp" android:layout_height="5dp" android:layout_gravity="center_horizontal" android:background="@drawable/bg_drag_handle" />
     <TextView android:id="@+id/queueTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Up Next" android:textColor="@color/deep_text_primary" android:textSize="24sp" android:textStyle="bold" />
-    <TextView android:id="@+id/queueSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="No tracks queued" android:textColor="@color/deep_text_secondary" />
+    
+    <RelativeLayout android:id="@+id/radioIndicatorContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/bg_surface_card" android:padding="12dp">
+        <TextView android:id="@+id/radioModeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Radio Mode" android:textColor="@color/deep_accent_cyan" android:textStyle="bold" android:textSize="12sp" />
+        <TextView android:id="@+id/radioStatusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/radioModeLabel" android:text="Auto-playing related songs" android:textColor="@color/deep_text_secondary" android:textSize="11sp" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/radioToggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:checked="true" />
+        <ProgressBar android:id="@+id/radioLoading" android:layout_width="16dp" android:layout_height="16dp" android:layout_toStartOf="@id/radioToggle" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView android:id="@+id/queueSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="No tracks queued" android:textColor="@color/deep_text_secondary" />
+
     <androidx.recyclerview.widget.RecyclerView android:id="@+id/queueRecycler" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1" android:clipToPadding="false" android:paddingBottom="18dp" />
 </LinearLayout>

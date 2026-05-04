@@ -1,0 +1,30 @@
+# ── Build outputs ──
+*.iml
+.gradle/
+/local.properties
+/.idea/
+/build/
+/app/build/
+/app/release/
+/captures/
+
+# ── Signing credentials (NEVER commit) ──
+signing.properties
+*.keystore
+*.jks
+play-store-key.json
+
+# ── Native ──
+.cxx/
+.externalNativeBuild/
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ── IDE ──
+*.iml
+.idea/
+*.hprof

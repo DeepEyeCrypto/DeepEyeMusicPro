@@ -21,10 +21,19 @@ data class Track(
     val mimeType: String? = null,
     val bitrate: Int = 0,
     val source: String = SourceKind.YOUTUBE,
-    val isExplicit: Boolean = false
+    val isExplicit: Boolean = false,
+    val isFavorite: Boolean = false
 ) {
     val playableUri: String?
         get() = localUri ?: streamUrl
+
+    fun toMediaMetadata(): MediaMetadata {
+        return MediaMetadata.Builder()
+            .setTitle(title)
+            .setArtist(artist)
+            .setArtworkUri(thumbnailUrl?.let(android.net.Uri::parse))
+            .build()
+    }
 
     fun toMediaItem(): MediaItem {
         val uri = playableUri ?: webUrl.orEmpty()

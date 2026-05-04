@@ -1,0 +1,26 @@
+v1.0.0 — Initial Release
+
+🎵 Studio-Grade Audio
+• Native C++ DSP engine with 10-band EQ, bass boost, stereo width, and compressor
+• Convolution reverb with professional impulse response support
+• Speaker-safe output with intelligent look-ahead limiter
+
+🎨 Real-Time Visualizer
+• Frequency spectrum, waveform, and circular visualization modes
+• Beat-reactive animations powered by native FFT at 60 FPS
+
+🔍 Music Discovery
+• Search and stream millions of tracks
+• Auto-radio with intelligent recommendations
+• Offline downloads
+
+📱 Material 3 Design
+• Dynamic colors and immersive Now Playing screen
+• Smooth gesture controls and animations
+
+🔊 Wireless Audio
+• Google Cast and Bluetooth audio support
+
+🔒 Privacy First
+• No ads, no tracking, no telemetry
+• All data stored locally

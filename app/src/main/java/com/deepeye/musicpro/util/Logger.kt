@@ -4,6 +4,10 @@ import android.util.Log
 import com.deepeye.musicpro.BuildConfig
 
 object Logger {
+    fun i(tag: String, message: String) {
+        Log.i(tag, message)
+    }
+
     fun d(tag: String, message: String) {
         if (BuildConfig.DEBUG) Log.d(tag, message)
     }

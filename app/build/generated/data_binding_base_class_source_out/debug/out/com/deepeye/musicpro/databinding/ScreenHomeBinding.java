@@ -4,48 +4,100 @@ package com.deepeye.musicpro.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.deepeye.musicpro.R;
-import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.chip.ChipGroup;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ScreenHomeBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final RecyclerView homeRecycler;
+  public final SectionHeaderBinding listenAgainHeader;
 
   @NonNull
-  public final MaterialCardView homeV4AButton;
+  public final RecyclerView listenAgainRecycler;
 
   @NonNull
-  public final View homeV4AStatusDot;
+  public final SectionHeaderBinding madeForYouHeader;
 
   @NonNull
-  public final TextView homeV4ASubtitle;
+  public final RecyclerView madeForYouRecycler;
 
-  private ScreenHomeBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView homeRecycler,
-      @NonNull MaterialCardView homeV4AButton, @NonNull View homeV4AStatusDot,
-      @NonNull TextView homeV4ASubtitle) {
+  @NonNull
+  public final ChipGroup moodChips;
+
+  @NonNull
+  public final HorizontalScrollView moodChipsScroll;
+
+  @NonNull
+  public final SectionHeaderBinding moodGenresHeader;
+
+  @NonNull
+  public final RecyclerView moodGenresRecycler;
+
+  @NonNull
+  public final SectionHeaderBinding newReleasesHeader;
+
+  @NonNull
+  public final RecyclerView newReleasesRecycler;
+
+  @NonNull
+  public final CardView profileChip;
+
+  @NonNull
+  public final ImageView profileImage;
+
+  @NonNull
+  public final TextView profileText;
+
+  @NonNull
+  public final SectionHeaderBinding trendingHeader;
+
+  @NonNull
+  public final RecyclerView trendingRecycler;
+
+  private ScreenHomeBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull SectionHeaderBinding listenAgainHeader, @NonNull RecyclerView listenAgainRecycler,
+      @NonNull SectionHeaderBinding madeForYouHeader, @NonNull RecyclerView madeForYouRecycler,
+      @NonNull ChipGroup moodChips, @NonNull HorizontalScrollView moodChipsScroll,
+      @NonNull SectionHeaderBinding moodGenresHeader, @NonNull RecyclerView moodGenresRecycler,
+      @NonNull SectionHeaderBinding newReleasesHeader, @NonNull RecyclerView newReleasesRecycler,
+      @NonNull CardView profileChip, @NonNull ImageView profileImage, @NonNull TextView profileText,
+      @NonNull SectionHeaderBinding trendingHeader, @NonNull RecyclerView trendingRecycler) {
     this.rootView = rootView;
-    this.homeRecycler = homeRecycler;
-    this.homeV4AButton = homeV4AButton;
-    this.homeV4AStatusDot = homeV4AStatusDot;
-    this.homeV4ASubtitle = homeV4ASubtitle;
+    this.listenAgainHeader = listenAgainHeader;
+    this.listenAgainRecycler = listenAgainRecycler;
+    this.madeForYouHeader = madeForYouHeader;
+    this.madeForYouRecycler = madeForYouRecycler;
+    this.moodChips = moodChips;
+    this.moodChipsScroll = moodChipsScroll;
+    this.moodGenresHeader = moodGenresHeader;
+    this.moodGenresRecycler = moodGenresRecycler;
+    this.newReleasesHeader = newReleasesHeader;
+    this.newReleasesRecycler = newReleasesRecycler;
+    this.profileChip = profileChip;
+    this.profileImage = profileImage;
+    this.profileText = profileText;
+    this.trendingHeader = trendingHeader;
+    this.trendingRecycler = trendingRecycler;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -70,32 +122,106 @@ public final class ScreenHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.homeRecycler;
-      RecyclerView homeRecycler = ViewBindings.findChildViewById(rootView, id);
-      if (homeRecycler == null) {
+      id = R.id.listenAgainHeader;
+      View listenAgainHeader = ViewBindings.findChildViewById(rootView, id);
+      if (listenAgainHeader == null) {
+        break missingId;
+      }
+      SectionHeaderBinding binding_listenAgainHeader = SectionHeaderBinding.bind(listenAgainHeader);
+
+      id = R.id.listenAgainRecycler;
+      RecyclerView listenAgainRecycler = ViewBindings.findChildViewById(rootView, id);
+      if (listenAgainRecycler == null) {
         break missingId;
       }
 
-      id = R.id.homeV4AButton;
-      MaterialCardView homeV4AButton = ViewBindings.findChildViewById(rootView, id);
-      if (homeV4AButton == null) {
+      id = R.id.madeForYouHeader;
+      View madeForYouHeader = ViewBindings.findChildViewById(rootView, id);
+      if (madeForYouHeader == null) {
+        break missingId;
+      }
+      SectionHeaderBinding binding_madeForYouHeader = SectionHeaderBinding.bind(madeForYouHeader);
+
+      id = R.id.madeForYouRecycler;
+      RecyclerView madeForYouRecycler = ViewBindings.findChildViewById(rootView, id);
+      if (madeForYouRecycler == null) {
         break missingId;
       }
 
-      id = R.id.homeV4AStatusDot;
-      View homeV4AStatusDot = ViewBindings.findChildViewById(rootView, id);
-      if (homeV4AStatusDot == null) {
+      id = R.id.moodChips;
+      ChipGroup moodChips = ViewBindings.findChildViewById(rootView, id);
+      if (moodChips == null) {
         break missingId;
       }
 
-      id = R.id.homeV4ASubtitle;
-      TextView homeV4ASubtitle = ViewBindings.findChildViewById(rootView, id);
-      if (homeV4ASubtitle == null) {
+      id = R.id.moodChipsScroll;
+      HorizontalScrollView moodChipsScroll = ViewBindings.findChildViewById(rootView, id);
+      if (moodChipsScroll == null) {
         break missingId;
       }
 
-      return new ScreenHomeBinding((LinearLayout) rootView, homeRecycler, homeV4AButton,
-          homeV4AStatusDot, homeV4ASubtitle);
+      id = R.id.moodGenresHeader;
+      View moodGenresHeader = ViewBindings.findChildViewById(rootView, id);
+      if (moodGenresHeader == null) {
+        break missingId;
+      }
+      SectionHeaderBinding binding_moodGenresHeader = SectionHeaderBinding.bind(moodGenresHeader);
+
+      id = R.id.moodGenresRecycler;
+      RecyclerView moodGenresRecycler = ViewBindings.findChildViewById(rootView, id);
+      if (moodGenresRecycler == null) {
+        break missingId;
+      }
+
+      id = R.id.newReleasesHeader;
+      View newReleasesHeader = ViewBindings.findChildViewById(rootView, id);
+      if (newReleasesHeader == null) {
+        break missingId;
+      }
+      SectionHeaderBinding binding_newReleasesHeader = SectionHeaderBinding.bind(newReleasesHeader);
+
+      id = R.id.newReleasesRecycler;
+      RecyclerView newReleasesRecycler = ViewBindings.findChildViewById(rootView, id);
+      if (newReleasesRecycler == null) {
+        break missingId;
+      }
+
+      id = R.id.profileChip;
+      CardView profileChip = ViewBindings.findChildViewById(rootView, id);
+      if (profileChip == null) {
+        break missingId;
+      }
+
+      id = R.id.profileImage;
+      ImageView profileImage = ViewBindings.findChildViewById(rootView, id);
+      if (profileImage == null) {
+        break missingId;
+      }
+
+      id = R.id.profileText;
+      TextView profileText = ViewBindings.findChildViewById(rootView, id);
+      if (profileText == null) {
+        break missingId;
+      }
+
+      id = R.id.trendingHeader;
+      View trendingHeader = ViewBindings.findChildViewById(rootView, id);
+      if (trendingHeader == null) {
+        break missingId;
+      }
+      SectionHeaderBinding binding_trendingHeader = SectionHeaderBinding.bind(trendingHeader);
+
+      id = R.id.trendingRecycler;
+      RecyclerView trendingRecycler = ViewBindings.findChildViewById(rootView, id);
+      if (trendingRecycler == null) {
+        break missingId;
+      }
+
+      return new ScreenHomeBinding((CoordinatorLayout) rootView, binding_listenAgainHeader,
+          listenAgainRecycler, binding_madeForYouHeader, madeForYouRecycler, moodChips,
+          moodChipsScroll, binding_moodGenresHeader, moodGenresRecycler, binding_newReleasesHeader,
+          newReleasesRecycler, profileChip, profileImage, profileText, binding_trendingHeader,
+          trendingRecycler);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

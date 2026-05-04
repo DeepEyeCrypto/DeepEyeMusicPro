@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.deepeye.musicpro.R;
+import com.google.android.material.materialswitch.MaterialSwitch;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -29,13 +32,35 @@ public final class ScreenQueueSheetBinding implements ViewBinding {
   @NonNull
   public final TextView queueTitle;
 
+  @NonNull
+  public final RelativeLayout radioIndicatorContainer;
+
+  @NonNull
+  public final ProgressBar radioLoading;
+
+  @NonNull
+  public final TextView radioModeLabel;
+
+  @NonNull
+  public final TextView radioStatusText;
+
+  @NonNull
+  public final MaterialSwitch radioToggle;
+
   private ScreenQueueSheetBinding(@NonNull LinearLayout rootView,
       @NonNull RecyclerView queueRecycler, @NonNull TextView queueSummary,
-      @NonNull TextView queueTitle) {
+      @NonNull TextView queueTitle, @NonNull RelativeLayout radioIndicatorContainer,
+      @NonNull ProgressBar radioLoading, @NonNull TextView radioModeLabel,
+      @NonNull TextView radioStatusText, @NonNull MaterialSwitch radioToggle) {
     this.rootView = rootView;
     this.queueRecycler = queueRecycler;
     this.queueSummary = queueSummary;
     this.queueTitle = queueTitle;
+    this.radioIndicatorContainer = radioIndicatorContainer;
+    this.radioLoading = radioLoading;
+    this.radioModeLabel = radioModeLabel;
+    this.radioStatusText = radioStatusText;
+    this.radioToggle = radioToggle;
   }
 
   @Override
@@ -83,8 +108,39 @@ public final class ScreenQueueSheetBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.radioIndicatorContainer;
+      RelativeLayout radioIndicatorContainer = ViewBindings.findChildViewById(rootView, id);
+      if (radioIndicatorContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.radioLoading;
+      ProgressBar radioLoading = ViewBindings.findChildViewById(rootView, id);
+      if (radioLoading == null) {
+        break missingId;
+      }
+
+      id = R.id.radioModeLabel;
+      TextView radioModeLabel = ViewBindings.findChildViewById(rootView, id);
+      if (radioModeLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.radioStatusText;
+      TextView radioStatusText = ViewBindings.findChildViewById(rootView, id);
+      if (radioStatusText == null) {
+        break missingId;
+      }
+
+      id = R.id.radioToggle;
+      MaterialSwitch radioToggle = ViewBindings.findChildViewById(rootView, id);
+      if (radioToggle == null) {
+        break missingId;
+      }
+
       return new ScreenQueueSheetBinding((LinearLayout) rootView, queueRecycler, queueSummary,
-          queueTitle);
+          queueTitle, radioIndicatorContainer, radioLoading, radioModeLabel, radioStatusText,
+          radioToggle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

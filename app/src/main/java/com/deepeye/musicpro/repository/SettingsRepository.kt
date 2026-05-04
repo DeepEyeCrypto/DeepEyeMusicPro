@@ -24,7 +24,10 @@ class SettingsRepository(private val context: Context) {
             dspEnabledDefault = prefs[Keys.DspEnabledDefault] ?: true,
             chosenPreset = prefs[Keys.ChosenPreset] ?: "flat",
             webViewFallbackEnabled = prefs[Keys.WebFallbackEnabled] ?: true,
-            explicitContentEnabled = prefs[Keys.ExplicitContentEnabled] ?: true
+            explicitContentEnabled = prefs[Keys.ExplicitContentEnabled] ?: true,
+            autoRadioEnabled = prefs[Keys.AutoRadioEnabled] ?: true,
+            radioSource = prefs[Keys.RadioSource] ?: "related",
+            prefetchCount = prefs[Keys.PrefetchCount] ?: 10
         )
     }
 
@@ -33,6 +36,7 @@ class SettingsRepository(private val context: Context) {
     suspend fun setChosenPreset(value: String) = context.settingsDataStore.edit { it[Keys.ChosenPreset] = value }
     suspend fun setWebFallbackEnabled(value: Boolean) = context.settingsDataStore.edit { it[Keys.WebFallbackEnabled] = value }
     suspend fun setDownloadLocation(value: String) = context.settingsDataStore.edit { it[Keys.DownloadLocationStrategy] = value }
+    suspend fun setAutoRadioEnabled(value: Boolean) = context.settingsDataStore.edit { it[Keys.AutoRadioEnabled] = value }
 
     private object Keys {
         val ThemeMode = stringPreferencesKey("theme_mode")
@@ -46,5 +50,8 @@ class SettingsRepository(private val context: Context) {
         val ChosenPreset = stringPreferencesKey("chosen_preset")
         val WebFallbackEnabled = booleanPreferencesKey("webview_fallback_enabled")
         val ExplicitContentEnabled = booleanPreferencesKey("explicit_content_enabled")
+        val AutoRadioEnabled = booleanPreferencesKey("auto_radio_enabled")
+        val RadioSource = stringPreferencesKey("radio_source")
+        val PrefetchCount = androidx.datastore.preferences.core.intPreferencesKey("prefetch_count")
     }
 }

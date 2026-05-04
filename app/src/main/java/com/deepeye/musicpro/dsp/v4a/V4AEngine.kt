@@ -86,6 +86,13 @@ class V4AEngine(context: Context) {
     fun setTubeWarmth(warmth: Float) = synchronized(lock) {
         val effects = _state.value.effects.copy(tubeWarmth = warmth.coerceIn(0f, 1f)).withEffect(V4AEffect.TUBE, warmth > 0f)
         nativeV4A.applyState(effects, _state.value.mode == V4AEngineMode.BUNDLED && effects.masterEnabled)
+        Log.i(TAG, "Tube warmth=%.2f".format(warmth))
+        _state.value = _state.value.copy(effects = effects)
+    }
+
+    fun setTubeEnabled(enabled: Boolean) = synchronized(lock) {
+        val effects = _state.value.effects.withEffect(V4AEffect.TUBE, enabled)
+        nativeV4A.applyState(effects, _state.value.mode == V4AEngineMode.BUNDLED && effects.masterEnabled)
         _state.value = _state.value.copy(effects = effects)
     }
 

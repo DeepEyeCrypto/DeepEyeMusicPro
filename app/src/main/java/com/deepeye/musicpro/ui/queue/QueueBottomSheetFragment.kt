@@ -33,6 +33,24 @@ class QueueBottomSheetFragment : BottomSheetDialogFragment() {
         binding?.queueRecycler?.layoutManager = LinearLayoutManager(requireContext())
         binding?.queueRecycler?.adapter = adapter
         playerController.connect()
+        
+        val app = com.deepeye.musicpro.DeepEyeApp.from(requireContext())
+        val settingsRepo = app.settingsRepository
+        
+        lifecycleScope.launch {
+            settingsRepo.settings.collect { settings ->
+                binding?.radioToggle?.isChecked = settings.autoRadioEnabled
+                binding?.radioIndicatorContainer?.visibility = if (settings.autoRadioEnabled) View.VISIBLE else View.VISIBLE // Always show for toggle
+                binding?.radioStatusText?.text = if (settings.autoRadioEnabled) "Auto-playing related songs" else "Radio mode disabled"
+            }
+        }
+        
+        binding?.radioToggle?.setOnCheckedChangeListener { _, isChecked ->
+            lifecycleScope.launch {
+                settingsRepo.setAutoRadioEnabled(isChecked)
+            }
+        }
+
         lifecycleScope.launch {
             playerController.state.collect { state ->
                 adapter.currentIndex = state.currentIndex

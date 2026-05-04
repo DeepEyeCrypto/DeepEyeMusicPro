@@ -20,4 +20,16 @@
     <color name="deep_text_inverse">#041019</color>
     <color name="deep_scrim">#CC020407</color>
     <color name="deep_transparent">#00000000</color>
+
+    <!-- UI Enhancement Colors -->
+    <color name="surface_2">#182231</color>
+    <color name="text_faint">#4A5B6F</color>
+    <color name="cyan_accent">#35D8FF</color>
+    <color name="surface">#020407</color>
+    <color name="surface_dynamic">#1F2B3A</color>
+    <color name="cyan_accent_20">#3335D8FF</color>
+    <color name="cyan_accent_10">#1A35D8FF</color>
+    <color name="text">#F5FAFF</color>
+    <color name="surface_variant">#121A24</color>
+    <color name="outline_variant">#2C3B4C</color>
 </resources>

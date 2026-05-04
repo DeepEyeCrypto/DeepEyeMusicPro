@@ -1,0 +1,70 @@
+name: DeepEye Crash Regression Gate
+
+on:
+  pull_request:
+    branches: [ "main", "release/*" ]
+  workflow_dispatch:
+
+jobs:
+  regression-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'zulu'
+        java-version: '17'
+        cache: 'gradle'
+
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
+    - name: Run Unit & Integration Tests
+      run: ./gradlew testDebugUnitTest
+
+    - name: Run Strict Mode Lint
+      run: ./gradlew lintDebug
+
+    - name: Enable KVM group perms (for emulator)
+      run: |
+        echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+        sudo udevadm control --reload-rules
+        sudo udevadm trigger --name-match=kvm
+
+    - name: Deep Test (Instrumentation & UI)
+      uses: reactivecircus/android-emulator-runner@v2
+      with:
+        api-level: 30
+        target: aosp_atd
+        arch: x86_64
+        profile: Nexus 6
+        script: |
+          echo "Running Emergency Deep Test..."
+          # Install app and test APK
+          ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest
+          
+          # Run core stability tests (simulating deep_test.sh)
+          ./gradlew :app:connectedDebugAndroidTest \
+              -Pandroid.testInstrumentationRunnerArguments.annotation=androidx.test.filters.LargeTest
+
+    - name: Check for Native Crashes (Tombstones)
+      if: failure()
+      run: |
+        echo "🚨 Test Failed. Pulling Tombstones..."
+        adb pull /data/tombstones/ ./tombstones || true
+        ls -la ./tombstones || true
+        cat ./tombstones/* || true
+
+    - name: Upload Crash Logs
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: crash-logs
+        path: |
+          app/build/reports/
+          ./tombstones/

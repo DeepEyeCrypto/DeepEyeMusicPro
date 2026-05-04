@@ -14,7 +14,7 @@ import androidx.room.TypeConverters
         PlaylistEntity::class,
         PlaylistTrackCrossRef::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = true
 )
 @TypeConverters(Converters::class)

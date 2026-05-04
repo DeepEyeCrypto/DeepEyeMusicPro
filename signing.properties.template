@@ -1,0 +1,6 @@
+# ── Signing config (DO NOT COMMIT with real values) ──
+# Copy this to signing.properties and fill in your credentials
+STORE_FILE=/path/to/deepeye-release.keystore
+STORE_PASSWORD=changeme
+KEY_ALIAS=deepeye
+KEY_PASSWORD=changeme

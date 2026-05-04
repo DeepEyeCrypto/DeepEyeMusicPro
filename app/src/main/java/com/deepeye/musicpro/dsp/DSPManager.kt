@@ -47,6 +47,10 @@ class DSPManager(
         applyPreset(current.copy(id = "custom_live", name = "Custom Live", eqGains = gains, builtIn = false))
     }
 
+    fun getVisualizerData(spectrum: FloatArray, waveform: FloatArray, peak: FloatArray) {
+        nativeDSP.getVisualizerData(spectrum, waveform, peak)
+    }
+
     fun release() {
         audioProcessor.reset()
     }

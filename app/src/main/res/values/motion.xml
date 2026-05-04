@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Motion Tokens -->
+    
+    <!-- Duration -->
+    <integer name="m3_duration_short">50</integer>
+    <integer name="m3_duration_medium">150</integer>
+    <integer name="m3_duration_long">250</integer>
+    <integer name="m3_duration_extra_long">350</integer>
+    
+    <!-- Easing - Standard -->
+    <string name="m3_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1)</string>
+    <!-- Easing - Emphasized (Expressive) -->
+    <string name="m3_easing_emphasized">cubic-bezier(0.2, 0.0, 0, 1)</string>
+    <!-- Easing - Decelerate -->
+    <string name="m3_easing_decelerate">cubic-bezier(0.0, 0.0, 0.2, 1)</string>
+    <!-- Easing - Accelerate -->
+    <string name="m3_easing_accelerate">cubic-bezier(0.4, 0.0, 1, 1)</string>
+    
+    <!-- Music Animations -->
+    <style name="MusicAnimation.FadeIn" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    
+    <style name="MusicAnimation.SlideUp" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+</resources>

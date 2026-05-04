@@ -1,0 +1,105 @@
+# ══════════════════════════════════════════════════════════════════
+# DeepEyeMusicPro — Fastlane Configuration
+# ══════════════════════════════════════════════════════════════════
+
+default_platform(:android)
+
+platform :android do
+
+  desc "Run unit tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Build debug APK"
+  lane :debug do
+    gradle(task: "assembleDebug")
+  end
+
+  desc "Build release AAB"
+  lane :build_release do
+    gradle(
+      task: "bundleRelease",
+      print_command: true
+    )
+  end
+
+  # ── Deployment Lanes ────────────────────────────────────────────
+
+  desc "Deploy to Play Store Internal Testing"
+  lane :internal do
+    build_release
+    upload_to_play_store(
+      track: 'internal',
+      aab: 'app/build/outputs/bundle/release/app-release.aab',
+      release_status: 'draft',
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      skip_upload_changelogs: false
+    )
+    UI.success("✅ Uploaded to Internal Testing track")
+  end
+
+  desc "Deploy to Play Store Beta (Closed Testing)"
+  lane :beta do
+    build_release
+    upload_to_play_store(
+      track: 'beta',
+      aab: 'app/build/outputs/bundle/release/app-release.aab',
+      release_status: 'draft',
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true
+    )
+    UI.success("✅ Uploaded to Beta track")
+  end
+
+  desc "Deploy to Play Store Production (staged 5%)"
+  lane :production do
+    build_release
+
+    # Staged rollout: start at 5%
+    upload_to_play_store(
+      track: 'production',
+      aab: 'app/build/outputs/bundle/release/app-release.aab',
+      release_status: 'inProgress',
+      rollout: '0.05',
+      skip_upload_metadata: false,
+      skip_upload_images: false,
+      skip_upload_screenshots: false
+    )
+    UI.success("✅ Production release started (5% rollout)")
+  end
+
+  desc "Promote production rollout to 100%"
+  lane :promote_full do
+    upload_to_play_store(
+      track: 'production',
+      release_status: 'completed',
+      skip_upload_aab: true,
+      version_code: lane_context[:VERSION_CODE]
+    )
+    UI.success("✅ Promoted to 100% rollout")
+  end
+
+  # ── Utility Lanes ──────────────────────────────────────────────
+
+  desc "Upload ProGuard mapping and native debug symbols"
+  lane :upload_symbols do
+    upload_to_play_store(
+      track: 'internal',
+      mapping: 'app/build/outputs/mapping/release/mapping.txt',
+      skip_upload_aab: true
+    )
+    UI.success("✅ Symbols uploaded")
+  end
+
+  desc "Validate release AAB without uploading"
+  lane :validate do
+    build_release
+    validate_play_store_json_key(json_key: ENV['SUPPLY_JSON_KEY'])
+    UI.success("✅ Validation passed")
+  end
+
+end

@@ -2,12 +2,17 @@ package com.deepeye.musicpro.player
 
 import android.content.ComponentName
 import android.content.Context
+import android.os.Bundle
 import androidx.media3.common.Player
 import androidx.media3.session.MediaController
-import com.google.common.util.concurrent.ListenableFuture
+import androidx.media3.session.SessionCommand
+import androidx.media3.session.SessionResult
 import androidx.media3.session.SessionToken
 import com.deepeye.musicpro.model.Track
 import com.deepeye.musicpro.service.MusicPlayerService
+import com.deepeye.musicpro.util.Logger
+import com.google.common.util.concurrent.Futures
+import com.google.common.util.concurrent.ListenableFuture
 import com.google.common.util.concurrent.MoreExecutors
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -16,7 +21,12 @@ import kotlinx.coroutines.flow.asStateFlow
 class PlayerController(private val context: Context) {
     private val _state = MutableStateFlow(PlayerState())
     val state: StateFlow<PlayerState> = _state.asStateFlow()
+    
+    private val _radioFetching = MutableStateFlow(false)
+    val radioFetching: StateFlow<Boolean> = _radioFetching.asStateFlow()
+
     private var controller: MediaController? = null
+    fun getController(): MediaController? = controller
     private var controllerFuture: ListenableFuture<MediaController>? = null
     private val queueManager = QueueManager()
 
@@ -29,12 +39,16 @@ class PlayerController(private val context: Context) {
         val future = MediaController.Builder(context, token).buildAsync()
         controllerFuture = future
         future.addListener({
-            controller = future.get().also { mediaController ->
-                mediaController.addListener(listener)
-                syncQueueManager(mediaController)
-                publishState(mediaController)
+            try {
+                controller = future.get().also { mediaController ->
+                    mediaController.addListener(listener)
+                    syncQueueManager(mediaController)
+                    publishState(mediaController)
+                }
+                onConnected?.invoke()
+            } catch (e: Exception) {
+                Logger.e("PlayerController", "Failed to connect to MediaSession", e)
             }
-            onConnected?.invoke()
         }, MoreExecutors.directExecutor())
     }
 
@@ -57,17 +71,41 @@ class PlayerController(private val context: Context) {
     fun enqueue(track: Track, playIfEmpty: Boolean = true) {
         connect {
             val mediaController = controller ?: return@connect
-            val wasEmpty = mediaController.mediaItemCount == 0
-            mediaController.addMediaItem(track.toMediaItem())
-            syncQueueManager(mediaController)
-            if (wasEmpty && playIfEmpty) {
-                mediaController.prepare()
-                mediaController.play()
+            val items = (0 until mediaController.mediaItemCount).mapNotNull { 
+                mediaController.getMediaItemAt(it).localConfiguration?.tag as? Track
+            }
+            if (items.isEmpty() && playIfEmpty) {
+                playQueue(listOf(track))
+            } else {
+                mediaController.addMediaItem(track.toMediaItem())
             }
         }
     }
 
-    fun play(track: Track) { playQueue(listOf(track), 0) }
+    fun enqueueRelated(results: List<com.deepeye.musicpro.model.SearchResult>) {
+        connect {
+            val mediaController = controller ?: return@connect
+            val existingIds = (0 until mediaController.mediaItemCount).map { 
+                mediaController.getMediaItemAt(it).mediaId
+            }.toSet()
+            
+            results.forEach { result ->
+                if (!existingIds.contains(result.track.id)) {
+                    val placeholderUri = android.net.Uri.parse("placeholder://${result.track.id}")
+                    val item = androidx.media3.common.MediaItem.Builder()
+                        .setMediaId(result.track.id)
+                        .setUri(placeholderUri)
+                        .setMediaMetadata(result.track.toMediaMetadata())
+                        .setTag(result.track)
+                        .build()
+                    mediaController.addMediaItem(item)
+                }
+            }
+        }
+    }
+
+    fun getCurrentVideoId(): String? = controller?.currentMediaItem?.mediaId
+
     fun pause() { controller?.pause() }
     fun resume() { controller?.play() }
     fun toggle() { controller?.let { if (it.isPlaying) it.pause() else it.play() } }
@@ -95,6 +133,12 @@ class PlayerController(private val context: Context) {
             syncQueueManager(player)
             publishState(player)
         }
+    }
+
+    fun getQueueRemainingCount(): Int {
+        val current = controller?.currentMediaItemIndex ?: 0
+        val total = controller?.mediaItemCount ?: 0
+        return (total - current - 1).coerceAtLeast(0)
     }
 
     private fun syncQueueManager(player: Player?) {

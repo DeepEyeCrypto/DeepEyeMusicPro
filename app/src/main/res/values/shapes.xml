@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Expressive Shape Scale -->
+    
+    <!-- Extra Small: Chips, badges -->
+    <style name="ShapeAppearance.M3.ExtraSmall" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    
+    <!-- Small: Buttons, text fields -->
+    <style name="ShapeAppearance.M3.Small" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    
+    <!-- Medium: Cards, dialogs -->
+    <style name="ShapeAppearance.M3.Medium" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    
+    <!-- Large: Sheets, menus -->
+    <style name="ShapeAppearance.M3.Large" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    
+    <!-- Extra Large: Hero cards, featured content -->
+    <style name="ShapeAppearance.M3.ExtraLarge" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+    
+    <!-- Full: FAB, avatar, play button -->
+    <style name="ShapeAppearance.M3.Full" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    
+    <!-- MUSIC SPECIFIC SHAPES -->
+    <style name="ShapeAppearance.Music.Artwork" parent="ShapeAppearance.M3.Medium"/>
+    <style name="ShapeAppearance.Music.Card" parent="ShapeAppearance.M3.Large"/>
+    <style name="ShapeAppearance.Music.Button" parent="ShapeAppearance.M3.Full"/>
+    <style name="ShapeAppearance.Music.Input" parent="ShapeAppearance.M3.Small"/>
+    <style name="ShapeAppearance.Music.BottomSheet" parent="ShapeAppearance.M3.ExtraLarge"/>
+    <style name="ShapeAppearance.Music.NowPlaying" parent="ShapeAppearance.M3.ExtraLarge"/>
+</resources>

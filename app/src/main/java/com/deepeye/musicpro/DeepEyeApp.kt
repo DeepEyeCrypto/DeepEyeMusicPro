@@ -36,6 +36,7 @@ class DeepEyeApp : Application() {
             .connectTimeout(12, TimeUnit.SECONDS)
             .readTimeout(30, TimeUnit.SECONDS)
             .writeTimeout(30, TimeUnit.SECONDS)
+            .addInterceptor(com.deepeye.musicpro.extractor.PrivacyInterceptor())
             .retryOnConnectionFailure(true)
             .build()
     }
@@ -70,6 +71,19 @@ class DeepEyeApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        com.deepeye.musicpro.CrashGuard.init(this, BuildConfig.DEBUG)
+        
+        try {
+            com.google.firebase.crashlytics.FirebaseCrashlytics.getInstance().apply {
+                setCrashlyticsCollectionEnabled(!BuildConfig.DEBUG)
+                setCustomKey("native_dsp_loaded", com.deepeye.musicpro.dsp.NativeDSP().available)
+                setCustomKey("device_model", Build.MODEL)
+            }
+        } catch (e: Exception) {
+            android.util.Log.e("DeepEyeApp", "Crashlytics init failed - missing google-services.json?", e)
+        }
+
+        com.deepeye.musicpro.auth.YoutubeAuthManager.init(this)
         createNotificationChannels()
         applicationScope.launch { V4AAssetLoader.copyAssetsToCache(this@DeepEyeApp) }
         applicationScope.launch { adBlockEngine.loadFilterLists() }

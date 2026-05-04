@@ -4,10 +4,12 @@
     android:id="@+id/miniPlayerCard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:cardBackgroundColor="@color/deep_surface_elevated"
-    app:cardCornerRadius="24dp"
-    app:strokeColor="@color/deep_outline"
-    app:strokeWidth="1dp">
+    app:cardBackgroundColor="@color/deep_surface_soft"
+    app:cardCornerRadius="32dp"
+    app:cardElevation="8dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#1AFFFFFF"
+    android:foreground="?attr/selectableItemBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,11 +19,11 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/miniArtwork"
+            android:id="@+id/miniPlayerArtwork"
             android:layout_width="54dp"
             android:layout_height="54dp"
-            android:background="@drawable/bg_surface_card_selected"
-            android:padding="12dp"
+            android:background="@drawable/bg_artwork_rounded"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_notification"
             android:contentDescription="@string/app_name" />
 
@@ -32,21 +34,21 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/miniTitle"
+                android:id="@+id/miniPlayerTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:maxLines="1"
+                android:ellipsize="marquee"
+                android:singleLine="true"
                 android:text="DeepEyeMusicPro"
                 android:textColor="@color/deep_text_primary"
                 android:textSize="15sp"
                 android:textStyle="bold" />
             <TextView
-                android:id="@+id/miniSubtitle"
+                android:id="@+id/miniPlayerSubtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
-                android:maxLines="1"
+                android:singleLine="true"
                 android:text="Ready for premium playback"
                 android:textColor="@color/deep_text_secondary"
                 android:textSize="12sp" />

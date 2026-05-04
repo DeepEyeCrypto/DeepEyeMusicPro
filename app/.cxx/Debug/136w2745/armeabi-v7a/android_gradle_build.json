@@ -31,9 +31,7 @@
       "cppCompilerExecutable": "/usr/local/share/android-commandlinetools/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
     }
   },
-  "cFileExtensions": [
-    "c"
-  ],
+  "cFileExtensions": [],
   "cppFileExtensions": [
     "cpp"
   ]

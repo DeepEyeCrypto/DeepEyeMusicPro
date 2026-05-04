@@ -47,472 +47,768 @@
 24    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 24-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:16:5-81
 24-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:16:22-78
-25
-26    <permission
-26-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/98654071de0493cb86eca5f3afcbc2e3/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
-27        android:name="com.deepeye.musicpro.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-27-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/98654071de0493cb86eca5f3afcbc2e3/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
-28        android:protectionLevel="signature" />
-28-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/98654071de0493cb86eca5f3afcbc2e3/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
-29
-30    <uses-permission android:name="com.deepeye.musicpro.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-30-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/98654071de0493cb86eca5f3afcbc2e3/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
-30-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/98654071de0493cb86eca5f3afcbc2e3/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
-31
-32    <application
-32-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:18:5-97:19
-33        android:name="com.deepeye.musicpro.DeepEyeApp"
-33-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:19:9-35
-34        android:allowBackup="true"
-34-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:20:9-35
-35        android:appCategory="audio"
-35-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:21:9-36
-36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-36-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/98654071de0493cb86eca5f3afcbc2e3/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
-37        android:dataExtractionRules="@xml/data_extraction_rules"
-37-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:22:9-65
-38        android:debuggable="true"
-39        android:extractNativeLibs="false"
-40        android:fullBackupContent="@xml/backup_rules"
-40-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:23:9-54
-41        android:icon="@mipmap/ic_launcher"
-41-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:24:9-43
-42        android:label="@string/app_name"
-42-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:25:9-41
-43        android:localeConfig="@xml/locales_config"
-43-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:26:9-51
-44        android:networkSecurityConfig="@xml/network_security_config"
-44-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:27:9-69
-45        android:roundIcon="@mipmap/ic_launcher_round"
-45-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:28:9-54
-46        android:supportsRtl="true"
-46-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:29:9-35
-47        android:theme="@style/Theme.DeepEyeMusicPro"
-47-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:30:9-53
-48        android:usesCleartextTraffic="false" >
-48-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:31:9-45
-49        <activity
-49-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:34:9-59:20
-50            android:name="com.deepeye.musicpro.ui.MainActivity"
-50-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:35:13-44
-51            android:exported="true"
-51-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:36:13-36
-52            android:launchMode="singleTask"
-52-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:37:13-44
-53            android:screenOrientation="portrait"
-53-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:38:13-49
-54            android:windowSoftInputMode="adjustResize" >
-54-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:39:13-55
-55            <intent-filter>
-55-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:40:13-43:29
-56                <action android:name="android.intent.action.MAIN" />
-56-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:41:17-69
-56-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:41:25-66
-57
-58                <category android:name="android.intent.category.LAUNCHER" />
-58-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:42:17-77
-58-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:42:27-74
-59            </intent-filter>
-60            <intent-filter android:autoVerify="false" >
-60-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:44:13-53:29
-60-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:44:28-54
-61                <action android:name="android.intent.action.VIEW" />
-61-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:45:17-69
-61-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:45:25-66
-62
-63                <category android:name="android.intent.category.DEFAULT" />
-63-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:46:17-76
-63-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:46:27-73
-64                <category android:name="android.intent.category.BROWSABLE" />
-64-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:47:17-78
-64-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:47:27-75
-65
-66                <data
-66-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:17-70
-67                    android:host="play"
-67-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:48-67
-68                    android:scheme="deepeye" />
-68-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:23-47
-69                <data
-69-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:17-70
-70                    android:host="www.youtube.com"
-70-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:48-67
-71                    android:scheme="https" />
-71-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:23-47
-72                <data
-72-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:17-70
-73                    android:host="youtube.com"
-73-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:48-67
-74                    android:scheme="https" />
-74-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:23-47
-75                <data
-75-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:17-70
-76                    android:host="youtu.be"
-76-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:48-67
-77                    android:scheme="https" />
-77-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:23-47
-78                <data
-78-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:17-70
-79                    android:host="music.youtube.com"
-79-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:48-67
-80                    android:scheme="https" />
-80-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:23-47
-81            </intent-filter>
-82            <intent-filter>
-82-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:54:13-58:29
-83                <action android:name="android.intent.action.SEND" />
-83-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:55:17-69
-83-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:55:25-66
-84
-85                <category android:name="android.intent.category.DEFAULT" />
-85-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:46:17-76
-85-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:46:27-73
-86
-87                <data android:mimeType="text/plain" />
-87-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:17-70
-87-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:57:23-52
-88            </intent-filter>
-89        </activity>
-90
-91        <service
-91-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:61:9-70:19
-92            android:name="com.deepeye.musicpro.service.MusicPlayerService"
-92-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:62:13-55
-93            android:enabled="true"
-93-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:63:13-35
-94            android:exported="true"
-94-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:64:13-36
-95            android:foregroundServiceType="mediaPlayback" >
-95-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:65:13-58
-96            <intent-filter>
-96-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:66:13-69:29
-97                <action android:name="androidx.media3.session.MediaLibraryService" />
-97-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:67:17-86
-97-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:67:25-83
-98                <action android:name="android.media.browse.MediaBrowserService" />
-98-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:68:17-83
-98-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:68:25-80
-99            </intent-filter>
-100        </service>
-101        <service
-101-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:72:9-76:56
-102            android:name="com.deepeye.musicpro.service.DownloadService"
-102-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:73:13-52
-103            android:enabled="true"
-103-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:74:13-35
-104            android:exported="false"
-104-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:75:13-37
-105            android:foregroundServiceType="dataSync" />
-105-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:76:13-53
-106
-107        <receiver
-107-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:78:9-86:20
-108            android:name="com.deepeye.musicpro.receiver.BootReceiver"
-108-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:79:13-50
-109            android:enabled="true"
-109-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:80:13-35
-110            android:exported="true" >
-110-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:81:13-36
-111            <intent-filter>
-111-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:82:13-85:29
-112                <action android:name="android.intent.action.BOOT_COMPLETED" />
-112-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:83:17-79
-112-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:83:25-76
-113                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-113-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:84:17-84
-113-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:84:25-81
-114            </intent-filter>
-115        </receiver>
-116
-117        <provider
-118            android:name="androidx.core.content.FileProvider"
-118-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:89:13-62
-119            android:authorities="com.deepeye.musicpro.debug.fileprovider"
-119-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:90:13-64
-120            android:exported="false"
-120-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:91:13-37
-121            android:grantUriPermissions="true" >
-121-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:92:13-47
-122            <meta-data
-122-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:93:13-95:54
-123                android:name="android.support.FILE_PROVIDER_PATHS"
-123-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:94:17-67
-124                android:resource="@xml/file_paths" />
-124-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:95:17-51
-125        </provider>
-126        <provider
-126-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/84a5421b59238ea050590c88fa3b8737/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-127            android:name="androidx.startup.InitializationProvider"
-127-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/84a5421b59238ea050590c88fa3b8737/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-128            android:authorities="com.deepeye.musicpro.debug.androidx-startup"
-128-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/84a5421b59238ea050590c88fa3b8737/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-129            android:exported="false" >
-129-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/84a5421b59238ea050590c88fa3b8737/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-130            <meta-data
-130-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/84a5421b59238ea050590c88fa3b8737/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-131                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-131-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/84a5421b59238ea050590c88fa3b8737/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-132                android:value="androidx.startup" />
-132-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/84a5421b59238ea050590c88fa3b8737/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-133            <meta-data
-133-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:34:13-36:52
-134                android:name="androidx.work.WorkManagerInitializer"
-134-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:35:17-68
-135                android:value="androidx.startup" />
-135-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:36:17-49
-136            <meta-data
-136-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/enayat/.gradle/caches/8.9/transforms/5fd8753729e31210b404328df702a09e/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
-137                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-137-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/enayat/.gradle/caches/8.9/transforms/5fd8753729e31210b404328df702a09e/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
-138                android:value="androidx.startup" />
-138-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/enayat/.gradle/caches/8.9/transforms/5fd8753729e31210b404328df702a09e/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+25    <uses-permission
+25-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:17:5-95
+26        android:name="android.permission.BLUETOOTH"
+26-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:17:22-65
+27        android:maxSdkVersion="30" />
+27-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:17:66-92
+28    <uses-permission
+28-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:18:5-101
+29        android:name="android.permission.BLUETOOTH_ADMIN"
+29-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:18:22-71
+30        android:maxSdkVersion="30" />
+30-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:18:72-98
+31    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+31-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:19:5-76
+31-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:19:22-73
+32    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+32-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:20:5-73
+32-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:20:22-70
+33
+34    <queries>
+34-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:10:5-12:15
+35        <package android:name="com.google.android.gms.policy_cast_dynamite" />
+35-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:11:9-79
+35-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:11:18-76
+36    </queries>
+37
+38    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+38-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:26:5-110
+38-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:26:22-107
+39    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+39-->[com.google.android.gms:play-services-measurement-impl:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/9eb479874b1ee414320776edeeff94c1/transformed/play-services-measurement-impl-22.1.2/AndroidManifest.xml:27:5-79
+39-->[com.google.android.gms:play-services-measurement-impl:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/9eb479874b1ee414320776edeeff94c1/transformed/play-services-measurement-impl-22.1.2/AndroidManifest.xml:27:22-76
+40    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+40-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:26:5-88
+40-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:26:22-85
+41    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+41-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:27:5-82
+41-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:27:22-79
+42
+43    <permission
+43-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/c31fb433d0b336a8950404675b1e1ac2/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+44        android:name="com.deepeye.musicpro.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/c31fb433d0b336a8950404675b1e1ac2/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/c31fb433d0b336a8950404675b1e1ac2/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.deepeye.musicpro.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/c31fb433d0b336a8950404675b1e1ac2/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/c31fb433d0b336a8950404675b1e1ac2/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+48
+49    <application
+49-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:22:5-105:19
+50        android:name="com.deepeye.musicpro.DeepEyeApp"
+50-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:23:9-35
+51        android:allowBackup="true"
+51-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:24:9-35
+52        android:appCategory="audio"
+52-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:25:9-36
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.15.0] /Users/enayat/.gradle/caches/8.9/transforms/c31fb433d0b336a8950404675b1e1ac2/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+54        android:dataExtractionRules="@xml/data_extraction_rules"
+54-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:26:9-65
+55        android:debuggable="true"
+56        android:extractNativeLibs="false"
+57        android:fullBackupContent="@xml/backup_rules"
+57-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:27:9-54
+58        android:icon="@mipmap/ic_launcher"
+58-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:28:9-43
+59        android:label="@string/app_name"
+59-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:29:9-41
+60        android:localeConfig="@xml/locales_config"
+60-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:30:9-51
+61        android:networkSecurityConfig="@xml/network_security_config"
+61-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:31:9-69
+62        android:roundIcon="@mipmap/ic_launcher_round"
+62-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:32:9-54
+63        android:supportsRtl="true"
+63-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:33:9-35
+64        android:theme="@style/Theme.DeepEyeMusicPro"
+64-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:34:9-53
+65        android:usesCleartextTraffic="false" >
+65-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:35:9-45
+66        <activity
+66-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:38:9-63:20
+67            android:name="com.deepeye.musicpro.ui.MainActivity"
+67-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:39:13-44
+68            android:exported="true"
+68-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:40:13-36
+69            android:launchMode="singleTask"
+69-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:41:13-44
+70            android:screenOrientation="portrait"
+70-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:42:13-49
+71            android:windowSoftInputMode="adjustResize" >
+71-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:43:13-55
+72            <intent-filter>
+72-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:44:13-47:29
+73                <action android:name="android.intent.action.MAIN" />
+73-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:45:17-69
+73-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:45:25-66
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:46:17-77
+75-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:46:27-74
+76            </intent-filter>
+77            <intent-filter android:autoVerify="false" >
+77-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:13-57:29
+77-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:48:28-54
+78                <action android:name="android.intent.action.VIEW" />
+78-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:49:17-69
+78-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:49:25-66
+79
+80                <category android:name="android.intent.category.DEFAULT" />
+80-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:50:17-76
+80-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:50:27-73
+81                <category android:name="android.intent.category.BROWSABLE" />
+81-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:51:17-78
+81-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:51:27-75
+82
+83                <data
+83-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:17-70
+84                    android:host="play"
+84-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:48-67
+85                    android:scheme="deepeye" />
+85-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:23-47
+86                <data
+86-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:17-70
+87                    android:host="www.youtube.com"
+87-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:48-67
+88                    android:scheme="https" />
+88-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:23-47
+89                <data
+89-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:17-70
+90                    android:host="youtube.com"
+90-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:48-67
+91                    android:scheme="https" />
+91-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:23-47
+92                <data
+92-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:17-70
+93                    android:host="youtu.be"
+93-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:48-67
+94                    android:scheme="https" />
+94-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:23-47
+95                <data
+95-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:17-70
+96                    android:host="music.youtube.com"
+96-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:48-67
+97                    android:scheme="https" />
+97-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:23-47
+98            </intent-filter>
+99            <intent-filter>
+99-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:58:13-62:29
+100                <action android:name="android.intent.action.SEND" />
+100-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:59:17-69
+100-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:59:25-66
+101
+102                <category android:name="android.intent.category.DEFAULT" />
+102-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:50:17-76
+102-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:50:27-73
+103
+104                <data android:mimeType="text/plain" />
+104-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:52:17-70
+104-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:61:23-52
+105            </intent-filter>
+106        </activity>
+107
+108        <service
+108-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:65:9-74:19
+109            android:name="com.deepeye.musicpro.service.MusicPlayerService"
+109-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:66:13-55
+110            android:enabled="true"
+110-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:67:13-35
+111            android:exported="true"
+111-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:68:13-36
+112            android:foregroundServiceType="mediaPlayback" >
+112-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:69:13-58
+113            <intent-filter>
+113-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:70:13-73:29
+114                <action android:name="androidx.media3.session.MediaLibraryService" />
+114-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:71:17-86
+114-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:71:25-83
+115                <action android:name="android.media.browse.MediaBrowserService" />
+115-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:72:17-83
+115-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:72:25-80
+116            </intent-filter>
+117        </service>
+118        <service
+118-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:76:9-80:56
+119            android:name="com.deepeye.musicpro.service.DownloadService"
+119-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:77:13-52
+120            android:enabled="true"
+120-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:78:13-35
+121            android:exported="false"
+121-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:79:13-37
+122            android:foregroundServiceType="dataSync" />
+122-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:80:13-53
+123
+124        <receiver
+124-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:82:9-90:20
+125            android:name="com.deepeye.musicpro.receiver.BootReceiver"
+125-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:83:13-50
+126            android:enabled="true"
+126-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:84:13-35
+127            android:exported="true" >
+127-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:85:13-36
+128            <intent-filter>
+128-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:86:13-89:29
+129                <action android:name="android.intent.action.BOOT_COMPLETED" />
+129-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:87:17-79
+129-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:87:25-76
+130                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+130-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:88:17-84
+130-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:88:25-81
+131            </intent-filter>
+132        </receiver>
+133
+134        <provider
+135            android:name="androidx.core.content.FileProvider"
+135-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:93:13-62
+136            android:authorities="com.deepeye.musicpro.debug.fileprovider"
+136-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:94:13-64
+137            android:exported="false"
+137-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:95:13-37
+138            android:grantUriPermissions="true" >
+138-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:96:13-47
 139            <meta-data
-139-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-140                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-140-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
-141                android:value="androidx.startup" />
-141-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+139-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:97:13-99:54
+140                android:name="android.support.FILE_PROVIDER_PATHS"
+140-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:98:17-67
+141                android:resource="@xml/file_paths" />
+141-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:99:17-51
 142        </provider>
 143
-144        <service
-144-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:39:9-45:35
-145            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-145-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:40:13-88
-146            android:directBootAware="false"
-146-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:41:13-44
-147            android:enabled="@bool/enable_system_alarm_service_default"
-147-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:42:13-72
-148            android:exported="false" />
-148-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:43:13-37
-149        <service
-149-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:46:9-52:35
-150            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-150-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:47:13-84
-151            android:directBootAware="false"
-151-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:48:13-44
-152            android:enabled="@bool/enable_system_job_service_default"
-152-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:49:13-70
-153            android:exported="true"
-153-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:50:13-36
-154            android:permission="android.permission.BIND_JOB_SERVICE" />
-154-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:51:13-69
+144        <meta-data
+144-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:102:9-104:77
+145            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+145-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:103:13-93
+146            android:value="com.deepeye.musicpro.cast.CastOptionsProvider" />
+146-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:104:13-74
+147
+148        <receiver
+148-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:15:9-125
+149            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
+149-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:15:19-97
+150            android:exported="false" />
+150-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:15:98-122
+151
+152        <service
+152-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:17:9-118
+153            android:name="com.google.android.gms.cast.framework.ReconnectionService"
+153-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:17:18-90
+154            android:exported="false" />
+154-->[com.google.android.gms:play-services-cast-framework:21.5.0] /Users/enayat/.gradle/caches/8.9/transforms/38565a067617fe91bba08c791668bc77/transformed/play-services-cast-framework-21.5.0/AndroidManifest.xml:17:91-115
 155        <service
-155-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:53:9-59:35
-156            android:name="androidx.work.impl.foreground.SystemForegroundService"
-156-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:54:13-81
-157            android:directBootAware="false"
-157-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:55:13-44
-158            android:enabled="@bool/enable_system_foreground_service_default"
-158-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:56:13-77
-159            android:exported="false" />
-159-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:57:13-37
-160
-161        <receiver
-161-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:61:9-66:35
-162            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-162-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:62:13-88
-163            android:directBootAware="false"
-163-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:63:13-44
-164            android:enabled="true"
-164-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:64:13-35
-165            android:exported="false" />
-165-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:65:13-37
-166        <receiver
-166-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:67:9-77:20
-167            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-167-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:68:13-106
-168            android:directBootAware="false"
-168-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:69:13-44
-169            android:enabled="false"
-169-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:70:13-36
-170            android:exported="false" >
-170-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:71:13-37
-171            <intent-filter>
-171-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:73:13-76:29
-172                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-172-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:17-87
-172-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:25-84
-173                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-173-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:17-90
-173-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:25-87
-174            </intent-filter>
-175        </receiver>
-176        <receiver
-176-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:78:9-88:20
-177            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-177-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:79:13-104
-178            android:directBootAware="false"
-178-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:80:13-44
-179            android:enabled="false"
-179-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:81:13-36
-180            android:exported="false" >
-180-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:82:13-37
-181            <intent-filter>
-181-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:84:13-87:29
-182                <action android:name="android.intent.action.BATTERY_OKAY" />
-182-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:17-77
-182-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:25-74
-183                <action android:name="android.intent.action.BATTERY_LOW" />
-183-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:17-76
-183-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:25-73
-184            </intent-filter>
-185        </receiver>
-186        <receiver
-186-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:89:9-99:20
-187            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-187-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:90:13-104
-188            android:directBootAware="false"
-188-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:91:13-44
-189            android:enabled="false"
-189-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:92:13-36
+155-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:24:9-32:19
+156            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+156-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:25:13-94
+157            android:enabled="true"
+157-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:26:13-35
+158            android:exported="false" >
+158-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:27:13-37
+159            <meta-data
+159-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:29:13-31:104
+160                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+160-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:30:17-76
+161                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+161-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:31:17-101
+162        </service>
+163
+164        <activity
+164-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:34:9-41:20
+165            android:name="androidx.credentials.playservices.HiddenActivity"
+165-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:35:13-76
+166            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+166-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:36:13-87
+167            android:enabled="true"
+167-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:37:13-35
+168            android:exported="false"
+168-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:38:13-37
+169            android:fitsSystemWindows="true"
+169-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:39:13-45
+170            android:theme="@style/Theme.Hidden" >
+170-->[androidx.credentials:credentials-play-services-auth:1.2.2] /Users/enayat/.gradle/caches/8.9/transforms/6081480525faa50fb223d3c764d00030/transformed/credentials-play-services-auth-1.2.2/AndroidManifest.xml:40:13-48
+171        </activity>
+172        <activity
+172-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:23:9-27:75
+173            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+173-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:24:13-93
+174            android:excludeFromRecents="true"
+174-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:25:13-46
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:26:13-37
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:27:13-72
+177        <!--
+178            Service handling Google Sign-In user revocation. For apps that do not integrate with
+179            Google Sign-In, this service will never be started.
+180        -->
+181        <service
+181-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:33:9-37:51
+182            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+182-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:34:13-89
+183            android:exported="true"
+183-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:35:13-36
+184            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+184-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:36:13-107
+185            android:visibleToInstantApps="true" />
+185-->[com.google.android.gms:play-services-auth:21.2.0] /Users/enayat/.gradle/caches/8.9/transforms/9a0d8ecace79901eb64b20775c6926dd/transformed/play-services-auth-21.2.0/AndroidManifest.xml:37:13-48
+186
+187        <receiver
+187-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:29:9-33:20
+188            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+188-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:30:13-85
+189            android:enabled="true"
+189-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:31:13-35
 190            android:exported="false" >
-190-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:93:13-37
-191            <intent-filter>
-191-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:95:13-98:29
-192                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-192-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:17-83
-192-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:25-80
-193                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-193-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:17-82
-193-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:25-79
-194            </intent-filter>
-195        </receiver>
-196        <receiver
-196-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:100:9-109:20
-197            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-197-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:101:13-103
-198            android:directBootAware="false"
-198-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:102:13-44
-199            android:enabled="false"
-199-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:103:13-36
-200            android:exported="false" >
-200-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:104:13-37
-201            <intent-filter>
-201-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:106:13-108:29
-202                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-202-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:17-79
-202-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:25-76
-203            </intent-filter>
-204        </receiver>
-205        <receiver
-205-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:110:9-121:20
-206            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-206-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:111:13-88
-207            android:directBootAware="false"
-207-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:112:13-44
-208            android:enabled="false"
-208-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:113:13-36
-209            android:exported="false" >
-209-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:114:13-37
-210            <intent-filter>
-210-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:116:13-120:29
-211                <action android:name="android.intent.action.BOOT_COMPLETED" />
-211-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:83:17-79
-211-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:83:25-76
-212                <action android:name="android.intent.action.TIME_SET" />
-212-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:17-73
-212-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:25-70
-213                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-213-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:17-81
-213-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:25-78
-214            </intent-filter>
-215        </receiver>
-216        <receiver
-216-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:122:9-131:20
-217            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-217-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:123:13-99
-218            android:directBootAware="false"
-218-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:124:13-44
-219            android:enabled="@bool/enable_system_alarm_service_default"
-219-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:125:13-72
-220            android:exported="false" >
-220-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:126:13-37
-221            <intent-filter>
-221-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:128:13-130:29
-222                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-222-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:17-98
-222-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:25-95
-223            </intent-filter>
-224        </receiver>
-225        <receiver
-225-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:132:9-142:20
-226            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-226-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:133:13-78
-227            android:directBootAware="false"
-227-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:134:13-44
-228            android:enabled="true"
-228-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:135:13-35
-229            android:exported="true"
-229-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:136:13-36
-230            android:permission="android.permission.DUMP" >
-230-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:137:13-57
-231            <intent-filter>
-231-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:139:13-141:29
-232                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-232-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:17-88
-232-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:25-85
-233            </intent-filter>
-234        </receiver>
-235
-236        <uses-library
-236-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6b25fe037584d046c89110cfe678c4b7/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-237            android:name="androidx.window.extensions"
-237-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6b25fe037584d046c89110cfe678c4b7/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-238            android:required="false" />
-238-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6b25fe037584d046c89110cfe678c4b7/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-239        <uses-library
-239-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6b25fe037584d046c89110cfe678c4b7/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-240            android:name="androidx.window.sidecar"
-240-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6b25fe037584d046c89110cfe678c4b7/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-241            android:required="false" />
-241-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6b25fe037584d046c89110cfe678c4b7/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-242
-243        <service
-243-->[androidx.room:room-runtime:2.6.1] /Users/enayat/.gradle/caches/8.9/transforms/1026aee44daa60229e9d705565851476/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
-244            android:name="androidx.room.MultiInstanceInvalidationService"
-244-->[androidx.room:room-runtime:2.6.1] /Users/enayat/.gradle/caches/8.9/transforms/1026aee44daa60229e9d705565851476/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
-245            android:directBootAware="true"
-245-->[androidx.room:room-runtime:2.6.1] /Users/enayat/.gradle/caches/8.9/transforms/1026aee44daa60229e9d705565851476/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
-246            android:exported="false" />
-246-->[androidx.room:room-runtime:2.6.1] /Users/enayat/.gradle/caches/8.9/transforms/1026aee44daa60229e9d705565851476/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+190-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:32:13-37
+191        </receiver>
+192
+193        <service
+193-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:35:9-38:40
+194            android:name="com.google.android.gms.measurement.AppMeasurementService"
+194-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:36:13-84
+195            android:enabled="true"
+195-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:37:13-35
+196            android:exported="false" />
+196-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:38:13-37
+197        <service
+197-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:39:9-43:72
+198            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+198-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:40:13-87
+199            android:enabled="true"
+199-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:41:13-35
+200            android:exported="false"
+200-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:42:13-37
+201            android:permission="android.permission.BIND_JOB_SERVICE" />
+201-->[com.google.android.gms:play-services-measurement:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/96af0be4246adb7190f9b09723c5d578/transformed/play-services-measurement-22.1.2/AndroidManifest.xml:43:13-69
+202
+203        <activity
+203-->[com.google.android.gms:play-services-base:18.5.0] /Users/enayat/.gradle/caches/8.9/transforms/d93497e28b31182cf8a2f923d8372950/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+204            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+204-->[com.google.android.gms:play-services-base:18.5.0] /Users/enayat/.gradle/caches/8.9/transforms/d93497e28b31182cf8a2f923d8372950/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+205            android:exported="false"
+205-->[com.google.android.gms:play-services-base:18.5.0] /Users/enayat/.gradle/caches/8.9/transforms/d93497e28b31182cf8a2f923d8372950/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+206            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+206-->[com.google.android.gms:play-services-base:18.5.0] /Users/enayat/.gradle/caches/8.9/transforms/d93497e28b31182cf8a2f923d8372950/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+207
+208        <service
+208-->[com.google.firebase:firebase-crashlytics-ndk:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/0cad8805dbe0ac9dee5b3976f93e312f/transformed/firebase-crashlytics-ndk-19.3.0/AndroidManifest.xml:29:9-35:19
+209            android:name="com.google.firebase.components.ComponentDiscoveryService"
+209-->[com.google.firebase:firebase-crashlytics-ndk:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/0cad8805dbe0ac9dee5b3976f93e312f/transformed/firebase-crashlytics-ndk-19.3.0/AndroidManifest.xml:30:13-84
+210            android:directBootAware="true"
+210-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+211            android:exported="false" >
+211-->[com.google.firebase:firebase-crashlytics-ndk:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/0cad8805dbe0ac9dee5b3976f93e312f/transformed/firebase-crashlytics-ndk-19.3.0/AndroidManifest.xml:31:13-37
+212            <meta-data
+212-->[com.google.firebase:firebase-crashlytics-ndk:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/0cad8805dbe0ac9dee5b3976f93e312f/transformed/firebase-crashlytics-ndk-19.3.0/AndroidManifest.xml:32:13-34:85
+213                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+213-->[com.google.firebase:firebase-crashlytics-ndk:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/0cad8805dbe0ac9dee5b3976f93e312f/transformed/firebase-crashlytics-ndk-19.3.0/AndroidManifest.xml:33:17-122
+214                android:value="com.google.firebase.components.ComponentRegistrar" />
+214-->[com.google.firebase:firebase-crashlytics-ndk:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/0cad8805dbe0ac9dee5b3976f93e312f/transformed/firebase-crashlytics-ndk-19.3.0/AndroidManifest.xml:34:17-82
+215            <meta-data
+215-->[com.google.firebase:firebase-crashlytics:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/873065f3852c83695f78f869bd830895/transformed/firebase-crashlytics-19.3.0/AndroidManifest.xml:15:13-17:85
+216                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+216-->[com.google.firebase:firebase-crashlytics:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/873065f3852c83695f78f869bd830895/transformed/firebase-crashlytics-19.3.0/AndroidManifest.xml:16:17-126
+217                android:value="com.google.firebase.components.ComponentRegistrar" />
+217-->[com.google.firebase:firebase-crashlytics:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/873065f3852c83695f78f869bd830895/transformed/firebase-crashlytics-19.3.0/AndroidManifest.xml:17:17-82
+218            <meta-data
+218-->[com.google.firebase:firebase-crashlytics:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/873065f3852c83695f78f869bd830895/transformed/firebase-crashlytics-19.3.0/AndroidManifest.xml:18:13-20:85
+219                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+219-->[com.google.firebase:firebase-crashlytics:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/873065f3852c83695f78f869bd830895/transformed/firebase-crashlytics-19.3.0/AndroidManifest.xml:19:17-115
+220                android:value="com.google.firebase.components.ComponentRegistrar" />
+220-->[com.google.firebase:firebase-crashlytics:19.3.0] /Users/enayat/.gradle/caches/8.9/transforms/873065f3852c83695f78f869bd830895/transformed/firebase-crashlytics-19.3.0/AndroidManifest.xml:20:17-82
+221            <meta-data
+221-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:37:13-39:85
+222                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+222-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:38:17-139
+223                android:value="com.google.firebase.components.ComponentRegistrar" />
+223-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:39:17-82
+224            <meta-data
+224-->[com.google.firebase:firebase-sessions:2.0.7] /Users/enayat/.gradle/caches/8.9/transforms/a489c9a010f7962167966d62c5fa20ae/transformed/firebase-sessions-2.0.7/AndroidManifest.xml:29:13-31:85
+225                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+225-->[com.google.firebase:firebase-sessions:2.0.7] /Users/enayat/.gradle/caches/8.9/transforms/a489c9a010f7962167966d62c5fa20ae/transformed/firebase-sessions-2.0.7/AndroidManifest.xml:30:17-117
+226                android:value="com.google.firebase.components.ComponentRegistrar" />
+226-->[com.google.firebase:firebase-sessions:2.0.7] /Users/enayat/.gradle/caches/8.9/transforms/a489c9a010f7962167966d62c5fa20ae/transformed/firebase-sessions-2.0.7/AndroidManifest.xml:31:17-82
+227            <meta-data
+227-->[com.google.firebase:firebase-installations:18.0.0] /Users/enayat/.gradle/caches/8.9/transforms/33a821d0646ecf90b2c024bc8fd0df20/transformed/firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+228                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+228-->[com.google.firebase:firebase-installations:18.0.0] /Users/enayat/.gradle/caches/8.9/transforms/33a821d0646ecf90b2c024bc8fd0df20/transformed/firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+229                android:value="com.google.firebase.components.ComponentRegistrar" />
+229-->[com.google.firebase:firebase-installations:18.0.0] /Users/enayat/.gradle/caches/8.9/transforms/33a821d0646ecf90b2c024bc8fd0df20/transformed/firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+230            <meta-data
+230-->[com.google.firebase:firebase-installations:18.0.0] /Users/enayat/.gradle/caches/8.9/transforms/33a821d0646ecf90b2c024bc8fd0df20/transformed/firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+231                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+231-->[com.google.firebase:firebase-installations:18.0.0] /Users/enayat/.gradle/caches/8.9/transforms/33a821d0646ecf90b2c024bc8fd0df20/transformed/firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+232                android:value="com.google.firebase.components.ComponentRegistrar" />
+232-->[com.google.firebase:firebase-installations:18.0.0] /Users/enayat/.gradle/caches/8.9/transforms/33a821d0646ecf90b2c024bc8fd0df20/transformed/firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+233            <meta-data
+233-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/00bf23a16edebffa035afa8ab0d56366/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+234                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+234-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/00bf23a16edebffa035afa8ab0d56366/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+235                android:value="com.google.firebase.components.ComponentRegistrar" />
+235-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/00bf23a16edebffa035afa8ab0d56366/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+236            <meta-data
+236-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+237                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+237-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+238                android:value="com.google.firebase.components.ComponentRegistrar" />
+238-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+239            <meta-data
+239-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6a00b1c4ba886dd9ce565b49bd691602/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:25:13-27:85
+240                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+240-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6a00b1c4ba886dd9ce565b49bd691602/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:26:17-115
+241                android:value="com.google.firebase.components.ComponentRegistrar" />
+241-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/enayat/.gradle/caches/8.9/transforms/6a00b1c4ba886dd9ce565b49bd691602/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:27:17-82
+242        </service>
+243
+244        <property
+244-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:30:9-32:61
+245            android:name="android.adservices.AD_SERVICES_CONFIG"
+245-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:31:13-65
+246            android:resource="@xml/ga_ad_services_config" />
+246-->[com.google.android.gms:play-services-measurement-api:22.1.2] /Users/enayat/.gradle/caches/8.9/transforms/34513c7fb80a5de295a133afb41ad3bd/transformed/play-services-measurement-api-22.1.2/AndroidManifest.xml:32:13-58
 247
-248        <receiver
-248-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-249            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-249-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-250            android:directBootAware="false"
-250-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-251            android:enabled="true"
-251-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-252            android:exported="true"
-252-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-253            android:permission="android.permission.DUMP" >
-253-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-254            <intent-filter>
-254-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-255                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-255-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-255-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-256            </intent-filter>
-257            <intent-filter>
-257-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-258                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-258-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-258-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
-259            </intent-filter>
-260            <intent-filter>
-260-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-261                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-261-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-261-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
-262            </intent-filter>
-263            <intent-filter>
-263-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-264                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-264-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-264-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/d97059b341fc8922128295ba7e7d6b3d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
-265            </intent-filter>
-266        </receiver>
-267    </application>
-268
-269</manifest>
+248        <service
+248-->[com.google.firebase:firebase-sessions:2.0.7] /Users/enayat/.gradle/caches/8.9/transforms/a489c9a010f7962167966d62c5fa20ae/transformed/firebase-sessions-2.0.7/AndroidManifest.xml:22:9-25:40
+249            android:name="com.google.firebase.sessions.SessionLifecycleService"
+249-->[com.google.firebase:firebase-sessions:2.0.7] /Users/enayat/.gradle/caches/8.9/transforms/a489c9a010f7962167966d62c5fa20ae/transformed/firebase-sessions-2.0.7/AndroidManifest.xml:23:13-80
+250            android:enabled="true"
+250-->[com.google.firebase:firebase-sessions:2.0.7] /Users/enayat/.gradle/caches/8.9/transforms/a489c9a010f7962167966d62c5fa20ae/transformed/firebase-sessions-2.0.7/AndroidManifest.xml:24:13-35
+251            android:exported="false" />
+251-->[com.google.firebase:firebase-sessions:2.0.7] /Users/enayat/.gradle/caches/8.9/transforms/a489c9a010f7962167966d62c5fa20ae/transformed/firebase-sessions-2.0.7/AndroidManifest.xml:25:13-37
+252
+253        <provider
+253-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+254            android:name="com.google.firebase.provider.FirebaseInitProvider"
+254-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+255            android:authorities="com.deepeye.musicpro.debug.firebaseinitprovider"
+255-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+256            android:directBootAware="true"
+256-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+257            android:exported="false"
+257-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+258            android:initOrder="100" />
+258-->[com.google.firebase:firebase-common:21.0.0] /Users/enayat/.gradle/caches/8.9/transforms/3a2399a713530690728ecf046d7e5911/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+259        <provider
+259-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:29:9-37:20
+260            android:name="androidx.startup.InitializationProvider"
+260-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:30:13-67
+261            android:authorities="com.deepeye.musicpro.debug.androidx-startup"
+261-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:31:13-68
+262            android:exported="false" >
+262-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:32:13-37
+263            <meta-data
+263-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:34:13-36:52
+264                android:name="androidx.work.WorkManagerInitializer"
+264-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:35:17-68
+265                android:value="androidx.startup" />
+265-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:36:17-49
+266            <meta-data
+266-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a5a5cfe590934bb1999e6a205883b80b/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+267                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+267-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a5a5cfe590934bb1999e6a205883b80b/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+268                android:value="androidx.startup" />
+268-->[androidx.emoji2:emoji2:1.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a5a5cfe590934bb1999e6a205883b80b/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+269            <meta-data
+269-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/enayat/.gradle/caches/8.9/transforms/b040ab9d757aca3761ff941fbbd17673/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+270                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+270-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/enayat/.gradle/caches/8.9/transforms/b040ab9d757aca3761ff941fbbd17673/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+271                android:value="androidx.startup" />
+271-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/enayat/.gradle/caches/8.9/transforms/b040ab9d757aca3761ff941fbbd17673/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+272            <meta-data
+272-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+273                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+273-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+274                android:value="androidx.startup" />
+274-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+275        </provider>
+276
+277        <service
+277-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:39:9-45:35
+278            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+278-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:40:13-88
+279            android:directBootAware="false"
+279-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:41:13-44
+280            android:enabled="@bool/enable_system_alarm_service_default"
+280-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:42:13-72
+281            android:exported="false" />
+281-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:43:13-37
+282        <service
+282-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:46:9-52:35
+283            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+283-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:47:13-84
+284            android:directBootAware="false"
+284-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:48:13-44
+285            android:enabled="@bool/enable_system_job_service_default"
+285-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:49:13-70
+286            android:exported="true"
+286-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:50:13-36
+287            android:permission="android.permission.BIND_JOB_SERVICE" />
+287-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:51:13-69
+288        <service
+288-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:53:9-59:35
+289            android:name="androidx.work.impl.foreground.SystemForegroundService"
+289-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:54:13-81
+290            android:directBootAware="false"
+290-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:55:13-44
+291            android:enabled="@bool/enable_system_foreground_service_default"
+291-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:56:13-77
+292            android:exported="false" />
+292-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:57:13-37
+293
+294        <receiver
+294-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:61:9-66:35
+295            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+295-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:62:13-88
+296            android:directBootAware="false"
+296-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:63:13-44
+297            android:enabled="true"
+297-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:64:13-35
+298            android:exported="false" />
+298-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:65:13-37
+299        <receiver
+299-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:67:9-77:20
+300            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+300-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:68:13-106
+301            android:directBootAware="false"
+301-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:69:13-44
+302            android:enabled="false"
+302-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:70:13-36
+303            android:exported="false" >
+303-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:71:13-37
+304            <intent-filter>
+304-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:73:13-76:29
+305                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+305-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:17-87
+305-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:25-84
+306                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+306-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:17-90
+306-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:25-87
+307            </intent-filter>
+308        </receiver>
+309        <receiver
+309-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:78:9-88:20
+310            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+310-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:79:13-104
+311            android:directBootAware="false"
+311-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:80:13-44
+312            android:enabled="false"
+312-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:81:13-36
+313            android:exported="false" >
+313-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:82:13-37
+314            <intent-filter>
+314-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:84:13-87:29
+315                <action android:name="android.intent.action.BATTERY_OKAY" />
+315-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:17-77
+315-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:25-74
+316                <action android:name="android.intent.action.BATTERY_LOW" />
+316-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:17-76
+316-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:25-73
+317            </intent-filter>
+318        </receiver>
+319        <receiver
+319-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:89:9-99:20
+320            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+320-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:90:13-104
+321            android:directBootAware="false"
+321-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:91:13-44
+322            android:enabled="false"
+322-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:92:13-36
+323            android:exported="false" >
+323-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:93:13-37
+324            <intent-filter>
+324-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:95:13-98:29
+325                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+325-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:17-83
+325-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:25-80
+326                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+326-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:17-82
+326-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:25-79
+327            </intent-filter>
+328        </receiver>
+329        <receiver
+329-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:100:9-109:20
+330            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+330-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:101:13-103
+331            android:directBootAware="false"
+331-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:102:13-44
+332            android:enabled="false"
+332-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:103:13-36
+333            android:exported="false" >
+333-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:104:13-37
+334            <intent-filter>
+334-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:106:13-108:29
+335                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+335-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:17-79
+335-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:25-76
+336            </intent-filter>
+337        </receiver>
+338        <receiver
+338-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:110:9-121:20
+339            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+339-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:111:13-88
+340            android:directBootAware="false"
+340-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:112:13-44
+341            android:enabled="false"
+341-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:113:13-36
+342            android:exported="false" >
+342-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:114:13-37
+343            <intent-filter>
+343-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:116:13-120:29
+344                <action android:name="android.intent.action.BOOT_COMPLETED" />
+344-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:87:17-79
+344-->/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/AndroidManifest.xml:87:25-76
+345                <action android:name="android.intent.action.TIME_SET" />
+345-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:17-73
+345-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:25-70
+346                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+346-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:17-81
+346-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:25-78
+347            </intent-filter>
+348        </receiver>
+349        <receiver
+349-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:122:9-131:20
+350            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+350-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:123:13-99
+351            android:directBootAware="false"
+351-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:124:13-44
+352            android:enabled="@bool/enable_system_alarm_service_default"
+352-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:125:13-72
+353            android:exported="false" >
+353-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:126:13-37
+354            <intent-filter>
+354-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:128:13-130:29
+355                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+355-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:17-98
+355-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:25-95
+356            </intent-filter>
+357        </receiver>
+358        <receiver
+358-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:132:9-142:20
+359            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+359-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:133:13-78
+360            android:directBootAware="false"
+360-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:134:13-44
+361            android:enabled="true"
+361-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:135:13-35
+362            android:exported="true"
+362-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:136:13-36
+363            android:permission="android.permission.DUMP" >
+363-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:137:13-57
+364            <intent-filter>
+364-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:139:13-141:29
+365                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+365-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:17-88
+365-->[androidx.work:work-runtime:2.9.1] /Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:25-85
+366            </intent-filter>
+367        </receiver>
+368
+369        <uses-library
+369-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/1bd6fe9875c177bdad2a99c3fc95e142/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+370            android:name="androidx.window.extensions"
+370-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/1bd6fe9875c177bdad2a99c3fc95e142/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+371            android:required="false" />
+371-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/1bd6fe9875c177bdad2a99c3fc95e142/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+372        <uses-library
+372-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/1bd6fe9875c177bdad2a99c3fc95e142/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+373            android:name="androidx.window.sidecar"
+373-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/1bd6fe9875c177bdad2a99c3fc95e142/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+374            android:required="false" />
+374-->[androidx.window:window:1.0.0] /Users/enayat/.gradle/caches/8.9/transforms/1bd6fe9875c177bdad2a99c3fc95e142/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+375
+376        <service
+376-->[androidx.room:room-runtime:2.6.1] /Users/enayat/.gradle/caches/8.9/transforms/669ba7c32db29e48dcd40b5e0cb11702/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+377            android:name="androidx.room.MultiInstanceInvalidationService"
+377-->[androidx.room:room-runtime:2.6.1] /Users/enayat/.gradle/caches/8.9/transforms/669ba7c32db29e48dcd40b5e0cb11702/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+378            android:directBootAware="true"
+378-->[androidx.room:room-runtime:2.6.1] /Users/enayat/.gradle/caches/8.9/transforms/669ba7c32db29e48dcd40b5e0cb11702/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+379            android:exported="false" />
+379-->[androidx.room:room-runtime:2.6.1] /Users/enayat/.gradle/caches/8.9/transforms/669ba7c32db29e48dcd40b5e0cb11702/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+380
+381        <uses-library
+381-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/enayat/.gradle/caches/8.9/transforms/5bc1a44f9f2d462d880e3a910f98f9c0/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+382            android:name="android.ext.adservices"
+382-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/enayat/.gradle/caches/8.9/transforms/5bc1a44f9f2d462d880e3a910f98f9c0/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+383            android:required="false" />
+383-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/enayat/.gradle/caches/8.9/transforms/5bc1a44f9f2d462d880e3a910f98f9c0/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+384
+385        <meta-data
+385-->[com.google.android.gms:play-services-basement:18.4.0] /Users/enayat/.gradle/caches/8.9/transforms/85a3894843be16951e619903f66e46f2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+386            android:name="com.google.android.gms.version"
+386-->[com.google.android.gms:play-services-basement:18.4.0] /Users/enayat/.gradle/caches/8.9/transforms/85a3894843be16951e619903f66e46f2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+387            android:value="@integer/google_play_services_version" />
+387-->[com.google.android.gms:play-services-basement:18.4.0] /Users/enayat/.gradle/caches/8.9/transforms/85a3894843be16951e619903f66e46f2/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+388
+389        <service
+389-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/98215cba2847cca8d7588366c5753204/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:26:9-32:19
+390            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+390-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/98215cba2847cca8d7588366c5753204/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:27:13-103
+391            android:exported="false" >
+391-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/98215cba2847cca8d7588366c5753204/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:28:13-37
+392            <meta-data
+392-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/98215cba2847cca8d7588366c5753204/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:29:13-31:39
+393                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+393-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/98215cba2847cca8d7588366c5753204/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:30:17-94
+394                android:value="cct" />
+394-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/98215cba2847cca8d7588366c5753204/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:31:17-36
+395        </service>
+396
+397        <receiver
+397-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+398            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+398-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+399            android:directBootAware="false"
+399-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+400            android:enabled="true"
+400-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+401            android:exported="true"
+401-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+402            android:permission="android.permission.DUMP" >
+402-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+403            <intent-filter>
+403-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+404                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+404-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+404-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+405            </intent-filter>
+406            <intent-filter>
+406-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+407                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+407-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+407-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+408            </intent-filter>
+409            <intent-filter>
+409-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+410                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+410-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+410-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+411            </intent-filter>
+412            <intent-filter>
+412-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+413                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+413-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+413-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/enayat/.gradle/caches/8.9/transforms/47467a7fcb40ae7df96728ddd2f3c846/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+414            </intent-filter>
+415        </receiver>
+416
+417        <service
+417-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a027ed6d4c67c10eca44575842c16ff9/transformed/transport-runtime-3.3.0/AndroidManifest.xml:24:9-28:19
+418            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+418-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a027ed6d4c67c10eca44575842c16ff9/transformed/transport-runtime-3.3.0/AndroidManifest.xml:25:13-117
+419            android:exported="false"
+419-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a027ed6d4c67c10eca44575842c16ff9/transformed/transport-runtime-3.3.0/AndroidManifest.xml:26:13-37
+420            android:permission="android.permission.BIND_JOB_SERVICE" >
+420-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a027ed6d4c67c10eca44575842c16ff9/transformed/transport-runtime-3.3.0/AndroidManifest.xml:27:13-69
+421        </service>
+422
+423        <receiver
+423-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a027ed6d4c67c10eca44575842c16ff9/transformed/transport-runtime-3.3.0/AndroidManifest.xml:30:9-32:40
+424            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+424-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a027ed6d4c67c10eca44575842c16ff9/transformed/transport-runtime-3.3.0/AndroidManifest.xml:31:13-132
+425            android:exported="false" />
+425-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/enayat/.gradle/caches/8.9/transforms/a027ed6d4c67c10eca44575842c16ff9/transformed/transport-runtime-3.3.0/AndroidManifest.xml:32:13-37
+426    </application>
+427
+428</manifest>

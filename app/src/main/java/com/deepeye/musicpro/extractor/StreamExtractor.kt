@@ -22,7 +22,11 @@ class StreamExtractor(
     private val initialized = AtomicBoolean(false)
 
     suspend fun extract(input: String): Result<StreamExtractionResult> = withContext(Dispatchers.IO) {
-        val url = LinkParser.normalizeYouTubeUrl(input) ?: input
+        val url = if (input.length in 6..15 && !input.contains("/")) {
+            "https://www.youtube.com/watch?v=$input"
+        } else {
+            LinkParser.normalizeYouTubeUrl(input) ?: input
+        }
         runCatching {
             ensureNewPipeInitialized()
             newPipeExtraction(url).getOrElse { error ->

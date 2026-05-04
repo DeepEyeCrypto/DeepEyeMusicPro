@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.deepeye.musicpro.app-mergeDebugResources-65:/values-v23/values-v23.xml",
+            "outputFile": "com.deepeye.musicpro.app-mergeDebugResources-104:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/d83454389e27978268b1efa73217efca/transformed/material-1.12.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/7281e1dc07b66e5b25aeeecd2771d753/transformed/work-runtime-2.9.1/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
+                    }
+                },
+                {
+                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/62d7b2383348cb4920a01a8bde17ac36/transformed/material-1.12.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,17 +33,7 @@
                     }
                 },
                 {
-                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/89a6cfecbfb7519b51bb40e389c30ebf/transformed/work-runtime-2.9.1/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,121",
-                        "endColumns": "65,62",
-                        "endOffsets": "116,179"
-                    }
-                },
-                {
-                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/6b5784146877abc06408982faf1b6e3e/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/32a5e74c6975dd6010e9e027fa9d6e90/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -52,7 +52,7 @@
                     }
                 },
                 {
-                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/722a25ae7be68636d6dcd867bce731a1/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/2a9dfe90d6349ff4f3969c188969b577/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

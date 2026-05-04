@@ -22,30 +22,30 @@ public final class LayoutMiniPlayerBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
-  public final ImageView miniArtwork;
+  public final ImageButton miniPlayPause;
 
   @NonNull
-  public final ImageButton miniPlayPause;
+  public final ImageView miniPlayerArtwork;
 
   @NonNull
   public final MaterialCardView miniPlayerCard;
 
   @NonNull
-  public final TextView miniSubtitle;
+  public final TextView miniPlayerSubtitle;
 
   @NonNull
-  public final TextView miniTitle;
+  public final TextView miniPlayerTitle;
 
   private LayoutMiniPlayerBinding(@NonNull MaterialCardView rootView,
-      @NonNull ImageView miniArtwork, @NonNull ImageButton miniPlayPause,
-      @NonNull MaterialCardView miniPlayerCard, @NonNull TextView miniSubtitle,
-      @NonNull TextView miniTitle) {
+      @NonNull ImageButton miniPlayPause, @NonNull ImageView miniPlayerArtwork,
+      @NonNull MaterialCardView miniPlayerCard, @NonNull TextView miniPlayerSubtitle,
+      @NonNull TextView miniPlayerTitle) {
     this.rootView = rootView;
-    this.miniArtwork = miniArtwork;
     this.miniPlayPause = miniPlayPause;
+    this.miniPlayerArtwork = miniPlayerArtwork;
     this.miniPlayerCard = miniPlayerCard;
-    this.miniSubtitle = miniSubtitle;
-    this.miniTitle = miniTitle;
+    this.miniPlayerSubtitle = miniPlayerSubtitle;
+    this.miniPlayerTitle = miniPlayerTitle;
   }
 
   @Override
@@ -75,34 +75,34 @@ public final class LayoutMiniPlayerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.miniArtwork;
-      ImageView miniArtwork = ViewBindings.findChildViewById(rootView, id);
-      if (miniArtwork == null) {
-        break missingId;
-      }
-
       id = R.id.miniPlayPause;
       ImageButton miniPlayPause = ViewBindings.findChildViewById(rootView, id);
       if (miniPlayPause == null) {
         break missingId;
       }
 
+      id = R.id.miniPlayerArtwork;
+      ImageView miniPlayerArtwork = ViewBindings.findChildViewById(rootView, id);
+      if (miniPlayerArtwork == null) {
+        break missingId;
+      }
+
       MaterialCardView miniPlayerCard = (MaterialCardView) rootView;
 
-      id = R.id.miniSubtitle;
-      TextView miniSubtitle = ViewBindings.findChildViewById(rootView, id);
-      if (miniSubtitle == null) {
+      id = R.id.miniPlayerSubtitle;
+      TextView miniPlayerSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (miniPlayerSubtitle == null) {
         break missingId;
       }
 
-      id = R.id.miniTitle;
-      TextView miniTitle = ViewBindings.findChildViewById(rootView, id);
-      if (miniTitle == null) {
+      id = R.id.miniPlayerTitle;
+      TextView miniPlayerTitle = ViewBindings.findChildViewById(rootView, id);
+      if (miniPlayerTitle == null) {
         break missingId;
       }
 
-      return new LayoutMiniPlayerBinding((MaterialCardView) rootView, miniArtwork, miniPlayPause,
-          miniPlayerCard, miniSubtitle, miniTitle);
+      return new LayoutMiniPlayerBinding((MaterialCardView) rootView, miniPlayPause,
+          miniPlayerArtwork, miniPlayerCard, miniPlayerSubtitle, miniPlayerTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

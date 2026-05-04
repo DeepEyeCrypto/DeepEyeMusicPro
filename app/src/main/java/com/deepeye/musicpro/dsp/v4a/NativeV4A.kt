@@ -60,18 +60,30 @@ class NativeV4A {
     @Synchronized
     external fun getSpectrumMagnitudes(out: FloatArray)
 
+    @Synchronized
+    external fun setTubeEnabled(enabled: Boolean)
+
+    @Synchronized
+    external fun getTubeWarmth(): Float
+
     private external fun nativeCreate(sampleRate: Int, channels: Int): Long
     private external fun nativeRelease(handle: Long)
     private external fun nativeSetMasterEnabled(handle: Long, enabled: Boolean)
     private external fun nativeSetEffectEnabled(handle: Long, effectOrdinal: Int, enabled: Boolean)
     private external fun nativeSetEqGains(handle: Long, gains: FloatArray)
     private external fun nativeSetTubeWarmth(handle: Long, warmth: Float)
+    private external fun nativeSetTubeEnabled(handle: Long, enabled: Boolean)
+    private external fun nativeGetTubeWarmth(handle: Long): Float
     private external fun nativeSetReverb(handle: Long, room: Float, damping: Float, width: Float, wet: Float)
     private external fun nativeProcessFloatArray(handle: Long, input: FloatArray, output: FloatArray, frames: Int)
     private external fun nativeProcessDirect(handle: Long, input: ByteBuffer, output: ByteBuffer, frames: Int)
 
     companion object {
         private val libraryLoaded = AtomicBoolean(false)
+
+        @JvmStatic external fun setTubeWarmthNative(warmth: Float)
+        @JvmStatic external fun setTubeEnabledNative(enabled: Boolean)
+        @JvmStatic external fun getTubeWarmthNative(): Float
 
         init {
             try {

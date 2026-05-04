@@ -22,7 +22,8 @@ data class CachedTrack(
     val downloadedAt: Long,
     val lastPlayedAt: Long,
     val playCount: Int,
-    val fileSizeBytes: Long
+    val fileSizeBytes: Long,
+    val isFavorite: Boolean
 ) {
     fun toTrack(): Track = Track(
         id = id,
@@ -35,7 +36,8 @@ data class CachedTrack(
         localUri = localUri,
         mimeType = mimeType,
         bitrate = bitrate,
-        source = source
+        source = source,
+        isFavorite = isFavorite
     )
 
     companion object {
@@ -56,7 +58,8 @@ data class CachedTrack(
                 downloadedAt = if (downloaded) now else 0L,
                 lastPlayedAt = now,
                 playCount = 0,
-                fileSizeBytes = fileSizeBytes
+                fileSizeBytes = fileSizeBytes,
+                isFavorite = track.isFavorite
             )
         }
     }

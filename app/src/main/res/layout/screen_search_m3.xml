@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+    
+    <!-- Search Header -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:shapeAppearance="@style/ShapeAppearance.M3.Medium"
+        android:layout_margin="24dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp">
+            
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                app:tint="?attr/colorOnSurfaceVariant"/>
+            
+            <EditText
+                android:id="@+id/searchInputM3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:hint="Songs, artists, or paste link"
+                android:textAppearance="@style/TextAppearance.M3.BodyLarge"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurfaceVariant"
+                android:imeOptions="actionSearch"
+                android:inputType="text"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    
+    <!-- Search Status -->
+    <TextView
+        android:id="@+id/searchStatusM3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:text="Search YouTube Music"
+        android:textAppearance="@style/TextAppearance.M3.LabelMedium"
+        android:textColor="?attr/colorOnSurfaceVariant"/>
+    
+    <!-- Search Results -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResultsRecyclerM3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="8dp"/>
+        
+</LinearLayout>

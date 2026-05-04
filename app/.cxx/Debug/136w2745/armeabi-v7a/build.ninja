@@ -52,50 +52,18 @@ build cmake_object_order_depends_target_deepeye_dsp: phony || CMakeFiles/deepeye
 build CMakeFiles/deepeye_dsp.dir/jni_bridge.cpp.o: CXX_COMPILER__deepeye_dsp_Debug /Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jni_bridge.cpp || cmake_object_order_depends_target_deepeye_dsp
   DEFINES = -Ddeepeye_dsp_EXPORTS
   DEP_FILE = CMakeFiles/deepeye_dsp.dir/jni_bridge.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O3 -ffast-math -fno-exceptions -fno-rtti -Wall -Wextra -O3 -ffast-math -Wall -Wextra -fno-limit-debug-info  -fPIC
-  INCLUDES = -I/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O3 -ffast-math -fno-exceptions -fno-rtti -Wall -Wextra -fno-limit-debug-info  -fPIC -Ofast -ffast-math -funroll-loops -Wall
+  INCLUDES = -I/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp
   OBJECT_DIR = CMakeFiles/deepeye_dsp.dir
   OBJECT_FILE_DIR = CMakeFiles/deepeye_dsp.dir
 
-build CMakeFiles/deepeye_dsp.dir/jamesdsp/jdsp_controller.c.o: C_COMPILER__deepeye_dsp_Debug /Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp/jdsp_controller.c || cmake_object_order_depends_target_deepeye_dsp
+build CMakeFiles/deepeye_dsp.dir/dsp/dsp_engine.cpp.o: CXX_COMPILER__deepeye_dsp_Debug /Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/dsp/dsp_engine.cpp || cmake_object_order_depends_target_deepeye_dsp
   DEFINES = -Ddeepeye_dsp_EXPORTS
-  DEP_FILE = CMakeFiles/deepeye_dsp.dir/jamesdsp/jdsp_controller.c.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O3 -ffast-math -Wall -Wextra -O3 -ffast-math -Wall -Wextra -fno-limit-debug-info  -fPIC -std=gnu11
-  INCLUDES = -I/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp
+  DEP_FILE = CMakeFiles/deepeye_dsp.dir/dsp/dsp_engine.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O3 -ffast-math -fno-exceptions -fno-rtti -Wall -Wextra -fno-limit-debug-info  -fPIC -Ofast -ffast-math -funroll-loops -Wall
+  INCLUDES = -I/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp
   OBJECT_DIR = CMakeFiles/deepeye_dsp.dir
-  OBJECT_FILE_DIR = CMakeFiles/deepeye_dsp.dir/jamesdsp
-
-build CMakeFiles/deepeye_dsp.dir/jamesdsp/convolver.c.o: C_COMPILER__deepeye_dsp_Debug /Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp/convolver.c || cmake_object_order_depends_target_deepeye_dsp
-  DEFINES = -Ddeepeye_dsp_EXPORTS
-  DEP_FILE = CMakeFiles/deepeye_dsp.dir/jamesdsp/convolver.c.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O3 -ffast-math -Wall -Wextra -O3 -ffast-math -Wall -Wextra -fno-limit-debug-info  -fPIC -std=gnu11
-  INCLUDES = -I/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp
-  OBJECT_DIR = CMakeFiles/deepeye_dsp.dir
-  OBJECT_FILE_DIR = CMakeFiles/deepeye_dsp.dir/jamesdsp
-
-build CMakeFiles/deepeye_dsp.dir/jamesdsp/ddc_engine.c.o: C_COMPILER__deepeye_dsp_Debug /Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp/ddc_engine.c || cmake_object_order_depends_target_deepeye_dsp
-  DEFINES = -Ddeepeye_dsp_EXPORTS
-  DEP_FILE = CMakeFiles/deepeye_dsp.dir/jamesdsp/ddc_engine.c.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O3 -ffast-math -Wall -Wextra -O3 -ffast-math -Wall -Wextra -fno-limit-debug-info  -fPIC -std=gnu11
-  INCLUDES = -I/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp
-  OBJECT_DIR = CMakeFiles/deepeye_dsp.dir
-  OBJECT_FILE_DIR = CMakeFiles/deepeye_dsp.dir/jamesdsp
-
-build CMakeFiles/deepeye_dsp.dir/jamesdsp/fet_compressor.c.o: C_COMPILER__deepeye_dsp_Debug /Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp/fet_compressor.c || cmake_object_order_depends_target_deepeye_dsp
-  DEFINES = -Ddeepeye_dsp_EXPORTS
-  DEP_FILE = CMakeFiles/deepeye_dsp.dir/jamesdsp/fet_compressor.c.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O3 -ffast-math -Wall -Wextra -O3 -ffast-math -Wall -Wextra -fno-limit-debug-info  -fPIC -std=gnu11
-  INCLUDES = -I/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp
-  OBJECT_DIR = CMakeFiles/deepeye_dsp.dir
-  OBJECT_FILE_DIR = CMakeFiles/deepeye_dsp.dir/jamesdsp
-
-build CMakeFiles/deepeye_dsp.dir/jamesdsp/spectrum.c.o: C_COMPILER__deepeye_dsp_Debug /Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp/spectrum.c || cmake_object_order_depends_target_deepeye_dsp
-  DEFINES = -Ddeepeye_dsp_EXPORTS
-  DEP_FILE = CMakeFiles/deepeye_dsp.dir/jamesdsp/spectrum.c.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O3 -ffast-math -Wall -Wextra -O3 -ffast-math -Wall -Wextra -fno-limit-debug-info  -fPIC -std=gnu11
-  INCLUDES = -I/Users/enayat/Documents/DeepEyeMusicPro/app/src/main/cpp/jamesdsp
-  OBJECT_DIR = CMakeFiles/deepeye_dsp.dir
-  OBJECT_FILE_DIR = CMakeFiles/deepeye_dsp.dir/jamesdsp
+  OBJECT_FILE_DIR = CMakeFiles/deepeye_dsp.dir/dsp
 
 
 # =============================================================================
@@ -105,10 +73,10 @@ build CMakeFiles/deepeye_dsp.dir/jamesdsp/spectrum.c.o: C_COMPILER__deepeye_dsp_
 #############################################
 # Link the shared library /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/cxx/Debug/136w2745/obj/armeabi-v7a/libdeepeye_dsp.so
 
-build /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/cxx/Debug/136w2745/obj/armeabi-v7a/libdeepeye_dsp.so: CXX_SHARED_LIBRARY_LINKER__deepeye_dsp_Debug CMakeFiles/deepeye_dsp.dir/jni_bridge.cpp.o CMakeFiles/deepeye_dsp.dir/jamesdsp/jdsp_controller.c.o CMakeFiles/deepeye_dsp.dir/jamesdsp/convolver.c.o CMakeFiles/deepeye_dsp.dir/jamesdsp/ddc_engine.c.o CMakeFiles/deepeye_dsp.dir/jamesdsp/fet_compressor.c.o CMakeFiles/deepeye_dsp.dir/jamesdsp/spectrum.c.o | /usr/local/share/android-commandlinetools/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/24/liblog.so
-  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O3 -ffast-math -fno-exceptions -fno-rtti -Wall -Wextra -O3 -ffast-math -Wall -Wextra -fno-limit-debug-info
+build /Users/enayat/Documents/DeepEyeMusicPro/app/build/intermediates/cxx/Debug/136w2745/obj/armeabi-v7a/libdeepeye_dsp.so: CXX_SHARED_LIBRARY_LINKER__deepeye_dsp_Debug CMakeFiles/deepeye_dsp.dir/jni_bridge.cpp.o CMakeFiles/deepeye_dsp.dir/dsp/dsp_engine.cpp.o | /usr/local/share/android-commandlinetools/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/24/liblog.so
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O3 -ffast-math -fno-exceptions -fno-rtti -Wall -Wextra -fno-limit-debug-info
   LINK_FLAGS = -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = /usr/local/share/android-commandlinetools/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/24/liblog.so  -lm  -latomic -lm
+  LINK_LIBRARIES = /usr/local/share/android-commandlinetools/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/24/liblog.so  -latomic -lm
   OBJECT_DIR = CMakeFiles/deepeye_dsp.dir
   POST_BUILD = :
   PRE_LINK = :

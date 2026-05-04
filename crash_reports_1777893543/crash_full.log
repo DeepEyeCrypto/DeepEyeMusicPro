@@ -1,0 +1,123 @@
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: FATAL EXCEPTION: ExoPlayer:Playback
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: Process: com.deepeye.musicpro.debug, PID: 29601
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: java.lang.UnsatisfiedLinkError: No implementation found for long com.deepeye.musicpro.dsp.v4a.NativeV4A.nativeCreate(int, int) (tried Java_com_deepeye_musicpro_dsp_v4a_NativeV4A_nativeCreate and Java_com_deepeye_musicpro_dsp_v4a_NativeV4A_nativeCreate__II) - is the library loaded, e.g. System.loadLibrary?
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.v4a.NativeV4A.nativeCreate(Native Method)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.v4a.NativeV4A.configure(NativeV4A.kt:18)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.v4a.V4ABundledProcessor.configure(V4ABundledProcessor.kt:31)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at androidx.media3.common.audio.AudioProcessingPipeline.configure(AudioProcessingPipeline.java:136)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at androidx.media3.exoplayer.audio.DefaultAudioSink.configure(DefaultAudioSink.java:715)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at androidx.media3.exoplayer.audio.MediaCodecAudioRenderer.onOutputFormatChanged(MediaCodecAudioRenderer.java:609)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at androidx.media3.exoplayer.mediacodec.MediaCodecRenderer.updateOutputFormatForTime(MediaCodecRenderer.java:688)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at androidx.media3.exoplayer.mediacodec.MediaCodecRenderer.drainOutputBuffer(MediaCodecRenderer.java:2041)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at androidx.media3.exoplayer.mediacodec.MediaCodecRenderer.render(MediaCodecRenderer.java:873)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at androidx.media3.exoplayer.ExoPlayerImplInternal.doSomeWork(ExoPlayerImplInternal.java:1136)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at androidx.media3.exoplayer.ExoPlayerImplInternal.handleMessage(ExoPlayerImplInternal.java:561)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:362)
+05-04 16:05:30.647 29601 29900 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+05-04 16:05:47.590   426   426 E AndroidRuntime: FATAL EXCEPTION: main
+05-04 16:05:47.590   426   426 E AndroidRuntime: Process: com.deepeye.musicpro.debug, PID: 426
+05-04 16:05:47.590   426   426 E AndroidRuntime: android.view.InflateException: Binary XML file line #193 in com.deepeye.musicpro.debug:layout/screen_nowplaying_m3: Binary XML file line #193: You must supply a layout_width attribute., theme={InheritanceMap=[id=0x7f140320com.deepeye.musicpro.debug:style/ThemeOverlay.Material3.DynamicColors.Dark], Themes=[com.deepeye.musicpro.debug:style/ThemeOverlay.Material3.DynamicColors.Dark, forced, com.deepeye.musicpro.debug:style/Theme.DeepEyeMusicPro, forced, com.deepeye.musicpro.debug:style/Theme.AppCompat.Empty, forced, android:style/Theme.DeviceDefault.Light.DarkActionBar, forced]}
+05-04 16:05:47.590   426   426 E AndroidRuntime: Caused by: java.lang.UnsupportedOperationException: Binary XML file line #193: You must supply a layout_width attribute., theme={InheritanceMap=[id=0x7f140320com.deepeye.musicpro.debug:style/ThemeOverlay.Material3.DynamicColors.Dark], Themes=[com.deepeye.musicpro.debug:style/ThemeOverlay.Material3.DynamicColors.Dark, forced, com.deepeye.musicpro.debug:style/Theme.DeepEyeMusicPro, forced, com.deepeye.musicpro.debug:style/Theme.AppCompat.Empty, forced, android:style/Theme.DeviceDefault.Light.DarkActionBar, forced]}
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.content.res.TypedArray.getLayoutDimension(TypedArray.java:839)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.ViewGroup$LayoutParams.setBaseAttributes(ViewGroup.java:8287)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.ViewGroup$MarginLayoutParams.<init>(ViewGroup.java:8485)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.widget.LinearLayout$LayoutParams.<init>(LinearLayout.java:2085)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.widget.LinearLayout.generateLayoutParams(LinearLayout.java:1979)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.widget.LinearLayout.generateLayoutParams(LinearLayout.java:89)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1137)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1138)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1138)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:694)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:538)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at com.deepeye.musicpro.ui.player.NowPlayingFragment.onCreateView(NowPlayingFragment.kt:25)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at androidx.fragment.app.Fragment.performCreateView(Fragment.java:3119)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:577)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:286)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:2214)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:2115)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.execPendingActions(FragmentManager.java:2052)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager$5.run(FragmentManager.java:703)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1000)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:104)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:362)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 16:05:47.590   426   426 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 16:37:02.181  3064 12172 I MediaSessionStack: addSession to bottom of stack | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-04 16:41:06.023  3064  5988 I MediaSessionStack: onPlaybackStateChanged - Pushing session to top | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: FATAL EXCEPTION: ExoPlayer:Playback
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: Process: com.deepeye.musicpro.debug, PID: 13694
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: java.lang.UnsatisfiedLinkError: No implementation found for long com.deepeye.musicpro.dsp.v4a.NativeV4A.nativeCreate(int, int) (tried Java_com_deepeye_musicpro_dsp_v4a_NativeV4A_nativeCreate and Java_com_deepeye_musicpro_dsp_v4a_NativeV4A_nativeCreate__II) - is the library loaded, e.g. System.loadLibrary?
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.v4a.NativeV4A.nativeCreate(Native Method)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.v4a.NativeV4A.configure(NativeV4A.kt:18)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at com.deepeye.musicpro.dsp.v4a.V4ABundledProcessor.configure(V4ABundledProcessor.kt:31)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at androidx.media3.common.audio.AudioProcessingPipeline.configure(AudioProcessingPipeline.java:136)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at androidx.media3.exoplayer.audio.DefaultAudioSink.configure(DefaultAudioSink.java:715)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at androidx.media3.exoplayer.audio.MediaCodecAudioRenderer.onOutputFormatChanged(MediaCodecAudioRenderer.java:609)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at androidx.media3.exoplayer.mediacodec.MediaCodecRenderer.updateOutputFormatForTime(MediaCodecRenderer.java:688)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at androidx.media3.exoplayer.mediacodec.MediaCodecRenderer.drainOutputBuffer(MediaCodecRenderer.java:2041)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at androidx.media3.exoplayer.mediacodec.MediaCodecRenderer.render(MediaCodecRenderer.java:873)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at androidx.media3.exoplayer.ExoPlayerImplInternal.doSomeWork(ExoPlayerImplInternal.java:1136)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at androidx.media3.exoplayer.ExoPlayerImplInternal.handleMessage(ExoPlayerImplInternal.java:561)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:362)
+05-04 16:41:06.969 13694 13753 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+05-04 16:41:07.028  3064  5990 I MediaSessionStack: removeSession | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-04 16:41:08.637  3064  4883 I MediaSessionStack: addSession to bottom of stack | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-04 16:43:22.978 14460 14460 D AndroidRuntime: Shutting down VM
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: FATAL EXCEPTION: main
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: Process: com.deepeye.musicpro.debug, PID: 14460
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: android.view.InflateException: Binary XML file line #193 in com.deepeye.musicpro.debug:layout/screen_nowplaying_m3: Binary XML file line #193: You must supply a layout_width attribute., theme={InheritanceMap=[id=0x7f140188com.deepeye.musicpro.debug:style/PreferenceThemeOverlay, id=0x7f14011fcom.deepeye.musicpro.debug:style/BasePreferenceThemeOverlay], Themes=[com.deepeye.musicpro.debug:style/PreferenceThemeOverlay, not forced, com.deepeye.musicpro.debug:style/ThemeOverlay.Material3.DynamicColors.Dark, forced, com.deepeye.musicpro.debug:style/Theme.DeepEyeMusicPro, forced, com.deepeye.musicpro.debug:style/Theme.AppCompat.Empty, forced, android:style/Theme.DeviceDefault.Light.DarkActionBar, forced]}
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: Caused by: java.lang.UnsupportedOperationException: Binary XML file line #193: You must supply a layout_width attribute., theme={InheritanceMap=[id=0x7f140188com.deepeye.musicpro.debug:style/PreferenceThemeOverlay, id=0x7f14011fcom.deepeye.musicpro.debug:style/BasePreferenceThemeOverlay], Themes=[com.deepeye.musicpro.debug:style/PreferenceThemeOverlay, not forced, com.deepeye.musicpro.debug:style/ThemeOverlay.Material3.DynamicColors.Dark, forced, com.deepeye.musicpro.debug:style/Theme.DeepEyeMusicPro, forced, com.deepeye.musicpro.debug:style/Theme.AppCompat.Empty, forced, android:style/Theme.DeviceDefault.Light.DarkActionBar, forced]}
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.content.res.TypedArray.getLayoutDimension(TypedArray.java:839)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.ViewGroup$LayoutParams.setBaseAttributes(ViewGroup.java:8287)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.ViewGroup$MarginLayoutParams.<init>(ViewGroup.java:8485)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.widget.LinearLayout$LayoutParams.<init>(LinearLayout.java:2085)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.widget.LinearLayout.generateLayoutParams(LinearLayout.java:1979)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.widget.LinearLayout.generateLayoutParams(LinearLayout.java:89)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1137)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1138)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1138)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:694)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:538)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at com.deepeye.musicpro.ui.player.NowPlayingFragment.onCreateView(NowPlayingFragment.kt:25)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at androidx.fragment.app.Fragment.performCreateView(Fragment.java:3119)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:577)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:286)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:2214)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:2115)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.execPendingActions(FragmentManager.java:2052)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager$5.run(FragmentManager.java:703)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1000)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:104)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:242)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:362)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8448)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+05-04 16:43:22.978 14460 14460 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:992)
+05-04 16:43:23.019  3064  3970 I MediaSessionStack: removeSession | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-04 16:43:23.020  1587  1587 I Zygote  : Process 14460 exited due to signal 9 (Killed)
+05-04 16:43:25.290 14674 14674 I DeepEyeJNI: JNI_OnLoad called - Native library initializing...
+05-04 16:43:25.346 14674 14674 I ExoPlayerImpl: Init fe7585c [AndroidXMedia3/1.4.1] [hiphi, motorola edge 30 pro, motorola, 34]
+05-04 16:43:25.411 14674 14674 I .musicpro.debug: hiddenapi: Accessing hidden method Landroid/media/AudioTrack;->getLatency()I (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker; (domain=app, TargetSdkVersion=35) using reflection: allowed
+05-04 16:43:25.603  3064  3971 I MediaSessionStack: addSession to bottom of stack | record: com.deepeye.musicpro.debug/androidx.media3.session.id.DeepEyeMusicProSession (userId=0)
+05-04 16:43:25.637  7916  8010 D Avrcp_ext: update #11:MediaPlayerInfo com.deepeye.musicpro.debug (as 'DeepEyeMusicPro') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (com.deepeye.musicpro.debug@4e622f7) null
+05-04 16:43:25.643 14674 14674 I Choreographer: Skipped 97 frames!  The application may be doing too much work on its main thread.
+05-04 16:43:49.787  7916  8004 D HeadsetPhoneState: Updating the signal strength change to the apps
+05-04 16:44:51.226  7916  8004 D HeadsetPhoneState: Updating the signal strength change to the apps
+05-04 16:45:48.835  7916  8004 D HeadsetPhoneState: Updating the signal strength change to the apps
+05-04 16:45:52.680  7916  8004 D HeadsetPhoneState: Updating the signal strength change to the apps
+05-04 16:47:16.211  3064  3370 E BLASTSyncEngine: WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+05-04 16:47:16.214  3064  3370 E BLASTSyncEngine: WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.

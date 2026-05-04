@@ -1,0 +1,61 @@
+# ══════════════════════════════════════════════════════════════════
+# DeepEyeMusicPro — Baseline Profile (Manual Hot-Path Rules)
+#
+# These rules tell ART to AOT-compile these methods at install time,
+# eliminating JIT stalls during first use. The auto-generated rules
+# from BaselineProfileGenerator are merged with these at build time.
+#
+# Format: HSPf or HLMethod; (H=Hot, S=Startup, P=Post-startup)
+# ══════════════════════════════════════════════════════════════════
+
+# ── Application Startup ─────────────────────────────────────────
+HSPLcom/deepeye/musicpro/DeepEyeApp;->onCreate()V
+HSPLcom/deepeye/musicpro/ui/MainActivity;->onCreate(Landroid/os/Bundle;)V
+
+# ── Compose Runtime (eliminates JIT stalls on first composition) ─
+HSPLandroidx/compose/runtime/ComposerImpl;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
+HSPLandroidx/compose/runtime/ComposerImpl;->changed(Ljava/lang/Object;)Z
+HSPLandroidx/compose/runtime/RecomposerImpl;->performRecompose(Landroidx/compose/runtime/ControlledComposition;Landroidx/compose/runtime/collection/IdentityArraySet;)Z
+HSPLandroidx/compose/ui/platform/AndroidComposeView;->dispatchDraw(Landroid/graphics/Canvas;)V
+HSPLandroidx/compose/foundation/Canvas_androidKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
+
+# ── Media3 / ExoPlayer Core ─────────────────────────────────────
+HSPLandroidx/media3/exoplayer/ExoPlayerImpl;-><init>(Landroidx/media3/exoplayer/ExoPlayer$Builder;Landroidx/media3/exoplayer/ExoPlayerImpl$ConstructorParams;)V
+HSPLandroidx/media3/exoplayer/ExoPlayerImpl;->setMediaItems(Ljava/util/List;IJ)V
+HSPLandroidx/media3/exoplayer/ExoPlayerImpl;->prepare()V
+HSPLandroidx/media3/exoplayer/ExoPlayerImpl;->play()V
+HSPLandroidx/media3/exoplayer/ExoPlayerImpl;->setPlayWhenReady(Z)V
+HSPLandroidx/media3/session/MediaSessionImpl;->onGetSession(Landroidx/media3/session/MediaSession$ControllerInfo;)Landroidx/media3/session/MediaSession;
+
+# ── Audio Pipeline ───────────────────────────────────────────────
+HSPLandroidx/media3/exoplayer/audio/DefaultAudioSink;->handleBuffer(Ljava/nio/ByteBuffer;JZ)Z
+HSPLandroidx/media3/exoplayer/audio/DefaultAudioSink;->configure(Landroidx/media3/common/Format;II[I)V
+
+# ── Native DSP JNI Bridge ───────────────────────────────────────
+HSPLcom/deepeye/musicpro/dsp/NativeDSP;->applyPreset(Lcom/deepeye/musicpro/dsp/DSPPreset;Z)V
+HSPLcom/deepeye/musicpro/dsp/NativeDSP;->getVisualizerData([F[F[F)V
+HSPLcom/deepeye/musicpro/dsp/DSPAudioProcessor;->queueInput(Ljava/nio/ByteBuffer;)V
+HSPLcom/deepeye/musicpro/dsp/DSPManager;-><init>(Landroid/content/Context;Lkotlinx/coroutines/CoroutineScope;)V
+
+# ── Coroutines (hot paths for async playback) ────────────────────
+HSPLkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+HSPLkotlinx/coroutines/DispatchersKt;->getMain()Lkotlinx/coroutines/MainCoroutineDispatcher;
+HSPLkotlinx/coroutines/flow/FlowKt;->collect(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+# ── DataStore (first settings read blocks startup) ───────────────
+HSPLandroidx/datastore/preferences/core/PreferencesSerializer;->readFrom(Ljava/io/InputStream;)Landroidx/datastore/preferences/core/Preferences;
+
+# ── Navigation (Fragment transactions on startup) ────────────────
+HSPLandroidx/navigation/fragment/FragmentNavigator;->navigate(Landroidx/navigation/NavDestination;Landroid/os/Bundle;Landroidx/navigation/NavOptions;Landroidx/navigation/Navigator$Extras;)Landroidx/navigation/NavDestination;
+
+# ── Room Database (first query at startup) ───────────────────────
+HSPLandroidx/room/RoomDatabase;->query(Landroidx/sqlite/db/SupportSQLiteQuery;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
+
+# ── Image Loading (Coil — first thumbnail fetch) ────────────────
+HSPLcoil/RealImageLoader;->enqueue(Lcoil/request/ImageRequest;)Lcoil/request/Disposable;
+
+# ── OkHttp (first network request) ──────────────────────────────
+HSPLokhttp3/internal/connection/RealConnectionPool;->get(Lokhttp3/Address;Ljava/util/List;)Lokhttp3/internal/connection/RealConnection;
+
+# ── NewPipe Extractor Init ──────────────────────────────────────
+HSPLorg/schabi/newpipe/extractor/NewPipe;->init(Lorg/schabi/newpipe/extractor/downloader/Downloader;)V

@@ -24,16 +24,16 @@ public final class ItemAlbumCardBinding implements ViewBinding {
   public final TextView albumArtist;
 
   @NonNull
-  public final ImageView albumArtwork;
+  public final ImageView albumThumbnail;
 
   @NonNull
   public final TextView albumTitle;
 
   private ItemAlbumCardBinding(@NonNull LinearLayout rootView, @NonNull TextView albumArtist,
-      @NonNull ImageView albumArtwork, @NonNull TextView albumTitle) {
+      @NonNull ImageView albumThumbnail, @NonNull TextView albumTitle) {
     this.rootView = rootView;
     this.albumArtist = albumArtist;
-    this.albumArtwork = albumArtwork;
+    this.albumThumbnail = albumThumbnail;
     this.albumTitle = albumTitle;
   }
 
@@ -70,9 +70,9 @@ public final class ItemAlbumCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.albumArtwork;
-      ImageView albumArtwork = ViewBindings.findChildViewById(rootView, id);
-      if (albumArtwork == null) {
+      id = R.id.albumThumbnail;
+      ImageView albumThumbnail = ViewBindings.findChildViewById(rootView, id);
+      if (albumThumbnail == null) {
         break missingId;
       }
 
@@ -82,7 +82,7 @@ public final class ItemAlbumCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemAlbumCardBinding((LinearLayout) rootView, albumArtist, albumArtwork,
+      return new ItemAlbumCardBinding((LinearLayout) rootView, albumArtist, albumThumbnail,
           albumTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -1,28 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.DeepEyeMusicPro" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:fontFamily">@font/outfit_variable</item>
-        <item name="fontFamily">@font/outfit_variable</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
+    <!-- DeepEyeMusicPro Base Theme with Material 3 Expressive -->
+    <style name="Theme.DeepEyeMusicPro" parent="Theme.Material3.Dark.NoActionBar">
+        
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/m3_primary</item>
+        <item name="colorOnPrimary">@color/m3_on_primary</item>
+        <item name="colorPrimaryContainer">@color/m3_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/m3_on_primary_container</item>
+        
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/m3_secondary</item>
+        <item name="colorOnSecondary">@color/m3_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/m3_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/m3_on_secondary_container</item>
+        
+        <!-- Tertiary Colors -->
+        <item name="colorTertiary">@color/m3_tertiary</item>
+        <item name="colorOnTertiary">@color/m3_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/m3_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/m3_on_tertiary_container</item>
+        
+        <!-- Error Colors -->
+        <item name="colorError">@color/m3_error</item>
+        <item name="colorOnError">@color/m3_on_error</item>
+        <item name="colorErrorContainer">@color/m3_error_container</item>
+        <item name="colorOnErrorContainer">@color/m3_on_error_container</item>
+        
+        <!-- Surface Colors (Material 3 Expressive containers) -->
+        <item name="android:colorBackground">@color/m3_surface</item>
+        <item name="colorSurface">@color/m3_surface</item>
+        <item name="colorOnSurface">@color/m3_on_surface</item>
+        <item name="colorSurfaceVariant">@color/m3_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/m3_on_surface_variant</item>
+        <item name="colorSurfaceContainerLowest">@color/m3_surface_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/m3_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/m3_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/m3_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/m3_surface_container_highest</item>
+        
+        <!-- Inverse -->
+        <item name="colorSurfaceInverse">@color/m3_inverse_surface</item>
+        <item name="colorOnSurfaceInverse">@color/m3_inverse_on_surface</item>
+        <item name="colorPrimaryInverse">@color/m3_inverse_primary</item>
+        
+        <!-- Outline -->
+        <item name="colorOutline">@color/m3_outline</item>
+        <item name="colorOutlineVariant">@color/m3_outline_variant</item>
+        
+        <!-- Typography -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.M3.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.M3.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.M3.DisplaySmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.M3.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.M3.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.M3.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.M3.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.M3.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.M3.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.M3.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.M3.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.M3.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.M3.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.M3.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.M3.LabelSmall</item>
+        
+        <!-- Shapes -->
+        <item name="shapeAppearanceCornerExtraSmall">@style/ShapeAppearance.M3.ExtraSmall</item>
+        <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.M3.Small</item>
+        <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.M3.Medium</item>
+        <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.M3.Large</item>
+        <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.M3.ExtraLarge</item>
+        
+        <!-- Component Styles -->
+        <item name="materialButtonStyle">@style/Widget.M3.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.M3.Card</item>
+        <item name="sliderStyle">@style/Widget.M3.Slider</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.M3.BottomSheet</item>
+        <item name="toolbarStyle">@style/Widget.M3.Toolbar</item>
+        <item name="textInputStyle">@style/Widget.M3.TextInput</item>
+        <item name="chipStyle">@style/Widget.M3.Chip</item>
+        
+        <!-- System UI -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@color/deep_black</item>
-        <item name="android:colorAccent">@color/deep_accent_cyan</item>
-        <item name="colorPrimary">@color/deep_accent_cyan</item>
-        <item name="colorOnPrimary">@color/deep_text_inverse</item>
-        <item name="colorSecondary">@color/deep_accent_blue</item>
-        <item name="colorOnSecondary">@color/deep_text_primary</item>
-        <item name="colorSurface">@color/deep_surface</item>
-        <item name="colorOnSurface">@color/deep_text_primary</item>
-        <item name="colorSurfaceVariant">@color/deep_surface_elevated</item>
-        <item name="colorOnSurfaceVariant">@color/deep_text_secondary</item>
-        <item name="colorOutline">@color/deep_outline</item>
-        <item name="colorError">@color/deep_error</item>
-        <item name="bottomSheetStyle">@style/Widget.DeepEye.BottomSheet</item>
-        <item name="materialButtonStyle">@style/Widget.DeepEye.Button</item>
-        <item name="sliderStyle">@style/Widget.DeepEye.Slider</item>
-        <item name="chipStyle">@style/Widget.DeepEye.Chip</item>
+    </style>
+    
+    <!-- Widget Styles -->
+    <style name="Widget.M3.Button" parent="Widget.Material3.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.M3.Full</item>
+        <item name="android:textAppearance">@style/TextAppearance.M3.LabelLarge</item>
+    </style>
+    
+    <style name="Widget.M3.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="shapeAppearance">@style/ShapeAppearance.Music.Card</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/m3_surface_container</item>
+    </style>
+    
+    <style name="Widget.M3.Slider" parent="Widget.Material3.Slider">
+        <item name="trackColorActive">@color/m3_primary</item>
+        <item name="trackColorInactive">@color/m3_surface_container_highest</item>
+        <item name="thumbColor">@color/m3_primary</item>
+        <item name="haloColor">@color/m3_primary_container</item>
+    </style>
+    
+    <style name="ThemeOverlay.M3.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.M3.BottomSheet</item>
+    </style>
+    
+    <style name="Widget.M3.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/ShapeAppearance.Music.BottomSheet</item>
+        <item name="backgroundTint">@color/m3_surface_container</item>
+    </style>
+    
+    <style name="Widget.M3.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.M3.TitleLarge</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="Widget.M3.TextInput" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.Music.Input</item>
+        <item name="boxBackgroundColor">@color/m3_surface_container</item>
+    </style>
+    
+    <style name="Widget.M3.Chip" parent="Widget.Material3.Chip.Assist.Elevated">
+        <item name="shapeAppearance">@style/ShapeAppearance.M3.Small</item>
+        <item name="chipBackgroundColor">@color/m3_secondary_container</item>
+        <item name="android:textColor">@color/m3_on_secondary_container</item>
     </style>
 </resources>

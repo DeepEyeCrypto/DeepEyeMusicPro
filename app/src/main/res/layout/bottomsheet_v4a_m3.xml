@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Material 3 Expressive Bottom Sheet for V4A - High Fidelity Controls -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorSurfaceContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+        
+        <!-- Drag Handle -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="6dp"
+            android:background="?attr/colorOutline"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+        
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+            
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_equalizer"
+                android:background="?attr/colorPrimaryContainer"
+                app:shapeAppearance="@style/ShapeAppearance.M3.Small"
+                app:tint="?attr/colorOnPrimaryContainer"
+                android:padding="12dp"/>
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="24dp">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ViPER4Android FX"
+                    android:textAppearance="@style/TextAppearance.M3.TitleLarge"
+                    android:textColor="?attr/colorOnSurface"/>
+                    
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Premium Audio Suite"
+                    android:textAppearance="@style/TextAppearance.M3.BodyMedium"
+                    android:textColor="?attr/colorOnSurfaceVariant"/>
+            </LinearLayout>
+            
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/v4aMasterSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Spectrum Visualizer (Placeholder for the custom view) -->
+        <View
+            android:id="@+id/spectrumVisualizer"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?attr/colorSurfaceContainerHigh"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Presets -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presets"
+            android:textAppearance="@style/TextAppearance.M3.TitleMedium"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="16dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="32dp">
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/presetChipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"/>
+        </HorizontalScrollView>
+
+        <!-- Tube Warmth -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tube Warmth"
+                android:textAppearance="@style/TextAppearance.M3.TitleMedium"
+                android:textColor="?attr/colorOnSurface"/>
+            <com.google.android.material.slider.Slider
+                android:id="@+id/tubeWarmthSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:stepSize="0.01"/>
+        </LinearLayout>
+
+        <!-- FET Compressor (Simplified) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FET Threshold"
+                android:textAppearance="@style/TextAppearance.M3.TitleMedium"
+                android:textColor="?attr/colorOnSurface"/>
+            <com.google.android.material.slider.Slider
+                android:id="@+id/fetThresholdSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="-36"
+                android:valueTo="0"
+                android:stepSize="1"/>
+        </LinearLayout>
+
+        <!-- IRS / Convolver -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Impulse Response (IRS)"
+            android:textAppearance="@style/TextAppearance.M3.TitleMedium"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="16dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="32dp">
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/convolverChipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"/>
+        </HorizontalScrollView>
+
+        <!-- Actions -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/savePresetButton"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Save Current Setup"
+            app:icon="@drawable/ic_settings"
+            app:shapeAppearance="@style/ShapeAppearance.M3.Medium"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

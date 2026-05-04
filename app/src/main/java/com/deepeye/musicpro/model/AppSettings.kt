@@ -11,5 +11,8 @@ data class AppSettings(
     val dspEnabledDefault: Boolean = true,
     val chosenPreset: String = "flat",
     val webViewFallbackEnabled: Boolean = true,
-    val explicitContentEnabled: Boolean = true
+    val explicitContentEnabled: Boolean = true,
+    val autoRadioEnabled: Boolean = true,
+    val radioSource: String = "related",
+    val prefetchCount: Int = 10
 )

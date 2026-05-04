@@ -49,12 +49,17 @@ class V4AViewModel(application: Application) : AndroidViewModel(application) {
         engine.setDDCProfile(profile)
     }
 
-    fun setFET(attack: Float, release: Float, threshold: Float, knee: Float) {
-        val current = engineState.value.effects
-        engine.setFETParams(attack, release, current.fetRatio, threshold, knee)
+    fun setFET(
+        attack: Float = engineState.value.effects.fetAttack,
+        release: Float = engineState.value.effects.fetRelease,
+        threshold: Float = engineState.value.effects.fetThreshold,
+        knee: Float = engineState.value.effects.fetKnee
+    ) {
+        engine.setFETParams(attack, release, engineState.value.effects.fetRatio, threshold, knee)
     }
 
     fun setTubeWarmth(warmth: Float) = engine.setTubeWarmth(warmth)
+    fun setTubeEnabled(enabled: Boolean) = engine.setEffectEnabled(V4AEffect.TUBE, enabled)
 
     fun getSpectrumMagnitudes(out: FloatArray) = engine.getSpectrumMagnitudes(out)
 

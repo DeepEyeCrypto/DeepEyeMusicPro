@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Type Scale with expressive weights -->
+    
+    <!-- Display Large: Hero titles -->
+    <style name="TextAppearance.M3.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">57sp</item>
+        <item name="android:lineHeight">64sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+    
+    <!-- Display Medium -->
+    <style name="TextAppearance.M3.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:lineHeight">52sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    
+    <!-- Display Small -->
+    <style name="TextAppearance.M3.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:lineHeight">44sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    
+    <!-- Headline Large: Section titles -->
+    <style name="TextAppearance.M3.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:lineHeight">40sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    
+    <!-- Headline Medium -->
+    <style name="TextAppearance.M3.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:lineHeight">36sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    
+    <!-- Headline Small: Card titles -->
+    <style name="TextAppearance.M3.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineHeight">32sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    
+    <!-- Title Large: App bar, bottom sheet header -->
+    <style name="TextAppearance.M3.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:lineHeight">28sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    
+    <!-- Title Medium: List items, buttons -->
+    <style name="TextAppearance.M3.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    
+    <!-- Title Small: Labels, tags -->
+    <style name="TextAppearance.M3.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    
+    <!-- Body Large: Primary text -->
+    <style name="TextAppearance.M3.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    
+    <!-- Body Medium: Secondary text -->
+    <style name="TextAppearance.M3.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    
+    <!-- Body Small: Captions, metadata -->
+    <style name="TextAppearance.M3.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+    
+    <!-- Label Large: Button text -->
+    <style name="TextAppearance.M3.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    
+    <!-- Label Medium: Small buttons -->
+    <style name="TextAppearance.M3.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    
+    <!-- Label Small: Badges, indicators -->
+    <style name="TextAppearance.M3.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    
+    <!-- MUSIC SPECIFIC -->
+    <style name="TextAppearance.Music.TrackTitle" parent="TextAppearance.M3.TitleMedium"/>
+    <style name="TextAppearance.Music.ArtistName" parent="TextAppearance.M3.BodyMedium"/>
+    <style name="TextAppearance.Music.AlbumTitle" parent="TextAppearance.M3.TitleSmall"/>
+    <style name="TextAppearance.Music.Time" parent="TextAppearance.M3.BodySmall"/>
+    <style name="TextAppearance.Music.SectionHeader" parent="TextAppearance.M3.HeadlineSmall"/>
+</resources>

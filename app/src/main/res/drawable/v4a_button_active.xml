@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Glow Shadow -->
+    <item>
+        <shape>
+            <corners android:radius="20dp"/>
+            <solid android:color="#4000FFFF"/>
+            <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp"/>
+        </shape>
+    </item>
+    <!-- Main Background -->
+    <item>
+        <ripple android:color="@color/cyan_accent_20">
+            <item>
+                <shape>
+                    <corners android:radius="18dp"/>
+                    <solid android:color="@color/cyan_accent_10"/>
+                    <stroke android:width="2dp" android:color="@color/cyan_accent"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

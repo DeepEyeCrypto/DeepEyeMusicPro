@@ -26,10 +26,21 @@ import com.deepeye.musicpro.util.Logger
 import com.google.common.util.concurrent.Futures
 import com.google.common.util.concurrent.ListenableFuture
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import com.deepeye.musicpro.player.PlayerController
+import com.deepeye.musicpro.player.AutoRadioEngine
+import com.deepeye.musicpro.player.LazyStreamResolver
 
 class MusicPlayerService : MediaLibraryService() {
     private lateinit var player: ExoPlayer
     private var mediaLibrarySession: MediaLibrarySession? = null
+    
+    private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
+    private lateinit var playerController: PlayerController
+    private lateinit var autoRadio: AutoRadioEngine
+    private lateinit var lazyStreamResolver: LazyStreamResolver
 
     private val noisyReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
@@ -88,6 +99,39 @@ class MusicPlayerService : MediaLibraryService() {
             }
         })
         app.v4aEngine.init(player.audioSessionId)
+        
+        playerController = PlayerController(this)
+        // Need to set up controller future later or just pass it to AutoRadioEngine. 
+        // PlayerController will connect automatically when needed, but here we can just use the ExoPlayer.
+        // Actually AutoRadioEngine needs PlayerController for enqueueing items.
+        autoRadio = AutoRadioEngine(playerController, serviceScope, app.settingsRepository, app.searchService)
+        lazyStreamResolver = LazyStreamResolver(app.streamExtractor, serviceScope, playerController)
+        player.addListener(lazyStreamResolver)
+        
+        // Add listener for AutoRadioEngine
+        player.addListener(object : Player.Listener {
+            override fun onPlaybackStateChanged(state: Int) {
+                if (state == Player.STATE_READY && player.isPlaying) {
+                    player.currentMediaItem?.mediaId?.let { videoId ->
+                        autoRadio.onTrackStarted(videoId)
+                    }
+                }
+            }
+
+            override fun onPositionDiscontinuity(
+                oldPosition: Player.PositionInfo,
+                newPosition: Player.PositionInfo,
+                reason: Int
+            ) {
+                val current = player.currentMediaItemIndex
+                val total = player.mediaItemCount
+                val remaining = (total - current - 1).coerceAtLeast(0)
+                if (remaining <= 3) {
+                    autoRadio.onQueueLow(remaining)
+                }
+            }
+        })
+        
         mediaLibrarySession = MediaLibrarySession.Builder(this, player, Callback())
             .setId("DeepEyeMusicProSession")
             .build()

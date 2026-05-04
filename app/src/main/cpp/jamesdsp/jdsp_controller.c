@@ -104,7 +104,8 @@ void jdsp_set_convolver_enabled(jdsp_t* dsp, int enabled) { if (dsp) dsp->convol
 
 void jdsp_set_eq_gain(jdsp_t* dsp, int band, float gain_db) {
     if (!dsp || band < 0 || band >= JDSP_EQ_BANDS) return;
-    dsp->eq_gain[band] = clampf(gain_db, -12.0f, 12.0f);
+    // Super Bass V2: Expand range to 18dB for extreme bass
+    dsp->eq_gain[band] = clampf(gain_db, -18.0f, 18.0f);
 }
 
 void jdsp_set_eq_gains(jdsp_t* dsp, const float* gains, int count) {
@@ -247,13 +248,9 @@ void jdsp_process(jdsp_t* dsp, const float* input, float* output, int frames) {
 #include "ddc_engine.h"
 #include "fet_compressor.h"
 #include "spectrum.h"
+#include "tube_sim.h"
 
-#define V4A_EFFECT_EQ 0
-#define V4A_EFFECT_CONVOLVER 1
-#define V4A_EFFECT_DDC 2
-#define V4A_EFFECT_FET 3
-#define V4A_EFFECT_TUBE 4
-#define V4A_EFFECT_REVERB 5
+// Moved to header
 
 typedef struct v4a_runtime_s {
     int initialized;
@@ -272,6 +269,7 @@ typedef struct v4a_runtime_s {
     v4a_ddc_t ddc;
     v4a_fet_t fet;
     v4a_spectrum_t spectrum;
+    tube_sim_t tube;
 } v4a_runtime_t;
 
 static v4a_runtime_t g_v4a;
@@ -297,6 +295,7 @@ static void v4a_runtime_init(int sample_rate, int channels) {
     v4a_ddc_init(&g_v4a.ddc, sample_rate, channels);
     v4a_fet_init(&g_v4a.fet, sample_rate);
     v4a_spectrum_init(&g_v4a.spectrum, sample_rate);
+    tube_sim_init(&g_v4a.tube);
 }
 
 static void v4a_ensure_runtime(jdsp_t* dsp) {
@@ -307,26 +306,27 @@ static void v4a_ensure_runtime(jdsp_t* dsp) {
     }
 }
 
-static float v4a_tube(float x, float warmth) {
-    if (warmth <= 0.001f) return x;
-    float drive = 1.0f + warmth * 5.5f;
-    float y = tanhf(x * drive) / tanhf(drive);
-    float even = y * y * (x >= 0.0f ? 1.0f : -1.0f) * 0.12f * warmth;
-    return y * (1.0f - 0.18f * warmth) + even;
-}
-
 static float v4a_process_eq(int channel, float x) {
-    float low_alpha = 1.0f - expf(-2.0f * 3.14159265359f * 170.0f / (float)g_v4a.sample_rate);
-    float high_alpha = 1.0f - expf(-2.0f * 3.14159265359f * 4200.0f / (float)g_v4a.sample_rate);
+    // Isolated Sub-Bass (95Hz) and Clear Mid-High separation (4.5kHz)
+    float low_alpha = 1.0f - expf(-2.0f * 3.14159265359f * 95.0f / (float)g_v4a.sample_rate);
+    float high_alpha = 1.0f - expf(-2.0f * 3.14159265359f * 4500.0f / (float)g_v4a.sample_rate);
     g_v4a.eq_low_state[channel] += low_alpha * (x - g_v4a.eq_low_state[channel]);
     g_v4a.eq_high_state[channel] += high_alpha * (x - g_v4a.eq_high_state[channel]);
+    
     float low = g_v4a.eq_low_state[channel];
     float high = x - g_v4a.eq_high_state[channel];
     float mid = x - low - high;
-    float low_gain = db_to_gain((g_v4a.eq_gain[0] + g_v4a.eq_gain[1] + g_v4a.eq_gain[2]) / 3.0f);
+    
+    // Premium Bass Gains with sub-low emphasis
+    float low_gain = db_to_gain((g_v4a.eq_gain[0] + g_v4a.eq_gain[1] + g_v4a.eq_gain[2]) / 3.0f + 3.0f);
     float mid_gain = db_to_gain((g_v4a.eq_gain[3] + g_v4a.eq_gain[4] + g_v4a.eq_gain[5] + g_v4a.eq_gain[6]) / 4.0f);
-    float high_gain = db_to_gain((g_v4a.eq_gain[7] + g_v4a.eq_gain[8] + g_v4a.eq_gain[9]) / 3.0f);
-    return low * low_gain + mid * mid_gain + high * high_gain;
+    float high_gain = db_to_gain((g_v4a.eq_gain[7] + g_v4a.eq_gain[8] + g_v4a.eq_gain[9]) / 3.0f - 1.0f);
+    
+    float out = low * low_gain + mid * mid_gain + high * high_gain;
+    // Enhanced Sub-bass Resonance (DeepEye Texture)
+    if (low_gain > 1.1f) out += low * (low_gain - 1.0f) * 0.55f;
+    
+    return out;
 }
 
 static float v4a_process_reverb(int channel, float x) {
@@ -357,12 +357,18 @@ void jdsp_v4a_set_eq_gains(jdsp_t* dsp, const float* gains, int count) {
     v4a_ensure_runtime(dsp);
     if (!gains) return;
     int safe_count = count < JDSP_EQ_BANDS ? count : JDSP_EQ_BANDS;
-    for (int i = 0; i < safe_count; ++i) g_v4a.eq_gain[i] = clampf(gains[i], -12.0f, 12.0f);
+    for (int i = 0; i < safe_count; ++i) g_v4a.eq_gain[i] = clampf(gains[i], -24.0f, 24.0f);
 }
 
 void jdsp_v4a_set_tube_warmth(jdsp_t* dsp, float warmth) {
     v4a_ensure_runtime(dsp);
     g_v4a.tube_warmth = clampf(warmth, 0.0f, 1.0f);
+    tube_sim_set_warmth(&g_v4a.tube, g_v4a.tube_warmth);
+}
+
+
+float jdsp_v4a_get_tube_warmth(jdsp_t* dsp) {
+    return g_v4a.tube_warmth;
 }
 
 int jdsp_v4a_load_convolver_ir(const char* path) {
@@ -407,7 +413,7 @@ void jdsp_v4a_process(jdsp_t* dsp, const float* input, float* output, int frames
             if (g_v4a.effects[V4A_EFFECT_DDC]) x = v4a_ddc_process(&g_v4a.ddc, ch, x);
             if (g_v4a.effects[V4A_EFFECT_CONVOLVER]) x = v4a_convolver_process(&g_v4a.convolver, ch, x);
             if (g_v4a.effects[V4A_EFFECT_REVERB]) x = v4a_process_reverb(ch, x);
-            if (g_v4a.effects[V4A_EFFECT_TUBE]) x = v4a_tube(x, g_v4a.tube_warmth);
+            // Old tube call removed from here
             frame_values[ch] = x;
         }
         if (dsp->channels >= 2 && g_v4a.effects[V4A_EFFECT_CONVOLVER]) {
@@ -420,6 +426,7 @@ void jdsp_v4a_process(jdsp_t* dsp, const float* input, float* output, int frames
         for (int ch = 0; ch < dsp->channels; ++ch) {
             float y = frame_values[ch];
             if (g_v4a.effects[V4A_EFFECT_FET]) y = v4a_fet_process(&g_v4a.fet, y);
+            if (g_v4a.effects[V4A_EFFECT_TUBE]) y = tube_sim_process_sample(&g_v4a.tube, ch, y);
             y = clampf(y, -ceiling, ceiling);
             output[frame * dsp->channels + ch] = y;
             mono += y;

@@ -38,6 +38,7 @@ float v4a_fet_process(v4a_fet_t* fet, float input) {
     float abs_x = fabsf(input) + 1e-9f;
     float level_db = 20.0f * log10f(abs_x);
     float over_db = level_db - fet->threshold_db;
+    
     float compressed_over = over_db;
     if (fet->knee_db > 0.001f) {
         float half_knee = fet->knee_db * 0.5f;
@@ -52,12 +53,26 @@ float v4a_fet_process(v4a_fet_t* fet, float input) {
     } else if (over_db > 0.0f) {
         compressed_over = over_db / fet->ratio;
     }
+    
     float gain_db = over_db > -fet->knee_db * 0.5f ? compressed_over - over_db : 0.0f;
     float target = db_to_gain_local(gain_db);
-    float attack = expf(-1.0f / (0.001f * fet->attack_ms * (float)fet->sample_rate));
-    float release = expf(-1.0f / (0.001f * fet->release_ms * (float)fet->sample_rate));
+    
+    // Super Bass V2: Ultra-fast attack, aggressive release
+    float attack = expf(-1.0f / (0.0006f * fet->attack_ms * (float)fet->sample_rate));
+    float release = expf(-1.0f / (0.0008f * fet->release_ms * (float)fet->sample_rate));
+    
     float coeff = target < fet->envelope ? attack : release;
     fet->envelope = coeff * fet->envelope + (1.0f - coeff) * target;
+    
     if (fet->envelope < 0.0001f || fet->envelope != fet->envelope) fet->envelope = 1.0f;
-    return input * fet->envelope;
+    
+    float out = input * fet->envelope;
+    
+    // "fata fata" logic: add slight expansion to peaks for punch
+    if (over_db > 3.0f) {
+        float peak_boost = (over_db - 3.0f) * 0.045f;
+        out *= (1.0f + peak_boost);
+    }
+    
+    return out;
 }

@@ -41,13 +41,15 @@ public final class TrackDao_Impl implements TrackDao {
 
   private final SharedSQLiteStatement __preparedStmtOfClearDownload;
 
+  private final SharedSQLiteStatement __preparedStmtOfUpdateFavorite;
+
   public TrackDao_Impl(@NonNull final RoomDatabase __db) {
     this.__db = __db;
     this.__insertionAdapterOfCachedTrack = new EntityInsertionAdapter<CachedTrack>(__db) {
       @Override
       @NonNull
       protected String createQuery() {
-        return "INSERT OR REPLACE INTO `cached_tracks` (`id`,`title`,`artist`,`durationMs`,`thumbnailUrl`,`streamUrl`,`webUrl`,`localUri`,`mimeType`,`bitrate`,`source`,`isDownloaded`,`downloadedAt`,`lastPlayedAt`,`playCount`,`fileSizeBytes`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `cached_tracks` (`id`,`title`,`artist`,`durationMs`,`thumbnailUrl`,`streamUrl`,`webUrl`,`localUri`,`mimeType`,`bitrate`,`source`,`isDownloaded`,`downloadedAt`,`lastPlayedAt`,`playCount`,`fileSizeBytes`,`isFavorite`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -106,6 +108,8 @@ public final class TrackDao_Impl implements TrackDao {
         statement.bindLong(14, entity.getLastPlayedAt());
         statement.bindLong(15, entity.getPlayCount());
         statement.bindLong(16, entity.getFileSizeBytes());
+        final int _tmp_1 = entity.isFavorite() ? 1 : 0;
+        statement.bindLong(17, _tmp_1);
       }
     };
     this.__deletionAdapterOfCachedTrack = new EntityDeletionOrUpdateAdapter<CachedTrack>(__db) {
@@ -138,6 +142,14 @@ public final class TrackDao_Impl implements TrackDao {
       @NonNull
       public String createQuery() {
         final String _query = "UPDATE cached_tracks SET isDownloaded = 0, localUri = NULL, fileSizeBytes = 0 WHERE id = ?";
+        return _query;
+      }
+    };
+    this.__preparedStmtOfUpdateFavorite = new SharedSQLiteStatement(__db) {
+      @Override
+      @NonNull
+      public String createQuery() {
+        final String _query = "UPDATE cached_tracks SET isFavorite = ? WHERE id = ?";
         return _query;
       }
     };
@@ -241,8 +253,41 @@ public final class TrackDao_Impl implements TrackDao {
   }
 
   @Override
+  public Object updateFavorite(final String id, final boolean isFavorite,
+      final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        final SupportSQLiteStatement _stmt = __preparedStmtOfUpdateFavorite.acquire();
+        int _argIndex = 1;
+        final int _tmp = isFavorite ? 1 : 0;
+        _stmt.bindLong(_argIndex, _tmp);
+        _argIndex = 2;
+        if (id == null) {
+          _stmt.bindNull(_argIndex);
+        } else {
+          _stmt.bindString(_argIndex, id);
+        }
+        try {
+          __db.beginTransaction();
+          try {
+            _stmt.executeUpdateDelete();
+            __db.setTransactionSuccessful();
+            return Unit.INSTANCE;
+          } finally {
+            __db.endTransaction();
+          }
+        } finally {
+          __preparedStmtOfUpdateFavorite.release(_stmt);
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
   public Flow<List<CachedTrack>> observeDownloads() {
-    final String _sql = "SELECT `cached_tracks`.`id` AS `id`, `cached_tracks`.`title` AS `title`, `cached_tracks`.`artist` AS `artist`, `cached_tracks`.`durationMs` AS `durationMs`, `cached_tracks`.`thumbnailUrl` AS `thumbnailUrl`, `cached_tracks`.`streamUrl` AS `streamUrl`, `cached_tracks`.`webUrl` AS `webUrl`, `cached_tracks`.`localUri` AS `localUri`, `cached_tracks`.`mimeType` AS `mimeType`, `cached_tracks`.`bitrate` AS `bitrate`, `cached_tracks`.`source` AS `source`, `cached_tracks`.`isDownloaded` AS `isDownloaded`, `cached_tracks`.`downloadedAt` AS `downloadedAt`, `cached_tracks`.`lastPlayedAt` AS `lastPlayedAt`, `cached_tracks`.`playCount` AS `playCount`, `cached_tracks`.`fileSizeBytes` AS `fileSizeBytes` FROM cached_tracks WHERE isDownloaded = 1 ORDER BY downloadedAt DESC";
+    final String _sql = "SELECT `cached_tracks`.`id` AS `id`, `cached_tracks`.`title` AS `title`, `cached_tracks`.`artist` AS `artist`, `cached_tracks`.`durationMs` AS `durationMs`, `cached_tracks`.`thumbnailUrl` AS `thumbnailUrl`, `cached_tracks`.`streamUrl` AS `streamUrl`, `cached_tracks`.`webUrl` AS `webUrl`, `cached_tracks`.`localUri` AS `localUri`, `cached_tracks`.`mimeType` AS `mimeType`, `cached_tracks`.`bitrate` AS `bitrate`, `cached_tracks`.`source` AS `source`, `cached_tracks`.`isDownloaded` AS `isDownloaded`, `cached_tracks`.`downloadedAt` AS `downloadedAt`, `cached_tracks`.`lastPlayedAt` AS `lastPlayedAt`, `cached_tracks`.`playCount` AS `playCount`, `cached_tracks`.`fileSizeBytes` AS `fileSizeBytes`, `cached_tracks`.`isFavorite` AS `isFavorite` FROM cached_tracks WHERE isDownloaded = 1 ORDER BY downloadedAt DESC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     return CoroutinesRoom.createFlow(__db, false, new String[] {"cached_tracks"}, new Callable<List<CachedTrack>>() {
       @Override
@@ -266,6 +311,7 @@ public final class TrackDao_Impl implements TrackDao {
           final int _cursorIndexOfLastPlayedAt = 13;
           final int _cursorIndexOfPlayCount = 14;
           final int _cursorIndexOfFileSizeBytes = 15;
+          final int _cursorIndexOfIsFavorite = 16;
           final List<CachedTrack> _result = new ArrayList<CachedTrack>(_cursor.getCount());
           while (_cursor.moveToNext()) {
             final CachedTrack _item;
@@ -339,7 +385,11 @@ public final class TrackDao_Impl implements TrackDao {
             _tmpPlayCount = _cursor.getInt(_cursorIndexOfPlayCount);
             final long _tmpFileSizeBytes;
             _tmpFileSizeBytes = _cursor.getLong(_cursorIndexOfFileSizeBytes);
-            _item = new CachedTrack(_tmpId,_tmpTitle,_tmpArtist,_tmpDurationMs,_tmpThumbnailUrl,_tmpStreamUrl,_tmpWebUrl,_tmpLocalUri,_tmpMimeType,_tmpBitrate,_tmpSource,_tmpIsDownloaded,_tmpDownloadedAt,_tmpLastPlayedAt,_tmpPlayCount,_tmpFileSizeBytes);
+            final boolean _tmpIsFavorite;
+            final int _tmp_1;
+            _tmp_1 = _cursor.getInt(_cursorIndexOfIsFavorite);
+            _tmpIsFavorite = _tmp_1 != 0;
+            _item = new CachedTrack(_tmpId,_tmpTitle,_tmpArtist,_tmpDurationMs,_tmpThumbnailUrl,_tmpStreamUrl,_tmpWebUrl,_tmpLocalUri,_tmpMimeType,_tmpBitrate,_tmpSource,_tmpIsDownloaded,_tmpDownloadedAt,_tmpLastPlayedAt,_tmpPlayCount,_tmpFileSizeBytes,_tmpIsFavorite);
             _result.add(_item);
           }
           return _result;
@@ -383,6 +433,7 @@ public final class TrackDao_Impl implements TrackDao {
           final int _cursorIndexOfLastPlayedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "lastPlayedAt");
           final int _cursorIndexOfPlayCount = CursorUtil.getColumnIndexOrThrow(_cursor, "playCount");
           final int _cursorIndexOfFileSizeBytes = CursorUtil.getColumnIndexOrThrow(_cursor, "fileSizeBytes");
+          final int _cursorIndexOfIsFavorite = CursorUtil.getColumnIndexOrThrow(_cursor, "isFavorite");
           final List<CachedTrack> _result = new ArrayList<CachedTrack>(_cursor.getCount());
           while (_cursor.moveToNext()) {
             final CachedTrack _item;
@@ -456,7 +507,131 @@ public final class TrackDao_Impl implements TrackDao {
             _tmpPlayCount = _cursor.getInt(_cursorIndexOfPlayCount);
             final long _tmpFileSizeBytes;
             _tmpFileSizeBytes = _cursor.getLong(_cursorIndexOfFileSizeBytes);
-            _item = new CachedTrack(_tmpId,_tmpTitle,_tmpArtist,_tmpDurationMs,_tmpThumbnailUrl,_tmpStreamUrl,_tmpWebUrl,_tmpLocalUri,_tmpMimeType,_tmpBitrate,_tmpSource,_tmpIsDownloaded,_tmpDownloadedAt,_tmpLastPlayedAt,_tmpPlayCount,_tmpFileSizeBytes);
+            final boolean _tmpIsFavorite;
+            final int _tmp_1;
+            _tmp_1 = _cursor.getInt(_cursorIndexOfIsFavorite);
+            _tmpIsFavorite = _tmp_1 != 0;
+            _item = new CachedTrack(_tmpId,_tmpTitle,_tmpArtist,_tmpDurationMs,_tmpThumbnailUrl,_tmpStreamUrl,_tmpWebUrl,_tmpLocalUri,_tmpMimeType,_tmpBitrate,_tmpSource,_tmpIsDownloaded,_tmpDownloadedAt,_tmpLastPlayedAt,_tmpPlayCount,_tmpFileSizeBytes,_tmpIsFavorite);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
+  @Override
+  public Flow<List<CachedTrack>> observeFavorites() {
+    final String _sql = "SELECT `cached_tracks`.`id` AS `id`, `cached_tracks`.`title` AS `title`, `cached_tracks`.`artist` AS `artist`, `cached_tracks`.`durationMs` AS `durationMs`, `cached_tracks`.`thumbnailUrl` AS `thumbnailUrl`, `cached_tracks`.`streamUrl` AS `streamUrl`, `cached_tracks`.`webUrl` AS `webUrl`, `cached_tracks`.`localUri` AS `localUri`, `cached_tracks`.`mimeType` AS `mimeType`, `cached_tracks`.`bitrate` AS `bitrate`, `cached_tracks`.`source` AS `source`, `cached_tracks`.`isDownloaded` AS `isDownloaded`, `cached_tracks`.`downloadedAt` AS `downloadedAt`, `cached_tracks`.`lastPlayedAt` AS `lastPlayedAt`, `cached_tracks`.`playCount` AS `playCount`, `cached_tracks`.`fileSizeBytes` AS `fileSizeBytes`, `cached_tracks`.`isFavorite` AS `isFavorite` FROM cached_tracks WHERE isFavorite = 1 ORDER BY lastPlayedAt DESC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return CoroutinesRoom.createFlow(__db, false, new String[] {"cached_tracks"}, new Callable<List<CachedTrack>>() {
+      @Override
+      @NonNull
+      public List<CachedTrack> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = 0;
+          final int _cursorIndexOfTitle = 1;
+          final int _cursorIndexOfArtist = 2;
+          final int _cursorIndexOfDurationMs = 3;
+          final int _cursorIndexOfThumbnailUrl = 4;
+          final int _cursorIndexOfStreamUrl = 5;
+          final int _cursorIndexOfWebUrl = 6;
+          final int _cursorIndexOfLocalUri = 7;
+          final int _cursorIndexOfMimeType = 8;
+          final int _cursorIndexOfBitrate = 9;
+          final int _cursorIndexOfSource = 10;
+          final int _cursorIndexOfIsDownloaded = 11;
+          final int _cursorIndexOfDownloadedAt = 12;
+          final int _cursorIndexOfLastPlayedAt = 13;
+          final int _cursorIndexOfPlayCount = 14;
+          final int _cursorIndexOfFileSizeBytes = 15;
+          final int _cursorIndexOfIsFavorite = 16;
+          final List<CachedTrack> _result = new ArrayList<CachedTrack>(_cursor.getCount());
+          while (_cursor.moveToNext()) {
+            final CachedTrack _item;
+            final String _tmpId;
+            if (_cursor.isNull(_cursorIndexOfId)) {
+              _tmpId = null;
+            } else {
+              _tmpId = _cursor.getString(_cursorIndexOfId);
+            }
+            final String _tmpTitle;
+            if (_cursor.isNull(_cursorIndexOfTitle)) {
+              _tmpTitle = null;
+            } else {
+              _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+            }
+            final String _tmpArtist;
+            if (_cursor.isNull(_cursorIndexOfArtist)) {
+              _tmpArtist = null;
+            } else {
+              _tmpArtist = _cursor.getString(_cursorIndexOfArtist);
+            }
+            final long _tmpDurationMs;
+            _tmpDurationMs = _cursor.getLong(_cursorIndexOfDurationMs);
+            final String _tmpThumbnailUrl;
+            if (_cursor.isNull(_cursorIndexOfThumbnailUrl)) {
+              _tmpThumbnailUrl = null;
+            } else {
+              _tmpThumbnailUrl = _cursor.getString(_cursorIndexOfThumbnailUrl);
+            }
+            final String _tmpStreamUrl;
+            if (_cursor.isNull(_cursorIndexOfStreamUrl)) {
+              _tmpStreamUrl = null;
+            } else {
+              _tmpStreamUrl = _cursor.getString(_cursorIndexOfStreamUrl);
+            }
+            final String _tmpWebUrl;
+            if (_cursor.isNull(_cursorIndexOfWebUrl)) {
+              _tmpWebUrl = null;
+            } else {
+              _tmpWebUrl = _cursor.getString(_cursorIndexOfWebUrl);
+            }
+            final String _tmpLocalUri;
+            if (_cursor.isNull(_cursorIndexOfLocalUri)) {
+              _tmpLocalUri = null;
+            } else {
+              _tmpLocalUri = _cursor.getString(_cursorIndexOfLocalUri);
+            }
+            final String _tmpMimeType;
+            if (_cursor.isNull(_cursorIndexOfMimeType)) {
+              _tmpMimeType = null;
+            } else {
+              _tmpMimeType = _cursor.getString(_cursorIndexOfMimeType);
+            }
+            final int _tmpBitrate;
+            _tmpBitrate = _cursor.getInt(_cursorIndexOfBitrate);
+            final String _tmpSource;
+            if (_cursor.isNull(_cursorIndexOfSource)) {
+              _tmpSource = null;
+            } else {
+              _tmpSource = _cursor.getString(_cursorIndexOfSource);
+            }
+            final boolean _tmpIsDownloaded;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfIsDownloaded);
+            _tmpIsDownloaded = _tmp != 0;
+            final long _tmpDownloadedAt;
+            _tmpDownloadedAt = _cursor.getLong(_cursorIndexOfDownloadedAt);
+            final long _tmpLastPlayedAt;
+            _tmpLastPlayedAt = _cursor.getLong(_cursorIndexOfLastPlayedAt);
+            final int _tmpPlayCount;
+            _tmpPlayCount = _cursor.getInt(_cursorIndexOfPlayCount);
+            final long _tmpFileSizeBytes;
+            _tmpFileSizeBytes = _cursor.getLong(_cursorIndexOfFileSizeBytes);
+            final boolean _tmpIsFavorite;
+            final int _tmp_1;
+            _tmp_1 = _cursor.getInt(_cursorIndexOfIsFavorite);
+            _tmpIsFavorite = _tmp_1 != 0;
+            _item = new CachedTrack(_tmpId,_tmpTitle,_tmpArtist,_tmpDurationMs,_tmpThumbnailUrl,_tmpStreamUrl,_tmpWebUrl,_tmpLocalUri,_tmpMimeType,_tmpBitrate,_tmpSource,_tmpIsDownloaded,_tmpDownloadedAt,_tmpLastPlayedAt,_tmpPlayCount,_tmpFileSizeBytes,_tmpIsFavorite);
             _result.add(_item);
           }
           return _result;
@@ -505,6 +680,7 @@ public final class TrackDao_Impl implements TrackDao {
           final int _cursorIndexOfLastPlayedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "lastPlayedAt");
           final int _cursorIndexOfPlayCount = CursorUtil.getColumnIndexOrThrow(_cursor, "playCount");
           final int _cursorIndexOfFileSizeBytes = CursorUtil.getColumnIndexOrThrow(_cursor, "fileSizeBytes");
+          final int _cursorIndexOfIsFavorite = CursorUtil.getColumnIndexOrThrow(_cursor, "isFavorite");
           final CachedTrack _result;
           if (_cursor.moveToFirst()) {
             final String _tmpId;
@@ -577,7 +753,11 @@ public final class TrackDao_Impl implements TrackDao {
             _tmpPlayCount = _cursor.getInt(_cursorIndexOfPlayCount);
             final long _tmpFileSizeBytes;
             _tmpFileSizeBytes = _cursor.getLong(_cursorIndexOfFileSizeBytes);
-            _result = new CachedTrack(_tmpId,_tmpTitle,_tmpArtist,_tmpDurationMs,_tmpThumbnailUrl,_tmpStreamUrl,_tmpWebUrl,_tmpLocalUri,_tmpMimeType,_tmpBitrate,_tmpSource,_tmpIsDownloaded,_tmpDownloadedAt,_tmpLastPlayedAt,_tmpPlayCount,_tmpFileSizeBytes);
+            final boolean _tmpIsFavorite;
+            final int _tmp_1;
+            _tmp_1 = _cursor.getInt(_cursorIndexOfIsFavorite);
+            _tmpIsFavorite = _tmp_1 != 0;
+            _result = new CachedTrack(_tmpId,_tmpTitle,_tmpArtist,_tmpDurationMs,_tmpThumbnailUrl,_tmpStreamUrl,_tmpWebUrl,_tmpLocalUri,_tmpMimeType,_tmpBitrate,_tmpSource,_tmpIsDownloaded,_tmpDownloadedAt,_tmpLastPlayedAt,_tmpPlayCount,_tmpFileSizeBytes,_tmpIsFavorite);
           } else {
             _result = null;
           }

@@ -15,6 +15,9 @@ interface TrackDao {
     @Query("SELECT * FROM cached_tracks ORDER BY lastPlayedAt DESC LIMIT :limit")
     fun observeRecentlyPlayed(limit: Int): Flow<List<CachedTrack>>
 
+    @Query("SELECT * FROM cached_tracks WHERE isFavorite = 1 ORDER BY lastPlayedAt DESC")
+    fun observeFavorites(): Flow<List<CachedTrack>>
+
     @Query("SELECT * FROM cached_tracks WHERE id = :id")
     suspend fun getById(id: String): CachedTrack?
 
@@ -26,6 +29,9 @@ interface TrackDao {
 
     @Query("UPDATE cached_tracks SET isDownloaded = 0, localUri = NULL, fileSizeBytes = 0 WHERE id = :id")
     suspend fun clearDownload(id: String)
+
+    @Query("UPDATE cached_tracks SET isFavorite = :isFavorite WHERE id = :id")
+    suspend fun updateFavorite(id: String, isFavorite: Boolean)
 
     @Delete
     suspend fun delete(track: CachedTrack)

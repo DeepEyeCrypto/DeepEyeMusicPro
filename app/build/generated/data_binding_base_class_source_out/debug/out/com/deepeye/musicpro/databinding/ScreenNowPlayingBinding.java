@@ -12,6 +12,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.deepeye.musicpro.R;
@@ -21,63 +22,86 @@ import java.lang.String;
 
 public final class ScreenNowPlayingBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView playerArtist;
+  public final TextView artistText;
 
   @NonNull
-  public final ImageView playerArtwork;
+  public final ImageView artworkImage;
 
   @NonNull
-  public final Button playerDsp;
+  public final ImageButton downloadButton;
 
   @NonNull
-  public final TextView playerElapsed;
+  public final TextView elapsedTime;
 
   @NonNull
-  public final ImageButton playerNext;
+  public final ImageButton favoriteButton;
 
   @NonNull
-  public final ImageButton playerPlayPause;
+  public final LinearLayout mainControls;
 
   @NonNull
-  public final ImageButton playerPrev;
+  public final ImageButton nextButton;
 
   @NonNull
-  public final SeekBar playerProgress;
+  public final ImageButton playPauseButton;
 
   @NonNull
-  public final Button playerQueue;
+  public final ImageButton prevButton;
 
   @NonNull
-  public final TextView playerRemaining;
+  public final Button queueButton;
 
   @NonNull
-  public final TextView playerTitle;
+  public final ImageButton repeatButton;
 
-  private ScreenNowPlayingBinding(@NonNull LinearLayout rootView, @NonNull TextView playerArtist,
-      @NonNull ImageView playerArtwork, @NonNull Button playerDsp, @NonNull TextView playerElapsed,
-      @NonNull ImageButton playerNext, @NonNull ImageButton playerPlayPause,
-      @NonNull ImageButton playerPrev, @NonNull SeekBar playerProgress, @NonNull Button playerQueue,
-      @NonNull TextView playerRemaining, @NonNull TextView playerTitle) {
+  @NonNull
+  public final SeekBar seekBar;
+
+  @NonNull
+  public final TextView titleText;
+
+  @NonNull
+  public final TextView totalTime;
+
+  @NonNull
+  public final LinearLayout utilityControls;
+
+  @NonNull
+  public final Button v4aButton;
+
+  private ScreenNowPlayingBinding(@NonNull ConstraintLayout rootView, @NonNull TextView artistText,
+      @NonNull ImageView artworkImage, @NonNull ImageButton downloadButton,
+      @NonNull TextView elapsedTime, @NonNull ImageButton favoriteButton,
+      @NonNull LinearLayout mainControls, @NonNull ImageButton nextButton,
+      @NonNull ImageButton playPauseButton, @NonNull ImageButton prevButton,
+      @NonNull Button queueButton, @NonNull ImageButton repeatButton, @NonNull SeekBar seekBar,
+      @NonNull TextView titleText, @NonNull TextView totalTime,
+      @NonNull LinearLayout utilityControls, @NonNull Button v4aButton) {
     this.rootView = rootView;
-    this.playerArtist = playerArtist;
-    this.playerArtwork = playerArtwork;
-    this.playerDsp = playerDsp;
-    this.playerElapsed = playerElapsed;
-    this.playerNext = playerNext;
-    this.playerPlayPause = playerPlayPause;
-    this.playerPrev = playerPrev;
-    this.playerProgress = playerProgress;
-    this.playerQueue = playerQueue;
-    this.playerRemaining = playerRemaining;
-    this.playerTitle = playerTitle;
+    this.artistText = artistText;
+    this.artworkImage = artworkImage;
+    this.downloadButton = downloadButton;
+    this.elapsedTime = elapsedTime;
+    this.favoriteButton = favoriteButton;
+    this.mainControls = mainControls;
+    this.nextButton = nextButton;
+    this.playPauseButton = playPauseButton;
+    this.prevButton = prevButton;
+    this.queueButton = queueButton;
+    this.repeatButton = repeatButton;
+    this.seekBar = seekBar;
+    this.titleText = titleText;
+    this.totalTime = totalTime;
+    this.utilityControls = utilityControls;
+    this.v4aButton = v4aButton;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -102,75 +126,106 @@ public final class ScreenNowPlayingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.playerArtist;
-      TextView playerArtist = ViewBindings.findChildViewById(rootView, id);
-      if (playerArtist == null) {
+      id = R.id.artistText;
+      TextView artistText = ViewBindings.findChildViewById(rootView, id);
+      if (artistText == null) {
         break missingId;
       }
 
-      id = R.id.playerArtwork;
-      ImageView playerArtwork = ViewBindings.findChildViewById(rootView, id);
-      if (playerArtwork == null) {
+      id = R.id.artworkImage;
+      ImageView artworkImage = ViewBindings.findChildViewById(rootView, id);
+      if (artworkImage == null) {
         break missingId;
       }
 
-      id = R.id.playerDsp;
-      Button playerDsp = ViewBindings.findChildViewById(rootView, id);
-      if (playerDsp == null) {
+      id = R.id.downloadButton;
+      ImageButton downloadButton = ViewBindings.findChildViewById(rootView, id);
+      if (downloadButton == null) {
         break missingId;
       }
 
-      id = R.id.playerElapsed;
-      TextView playerElapsed = ViewBindings.findChildViewById(rootView, id);
-      if (playerElapsed == null) {
+      id = R.id.elapsedTime;
+      TextView elapsedTime = ViewBindings.findChildViewById(rootView, id);
+      if (elapsedTime == null) {
         break missingId;
       }
 
-      id = R.id.playerNext;
-      ImageButton playerNext = ViewBindings.findChildViewById(rootView, id);
-      if (playerNext == null) {
+      id = R.id.favoriteButton;
+      ImageButton favoriteButton = ViewBindings.findChildViewById(rootView, id);
+      if (favoriteButton == null) {
         break missingId;
       }
 
-      id = R.id.playerPlayPause;
-      ImageButton playerPlayPause = ViewBindings.findChildViewById(rootView, id);
-      if (playerPlayPause == null) {
+      id = R.id.mainControls;
+      LinearLayout mainControls = ViewBindings.findChildViewById(rootView, id);
+      if (mainControls == null) {
         break missingId;
       }
 
-      id = R.id.playerPrev;
-      ImageButton playerPrev = ViewBindings.findChildViewById(rootView, id);
-      if (playerPrev == null) {
+      id = R.id.nextButton;
+      ImageButton nextButton = ViewBindings.findChildViewById(rootView, id);
+      if (nextButton == null) {
         break missingId;
       }
 
-      id = R.id.playerProgress;
-      SeekBar playerProgress = ViewBindings.findChildViewById(rootView, id);
-      if (playerProgress == null) {
+      id = R.id.playPauseButton;
+      ImageButton playPauseButton = ViewBindings.findChildViewById(rootView, id);
+      if (playPauseButton == null) {
         break missingId;
       }
 
-      id = R.id.playerQueue;
-      Button playerQueue = ViewBindings.findChildViewById(rootView, id);
-      if (playerQueue == null) {
+      id = R.id.prevButton;
+      ImageButton prevButton = ViewBindings.findChildViewById(rootView, id);
+      if (prevButton == null) {
         break missingId;
       }
 
-      id = R.id.playerRemaining;
-      TextView playerRemaining = ViewBindings.findChildViewById(rootView, id);
-      if (playerRemaining == null) {
+      id = R.id.queueButton;
+      Button queueButton = ViewBindings.findChildViewById(rootView, id);
+      if (queueButton == null) {
         break missingId;
       }
 
-      id = R.id.playerTitle;
-      TextView playerTitle = ViewBindings.findChildViewById(rootView, id);
-      if (playerTitle == null) {
+      id = R.id.repeatButton;
+      ImageButton repeatButton = ViewBindings.findChildViewById(rootView, id);
+      if (repeatButton == null) {
         break missingId;
       }
 
-      return new ScreenNowPlayingBinding((LinearLayout) rootView, playerArtist, playerArtwork,
-          playerDsp, playerElapsed, playerNext, playerPlayPause, playerPrev, playerProgress,
-          playerQueue, playerRemaining, playerTitle);
+      id = R.id.seekBar;
+      SeekBar seekBar = ViewBindings.findChildViewById(rootView, id);
+      if (seekBar == null) {
+        break missingId;
+      }
+
+      id = R.id.titleText;
+      TextView titleText = ViewBindings.findChildViewById(rootView, id);
+      if (titleText == null) {
+        break missingId;
+      }
+
+      id = R.id.totalTime;
+      TextView totalTime = ViewBindings.findChildViewById(rootView, id);
+      if (totalTime == null) {
+        break missingId;
+      }
+
+      id = R.id.utilityControls;
+      LinearLayout utilityControls = ViewBindings.findChildViewById(rootView, id);
+      if (utilityControls == null) {
+        break missingId;
+      }
+
+      id = R.id.v4aButton;
+      Button v4aButton = ViewBindings.findChildViewById(rootView, id);
+      if (v4aButton == null) {
+        break missingId;
+      }
+
+      return new ScreenNowPlayingBinding((ConstraintLayout) rootView, artistText, artworkImage,
+          downloadButton, elapsedTime, favoriteButton, mainControls, nextButton, playPauseButton,
+          prevButton, queueButton, repeatButton, seekBar, titleText, totalTime, utilityControls,
+          v4aButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

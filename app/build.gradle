@@ -2,6 +2,9 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'org.jetbrains.kotlin.kapt'
+    id 'org.jetbrains.kotlin.plugin.compose'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -68,7 +71,20 @@ android {
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release.storeFile != null ? signingConfigs.release : signingConfigs.debug
+            ndk {
+                debugSymbolLevel 'FULL'
+            }
+            firebaseCrashlytics {
+                nativeSymbolUploadEnabled true
+                unstrippedNativeLibsDir 'build/intermediates/cxx/Release'
+            }
         }
+    }
+
+    bundle {
+        language { enableSplit = true }
+        density { enableSplit = true }
+        abi { enableSplit = true }
     }
 
     compileOptions {
@@ -87,6 +103,9 @@ android {
     buildFeatures {
         buildConfig true
         viewBinding true
+        dataBinding true
+        prefab true
+        compose true
     }
 
     externalNativeBuild {
@@ -155,7 +174,45 @@ dependencies {
 
     implementation 'com.github.TeamNewPipe:NewPipeExtractor:v0.26.0'
 
+    // YouTube Auth & Security
+    implementation 'com.google.android.gms:play-services-auth:21.2.0'
+    implementation 'androidx.credentials:credentials:1.2.2'
+    implementation 'androidx.credentials:credentials-play-services-auth:1.2.2'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+
+    // UI Enhancements
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // Google Cast & Media Routing
+    implementation 'com.google.android.gms:play-services-cast-framework:21.5.0'
+    implementation 'androidx.mediarouter:mediarouter:1.7.0'
+
+    // Low Latency Audio
+    implementation 'com.google.oboe:oboe:1.9.0'
+
+    // Jetpack Compose
+    def composeBom = platform('androidx.compose:compose-bom:2024.10.00')
+    implementation composeBom
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose'
+    implementation 'androidx.activity:activity-compose'
+
+    // Baseline Profile (AOT compilation at install time)
+    implementation 'androidx.profileinstaller:profileinstaller:1.3.1'
+
+    // Firebase (Crashlytics + Analytics)
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-crashlytics-ndk'
+    implementation 'com.google.firebase:firebase-analytics'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }
+
+
+
+apply plugin: 'com.google.gms.google-services'

@@ -33,4 +33,10 @@ class PlayerRepository(
         database.trackDao().upsert(CachedTrack.fromTrack(track))
         database.trackDao().markPlayed(track.id, System.currentTimeMillis())
     }
+    
+    suspend fun toggleFavorite(track: Track): Boolean {
+        val newState = !track.isFavorite
+        database.trackDao().updateFavorite(track.id, newState)
+        return newState
+    }
 }

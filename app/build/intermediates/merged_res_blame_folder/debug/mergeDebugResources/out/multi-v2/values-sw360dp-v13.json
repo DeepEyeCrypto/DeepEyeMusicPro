@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.deepeye.musicpro.app-mergeDebugResources-65:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "com.deepeye.musicpro.app-mergeDebugResources-104:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/d5c325285c8373d20d69df8f5cb6bbe4/transformed/preference-1.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "/Users/enayat/.gradle/caches/8.9/transforms/c01106caa01e260fa8b8707b4eb4e6fc/transformed/preference-1.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

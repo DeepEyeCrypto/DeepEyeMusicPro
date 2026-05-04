@@ -41,10 +41,10 @@ public final class AppDatabase_Impl extends AppDatabase {
   @Override
   @NonNull
   protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(2) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(3) {
       @Override
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
-        db.execSQL("CREATE TABLE IF NOT EXISTS `cached_tracks` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `artist` TEXT NOT NULL, `durationMs` INTEGER NOT NULL, `thumbnailUrl` TEXT, `streamUrl` TEXT, `webUrl` TEXT, `localUri` TEXT, `mimeType` TEXT, `bitrate` INTEGER NOT NULL, `source` TEXT NOT NULL, `isDownloaded` INTEGER NOT NULL, `downloadedAt` INTEGER NOT NULL, `lastPlayedAt` INTEGER NOT NULL, `playCount` INTEGER NOT NULL, `fileSizeBytes` INTEGER NOT NULL, PRIMARY KEY(`id`))");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `cached_tracks` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `artist` TEXT NOT NULL, `durationMs` INTEGER NOT NULL, `thumbnailUrl` TEXT, `streamUrl` TEXT, `webUrl` TEXT, `localUri` TEXT, `mimeType` TEXT, `bitrate` INTEGER NOT NULL, `source` TEXT NOT NULL, `isDownloaded` INTEGER NOT NULL, `downloadedAt` INTEGER NOT NULL, `lastPlayedAt` INTEGER NOT NULL, `playCount` INTEGER NOT NULL, `fileSizeBytes` INTEGER NOT NULL, `isFavorite` INTEGER NOT NULL, PRIMARY KEY(`id`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS `favorite_tracks` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `artist` TEXT NOT NULL, `thumbnailUrl` TEXT, `webUrl` TEXT, `addedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS `search_history` (`query` TEXT NOT NULL, `lastSearchedAt` INTEGER NOT NULL, `hitCount` INTEGER NOT NULL, PRIMARY KEY(`query`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS `dsp_presets` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `eqGains` TEXT NOT NULL, `bassBoost` REAL NOT NULL, `stereoWidth` REAL NOT NULL, `compressorThresholdDb` REAL NOT NULL, `compressorRatio` REAL NOT NULL, `compressorAttackMs` REAL NOT NULL, `compressorReleaseMs` REAL NOT NULL, `reverbRoom` REAL NOT NULL, `reverbDamping` REAL NOT NULL, `reverbWidth` REAL NOT NULL, `reverbWet` REAL NOT NULL, `limiterCeilingDb` REAL NOT NULL, `builtIn` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))");
@@ -52,7 +52,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         db.execSQL("CREATE TABLE IF NOT EXISTS `playlists` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `createdAt` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS `playlist_tracks` (`playlistId` TEXT NOT NULL, `trackId` TEXT NOT NULL, `position` INTEGER NOT NULL, `addedAt` INTEGER NOT NULL, PRIMARY KEY(`playlistId`, `trackId`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd9f2ad70917549d8f3994c65fc58bbd8')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a6f88e0365a82fb9e5602a764ff09d8a')");
       }
 
       @Override
@@ -107,7 +107,7 @@ public final class AppDatabase_Impl extends AppDatabase {
       @NonNull
       public RoomOpenHelper.ValidationResult onValidateSchema(
           @NonNull final SupportSQLiteDatabase db) {
-        final HashMap<String, TableInfo.Column> _columnsCachedTracks = new HashMap<String, TableInfo.Column>(16);
+        final HashMap<String, TableInfo.Column> _columnsCachedTracks = new HashMap<String, TableInfo.Column>(17);
         _columnsCachedTracks.put("id", new TableInfo.Column("id", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCachedTracks.put("title", new TableInfo.Column("title", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCachedTracks.put("artist", new TableInfo.Column("artist", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -124,6 +124,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         _columnsCachedTracks.put("lastPlayedAt", new TableInfo.Column("lastPlayedAt", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCachedTracks.put("playCount", new TableInfo.Column("playCount", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCachedTracks.put("fileSizeBytes", new TableInfo.Column("fileSizeBytes", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCachedTracks.put("isFavorite", new TableInfo.Column("isFavorite", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysCachedTracks = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesCachedTracks = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoCachedTracks = new TableInfo("cached_tracks", _columnsCachedTracks, _foreignKeysCachedTracks, _indicesCachedTracks);
@@ -245,7 +246,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "d9f2ad70917549d8f3994c65fc58bbd8", "5e41c4e3839b1814090ed6c1b0987ca4");
+    }, "a6f88e0365a82fb9e5602a764ff09d8a", "4ba5304bdd039fdb9d961d33cb0a191c");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;

@@ -21,6 +21,10 @@ class V4ABundledProcessor(
     private var active = false
     private var framesSinceMetricsLog = 0L
     private var lastMetricsLogTimeMs = 0L
+    private var persistentInput: ByteBuffer? = null
+    private var persistentOutput: ByteBuffer? = null
+    private var floatArrayBuffer: FloatArray? = null
+    private var outputArrayBuffer: FloatArray? = null
 
     override fun configure(inputAudioFormat: AudioFormat): AudioFormat {
         inputFormat = inputAudioFormat
@@ -55,38 +59,53 @@ class V4ABundledProcessor(
 
     private fun processFloat(inputBuffer: ByteBuffer, size: Int, channels: Int) {
         val frames = size / (Float.SIZE_BYTES * channels)
-        val directInput = ByteBuffer.allocateDirect(size).order(ByteOrder.nativeOrder())
-        val directOutput = ByteBuffer.allocateDirect(size).order(ByteOrder.nativeOrder())
-        directInput.put(inputBuffer)
-        directInput.flip()
-        val inputRms = calculatePcmFloatRms(directInput)
-        if (!nativeV4A.processDirect(directInput, directOutput, frames)) {
-            directOutput.clear()
-            directInput.rewind()
-            directOutput.put(directInput)
+        
+        val input = persistentInput?.takeIf { it.capacity() >= size } ?: ByteBuffer.allocateDirect(size * 2).order(ByteOrder.nativeOrder()).also { persistentInput = it }
+        val output = persistentOutput?.takeIf { it.capacity() >= size } ?: ByteBuffer.allocateDirect(size * 2).order(ByteOrder.nativeOrder()).also { persistentOutput = it }
+        
+        input.clear()
+        input.put(inputBuffer)
+        input.flip()
+        
+        val inputRms = calculatePcmFloatRms(input)
+        output.clear()
+        
+        if (!nativeV4A.processDirect(input, output, frames)) {
+            input.rewind()
+            output.put(input)
         }
-        directOutput.position(size)
-        directOutput.flip()
-        val outputRms = calculatePcmFloatRms(directOutput)
-        outputBuffer = directOutput
+        
+        output.flip()
+        val outputRms = calculatePcmFloatRms(output)
+        outputBuffer = output
         logMetrics(stateProvider(), frames, inputRms, outputRms)
     }
 
     private fun processPcm16(inputBuffer: ByteBuffer, size: Int, channels: Int) {
         val samples = size / Short.SIZE_BYTES
         val frames = samples / channels
-        val input = FloatArray(samples)
-        val output = FloatArray(samples)
+        
+        val input = floatArrayBuffer?.takeIf { it.size >= samples } ?: FloatArray(samples * 2).also { floatArrayBuffer = it }
+        val output = outputArrayBuffer?.takeIf { it.size >= samples } ?: FloatArray(samples * 2).also { outputArrayBuffer = it }
+        
         val shortInput = inputBuffer.order(ByteOrder.LITTLE_ENDIAN).asShortBuffer()
         for (index in 0 until samples) input[index] = shortInput.get(index) / 32768f
-        val inputRms = calculateFloatArrayRms(input)
-        if (!nativeV4A.processFloatArray(input, output, frames)) input.copyInto(output)
-        val outputRms = calculateFloatArrayRms(output)
-        val directOutput = ByteBuffer.allocateDirect(size).order(ByteOrder.LITTLE_ENDIAN)
-        for (sample in output) {
-            val clamped = sample.coerceIn(-1f, 0.9999695f)
+        
+        val inputRms = calculateFloatArrayRms(input, samples)
+        if (!nativeV4A.processFloatArray(input, output, frames)) {
+            System.arraycopy(input, 0, output, 0, samples)
+        }
+        val outputRms = calculateFloatArrayRms(output, samples)
+        
+        val directOutput = persistentOutput?.takeIf { it.capacity() >= size } ?: ByteBuffer.allocateDirect(size * 2).order(ByteOrder.LITTLE_ENDIAN).also { persistentOutput = it }
+        directOutput.clear()
+        directOutput.order(ByteOrder.LITTLE_ENDIAN)
+        
+        for (i in 0 until samples) {
+            val clamped = output[i].coerceIn(-1f, 0.9999695f)
             directOutput.putShort((clamped * 32768f).toInt().toShort())
         }
+        
         inputBuffer.position(inputBuffer.limit())
         directOutput.flip()
         outputBuffer = directOutput
@@ -131,14 +150,14 @@ class V4ABundledProcessor(
         return sqrt(sumSquares / samples)
     }
 
-    private fun calculateFloatArrayRms(samples: FloatArray): Double {
-        if (samples.isEmpty()) return 0.0
+    private fun calculateFloatArrayRms(samples: FloatArray, count: Int): Double {
+        if (count <= 0) return 0.0
         var sumSquares = 0.0
-        for (sampleValue in samples) {
-            val sample = sampleValue.toDouble()
+        for (i in 0 until count) {
+            val sample = samples[i].toDouble()
             sumSquares += sample * sample
         }
-        return sqrt(sumSquares / samples.size)
+        return sqrt(sumSquares / count)
     }
 
     private fun logMetrics(state: V4AEngineState, frames: Int, inputRms: Double, outputRms: Double) {
