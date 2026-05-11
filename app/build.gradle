@@ -150,7 +150,7 @@ dependencies {
     implementation 'androidx.preference:preference-ktx:1.2.1'
     implementation 'androidx.datastore:datastore-preferences:1.1.1'
     implementation 'androidx.work:work-runtime-ktx:2.9.1'
-    implementation 'androidx.media:media:1.7.0'
+    implementation 'androidx.media:media:1.8.0'
 
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'com.airbnb.android:lottie:6.6.2'
@@ -185,7 +185,7 @@ dependencies {
 
     // Google Cast & Media Routing
     implementation 'com.google.android.gms:play-services-cast-framework:21.5.0'
-    implementation 'androidx.mediarouter:mediarouter:1.7.0'
+    implementation 'androidx.mediarouter:mediarouter:1.8.0'
 
     // Low Latency Audio
     implementation 'com.google.oboe:oboe:1.9.0'
